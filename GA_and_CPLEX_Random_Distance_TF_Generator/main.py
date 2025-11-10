@@ -1,5 +1,6 @@
 import json
 import random
+import os
 from typing import Dict, List, Tuple, Any
 
 def get_type(name: str, node_types: Dict[str, Any]) -> str:
@@ -90,7 +91,17 @@ def build_graph_with_matrices(
     graph = {"nodes": nodes, "edges": edges}
     return graph, labels, Adj, Distance, TrafficFactor
 
-def print_matrix(matrix, decimals=None):
+def get_next_output_filename():
+    """Find the next available example_N.txt filename."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    counter = 1
+    while True:
+        filename = os.path.join(base_dir, f"example_{counter}.txt")
+        if not os.path.exists(filename):
+            return filename
+        counter += 1
+
+def print_matrix(matrix, decimals=None, file=None):
     # Format the entire matrix as a list of lists
     formatted_rows = []
     for row in matrix:
@@ -107,41 +118,55 @@ def print_matrix(matrix, decimals=None):
             formatted_rows.append(out)
     
     # Print as a single list with commas after each row
-    print("[")
+    output_lines = ["["]
     for i, row in enumerate(formatted_rows):
         if i < len(formatted_rows) - 1:
-            print(f" {row},")
+            output_lines.append(f" {row},")
         else:
-            print(f" {row}")
-    print("]")
+            output_lines.append(f" {row}")
+    output_lines.append("]")
+    
+    output = "\n".join(output_lines)
+    if file:
+        file.write(output + "\n")
+    else:
+        print(output)
 
 # ------------------ EXAMPLE USAGE (your "YOUR DATA") ------------------
 if __name__ == "__main__":
-    table = [
-        [1, 2],            # 0 -> D
-        [0, 2, 3, 11],     # 1 -> "1"
-        [0, 1, 3, 14],     # 2 -> "2"
-        [1, 2, 13],        # 3 -> "3"
-        [10, 11, 12, 13],  # 4 -> "4"
-        [9, 13, 14, 15],   # 5 -> "5"
-        [12, 13, 15, 7],   # 6 -> "6"
-        [12, 6, 8, 16],    # 7 -> "7"
-        [15, 16, 7],       # 8 -> "8"
-        [5],               # 9  -> BSS1
-        [11, 12, 4],       # 10 -> BSS2
-        [1, 4, 10],        # 11 -> C1
-        [10, 4, 6, 7],     # 12 -> C2
-        [3, 4, 6, 5, 14],  # 13 -> C3
-        [2, 13, 5],        # 14 -> C4
-        [5, 6, 8],         # 15 -> C5
-        [7, 8],            # 16 -> C6
+    table = table = [
+        [1, 2], #D
+        [0, 2, 3, 11], #1
+        [0, 1, 3, 14], #2
+        [1, 2, 13], #3
+        [10, 11, 12, 13], #4
+        [13, 15, 14, 9], #5
+        [12, 13, 15, 7], #6
+        [12, 6, 8, 16], #7
+        [15, 16, 7], #8
+        [5], #9
+        [11,12,4,21,22], #10
+        [1,4,10,23], #11
+        [10,4,6,7,24], #12
+        [3,4,6,5,14], #13
+        [2,13,5], #14
+        [5,6,8,19], #15
+        [7,8,20], #16
+        [20,18], #17
+        [19,17], #18
+        [15,20,18], #19
+        [16,17,19], #20
+        [23,10], #21
+        [24,10], #22
+        [11,21], #23
+        [12,22], #24
     ]
 
     idx2label = {
         0: "D",
-        1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8",
+        1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8",19: "19", 20: "20", 23: "23", 24: "24",
         9: "BSS1", 10: "BSS2",
-        11: "C1", 12: "C2", 13: "C3", 14: "C4", 15: "C5", 16: "C6",
+        11: "C1", 12: "C2", 13: "C3", 14: "C4", 15: "C5", 16: "C6", 17: "C7", 18: "C8", 21: "C9", 22: "C10"
     }
 
     node_types = {
@@ -162,19 +187,27 @@ if __name__ == "__main__":
         seed=None
     )
 
-    # 1) Input format (nodes + edges)
-    print("=== INPUT FORMAT (JSON) ===")
-    print(json.dumps(graph, indent=2))
+    # Get the next available output filename
+    output_filename = get_next_output_filename()
+    
+    # Write all output to the file
+    with open(output_filename, 'w', encoding='utf-8') as f:
+        # 1) Input format (nodes + edges)
+        f.write("=== INPUT FORMAT (JSON) ===\n")
+        f.write(json.dumps(graph, indent=2) + "\n")
 
-    # 2) Matrices (using identical edge values)
-    print("\n=== ORDER OF NODES ===")
-    print(labels)
+        # 2) Matrices (using identical edge values)
+        f.write("\n=== ORDER OF NODES ===\n")
+        f.write(str(labels) + "\n")
 
-    print("\n=== Adjacency (0/1) ===")
-    print_matrix(Adj)
+        f.write("\n=== Adjacency (0/1) ===\n")
+        print_matrix(Adj, file=f)
 
-    print("\n=== Distance (km) ===")
-    print_matrix(Distance, decimals=2)  # round to 2 decimal places
+        f.write("\n=== Distance (km) ===\n")
+        print_matrix(Distance, decimals=2, file=f)  # round to 2 decimal places
 
-    print("\n=== TrafficFactor ===")
-    print_matrix(TrafficFactor, decimals=2)
+        f.write("\n=== TrafficFactor ===\n")
+        print_matrix(TrafficFactor, decimals=2, file=f)
+    
+    # Print confirmation message to console
+    print(f"Output saved to: {output_filename}")
