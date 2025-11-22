@@ -296,5 +296,22 @@
       "distance": 5.21,
       "traffic_factor": 0.82
     }
-  ]
+  ],
+  "base_speed": 50,
+  "modules": [
+    {"capacity": 20, "soc": 100},
+    {"capacity": 20, "soc": 100},
+    {"capacity": 20, "soc": 100},
+    {"capacity": 20, "soc": 100},
+    {"capacity": 20, "soc": 100}
+  ],
+  "starting_node": "D",
+  "vehicle": {
+    "base_mass": 1500,
+    "f": 0.01,
+    "Cx": 0.3,
+    "A": 2.5,
+    "m": 100
+  }
 }
+

@@ -1,0 +1,17 @@
+================================================================================
+FINAL JOURNEY STATUS (Solution #1 - Best Cost)
+================================================================================
+Path Taken: D -> 1 -> C1 -> 23 -> C9 -> BSS2 -> C10 -> 24 -> C2 -> 7 -> C6 -> 20 -> C7 -> C8 -> 19 -> C5 -> 5 -> C3 -> C4 -> 2 -> D
+SoC Trail: D(100.0%) -> 1(97.9%) -> C1(95.7%) -> 23(93.6%) -> C9(91.5%) -> BSS2(89.3%) -> C10(87.2%) -> 24(85.1%) -> C2(83.0%) -> 7(80.9%) -> C6(78.7%) -> 20(76.6%) -> C7(74.5%) -> C8(72.4%) -> 19(70.3%) -> C5(68.2%) -> 5(66.1%) -> C3(64.1%) -> C4(62.0%) -> 2(59.9%) -> D(57.8%)
+Energy Trail: D - 2.1 kWh > 1 - 2.1 kWh > C1 - 2.1 kWh > 23 - 2.1 kWh > C9 - 2.1 kWh > BSS2 - 2.1 kWh > C10 - 2.1 kWh > 24 - 2.1 kWh > C2 - 2.1 kWh > 7 - 2.1 kWh > C6 - 2.1 kWh > 20 - 2.1 kWh > C7 - 2.1 kWh > C8 - 2.1 kWh > 19 - 2.1 kWh > C5 - 2.1 kWh > 5 - 2.1 kWh > C3 - 2.1 kWh > C4 - 2.1 kWh > 2 - 2.1 kWh > D
+Travel Time Trail: D - 9.60 min > 1 - 9.60 min > C1 - 9.60 min > 23 - 9.60 min > C9 - 9.60 min > BSS2 - 9.60 min > C10 - 9.60 min > 24 - 9.60 min > C2 - 9.60 min > 7 - 9.60 min > C6 - 9.60 min > 20 - 9.60 min > C7 - 9.60 min > C8 - 9.60 min > 19 - 9.60 min > C5 - 9.60 min > 5 - 9.60 min > C3 - 9.60 min > C4 - 9.60 min > 2 - 9.60 min > D        
+Current location: D
+Total Travel Time: 192.00 minutes
+Total Energy Consumed: 42.184 kWh
+Total Distance Covered: 160.00 km
+Current SoC: 57.8%
+Cost Breakdown (matching CPLEX objective):
+  Sum of Arrival Times (all nodes): 2016.00 minutes
+  Total Modules Swapped: 0
+  Swap Cost (50.0 per module): 0.00
+  Total Cost: 2016.00
