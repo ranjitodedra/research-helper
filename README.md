@@ -1,75 +1,70 @@
 # Research Helper Tools
 
-## add_zero
+## countEdges
 
-There are three ways to give it matrices:
+This modules take path from the GA and provides the number of edges which I can use as visits value in CPLEX.
 
-(a) One matrix
+just enenter path in UI or python program like this
 
-Paste a single matrix:
 ```
-[
- [0, 1, 1],
- [1, 0, 1],
- [1, 1, 0]
-]
+D -> 2 -> C3 -> 7 -> C1 -> 4 -> BSS1 -> C5 -> 3 -> C6 -> BSS4 -> C7 -> C2 -> C4 -> C8 -> C9 -> 5 -> 1 -> D
 ```
 
-Then press Enter (and Ctrl+D or Ctrl+Z + Enter on Windows).
+## customer&bssLists
 
-→ Output:
+based on input, which we get from network generator we can generate here input for CPLEX, its the lists we need to provides before matrixs.
+
+just provide 
+
 ```
-[[0, 1, 1, 0], [1, 0, 1, 0], [1, 1, 0, 0]]
+idx2label = {
+    0: "D",
+    1: "1",
+    2: "2",
+    3: "BSS1",
+    4: "C1",
+    5: "C2",
+    6: "3",
+    7: "4",
+    8: "5",
+    9: "C3",
+    10: "C4",
+    11: "BSS2",
+    12: "C5",
+    13: "6",
+    14: "BSS3",
+    15: "C6",
+    16: "7",
+    17: "8",
+    18: "C7",
+    19: "C8",
+    20: "C9",
+    21: "BSS4",
+}
 ```
 
-(b) Several matrices separated by ---
+and run the program
 
-Paste:
-```
-[
- [0, 1, 1],
- [1, 0, 1]
-]
----
-[
- [1.1, 2.2],
- [3.3, 4.4]
-]
-```
+## ExampleTracker
 
-Press Enter, then Ctrl+D (or Ctrl+Z + Enter).
-It will print both modified matrices, separated again by ---.
+This module is just storage for all examples I run
 
-(c) List of matrices in Python syntax
+## InputGenerator
 
-If you already have them in a list form:
-```
-[
- [
-  [0,1],
-  [1,0]
- ],
- [
-  [4.5,2.2],
-  [3.1,0.0]
- ]
-]
-```
-It will output the same structure with each row extended by one 0.
+Takes input from Network Generator and generate final inputs for all the programs
+
+## maintainRatio
+
+just take total number of nodes and provide the number of customer and bss we should keep
+
+## NetworkGenerator
+
+generate network based on number of nodes provided
 
 ## visualization
 
-Basic Usage
+To run
 
-1. Basic command (displays the graph):
 ```
 python visualize_graph.py graph.json
-```
-2. Save to a file:
-```
-python visualize_graph.py graph.json -o output.png
-```
-3. View all options:
-```
-python visualize_graph.py --help
 ```
