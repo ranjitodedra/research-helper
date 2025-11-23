@@ -1,70 +1,80 @@
 # Research Helper Tools
 
-## countEdges
+## UIG (Unified Input Generator)
 
-This modules take path from the GA and provides the number of edges which I can use as visits value in CPLEX.
+The UIG module combines `maintainRatio`, `NetworkGenerator`, `InputGenerator`, and `customer&bssLists` modules into a single unified interface. You only need to provide the total number of nodes, and it will automatically generate all necessary network configurations, matrices, and input files.
 
-just enenter path in UI or python program like this
+### Setup Instructions
 
-```
-D -> 2 -> C3 -> 7 -> C1 -> 4 -> BSS1 -> C5 -> 3 -> C6 -> BSS4 -> C7 -> C2 -> C4 -> C8 -> C9 -> 5 -> 1 -> D
-```
+#### 1. Create a Virtual Environment
 
-## customer&bssLists
-
-based on input, which we get from network generator we can generate here input for CPLEX, its the lists we need to provides before matrixs.
-
-just provide 
-
-```
-idx2label = {
-    0: "D",
-    1: "1",
-    2: "2",
-    3: "BSS1",
-    4: "C1",
-    5: "C2",
-    6: "3",
-    7: "4",
-    8: "5",
-    9: "C3",
-    10: "C4",
-    11: "BSS2",
-    12: "C5",
-    13: "6",
-    14: "BSS3",
-    15: "C6",
-    16: "7",
-    17: "8",
-    18: "C7",
-    19: "C8",
-    20: "C9",
-    21: "BSS4",
-}
+**Windows (PowerShell):**
+```powershell
+python -m venv venv
 ```
 
-and run the program
-
-## ExampleTracker
-
-This module is just storage for all examples I run
-
-## InputGenerator
-
-Takes input from Network Generator and generate final inputs for all the programs
-
-## maintainRatio
-
-just take total number of nodes and provide the number of customer and bss we should keep
-
-## NetworkGenerator
-
-generate network based on number of nodes provided
-
-## visualization
-
-To run
-
+**Windows (Command Prompt):**
+```cmd
+python -m venv venv
 ```
-python visualize_graph.py graph.json
+
+**Linux/Mac:**
+```bash
+python3 -m venv venv
 ```
+
+#### 2. Activate the Virtual Environment
+
+**Windows (PowerShell):**
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+**Windows (Command Prompt):**
+```cmd
+venv\Scripts\activate.bat
+```
+
+**Linux/Mac:**
+```bash
+source venv/bin/activate
+```
+
+#### 3. Install Dependencies
+
+Once the virtual environment is activated, install all required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Run the UIG Module
+
+Navigate to the UIG directory and run the module:
+
+```bash
+cd UIG
+python uig.py
+```
+
+The program will prompt you to enter the total number of nodes. For example:
+```
+Enter total number of nodes: 14
+```
+
+#### 5. Output Files
+
+After running, the UIG module will generate several output files in the `UIG/` directory:
+
+- **Network Configuration** (`*_network_config.txt`) - Contains the network structure, node labels, and types
+- **Input Example** (`*_example.txt`) - Contains GA input, CPLEX matrices, and all calculated values
+- **Visualization PNG** (`*.png`) - Visual representation of the network graph
+- **JSON Input** (`*.json`) - JSON format for other modules
+- **DAT Input** (`*.dat`) - DAT format for CPLEX optimization
+
+### Troubleshooting
+
+If you encounter an `ImportError` about NumPy and scikit-learn:
+1. Make sure your virtual environment is activated
+2. Verify that requirements are installed: `pip list`
+3. Reinstall requirements: `pip install -r requirements.txt --upgrade`
