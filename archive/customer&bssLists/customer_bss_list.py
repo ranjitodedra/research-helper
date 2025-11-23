@@ -2,25 +2,29 @@ idx2label = {
     0: "D",
     1: "1",
     2: "2",
-    3: "BSS1",
-    4: "C1",
-    5: "C2",
+    3: "C1",
+    4: "C2",
+    5: "BSS1",
     6: "3",
     7: "4",
-    8: "5",
-    9: "C3",
-    10: "C4",
-    11: "BSS2",
+    8: "C3",
+    9: "C4",
+    10: "BSS2",
+    11: "BSS3",
     12: "C5",
-    13: "6",
-    14: "BSS3",
-    15: "C6",
-    16: "7",
-    17: "8",
-    18: "C7",
-    19: "C8",
-    20: "C9",
-    21: "BSS4",
+    13: "5",
+    14: "C6",
+    15: "C7",
+    16: "BSS4",
+    17: "6",
+    18: "7",
+    19: "8",
+    20: "C8",
+    21: "BSS5",
+    22: "9",
+    23: "10",
+    24: "C9",
+    25: "C10",
 }
 
 def build_indicator_vectors(idx2label: dict):
@@ -43,6 +47,6 @@ def build_indicator_vectors(idx2label: dict):
 
 customers, bss = build_indicator_vectors(idx2label)
 
-print("Station:", bss)
-print("Costumer:", customers)
+print("Station =", bss)
+print("Costumer =", customers)
 

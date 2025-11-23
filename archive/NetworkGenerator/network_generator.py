@@ -774,8 +774,8 @@ def generate_network(
 if __name__ == "__main__":
     # Generate a network matching the example
     table, idx2label, node_types = generate_network(
-        total_nodes=22,
-        num_customers=9,
+        total_nodes=18,
+        num_customers=7,
         num_bss=4,
         seed=42
     )

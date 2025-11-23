@@ -288,54 +288,63 @@ def calculate_energy_time_matrices(D, TF):
 
 if __name__ == "__main__":
     # Graph configuration (same as GA_and_CPLEX_Random_Distance_TF_Generator)
+
     table = [
         [1, 2],  # Node 0: D (depot)
-        [0, 2, 8, 11],  # Node 1: 1 (intersection)
-        [0, 1, 4, 9, 11],  # Node 2: 2 (intersection)
-        [6, 7, 12],  # Node 3: BSS1 (bss)
-        [2, 7, 11, 14, 16],  # Node 4: C1 (customer)
-        [10, 13, 17, 18, 21],  # Node 5: C2 (customer)
-        [3, 12, 15],  # Node 6: 3 (intersection)
-        [3, 4, 14],  # Node 7: 4 (intersection)
-        [1, 11, 20],  # Node 8: 5 (intersection)
-        [2, 16],  # Node 9: C3 (customer)
-        [5, 19, 21],  # Node 10: C4 (customer)
-        [1, 2, 4, 8, 20],  # Node 11: BSS2 (bss)
-        [3, 6],  # Node 12: C5 (customer)
-        [5, 18, 19],  # Node 13: 6 (intersection)
-        [4, 7, 16],  # Node 14: BSS3 (bss)
-        [6, 17, 21],  # Node 15: C6 (customer)
-        [4, 9, 14],  # Node 16: 7 (intersection)
-        [5, 15],  # Node 17: 8 (intersection)
-        [5, 13, 19, 21],  # Node 18: C7 (customer)
-        [10, 13, 18, 20, 21],  # Node 19: C8 (customer)
-        [8, 11, 19],  # Node 20: C9 (customer)
-        [5, 10, 15, 18, 19],  # Node 21: BSS4 (bss)
+        [0, 2, 5, 7],  # Node 1: 1 (intersection)
+        [0, 1, 4, 5, 6],  # Node 2: 2 (intersection)
+        [9, 15, 16, 21, 23],  # Node 3: C1 (customer)
+        [2, 5, 6, 7, 17],  # Node 4: C2 (customer)
+        [1, 2, 4, 7, 17],  # Node 5: BSS1 (bss)
+        [2, 4, 7, 11],  # Node 6: 3 (intersection)
+        [1, 4, 5, 6, 17],  # Node 7: 4 (intersection)
+        [10, 12, 18, 22],  # Node 8: C3 (customer)
+        [3, 15, 21, 23],  # Node 9: C4 (customer)
+        [8, 12, 18, 22],  # Node 10: BSS2 (bss)
+        [6, 13, 17, 22, 25],  # Node 11: BSS3 (bss)
+        [8, 10, 18, 22],  # Node 12: C5 (customer)
+        [11, 22, 25],  # Node 13: 5 (intersection)
+        [19, 24],  # Node 14: C6 (customer)
+        [3, 9, 16, 21],  # Node 15: C7 (customer)
+        [3, 15, 19, 20, 24],  # Node 16: BSS4 (bss)
+        [4, 5, 7, 11, 20],  # Node 17: 6 (intersection)
+        [8, 10, 12, 21, 25],  # Node 18: 7 (intersection)
+        [14, 16, 20, 24],  # Node 19: 8 (intersection)
+        [16, 17, 19, 24, 25],  # Node 20: C8 (customer)
+        [3, 9, 15, 18, 23],  # Node 21: BSS5 (bss)
+        [8, 10, 11, 12, 13],  # Node 22: 9 (intersection)
+        [3, 9, 21, 25],  # Node 23: 10 (intersection)
+        [14, 16, 19, 20],  # Node 24: C9 (customer)
+        [11, 13, 18, 20, 23],  # Node 25: C10 (customer)
     ]
 
     idx2label = {
         0: "D",
         1: "1",
         2: "2",
-        3: "BSS1",
-        4: "C1",
-        5: "C2",
+        3: "C1",
+        4: "C2",
+        5: "BSS1",
         6: "3",
         7: "4",
-        8: "5",
-        9: "C3",
-        10: "C4",
-        11: "BSS2",
+        8: "C3",
+        9: "C4",
+        10: "BSS2",
+        11: "BSS3",
         12: "C5",
-        13: "6",
-        14: "BSS3",
-        15: "C6",
-        16: "7",
-        17: "8",
-        18: "C7",
-        19: "C8",
-        20: "C9",
-        21: "BSS4",
+        13: "5",
+        14: "C6",
+        15: "C7",
+        16: "BSS4",
+        17: "6",
+        18: "7",
+        19: "8",
+        20: "C8",
+        21: "BSS5",
+        22: "9",
+        23: "10",
+        24: "C9",
+        25: "C10",
     }
 
     node_types = {
@@ -343,7 +352,9 @@ if __name__ == "__main__":
         "BSS2": "bss",
         "BSS3": "bss",
         "BSS4": "bss",
+        "BSS5": "bss",
         "C1": "customer",
+        "C10": "customer",
         "C2": "customer",
         "C3": "customer",
         "C4": "customer",
@@ -354,6 +365,7 @@ if __name__ == "__main__":
         "C9": "customer",
         "D": "depot",
         "1": "intersection",
+        "10": "intersection",
         "2": "intersection",
         "3": "intersection",
         "4": "intersection",
@@ -361,6 +373,7 @@ if __name__ == "__main__":
         "6": "intersection",
         "7": "intersection",
         "8": "intersection",
+        "9": "intersection",
     }
 
     # STEP 1: Build graph and initial matrices

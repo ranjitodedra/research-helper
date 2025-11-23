@@ -1,0 +1,74 @@
+======================================================================
+NETWORK CONFIGURATION
+======================================================================
+
+Total Nodes: 18
+Customers: 7
+BSS Stations: 4
+Intersections: 6
+Depot: 1
+
+======================================================================
+
+table = [
+    [1, 2],  # Node 0: D (depot)
+    [0, 2, 8, 10],  # Node 1: 1 (intersection)
+    [0, 1, 3],  # Node 2: 2 (intersection)
+    [2, 5, 14],  # Node 3: C1 (customer)
+    [7, 8, 9, 10, 12],  # Node 4: BSS1 (bss)
+    [3, 14, 16],  # Node 5: 3 (intersection)
+    [8, 10, 17],  # Node 6: 4 (intersection)
+    [4, 11, 12, 13],  # Node 7: C2 (customer)
+    [1, 4, 6, 10, 17],  # Node 8: C3 (customer)
+    [4, 13, 14, 15, 16],  # Node 9: C4 (customer)
+    [1, 4, 6, 8, 17],  # Node 10: C5 (customer)
+    [7, 12, 13, 17],  # Node 11: C6 (customer)
+    [4, 7, 11, 13, 15],  # Node 12: 5 (intersection)
+    [7, 9, 11, 12, 15],  # Node 13: C7 (customer)
+    [3, 5, 9, 16],  # Node 14: BSS2 (bss)
+    [9, 12, 13, 16],  # Node 15: BSS3 (bss)
+    [5, 9, 14, 15],  # Node 16: 6 (intersection)
+    [6, 8, 10, 11],  # Node 17: BSS4 (bss)
+]
+
+idx2label = {
+    0: "D",
+    1: "1",
+    2: "2",
+    3: "C1",
+    4: "BSS1",
+    5: "3",
+    6: "4",
+    7: "C2",
+    8: "C3",
+    9: "C4",
+    10: "C5",
+    11: "C6",
+    12: "5",
+    13: "C7",
+    14: "BSS2",
+    15: "BSS3",
+    16: "6",
+    17: "BSS4",
+}
+
+node_types = {
+    "BSS1": "bss",
+    "BSS2": "bss",
+    "BSS3": "bss",
+    "BSS4": "bss",
+    "C1": "customer",
+    "C2": "customer",
+    "C3": "customer",
+    "C4": "customer",
+    "C5": "customer",
+    "C6": "customer",
+    "C7": "customer",
+    "D": "depot",
+    "1": "intersection",
+    "2": "intersection",
+    "3": "intersection",
+    "4": "intersection",
+    "5": "intersection",
+    "6": "intersection",
+}
