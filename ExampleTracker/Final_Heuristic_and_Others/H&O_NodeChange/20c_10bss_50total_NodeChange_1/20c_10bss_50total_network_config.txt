@@ -1,0 +1,170 @@
+======================================================================
+NETWORK CONFIGURATION
+======================================================================
+
+Total Nodes: 50
+Customers: 20
+BSS Stations: 10
+Intersections: 19
+Depot: 1
+
+======================================================================
+
+table = [
+    [1, 2],  # Node 0: D (depot)
+    [0, 2, 19, 34, 39],  # Node 1: 1 (intersection)
+    [0, 1, 19, 34, 35],  # Node 2: 2 (intersection)
+    [6, 9, 30],  # Node 3: C1 (customer)
+    [9, 30, 40],  # Node 4: C2 (customer)
+    [16, 24, 33, 38, 46],  # Node 5: C3 (customer)
+    [3, 12, 28, 42, 48],  # Node 6: BSS1 (bss)
+    [42, 49],  # Node 7: 3 (intersection)
+    [14, 25, 26, 41],  # Node 8: C4 (customer)
+    [3, 4],  # Node 9: 4 (intersection)
+    [11, 15, 23, 35, 37],  # Node 10: C5 (customer)
+    [10, 15, 22, 35],  # Node 11: C6 (customer)
+    [6, 13, 28, 33],  # Node 12: C7 (customer)
+    [12, 28, 33, 47, 48],  # Node 13: C8 (customer)
+    [8, 45],  # Node 14: BSS2 (bss)
+    [10, 11, 22, 23, 35],  # Node 15: C9 (customer)
+    [5, 33, 39],  # Node 16: C10 (customer)
+    [24, 36, 38, 39, 46],  # Node 17: 5 (intersection)
+    [27, 29, 43],  # Node 18: 6 (intersection)
+    [1, 2, 34],  # Node 19: C11 (customer)
+    [27, 31, 42, 43],  # Node 20: 7 (intersection)
+    [22, 32, 37, 49],  # Node 21: C12 (customer)
+    [11, 15, 21, 32, 37],  # Node 22: BSS3 (bss)
+    [10, 15, 35],  # Node 23: C13 (customer)
+    [5, 17, 36, 38, 46],  # Node 24: C14 (customer)
+    [8, 26, 41, 44, 45],  # Node 25: C15 (customer)
+    [8, 25, 41, 44, 45],  # Node 26: BSS4 (bss)
+    [18, 20, 29, 31, 43],  # Node 27: 8 (intersection)
+    [6, 12, 13, 48],  # Node 28: 9 (intersection)
+    [18, 27, 43],  # Node 29: 10 (intersection)
+    [3, 4, 40, 44],  # Node 30: BSS5 (bss)
+    [20, 27, 43],  # Node 31: BSS6 (bss)
+    [21, 22, 37, 42, 49],  # Node 32: 11 (intersection)
+    [5, 12, 13, 16, 46],  # Node 33: 12 (intersection)
+    [1, 2, 19, 37],  # Node 34: BSS7 (bss)
+    [2, 10, 11, 15, 23],  # Node 35: BSS8 (bss)
+    [17, 24, 39],  # Node 36: 13 (intersection)
+    [10, 21, 22, 32, 34],  # Node 37: C16 (customer)
+    [5, 17, 24, 46],  # Node 38: BSS9 (bss)
+    [1, 16, 17, 36],  # Node 39: 14 (intersection)
+    [4, 30, 48],  # Node 40: 15 (intersection)
+    [8, 25, 26, 45],  # Node 41: C17 (customer)
+    [6, 7, 20, 32, 49],  # Node 42: 16 (intersection)
+    [18, 20, 27, 29, 31],  # Node 43: 17 (intersection)
+    [25, 26, 30, 47, 48],  # Node 44: 18 (intersection)
+    [14, 25, 26, 41],  # Node 45: C18 (customer)
+    [5, 17, 24, 33, 38],  # Node 46: C19 (customer)
+    [13, 44],  # Node 47: C20 (customer)
+    [6, 13, 28, 40, 44],  # Node 48: 19 (intersection)
+    [7, 21, 32, 42],  # Node 49: BSS10 (bss)
+]
+
+idx2label = {
+    0: "D",
+    1: "1",
+    2: "2",
+    3: "C1",
+    4: "C2",
+    5: "C3",
+    6: "BSS1",
+    7: "3",
+    8: "C4",
+    9: "4",
+    10: "C5",
+    11: "C6",
+    12: "C7",
+    13: "C8",
+    14: "BSS2",
+    15: "C9",
+    16: "C10",
+    17: "5",
+    18: "6",
+    19: "C11",
+    20: "7",
+    21: "C12",
+    22: "BSS3",
+    23: "C13",
+    24: "C14",
+    25: "C15",
+    26: "BSS4",
+    27: "8",
+    28: "9",
+    29: "10",
+    30: "BSS5",
+    31: "BSS6",
+    32: "11",
+    33: "12",
+    34: "BSS7",
+    35: "BSS8",
+    36: "13",
+    37: "C16",
+    38: "BSS9",
+    39: "14",
+    40: "15",
+    41: "C17",
+    42: "16",
+    43: "17",
+    44: "18",
+    45: "C18",
+    46: "C19",
+    47: "C20",
+    48: "19",
+    49: "BSS10",
+}
+
+node_types = {
+    "BSS1": "bss",
+    "BSS10": "bss",
+    "BSS2": "bss",
+    "BSS3": "bss",
+    "BSS4": "bss",
+    "BSS5": "bss",
+    "BSS6": "bss",
+    "BSS7": "bss",
+    "BSS8": "bss",
+    "BSS9": "bss",
+    "C1": "customer",
+    "C10": "customer",
+    "C11": "customer",
+    "C12": "customer",
+    "C13": "customer",
+    "C14": "customer",
+    "C15": "customer",
+    "C16": "customer",
+    "C17": "customer",
+    "C18": "customer",
+    "C19": "customer",
+    "C2": "customer",
+    "C20": "customer",
+    "C3": "customer",
+    "C4": "customer",
+    "C5": "customer",
+    "C6": "customer",
+    "C7": "customer",
+    "C8": "customer",
+    "C9": "customer",
+    "D": "depot",
+    "1": "intersection",
+    "10": "intersection",
+    "11": "intersection",
+    "12": "intersection",
+    "13": "intersection",
+    "14": "intersection",
+    "15": "intersection",
+    "16": "intersection",
+    "17": "intersection",
+    "18": "intersection",
+    "19": "intersection",
+    "2": "intersection",
+    "3": "intersection",
+    "4": "intersection",
+    "5": "intersection",
+    "6": "intersection",
+    "7": "intersection",
+    "8": "intersection",
+    "9": "intersection",
+}

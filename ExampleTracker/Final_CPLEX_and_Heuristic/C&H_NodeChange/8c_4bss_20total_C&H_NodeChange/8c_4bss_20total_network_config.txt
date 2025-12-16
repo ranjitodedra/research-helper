@@ -1,0 +1,80 @@
+======================================================================
+NETWORK CONFIGURATION
+======================================================================
+
+Total Nodes: 20
+Customers: 8
+BSS Stations: 4
+Intersections: 7
+Depot: 1
+
+======================================================================
+
+table = [
+    [1, 2],  # Node 0: D (depot)
+    [0, 2, 15],  # Node 1: 1 (intersection)
+    [0, 1, 5, 11, 12],  # Node 2: 2 (intersection)
+    [4, 5, 7, 11, 15],  # Node 3: 3 (intersection)
+    [3, 7, 9, 15, 17],  # Node 4: C1 (customer)
+    [2, 3, 11, 12, 16],  # Node 5: 4 (intersection)
+    [9, 14, 19],  # Node 6: C2 (customer)
+    [3, 4, 11, 15],  # Node 7: C3 (customer)
+    [10, 14, 15, 19],  # Node 8: BSS1 (bss)
+    [4, 6, 10, 14, 17],  # Node 9: BSS2 (bss)
+    [8, 9, 14, 17, 19],  # Node 10: C4 (customer)
+    [2, 3, 5, 7, 16],  # Node 11: BSS3 (bss)
+    [2, 5, 13, 16, 18],  # Node 12: BSS4 (bss)
+    [12, 16, 18],  # Node 13: C5 (customer)
+    [6, 8, 9, 10, 17],  # Node 14: 5 (intersection)
+    [1, 3, 4, 7, 8],  # Node 15: 6 (intersection)
+    [5, 11, 12, 13],  # Node 16: C6 (customer)
+    [4, 9, 10, 14],  # Node 17: C7 (customer)
+    [12, 13],  # Node 18: 7 (intersection)
+    [6, 8, 10],  # Node 19: C8 (customer)
+]
+
+idx2label = {
+    0: "D",
+    1: "1",
+    2: "2",
+    3: "3",
+    4: "C1",
+    5: "4",
+    6: "C2",
+    7: "C3",
+    8: "BSS1",
+    9: "BSS2",
+    10: "C4",
+    11: "BSS3",
+    12: "BSS4",
+    13: "C5",
+    14: "5",
+    15: "6",
+    16: "C6",
+    17: "C7",
+    18: "7",
+    19: "C8",
+}
+
+node_types = {
+    "BSS1": "bss",
+    "BSS2": "bss",
+    "BSS3": "bss",
+    "BSS4": "bss",
+    "C1": "customer",
+    "C2": "customer",
+    "C3": "customer",
+    "C4": "customer",
+    "C5": "customer",
+    "C6": "customer",
+    "C7": "customer",
+    "C8": "customer",
+    "D": "depot",
+    "1": "intersection",
+    "2": "intersection",
+    "3": "intersection",
+    "4": "intersection",
+    "5": "intersection",
+    "6": "intersection",
+    "7": "intersection",
+}

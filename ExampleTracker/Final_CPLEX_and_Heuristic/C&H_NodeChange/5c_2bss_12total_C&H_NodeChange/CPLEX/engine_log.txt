@@ -1,0 +1,59 @@
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+Legacy callback                                  pi
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 3715 rows and 794 columns.
+MIQCP Presolve modified 21 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIQCP has 8985 rows, 8976 columns, and 29715 nonzeros.
+Reduced MIQCP has 169 binaries, 25 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 1704 quadratic constraints.
+Presolve time = 0.34 sec. (34.36 ticks)
+Probing fixed 0 vars, tightened 5153 bounds.
+Probing changed sense of 5 constraints.
+Probing time = 0.09 sec. (31.48 ticks)
+Cover probing fixed 0 vars, tightened 714 bounds.
+Clique table members: 987.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time = 0.61 sec. (747.37 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       11.6700     0                      0.0000     7695         
+      0     0       11.6700    55                     11.6700     7695         
+      0     0       11.6700    42                  MIRcuts: 1     7703         
+*     0+    0                          702.5101       11.6700            98.34%
+      0     0       11.6700    48      702.5101      Cuts: 83     7786   98.34%
+      0     2       11.6700    34      702.5101       11.6700     7786   98.34%
+Elapsed time = 3.20 sec. (2083.19 ticks, tree = 0.02 MB, solutions = 1)
+      1     2       11.6700    39      702.5101       11.6700     7889   98.34%
+      3     3       11.6700    44      702.5101       11.6700     8605   98.34%
+      6     5       26.3800    40      702.5101       11.6700    10158   98.34%
+      9     5       11.6700    56      702.5101       11.6700    10265   98.34%
+     17     8       26.3839    44      702.5101       11.6700    11768   98.34%
+     35     4        cutoff            702.5101       11.6700    14822   98.34%
+     39     8       14.5286    71      702.5101       11.6700    14419   98.34%
+     44     5       16.3380    59      702.5101       11.6700    15777   98.34%
+     59     7       11.6700    62      702.5101       11.6700    18699   98.34%
+*   120     7      integral     0      697.2000       13.4187    31134   98.08%
+Elapsed time = 7.23 sec. (5613.73 ticks, tree = 0.02 MB, solutions = 2)
+*   121    15      integral     0      686.6400       13.4187    22239   98.05%
+*   122    15      integral     0      623.8600       13.4187    22295   97.85%
+    122    15        cutoff            623.8600       13.4187    22295   97.85%
+
+Clique cuts applied:  1
+Implied bound cuts applied:  7
+Mixed integer rounding cuts applied:  6
+Gomory fractional cuts applied:  1
+Cone linearizations applied:  100
+
+Root node processing (before b&c):
+  Real time             =    3.11 sec. (2037.25 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    5.28 sec. (5155.57 ticks)
+  Sync time (average)   =    3.25 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    8.39 sec. (7192.82 ticks)

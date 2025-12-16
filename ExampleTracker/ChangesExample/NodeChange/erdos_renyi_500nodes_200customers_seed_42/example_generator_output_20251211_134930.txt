@@ -1,0 +1,3095 @@
+
+============================================================
+RUNNING SCENARIO: erdos_renyi_500nodes_200customers
+============================================================
+Customers: 200
+BSS: 87
+Depot: 143
+Connected: True
+============================================================
+STARTING EV ROUTING WITH MODULAR BATTERY SWAPPING
+============================================================
+Current location: 143
+Total Travel Time: 0.00 minutes
+Total Energy Consumed: 0.000 kWh
+Total Distance Covered: 0.00 km
+Current SoC: 100.0%
+Charge of modules:
+  M1 = 100.0%
+  M2 = 100.0%
+  M3 = 100.0%
+  M4 = 100.0%
+  M5 = 100.0%
+Number of Modules Swapped: 0
+Number of Packages: 200
+Payload: 1000.0 kg
+Number of unserved customers: 200
+Served Customers: []
+
+--- Current Status ---
+Location: 143
+Unserved customers: 200
+Current SoC: 100.0%
+Selected customer: 170
+Nearest BSS from customer: 432
+Required energy: 21.889kWh, Current: 100.000kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 143 -> 170: Distance=2.34km, Time=3.05min, Energy=0.446kWh, SoC=99.6%
+Serving customer 170
+Load reduced to 995.0kg
+
+--- Current Status ---
+Location: 170
+Unserved customers: 199
+Current SoC: 99.6%
+Selected customer: 181
+Nearest BSS from customer: 282
+Required energy: 21.221kWh, Current: 99.554kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 170 -> 181: Distance=2.60km, Time=3.54min, Energy=0.491kWh, SoC=99.1%
+Serving customer 181
+Load reduced to 990.0kg
+
+--- Current Status ---
+Location: 181
+Unserved customers: 198
+Current SoC: 99.1%
+Selected customer: 163
+Nearest BSS from customer: 329
+Required energy: 21.784kWh, Current: 99.063kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 181 -> 163: Distance=3.25km, Time=4.64min, Energy=0.607kWh, SoC=98.5%
+Serving customer 163
+Load reduced to 985.0kg
+
+--- Current Status ---
+Location: 163
+Unserved customers: 197
+Current SoC: 98.5%
+Selected customer: 68
+Nearest BSS from customer: 326
+Required energy: 20.959kWh, Current: 98.456kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 163 -> 68: Distance=2.63km, Time=3.35min, Energy=0.503kWh, SoC=98.0%
+Serving customer 68
+Load reduced to 980.0kg
+
+--- Current Status ---
+Location: 68
+Unserved customers: 196
+Current SoC: 98.0%
+Selected customer: 323
+Nearest BSS from customer: 313
+Required energy: 22.147kWh, Current: 97.953kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 68 -> 323: Distance=2.31km, Time=2.95min, Energy=0.440kWh, SoC=97.5%
+Serving customer 323
+Load reduced to 975.0kg
+
+--- Current Status ---
+Location: 323
+Unserved customers: 195
+Current SoC: 97.5%
+Selected customer: 419
+Nearest BSS from customer: 475
+Required energy: 20.786kWh, Current: 97.514kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 323 -> 419: Distance=1.57km, Time=2.13min, Energy=0.294kWh, SoC=97.2%
+Serving customer 419
+Load reduced to 970.0kg
+
+--- Current Status ---
+Location: 419
+Unserved customers: 194
+Current SoC: 97.2%
+Selected customer: 304
+Nearest BSS from customer: 105
+Required energy: 20.724kWh, Current: 97.220kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 419 -> 304: Distance=2.64km, Time=3.50min, Energy=0.496kWh, SoC=96.7%
+Serving customer 304
+Load reduced to 965.0kg
+
+--- Current Status ---
+Location: 304
+Unserved customers: 193
+Current SoC: 96.7%
+Selected customer: 53
+Nearest BSS from customer: 368
+Required energy: 21.363kWh, Current: 96.723kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 304 -> 53: Distance=3.22km, Time=4.29min, Energy=0.604kWh, SoC=96.1%
+Serving customer 53
+Load reduced to 960.0kg
+
+--- Current Status ---
+Location: 53
+Unserved customers: 192
+Current SoC: 96.1%
+Selected customer: 160
+Nearest BSS from customer: 326
+Required energy: 21.008kWh, Current: 96.119kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 53 -> 160: Distance=3.98km, Time=5.77min, Energy=0.733kWh, SoC=95.4%
+Serving customer 160
+Load reduced to 955.0kg
+
+--- Current Status ---
+Location: 160
+Unserved customers: 191
+Current SoC: 95.4%
+Selected customer: 213
+Nearest BSS from customer: 197
+Required energy: 22.357kWh, Current: 95.386kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 160 -> 213: Distance=5.52km, Time=7.12min, Energy=1.039kWh, SoC=94.3%
+Serving customer 213
+Load reduced to 950.0kg
+
+--- Current Status ---
+Location: 213
+Unserved customers: 190
+Current SoC: 94.3%
+Selected customer: 12
+Nearest BSS from customer: 275
+Required energy: 21.870kWh, Current: 94.347kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 213 -> 12: Distance=3.43km, Time=4.13min, Energy=0.654kWh, SoC=93.7%
+Serving customer 12
+Load reduced to 945.0kg
+
+--- Current Status ---
+Location: 12
+Unserved customers: 189
+Current SoC: 93.7%
+Selected customer: 290
+Nearest BSS from customer: 384
+Required energy: 23.719kWh, Current: 93.693kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 12 -> 290: Distance=6.09km, Time=7.34min, Energy=1.159kWh, SoC=92.5%
+Serving customer 290
+Load reduced to 940.0kg
+
+--- Current Status ---
+Location: 290
+Unserved customers: 188
+Current SoC: 92.5%
+Selected customer: 57
+Nearest BSS from customer: 315
+Required energy: 22.993kWh, Current: 92.534kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 290 -> 57: Distance=6.09km, Time=6.27min, Energy=2.503kWh, SoC=90.0%
+Serving customer 57
+Load reduced to 935.0kg
+
+--- Current Status ---
+Location: 57
+Unserved customers: 187
+Current SoC: 90.0%
+Selected customer: 133
+Nearest BSS from customer: 438
+Required energy: 21.461kWh, Current: 90.032kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 57 -> 133: Distance=4.96km, Time=7.36min, Energy=0.901kWh, SoC=89.1%
+Serving customer 133
+Load reduced to 930.0kg
+
+--- Current Status ---
+Location: 133
+Unserved customers: 186
+Current SoC: 89.1%
+Selected customer: 157
+Nearest BSS from customer: 96
+Required energy: 21.171kWh, Current: 89.131kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 133 -> 157: Distance=3.84km, Time=5.38min, Energy=0.703kWh, SoC=88.4%
+Serving customer 157
+Load reduced to 925.0kg
+
+--- Current Status ---
+Location: 157
+Unserved customers: 185
+Current SoC: 88.4%
+Selected customer: 138
+Nearest BSS from customer: 495
+Required energy: 20.930kWh, Current: 88.428kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 157 -> 138: Distance=1.70km, Time=1.78min, Energy=0.692kWh, SoC=87.7%
+Serving customer 138
+Load reduced to 920.0kg
+
+--- Current Status ---
+Location: 138
+Unserved customers: 184
+Current SoC: 87.7%
+Selected customer: 40
+Nearest BSS from customer: 495
+Required energy: 21.408kWh, Current: 87.737kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 138 -> 40: Distance=2.23km, Time=2.40min, Energy=0.903kWh, SoC=86.8%
+Serving customer 40
+Load reduced to 915.0kg
+
+--- Current Status ---
+Location: 40
+Unserved customers: 183
+Current SoC: 86.8%
+Selected customer: 324
+Nearest BSS from customer: 430
+Required energy: 21.350kWh, Current: 86.833kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 40 -> 324: Distance=4.14km, Time=5.74min, Energy=0.756kWh, SoC=86.1%
+Serving customer 324
+Load reduced to 910.0kg
+
+--- Current Status ---
+Location: 324
+Unserved customers: 182
+Current SoC: 86.1%
+Selected customer: 297
+Nearest BSS from customer: 179
+Required energy: 21.936kWh, Current: 86.077kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 324 -> 297: Distance=3.24km, Time=3.25min, Energy=1.322kWh, SoC=84.8%
+Serving customer 297
+Load reduced to 905.0kg
+
+--- Current Status ---
+Location: 297
+Unserved customers: 181
+Current SoC: 84.8%
+Selected customer: 59
+Nearest BSS from customer: 371
+Required energy: 21.182kWh, Current: 84.756kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 297 -> 59: Distance=1.86km, Time=2.70min, Energy=0.335kWh, SoC=84.4%
+Serving customer 59
+Load reduced to 900.0kg
+
+--- Current Status ---
+Location: 59
+Unserved customers: 180
+Current SoC: 84.4%
+Selected customer: 206
+Nearest BSS from customer: 495
+Required energy: 21.381kWh, Current: 84.421kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 59 -> 206: Distance=1.91km, Time=2.48min, Energy=0.352kWh, SoC=84.1%
+Serving customer 206
+Load reduced to 895.0kg
+
+--- Current Status ---
+Location: 206
+Unserved customers: 179
+Current SoC: 84.1%
+Selected customer: 239
+Nearest BSS from customer: 179
+Required energy: 21.229kWh, Current: 84.069kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 206 -> 239: Distance=1.46km, Time=1.68min, Energy=0.578kWh, SoC=83.5%
+Serving customer 239
+Load reduced to 890.0kg
+
+--- Current Status ---
+Location: 239
+Unserved customers: 178
+Current SoC: 83.5%
+Selected customer: 284
+Nearest BSS from customer: 460
+Required energy: 22.875kWh, Current: 83.490kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 239 -> 284: Distance=5.14km, Time=5.65min, Energy=2.049kWh, SoC=81.4%
+Serving customer 284
+Load reduced to 885.0kg
+
+--- Current Status ---
+Location: 284
+Unserved customers: 177
+Current SoC: 81.4%
+Selected customer: 140
+Nearest BSS from customer: 430
+Required energy: 21.985kWh, Current: 81.441kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 284 -> 140: Distance=0.55km, Time=0.63min, Energy=0.219kWh, SoC=81.2%
+Serving customer 140
+Load reduced to 880.0kg
+
+--- Current Status ---
+Location: 140
+Unserved customers: 176
+Current SoC: 81.2%
+Selected customer: 70
+Nearest BSS from customer: 360
+Required energy: 21.021kWh, Current: 81.222kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 140 -> 70: Distance=2.99km, Time=3.62min, Energy=0.557kWh, SoC=80.7%
+Serving customer 70
+Load reduced to 875.0kg
+
+--- Current Status ---
+Location: 70
+Unserved customers: 175
+Current SoC: 80.7%
+Selected customer: 121
+Nearest BSS from customer: 268
+Required energy: 21.441kWh, Current: 80.665kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['360']
+BSS not cost-effective - moving towards customer
+Step: 70 -> 121: Distance=4.00km, Time=4.99min, Energy=0.737kWh, SoC=79.9%
+Serving customer 121
+Load reduced to 870.0kg
+
+--- Current Status ---
+Location: 121
+Unserved customers: 174
+Current SoC: 79.9%
+Selected customer: 198
+Nearest BSS from customer: 19
+Required energy: 21.529kWh, Current: 79.928kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 121 -> 198: Distance=2.61km, Time=3.45min, Energy=0.472kWh, SoC=79.5%
+Serving customer 198
+Load reduced to 865.0kg
+
+--- Current Status ---
+Location: 198
+Unserved customers: 173
+Current SoC: 79.5%
+Selected customer: 31
+Nearest BSS from customer: 344
+Required energy: 22.514kWh, Current: 79.456kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 198 -> 31: Distance=2.12km, Time=3.13min, Energy=0.376kWh, SoC=79.1%
+Serving customer 31
+Load reduced to 860.0kg
+
+--- Current Status ---
+Location: 31
+Unserved customers: 172
+Current SoC: 79.1%
+Selected customer: 483
+Nearest BSS from customer: 268
+Required energy: 22.084kWh, Current: 79.080kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 31 -> 483: Distance=3.33km, Time=4.30min, Energy=0.604kWh, SoC=78.5%
+Serving customer 483
+Load reduced to 855.0kg
+
+--- Current Status ---
+Location: 483
+Unserved customers: 171
+Current SoC: 78.5%
+Selected customer: 154
+Nearest BSS from customer: 430
+Required energy: 22.531kWh, Current: 78.476kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 483 -> 154: Distance=2.44km, Time=3.02min, Energy=0.446kWh, SoC=78.0%
+Serving customer 154
+Load reduced to 850.0kg
+
+--- Current Status ---
+Location: 154
+Unserved customers: 170
+Current SoC: 78.0%
+Selected customer: 453
+Nearest BSS from customer: 146
+Required energy: 21.040kWh, Current: 78.029kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 154 -> 453: Distance=2.03km, Time=2.38min, Energy=0.792kWh, SoC=77.2%
+Serving customer 453
+Load reduced to 845.0kg
+
+--- Current Status ---
+Location: 453
+Unserved customers: 169
+Current SoC: 77.2%
+Selected customer: 387
+Nearest BSS from customer: 38
+Required energy: 21.363kWh, Current: 77.238kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['146', '182']
+BSS not cost-effective - moving towards customer
+Step: 453 -> 387: Distance=5.15km, Time=6.57min, Energy=0.933kWh, SoC=76.3%
+Serving customer 387
+Load reduced to 840.0kg
+
+--- Current Status ---
+Location: 387
+Unserved customers: 168
+Current SoC: 76.3%
+Selected customer: 498
+Nearest BSS from customer: 38
+Required energy: 22.308kWh, Current: 76.305kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['38']
+BSS not cost-effective - moving towards customer
+Step: 387 -> 498: Distance=3.60km, Time=3.65min, Energy=1.428kWh, SoC=74.9%
+Serving customer 498
+Load reduced to 835.0kg
+
+--- Current Status ---
+Location: 498
+Unserved customers: 167
+Current SoC: 74.9%
+Selected customer: 77
+Nearest BSS from customer: 268
+Required energy: 21.242kWh, Current: 74.877kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 498 -> 77: Distance=3.32km, Time=4.08min, Energy=0.604kWh, SoC=74.3%
+Serving customer 77
+Load reduced to 830.0kg
+
+--- Current Status ---
+Location: 77
+Unserved customers: 166
+Current SoC: 74.3%
+Selected customer: 259
+Nearest BSS from customer: 360
+Required energy: 20.833kWh, Current: 74.273kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 77 -> 259: Distance=2.91km, Time=3.85min, Energy=0.520kWh, SoC=73.8%
+Serving customer 259
+Load reduced to 825.0kg
+
+--- Current Status ---
+Location: 259
+Unserved customers: 165
+Current SoC: 73.8%
+Selected customer: 89
+Nearest BSS from customer: 38
+Required energy: 21.505kWh, Current: 73.753kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 259 -> 89: Distance=1.54km, Time=1.56min, Energy=0.609kWh, SoC=73.1%
+Serving customer 89
+Load reduced to 820.0kg
+
+--- Current Status ---
+Location: 89
+Unserved customers: 164
+Current SoC: 73.1%
+Selected customer: 340
+Nearest BSS from customer: 268
+Required energy: 21.301kWh, Current: 73.144kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 89 -> 340: Distance=4.82km, Time=6.22min, Energy=0.863kWh, SoC=72.3%
+Serving customer 340
+Load reduced to 815.0kg
+
+--- Current Status ---
+Location: 340
+Unserved customers: 163
+Current SoC: 72.3%
+Selected customer: 58
+Nearest BSS from customer: 488
+Required energy: 22.217kWh, Current: 72.282kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['268']
+BSS not cost-effective - moving towards customer
+Step: 340 -> 58: Distance=2.32km, Time=2.47min, Energy=0.905kWh, SoC=71.4%
+Serving customer 58
+Load reduced to 810.0kg
+
+--- Current Status ---
+Location: 58
+Unserved customers: 162
+Current SoC: 71.4%
+Selected customer: 126
+Nearest BSS from customer: 268
+Required energy: 21.062kWh, Current: 71.376kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 58 -> 126: Distance=3.92km, Time=5.48min, Energy=0.686kWh, SoC=70.7%
+Serving customer 126
+Load reduced to 805.0kg
+
+--- Current Status ---
+Location: 126
+Unserved customers: 161
+Current SoC: 70.7%
+Selected customer: 418
+Nearest BSS from customer: 146
+Required energy: 22.186kWh, Current: 70.691kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['268']
+BSS not cost-effective - moving towards customer
+Step: 126 -> 418: Distance=2.58km, Time=2.59min, Energy=1.012kWh, SoC=69.7%
+Serving customer 418
+Load reduced to 800.0kg
+
+--- Current Status ---
+Location: 418
+Unserved customers: 160
+Current SoC: 69.7%
+Selected customer: 115
+Nearest BSS from customer: 19
+Required energy: 21.498kWh, Current: 69.679kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['146']
+BSS not cost-effective - moving towards customer
+Step: 418 -> 115: Distance=5.12km, Time=6.95min, Energy=0.898kWh, SoC=68.8%
+Serving customer 115
+Load reduced to 795.0kg
+
+--- Current Status ---
+Location: 115
+Unserved customers: 159
+Current SoC: 68.8%
+Selected customer: 492
+Nearest BSS from customer: 19
+Required energy: 21.198kWh, Current: 68.781kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 115 -> 492: Distance=2.03km, Time=2.68min, Energy=0.358kWh, SoC=68.4%
+Serving customer 492
+Load reduced to 790.0kg
+
+--- Current Status ---
+Location: 492
+Unserved customers: 158
+Current SoC: 68.4%
+Selected customer: 499
+Nearest BSS from customer: 182
+Required energy: 21.435kWh, Current: 68.422kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 5 BSS within range: ['19', '260', '329', '371', '93']
+BSS not cost-effective - moving towards customer
+Step: 492 -> 499: Distance=6.36km, Time=8.00min, Energy=1.132kWh, SoC=67.3%
+Serving customer 499
+Load reduced to 785.0kg
+
+--- Current Status ---
+Location: 499
+Unserved customers: 157
+Current SoC: 67.3%
+Selected customer: 113
+Nearest BSS from customer: 460
+Required energy: 21.843kWh, Current: 67.291kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 499 -> 113: Distance=1.57km, Time=1.96min, Energy=0.280kWh, SoC=67.0%
+Serving customer 113
+Load reduced to 780.0kg
+
+--- Current Status ---
+Location: 113
+Unserved customers: 156
+Current SoC: 67.0%
+Selected customer: 47
+Nearest BSS from customer: 19
+Required energy: 21.671kWh, Current: 67.011kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['268', '460']
+BSS not cost-effective - moving towards customer
+Step: 113 -> 47: Distance=6.46km, Time=7.93min, Energy=1.153kWh, SoC=65.9%
+Serving customer 47
+Load reduced to 775.0kg
+
+--- Current Status ---
+Location: 47
+Unserved customers: 155
+Current SoC: 65.9%
+Selected customer: 342
+Nearest BSS from customer: 430
+Required energy: 22.840kWh, Current: 65.858kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 3 BSS within range: ['19', '329', '438']
+BSS not cost-effective - moving towards customer
+Step: 47 -> 342: Distance=5.64km, Time=7.88min, Energy=0.974kWh, SoC=64.9%
+Serving customer 342
+Load reduced to 770.0kg
+
+--- Current Status ---
+Location: 342
+Unserved customers: 154
+Current SoC: 64.9%
+Selected customer: 390
+Nearest BSS from customer: 81
+Required energy: 21.912kWh, Current: 64.884kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['279', '430']
+BSS not cost-effective - moving towards customer
+Step: 342 -> 390: Distance=6.62km, Time=9.53min, Energy=1.135kWh, SoC=63.7%
+Serving customer 390
+Load reduced to 765.0kg
+
+--- Current Status ---
+Location: 390
+Unserved customers: 153
+Current SoC: 63.7%
+Selected customer: 414
+Nearest BSS from customer: 430
+Required energy: 20.939kWh, Current: 63.749kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['81']
+BSS not cost-effective - moving towards customer
+Step: 390 -> 414: Distance=3.06km, Time=4.33min, Energy=0.525kWh, SoC=63.2%
+Serving customer 414
+Load reduced to 760.0kg
+
+--- Current Status ---
+Location: 414
+Unserved customers: 152
+Current SoC: 63.2%
+Selected customer: 262
+Nearest BSS from customer: 329
+Required energy: 21.736kWh, Current: 63.224kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['19', '430']
+BSS not cost-effective - moving towards customer
+Step: 414 -> 262: Distance=2.78km, Time=3.73min, Energy=0.482kWh, SoC=62.7%
+Serving customer 262
+Load reduced to 755.0kg
+
+--- Current Status ---
+Location: 262
+Unserved customers: 151
+Current SoC: 62.7%
+Selected customer: 106
+Nearest BSS from customer: 272
+Required energy: 22.245kWh, Current: 62.742kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['329', '81']
+BSS not cost-effective - moving towards customer
+Step: 262 -> 106: Distance=8.42km, Time=10.95min, Energy=1.466kWh, SoC=61.3%
+Serving customer 106
+Load reduced to 750.0kg
+
+--- Current Status ---
+Location: 106
+Unserved customers: 150
+Current SoC: 61.3%
+Selected customer: 119
+Nearest BSS from customer: 298
+Required energy: 20.338kWh, Current: 61.277kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 106 -> 119: Distance=1.28km, Time=1.70min, Energy=0.222kWh, SoC=61.1%
+Serving customer 119
+Load reduced to 745.0kg
+
+--- Current Status ---
+Location: 119
+Unserved customers: 149
+Current SoC: 61.1%
+Selected customer: 10
+Nearest BSS from customer: 272
+Required energy: 21.756kWh, Current: 61.055kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['298']
+BSS not cost-effective - moving towards customer
+Step: 119 -> 10: Distance=1.44km, Time=1.56min, Energy=0.546kWh, SoC=60.5%
+Serving customer 10
+Load reduced to 740.0kg
+
+--- Current Status ---
+Location: 10
+Unserved customers: 148
+Current SoC: 60.5%
+Selected customer: 289
+Nearest BSS from customer: 164
+Required energy: 21.162kWh, Current: 60.509kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 10 -> 289: Distance=4.61km, Time=5.54min, Energy=0.813kWh, SoC=59.7%
+Serving customer 289
+Load reduced to 735.0kg
+
+--- Current Status ---
+Location: 289
+Unserved customers: 147
+Current SoC: 59.7%
+Selected customer: 94
+Nearest BSS from customer: 443
+Required energy: 20.870kWh, Current: 59.696kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 289 -> 94: Distance=1.34km, Time=1.63min, Energy=0.237kWh, SoC=59.5%
+Serving customer 94
+Load reduced to 730.0kg
+
+--- Current Status ---
+Location: 94
+Unserved customers: 146
+Current SoC: 59.5%
+Selected customer: 9
+Nearest BSS from customer: 164
+Required energy: 21.455kWh, Current: 59.459kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 94 -> 9: Distance=3.18km, Time=3.20min, Energy=1.209kWh, SoC=58.3%
+Serving customer 9
+Load reduced to 725.0kg
+
+--- Current Status ---
+Location: 9
+Unserved customers: 145
+Current SoC: 58.3%
+Selected customer: 263
+Nearest BSS from customer: 221
+Required energy: 20.661kWh, Current: 58.250kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 9 -> 263: Distance=0.75km, Time=0.97min, Energy=0.130kWh, SoC=58.1%
+Serving customer 263
+Load reduced to 720.0kg
+
+--- Current Status ---
+Location: 263
+Unserved customers: 144
+Current SoC: 58.1%
+Selected customer: 97
+Nearest BSS from customer: 221
+Required energy: 21.008kWh, Current: 58.120kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['221']
+BSS not cost-effective - moving towards customer
+Step: 263 -> 97: Distance=3.45km, Time=4.73min, Energy=0.585kWh, SoC=57.5%
+Serving customer 97
+Load reduced to 715.0kg
+
+--- Current Status ---
+Location: 97
+Unserved customers: 143
+Current SoC: 57.5%
+Selected customer: 125
+Nearest BSS from customer: 221
+Required energy: 21.087kWh, Current: 57.535kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['221']
+BSS not cost-effective - moving towards customer
+Step: 97 -> 125: Distance=1.85km, Time=1.85min, Energy=0.700kWh, SoC=56.8%
+Serving customer 125
+Load reduced to 710.0kg
+
+--- Current Status ---
+Location: 125
+Unserved customers: 142
+Current SoC: 56.8%
+Selected customer: 345
+Nearest BSS from customer: 221
+Required energy: 20.690kWh, Current: 56.835kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 125 -> 345: Distance=1.66km, Time=2.06min, Energy=0.287kWh, SoC=56.5%
+Serving customer 345
+Load reduced to 705.0kg
+
+--- Current Status ---
+Location: 345
+Unserved customers: 141
+Current SoC: 56.5%
+Selected customer: 62
+Nearest BSS from customer: 208
+Required energy: 21.121kWh, Current: 56.548kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['221']
+BSS not cost-effective - moving towards customer
+Step: 345 -> 62: Distance=2.72km, Time=3.66min, Energy=0.461kWh, SoC=56.1%
+Serving customer 62
+Load reduced to 700.0kg
+
+--- Current Status ---
+Location: 62
+Unserved customers: 140
+Current SoC: 56.1%
+Selected customer: 349
+Nearest BSS from customer: 319
+Required energy: 22.074kWh, Current: 56.087kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 62 -> 349: Distance=2.64km, Time=3.51min, Energy=0.447kWh, SoC=55.6%
+Serving customer 349
+Load reduced to 695.0kg
+
+--- Current Status ---
+Location: 349
+Unserved customers: 139
+Current SoC: 55.6%
+Selected customer: 76
+Nearest BSS from customer: 469
+Required energy: 21.252kWh, Current: 55.639kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 349 -> 76: Distance=0.42km, Time=0.48min, Energy=0.155kWh, SoC=55.5%
+Serving customer 76
+Load reduced to 690.0kg
+
+--- Current Status ---
+Location: 76
+Unserved customers: 138
+Current SoC: 55.5%
+Selected customer: 422
+Nearest BSS from customer: 415
+Required energy: 21.186kWh, Current: 55.484kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 76 -> 422: Distance=2.12km, Time=2.40min, Energy=0.776kWh, SoC=54.7%
+Serving customer 422
+Load reduced to 685.0kg
+
+--- Current Status ---
+Location: 422
+Unserved customers: 137
+Current SoC: 54.7%
+Selected customer: 302
+Nearest BSS from customer: 317
+Required energy: 20.654kWh, Current: 54.708kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 422 -> 302: Distance=1.52km, Time=1.69min, Energy=0.557kWh, SoC=54.2%
+Serving customer 302
+Load reduced to 680.0kg
+
+--- Current Status ---
+Location: 302
+Unserved customers: 136
+Current SoC: 54.2%
+Selected customer: 382
+Nearest BSS from customer: 338
+Required energy: 21.529kWh, Current: 54.151kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 3 BSS within range: ['317', '338', '469']
+BSS not cost-effective - moving towards customer
+Step: 302 -> 382: Distance=3.82km, Time=4.89min, Energy=0.648kWh, SoC=53.5%
+Serving customer 382
+Load reduced to 675.0kg
+
+--- Current Status ---
+Location: 382
+Unserved customers: 135
+Current SoC: 53.5%
+Selected customer: 84
+Nearest BSS from customer: 325
+Required energy: 20.596kWh, Current: 53.503kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 382 -> 84: Distance=0.66km, Time=0.75min, Energy=0.242kWh, SoC=53.3%
+Serving customer 84
+Load reduced to 670.0kg
+
+--- Current Status ---
+Location: 84
+Unserved customers: 134
+Current SoC: 53.3%
+Selected customer: 238
+Nearest BSS from customer: 79
+Required energy: 21.407kWh, Current: 53.261kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 84 -> 238: Distance=1.47km, Time=1.77min, Energy=0.251kWh, SoC=53.0%
+Serving customer 238
+Load reduced to 665.0kg
+
+--- Current Status ---
+Location: 238
+Unserved customers: 133
+Current SoC: 53.0%
+Selected customer: 150
+Nearest BSS from customer: 325
+Required energy: 20.514kWh, Current: 53.010kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 238 -> 150: Distance=0.96km, Time=1.08min, Energy=0.349kWh, SoC=52.7%
+Serving customer 150
+Load reduced to 660.0kg
+
+--- Current Status ---
+Location: 150
+Unserved customers: 132
+Current SoC: 52.7%
+Selected customer: 211
+Nearest BSS from customer: 469
+Required energy: 20.690kWh, Current: 52.661kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['325']
+BSS not cost-effective - moving towards customer
+Step: 150 -> 211: Distance=1.78km, Time=2.60min, Energy=0.290kWh, SoC=52.4%
+Serving customer 211
+Load reduced to 655.0kg
+
+--- Current Status ---
+Location: 211
+Unserved customers: 131
+Current SoC: 52.4%
+Selected customer: 336
+Nearest BSS from customer: 228
+Required energy: 20.884kWh, Current: 52.371kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 211 -> 336: Distance=1.04km, Time=1.20min, Energy=0.376kWh, SoC=52.0%
+Serving customer 336
+Load reduced to 650.0kg
+
+--- Current Status ---
+Location: 336
+Unserved customers: 130
+Current SoC: 52.0%
+Selected customer: 131
+Nearest BSS from customer: 317
+Required energy: 21.154kWh, Current: 51.994kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 336 -> 131: Distance=1.66km, Time=2.31min, Energy=0.272kWh, SoC=51.7%
+Serving customer 131
+Load reduced to 645.0kg
+
+--- Current Status ---
+Location: 131
+Unserved customers: 129
+Current SoC: 51.7%
+Selected customer: 348
+Nearest BSS from customer: 32
+Required energy: 20.983kWh, Current: 51.722kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 2 BSS within range: ['103', '317']
+BSS not cost-effective - moving towards customer
+Step: 131 -> 348: Distance=4.70km, Time=6.05min, Energy=0.785kWh, SoC=50.9%
+Serving customer 348
+Load reduced to 640.0kg
+
+--- Current Status ---
+Location: 348
+Unserved customers: 128
+Current SoC: 50.9%
+Selected customer: 440
+Nearest BSS from customer: 22
+Required energy: 21.539kWh, Current: 50.937kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['32']
+BSS not cost-effective - moving towards customer
+Step: 348 -> 440: Distance=3.37km, Time=3.51min, Energy=1.227kWh, SoC=49.7%
+Serving customer 440
+Load reduced to 635.0kg
+
+--- Current Status ---
+Location: 440
+Unserved customers: 127
+Current SoC: 49.7%
+Selected customer: 388
+Nearest BSS from customer: 79
+Required energy: 20.589kWh, Current: 49.709kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['22']
+BSS not cost-effective - moving towards customer
+Step: 440 -> 388: Distance=1.51km, Time=1.76min, Energy=0.540kWh, SoC=49.2%
+Serving customer 388
+Load reduced to 630.0kg
+
+--- Current Status ---
+Location: 388
+Unserved customers: 126
+Current SoC: 49.2%
+Selected customer: 470
+Nearest BSS from customer: 8
+Required energy: 21.079kWh, Current: 49.169kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 3 BSS within range: ['282', '365', '79']
+BSS not cost-effective - moving towards customer
+Step: 388 -> 470: Distance=5.45km, Time=7.29min, Energy=0.896kWh, SoC=48.3%
+Serving customer 470
+Load reduced to 625.0kg
+
+--- Current Status ---
+Location: 470
+Unserved customers: 125
+Current SoC: 48.3%
+Selected customer: 496
+Nearest BSS from customer: 92
+Required energy: 20.871kWh, Current: 48.273kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['8']
+BSS not cost-effective - moving towards customer
+Step: 470 -> 496: Distance=1.16km, Time=1.73min, Energy=0.187kWh, SoC=48.1%
+Serving customer 496
+Load reduced to 620.0kg
+
+--- Current Status ---
+Location: 496
+Unserved customers: 124
+Current SoC: 48.1%
+Selected customer: 51
+Nearest BSS from customer: 415
+Required energy: 21.593kWh, Current: 48.086kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 2 BSS within range: ['8', '92']
+BSS not cost-effective - moving towards customer
+Step: 496 -> 51: Distance=2.97km, Time=3.77min, Energy=0.492kWh, SoC=47.6%
+Serving customer 51
+Load reduced to 615.0kg
+
+--- Current Status ---
+Location: 51
+Unserved customers: 123
+Current SoC: 47.6%
+Selected customer: 373
+Nearest BSS from customer: 32
+Required energy: 20.969kWh, Current: 47.594kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 51 -> 373: Distance=2.61km, Time=3.74min, Energy=0.420kWh, SoC=47.2%
+Serving customer 373
+Load reduced to 610.0kg
+
+--- Current Status ---
+Location: 373
+Unserved customers: 122
+Current SoC: 47.2%
+Selected customer: 413
+Nearest BSS from customer: 208
+Required energy: 21.573kWh, Current: 47.173kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 2 BSS within range: ['13', '32']
+BSS not cost-effective - moving towards customer
+Step: 373 -> 413: Distance=5.56km, Time=7.72min, Energy=0.900kWh, SoC=46.3%
+Serving customer 413
+Load reduced to 605.0kg
+
+--- Current Status ---
+Location: 413
+Unserved customers: 121
+Current SoC: 46.3%
+Selected customer: 112
+Nearest BSS from customer: 55
+Required energy: 20.980kWh, Current: 46.274kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['208']
+BSS not cost-effective - moving towards customer
+Step: 413 -> 112: Distance=3.51km, Time=5.17min, Energy=0.560kWh, SoC=45.7%
+Serving customer 112
+Load reduced to 600.0kg
+
+--- Current Status ---
+Location: 112
+Unserved customers: 120
+Current SoC: 45.7%
+Selected customer: 427
+Nearest BSS from customer: 416
+Required energy: 21.255kWh, Current: 45.714kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['55']
+BSS not cost-effective - moving towards customer
+Step: 112 -> 427: Distance=2.59km, Time=2.63min, Energy=0.934kWh, SoC=44.8%
+Serving customer 427
+Load reduced to 595.0kg
+
+--- Current Status ---
+Location: 427
+Unserved customers: 119
+Current SoC: 44.8%
+Selected customer: 184
+Nearest BSS from customer: 224
+Required energy: 22.185kWh, Current: 44.780kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['416']
+BSS not cost-effective - moving towards customer
+Step: 427 -> 184: Distance=3.46km, Time=3.61min, Energy=1.239kWh, SoC=43.5%
+Serving customer 184
+Load reduced to 590.0kg
+
+--- Current Status ---
+Location: 184
+Unserved customers: 118
+Current SoC: 43.5%
+Selected customer: 118
+Nearest BSS from customer: 155
+Required energy: 21.321kWh, Current: 43.541kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 184 -> 118: Distance=2.86km, Time=4.26min, Energy=0.451kWh, SoC=43.1%
+Serving customer 118
+Load reduced to 585.0kg
+
+--- Current Status ---
+Location: 118
+Unserved customers: 117
+Current SoC: 43.1%
+Selected customer: 497
+Nearest BSS from customer: 155
+Required energy: 21.524kWh, Current: 43.090kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 118 -> 497: Distance=3.10km, Time=3.20min, Energy=1.107kWh, SoC=42.0%
+Serving customer 497
+Load reduced to 580.0kg
+
+--- Current Status ---
+Location: 497
+Unserved customers: 116
+Current SoC: 42.0%
+Selected customer: 351
+Nearest BSS from customer: 7
+Required energy: 21.326kWh, Current: 41.982kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 497 -> 351: Distance=1.55km, Time=1.66min, Energy=0.549kWh, SoC=41.4%
+Serving customer 351
+Load reduced to 575.0kg
+
+--- Current Status ---
+Location: 351
+Unserved customers: 115
+Current SoC: 41.4%
+Selected customer: 462
+Nearest BSS from customer: 224
+Required energy: 21.347kWh, Current: 41.434kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 2 BSS within range: ['42', '7']
+BSS not cost-effective - moving towards customer
+Step: 351 -> 18: Distance=1.49km, Time=2.00min, Energy=0.240kWh, SoC=41.2%
+
+--- Current Status ---
+Location: 18
+Unserved customers: 115
+Current SoC: 41.2%
+Selected customer: 41
+Nearest BSS from customer: 155
+Required energy: 20.754kWh, Current: 41.194kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 18 -> 41: Distance=1.42km, Time=1.77min, Energy=0.233kWh, SoC=41.0%
+Serving customer 41
+Load reduced to 570.0kg
+
+--- Current Status ---
+Location: 41
+Unserved customers: 114
+Current SoC: 41.0%
+Selected customer: 72
+Nearest BSS from customer: 224
+Required energy: 21.636kWh, Current: 40.961kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 41 -> 72: Distance=1.78km, Time=1.86min, Energy=0.629kWh, SoC=40.3%
+Serving customer 72
+Load reduced to 565.0kg
+
+--- Current Status ---
+Location: 72
+Unserved customers: 113
+Current SoC: 40.3%
+Selected customer: 299
+Nearest BSS from customer: 416
+Required energy: 22.506kWh, Current: 40.332kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 72 -> 299: Distance=2.67km, Time=2.91min, Energy=0.934kWh, SoC=39.4%
+Serving customer 299
+Load reduced to 560.0kg
+
+--- Current Status ---
+Location: 299
+Unserved customers: 112
+Current SoC: 39.4%
+Selected customer: 166
+Nearest BSS from customer: 416
+Required energy: 22.588kWh, Current: 39.398kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 2 BSS within range: ['416', '449']
+BSS not cost-effective - moving towards customer
+Step: 299 -> 166: Distance=6.47km, Time=8.31min, Energy=1.045kWh, SoC=38.4%
+Serving customer 166
+Load reduced to 555.0kg
+
+--- Current Status ---
+Location: 166
+Unserved customers: 111
+Current SoC: 38.4%
+Selected customer: 467
+Nearest BSS from customer: 74
+Required energy: 23.495kWh, Current: 38.354kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['416']
+BSS not cost-effective - moving towards customer
+Step: 166 -> 467: Distance=6.30km, Time=7.20min, Energy=2.181kWh, SoC=36.2%
+Serving customer 467
+Load reduced to 550.0kg
+
+--- Current Status ---
+Location: 467
+Unserved customers: 110
+Current SoC: 36.2%
+Selected customer: 321
+Nearest BSS from customer: 66
+Required energy: 20.800kWh, Current: 36.173kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 467 -> 321: Distance=2.08km, Time=2.61min, Energy=0.337kWh, SoC=35.8%
+Serving customer 321
+Load reduced to 545.0kg
+
+--- Current Status ---
+Location: 321
+Unserved customers: 109
+Current SoC: 35.8%
+Selected customer: 171
+Nearest BSS from customer: 415
+Required energy: 21.082kWh, Current: 35.836kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['66']
+BSS not cost-effective - moving towards customer
+Step: 321 -> 171: Distance=3.18km, Time=4.38min, Energy=0.502kWh, SoC=35.3%
+Serving customer 171
+Load reduced to 540.0kg
+
+--- Current Status ---
+Location: 171
+Unserved customers: 108
+Current SoC: 35.3%
+Selected customer: 481
+Nearest BSS from customer: 66
+Required energy: 21.039kWh, Current: 35.334kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 2 BSS within range: ['13', '415']
+BSS not cost-effective - moving towards customer
+Step: 171 -> 481: Distance=2.52km, Time=3.33min, Energy=0.400kWh, SoC=34.9%
+Serving customer 481
+Load reduced to 535.0kg
+
+--- Current Status ---
+Location: 481
+Unserved customers: 107
+Current SoC: 34.9%
+Selected customer: 23
+Nearest BSS from customer: 92
+Required energy: 21.405kWh, Current: 34.934kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['66']
+BSS not cost-effective - moving towards customer
+Step: 481 -> 23: Distance=4.72km, Time=6.48min, Energy=0.742kWh, SoC=34.2%
+Serving customer 23
+Load reduced to 530.0kg
+
+--- Current Status ---
+Location: 23
+Unserved customers: 106
+Current SoC: 34.2%
+Selected customer: 174
+Nearest BSS from customer: 282
+Required energy: 21.913kWh, Current: 34.192kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 23 -> 174: Distance=4.13km, Time=4.70min, Energy=1.414kWh, SoC=32.8%
+Serving customer 174
+Load reduced to 525.0kg
+
+--- Current Status ---
+Location: 174
+Unserved customers: 105
+Current SoC: 32.8%
+Selected customer: 80
+Nearest BSS from customer: 22
+Required energy: 21.155kWh, Current: 32.778kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 174 -> 80: Distance=0.28km, Time=0.32min, Energy=0.097kWh, SoC=32.7%
+Serving customer 80
+Load reduced to 520.0kg
+
+--- Current Status ---
+Location: 80
+Unserved customers: 104
+Current SoC: 32.7%
+Selected customer: 108
+Nearest BSS from customer: 368
+Required energy: 20.999kWh, Current: 32.681kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['22']
+BSS not cost-effective - moving towards customer
+Step: 80 -> 108: Distance=3.37km, Time=4.36min, Energy=0.533kWh, SoC=32.1%
+Serving customer 108
+Load reduced to 515.0kg
+
+--- Current Status ---
+Location: 108
+Unserved customers: 103
+Current SoC: 32.1%
+Selected customer: 202
+Nearest BSS from customer: 368
+Required energy: 22.612kWh, Current: 32.148kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 2 BSS within range: ['22', '368']
+BSS not cost-effective - moving towards customer
+Step: 108 -> 202: Distance=4.72km, Time=5.42min, Energy=1.604kWh, SoC=30.5%
+Serving customer 202
+Load reduced to 510.0kg
+
+--- Current Status ---
+Location: 202
+Unserved customers: 102
+Current SoC: 30.5%
+Selected customer: 448
+Nearest BSS from customer: 384
+Required energy: 20.501kWh, Current: 30.544kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 202 -> 448: Distance=0.79km, Time=0.99min, Energy=0.125kWh, SoC=30.4%
+Serving customer 448
+Load reduced to 505.0kg
+
+--- Current Status ---
+Location: 448
+Unserved customers: 101
+Current SoC: 30.4%
+Selected customer: 353
+Nearest BSS from customer: 452
+Required energy: 21.574kWh, Current: 30.419kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['384']
+BSS not cost-effective - moving towards customer
+Step: 448 -> 353: Distance=2.52km, Time=3.35min, Energy=0.393kWh, SoC=30.0%
+Serving customer 353
+Load reduced to 500.0kg
+
+--- Current Status ---
+Location: 353
+Unserved customers: 100
+Current SoC: 30.0%
+Selected customer: 490
+Nearest BSS from customer: 79
+Required energy: 21.442kWh, Current: 30.026kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 353 -> 490: Distance=1.25km, Time=1.50min, Energy=0.420kWh, SoC=29.6%
+Serving customer 490
+Load reduced to 495.0kg
+
+--- Current Status ---
+Location: 490
+Unserved customers: 99
+Current SoC: 29.6%
+Selected customer: 251
+Nearest BSS from customer: 313
+Required energy: 20.996kWh, Current: 29.605kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 490 -> 251: Distance=1.39km, Time=2.07min, Energy=0.211kWh, SoC=29.4%
+Serving customer 251
+Load reduced to 490.0kg
+
+--- Current Status ---
+Location: 251
+Unserved customers: 98
+Current SoC: 29.4%
+Selected customer: 258
+Nearest BSS from customer: 197
+Required energy: 21.109kWh, Current: 29.394kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 251 -> 258: Distance=1.78km, Time=1.97min, Energy=0.602kWh, SoC=28.8%
+Serving customer 258
+Load reduced to 485.0kg
+
+--- Current Status ---
+Location: 258
+Unserved customers: 97
+Current SoC: 28.8%
+Selected customer: 205
+Nearest BSS from customer: 368
+Required energy: 21.457kWh, Current: 28.792kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 3 BSS within range: ['197', '313', '452']
+BSS not cost-effective - moving towards customer
+Step: 258 -> 205: Distance=4.54km, Time=6.38min, Energy=0.693kWh, SoC=28.1%
+Serving customer 205
+Load reduced to 480.0kg
+
+--- Current Status ---
+Location: 205
+Unserved customers: 96
+Current SoC: 28.1%
+Selected customer: 69
+Nearest BSS from customer: 275
+Required energy: 21.419kWh, Current: 28.099kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 205 -> 69: Distance=1.36km, Time=1.58min, Energy=0.456kWh, SoC=27.6%
+Serving customer 69
+Load reduced to 475.0kg
+
+--- Current Status ---
+Location: 69
+Unserved customers: 95
+Current SoC: 27.6%
+Selected customer: 330
+Nearest BSS from customer: 313
+Required energy: 21.337kWh, Current: 27.643kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 69 -> 330: Distance=0.44km, Time=0.45min, Energy=0.150kWh, SoC=27.5%
+Serving customer 330
+Load reduced to 470.0kg
+
+--- Current Status ---
+Location: 330
+Unserved customers: 94
+Current SoC: 27.5%
+Selected customer: 201
+Nearest BSS from customer: 285
+Required energy: 21.360kWh, Current: 27.493kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 330 -> 201: Distance=5.97km, Time=7.78min, Energy=0.924kWh, SoC=26.6%
+Serving customer 201
+Load reduced to 465.0kg
+
+--- Current Status ---
+Location: 201
+Unserved customers: 93
+Current SoC: 26.6%
+Selected customer: 175
+Nearest BSS from customer: 452
+Required energy: 20.507kWh, Current: 26.570kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 201 -> 175: Distance=0.93km, Time=1.40min, Energy=0.140kWh, SoC=26.4%
+Serving customer 175
+Load reduced to 460.0kg
+
+--- Current Status ---
+Location: 175
+Unserved customers: 92
+Current SoC: 26.4%
+Selected customer: 274
+Nearest BSS from customer: 285
+Required energy: 21.079kWh, Current: 26.430kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 2 BSS within range: ['285', '452']
+BSS not cost-effective - moving towards customer
+Step: 175 -> 274: Distance=2.85km, Time=2.97min, Energy=0.961kWh, SoC=25.5%
+Serving customer 274
+Load reduced to 455.0kg
+
+--- Current Status ---
+Location: 274
+Unserved customers: 91
+Current SoC: 25.5%
+Selected customer: 471
+Nearest BSS from customer: 315
+Required energy: 21.664kWh, Current: 25.469kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 4 BSS within range: ['275', '285', '313', '368']
+BSS not cost-effective - moving towards customer
+Step: 274 -> 471: Distance=4.46km, Time=5.53min, Energy=0.694kWh, SoC=24.8%
+Serving customer 471
+Load reduced to 450.0kg
+
+--- Current Status ---
+Location: 471
+Unserved customers: 90
+Current SoC: 24.8%
+Selected customer: 191
+Nearest BSS from customer: 242
+Required energy: 20.757kWh, Current: 24.774kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+No BSS within range - moving towards customer
+Step: 471 -> 191: Distance=1.56km, Time=2.20min, Energy=0.234kWh, SoC=24.5%
+Serving customer 191
+Load reduced to 445.0kg
+
+--- Current Status ---
+Location: 191
+Unserved customers: 89
+Current SoC: 24.5%
+Selected customer: 60
+Nearest BSS from customer: 222
+Required energy: 21.848kWh, Current: 24.541kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 2 BSS within range: ['130', '242']
+BSS not cost-effective - moving towards customer
+Step: 191 -> 60: Distance=4.78km, Time=4.87min, Energy=1.610kWh, SoC=22.9%
+Serving customer 60
+Load reduced to 440.0kg
+
+--- Current Status ---
+Location: 60
+Unserved customers: 88
+Current SoC: 22.9%
+Selected customer: 194
+Nearest BSS from customer: 495
+Required energy: 20.911kWh, Current: 22.931kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['222']
+BSS not cost-effective - moving towards customer
+Step: 60 -> 194: Distance=2.81km, Time=3.80min, Energy=0.426kWh, SoC=22.5%
+Serving customer 194
+Load reduced to 435.0kg
+
+--- Current Status ---
+Location: 194
+Unserved customers: 87
+Current SoC: 22.5%
+Selected customer: 98
+Nearest BSS from customer: 315
+Required energy: 20.457kWh, Current: 22.505kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 3 depleted modules: [1, 2, 3]
+Found 1 BSS within range: ['37']
+BSS not cost-effective - moving towards customer
+Step: 194 -> 98: Distance=2.58km, Time=3.19min, Energy=0.398kWh, SoC=22.1%
+Serving customer 98
+Load reduced to 430.0kg
+
+--- Current Status ---
+Location: 98
+Unserved customers: 86
+Current SoC: 22.1%
+Selected customer: 162
+Nearest BSS from customer: 96
+Required energy: 22.428kWh, Current: 22.107kWh
+Insufficient energy - finding nearest BSS
+Insufficient energy - implementing Step 4.4 logic...
+24.903644515779995
+23.912466336901
+36.72045772689323
+25.78600342740343
+25.262601735307427
+24.57912587994263
+32.472283041846424
+34.48414814372376
+25.40454545762466
+31.2471705587857
+30.620780542151653
+24.961158561124712
+37.12623218663491
+23.87831106935341
+29.469705975031495
+32.537991682925544
+31.628744597660525
+29.25904867310362
+37.63192544643999
+30.412276348494313
+28.453317752180524
+28.41185003472539
+38.43780855637622
+32.27325236654896
+29.80521256413749
+30.633418383778725
+32.373548986632436
+24.87461721970638
+27.21579492482339
+23.252968536828718
+25.330745480933725
+23.115969464920642
+34.22984602785489
+27.2747262631255
+31.126260614945963
+33.84245084087307
+23.873810528350997
+26.243709300867675
+31.284191843397338
+28.58169510772728
+28.193694914159657
+30.990576425253632
+33.09219553628769
+24.373751122992445
+26.08454843415457
+31.539729432842318
+28.660221750948654
+27.284974614101422
+28.09266742203055
+28.14256321513883
+24.58078528453411
+29.03348456946961
+24.02884560971563
+28.743271813969372
+28.617880171654996
+27.60288296786717
+28.130120845113147
+29.863397661383445
+31.070992867102504
+25.943231854696492
+34.83832315934775
+24.899882780085985
+33.0201228418828
+26.79515854544833
+30.9198200062735
+24.243496117685368
+33.616134456255864
+29.743762033507124
+31.649414483822092
+26.74580640858221
+28.866214234836058
+32.7429310395804
+37.9223075677495
+32.602429955051505
+31.110499973645442
+34.59026771351925
+29.57607055846361
+33.91398253455136
+32.81900817770832
+26.6734807657344
+34.35897576666612
+28.622036135412593
+33.491399733252216
+33.10993488958311
+28.014834352569608
+28.720904281219298
+22.42215518645213
+Selected BSS for insufficient energy scenario: 315 (cost=0.159)
+Moving towards nearest BSS: 315
+Step: 98 -> 315: Distance=0.40km, Time=0.59min, Energy=0.059kWh, SoC=22.0%
+
+=== HANDLING BSS VISIT AT 315 ===
+Re-evaluating customer and BSS selection from current BSS location...
+New selected customer from BSS: 267
+New nearest BSS from customer: 222
+Selected journey energy: 21.241 kWh
+Current energy: 22.048 kWh
+Current SoC sufficient for selected journey
+Swapping 3 depleted modules: [1, 2, 3]
+Swapping time: 6.0 minutes
+Moving to selected customer...
+Step: 315 -> 267: Distance=2.27km, Time=2.32min, Energy=0.758kWh, SoC=81.3%
+Serving customer 267
+Load reduced to 425.0kg
+
+--- Current Status ---
+Location: 267
+Unserved customers: 85
+Current SoC: 81.3%
+Selected customer: 78
+Nearest BSS from customer: 475
+Required energy: 21.916kWh, Current: 81.290kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 267 -> 78: Distance=5.54km, Time=7.91min, Energy=0.820kWh, SoC=80.5%
+Serving customer 78
+Load reduced to 420.0kg
+
+--- Current Status ---
+Location: 78
+Unserved customers: 84
+Current SoC: 80.5%
+Selected customer: 401
+Nearest BSS from customer: 329
+Required energy: 21.144kWh, Current: 80.470kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 78 -> 401: Distance=5.28km, Time=6.56min, Energy=0.810kWh, SoC=79.7%
+Serving customer 401
+Load reduced to 415.0kg
+
+--- Current Status ---
+Location: 401
+Unserved customers: 83
+Current SoC: 79.7%
+Selected customer: 366
+Nearest BSS from customer: 329
+Required energy: 20.799kWh, Current: 79.660kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 401 -> 366: Distance=3.67km, Time=4.69min, Energy=0.556kWh, SoC=79.1%
+Serving customer 366
+Load reduced to 410.0kg
+
+--- Current Status ---
+Location: 366
+Unserved customers: 82
+Current SoC: 79.1%
+Selected customer: 408
+Nearest BSS from customer: 164
+Required energy: 22.475kWh, Current: 79.104kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 366 -> 408: Distance=4.77km, Time=5.49min, Energy=1.543kWh, SoC=77.6%
+Serving customer 408
+Load reduced to 405.0kg
+
+--- Current Status ---
+Location: 408
+Unserved customers: 81
+Current SoC: 77.6%
+Selected customer: 161
+Nearest BSS from customer: 272
+Required energy: 21.483kWh, Current: 77.560kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 408 -> 161: Distance=3.81km, Time=5.15min, Energy=0.567kWh, SoC=77.0%
+Serving customer 161
+Load reduced to 400.0kg
+
+--- Current Status ---
+Location: 161
+Unserved customers: 80
+Current SoC: 77.0%
+Selected customer: 176
+Nearest BSS from customer: 344
+Required energy: 21.074kWh, Current: 76.993kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 161 -> 176: Distance=3.42km, Time=4.29min, Energy=0.517kWh, SoC=76.5%
+Serving customer 176
+Load reduced to 395.0kg
+
+--- Current Status ---
+Location: 176
+Unserved customers: 79
+Current SoC: 76.5%
+Selected customer: 486
+Nearest BSS from customer: 443
+Required energy: 21.218kWh, Current: 76.476kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 176 -> 486: Distance=2.43km, Time=3.63min, Energy=0.351kWh, SoC=76.1%
+Serving customer 486
+Load reduced to 390.0kg
+
+--- Current Status ---
+Location: 486
+Unserved customers: 78
+Current SoC: 76.1%
+Selected customer: 400
+Nearest BSS from customer: 272
+Required energy: 21.239kWh, Current: 76.125kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 486 -> 400: Distance=1.87km, Time=2.33min, Energy=0.283kWh, SoC=75.8%
+Serving customer 400
+Load reduced to 385.0kg
+
+--- Current Status ---
+Location: 400
+Unserved customers: 77
+Current SoC: 75.8%
+Selected customer: 456
+Nearest BSS from customer: 260
+Required energy: 21.633kWh, Current: 75.843kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 400 -> 456: Distance=8.39km, Time=11.27min, Energy=1.239kWh, SoC=74.6%
+Serving customer 456
+Load reduced to 380.0kg
+
+--- Current Status ---
+Location: 456
+Unserved customers: 76
+Current SoC: 74.6%
+Selected customer: 393
+Nearest BSS from customer: 48
+Required energy: 20.976kWh, Current: 74.603kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 456 -> 393: Distance=1.22km, Time=1.41min, Energy=0.389kWh, SoC=74.2%
+Serving customer 393
+Load reduced to 375.0kg
+
+--- Current Status ---
+Location: 393
+Unserved customers: 75
+Current SoC: 74.2%
+Selected customer: 255
+Nearest BSS from customer: 272
+Required energy: 20.426kWh, Current: 74.214kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 393 -> 255: Distance=1.08km, Time=1.30min, Energy=0.163kWh, SoC=74.1%
+Serving customer 255
+Load reduced to 370.0kg
+
+--- Current Status ---
+Location: 255
+Unserved customers: 74
+Current SoC: 74.1%
+Selected customer: 15
+Nearest BSS from customer: 155
+Required energy: 21.945kWh, Current: 74.051kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 255 -> 15: Distance=7.38km, Time=10.13min, Energy=1.076kWh, SoC=73.0%
+Serving customer 15
+Load reduced to 365.0kg
+
+--- Current Status ---
+Location: 15
+Unserved customers: 73
+Current SoC: 73.0%
+Selected customer: 219
+Nearest BSS from customer: 38
+Required energy: 20.963kWh, Current: 72.975kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 15 -> 219: Distance=4.43km, Time=5.86min, Energy=0.651kWh, SoC=72.3%
+Serving customer 219
+Load reduced to 360.0kg
+
+--- Current Status ---
+Location: 219
+Unserved customers: 72
+Current SoC: 72.3%
+Selected customer: 102
+Nearest BSS from customer: 298
+Required energy: 21.426kWh, Current: 72.324kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 219 -> 102: Distance=4.04km, Time=5.51min, Energy=0.587kWh, SoC=71.7%
+Serving customer 102
+Load reduced to 355.0kg
+
+--- Current Status ---
+Location: 102
+Unserved customers: 71
+Current SoC: 71.7%
+Selected customer: 350
+Nearest BSS from customer: 443
+Required energy: 21.501kWh, Current: 71.737kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 102 -> 350: Distance=2.59km, Time=3.16min, Energy=0.388kWh, SoC=71.3%
+Serving customer 350
+Load reduced to 350.0kg
+
+--- Current Status ---
+Location: 350
+Unserved customers: 70
+Current SoC: 71.3%
+Selected customer: 100
+Nearest BSS from customer: 298
+Required energy: 21.933kWh, Current: 71.349kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 350 -> 100: Distance=3.25km, Time=3.73min, Energy=1.025kWh, SoC=70.3%
+Serving customer 100
+Load reduced to 345.0kg
+
+--- Current Status ---
+Location: 100
+Unserved customers: 69
+Current SoC: 70.3%
+Selected customer: 14
+Nearest BSS from customer: 488
+Required energy: 20.283kWh, Current: 70.323kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 100 -> 14: Distance=1.79km, Time=2.44min, Energy=0.258kWh, SoC=70.1%
+Serving customer 14
+Load reduced to 340.0kg
+
+--- Current Status ---
+Location: 14
+Unserved customers: 68
+Current SoC: 70.1%
+Selected customer: 169
+Nearest BSS from customer: 488
+Required energy: 21.169kWh, Current: 70.066kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 14 -> 169: Distance=4.04km, Time=5.73min, Energy=0.575kWh, SoC=69.5%
+Serving customer 169
+Load reduced to 335.0kg
+
+--- Current Status ---
+Location: 169
+Unserved customers: 67
+Current SoC: 69.5%
+Selected customer: 306
+Nearest BSS from customer: 360
+Required energy: 23.114kWh, Current: 69.490kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 169 -> 306: Distance=5.07km, Time=5.51min, Energy=1.601kWh, SoC=67.9%
+Serving customer 306
+Load reduced to 330.0kg
+
+--- Current Status ---
+Location: 306
+Unserved customers: 66
+Current SoC: 67.9%
+Selected customer: 88
+Nearest BSS from customer: 329
+Required energy: 22.185kWh, Current: 67.889kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 306 -> 88: Distance=9.30km, Time=11.93min, Energy=1.355kWh, SoC=66.5%
+Serving customer 88
+Load reduced to 325.0kg
+
+--- Current Status ---
+Location: 88
+Unserved customers: 65
+Current SoC: 66.5%
+Selected customer: 442
+Nearest BSS from customer: 344
+Required energy: 21.177kWh, Current: 66.534kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 88 -> 442: Distance=7.14km, Time=9.57min, Energy=1.026kWh, SoC=65.5%
+Serving customer 442
+Load reduced to 320.0kg
+
+--- Current Status ---
+Location: 442
+Unserved customers: 64
+Current SoC: 65.5%
+Selected customer: 204
+Nearest BSS from customer: 268
+Required energy: 21.355kWh, Current: 65.509kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 442 -> 204: Distance=3.83km, Time=4.67min, Energy=0.564kWh, SoC=64.9%
+Serving customer 204
+Load reduced to 315.0kg
+
+--- Current Status ---
+Location: 204
+Unserved customers: 63
+Current SoC: 64.9%
+Selected customer: 114
+Nearest BSS from customer: 460
+Required energy: 22.787kWh, Current: 64.944kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 204 -> 114: Distance=15.03km, Time=21.44min, Energy=2.115kWh, SoC=62.8%
+Serving customer 114
+Load reduced to 310.0kg
+
+--- Current Status ---
+Location: 114
+Unserved customers: 62
+Current SoC: 62.8%
+Selected customer: 168
+Nearest BSS from customer: 210
+Required energy: 21.613kWh, Current: 62.829kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 114 -> 168: Distance=2.30km, Time=2.34min, Energy=0.726kWh, SoC=62.1%
+Serving customer 168
+Load reduced to 305.0kg
+
+--- Current Status ---
+Location: 168
+Unserved customers: 61
+Current SoC: 62.1%
+Selected customer: 99
+Nearest BSS from customer: 495
+Required energy: 20.888kWh, Current: 62.103kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 168 -> 99: Distance=2.26km, Time=2.92min, Energy=0.325kWh, SoC=61.8%
+Serving customer 99
+Load reduced to 300.0kg
+
+--- Current Status ---
+Location: 99
+Unserved customers: 60
+Current SoC: 61.8%
+Selected customer: 466
+Nearest BSS from customer: 179
+Required energy: 22.082kWh, Current: 61.778kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 3 BSS within range: ['371', '495', '96']
+BSS not cost-effective - moving towards customer
+Step: 99 -> 59: Distance=6.57km, Time=8.60min, Energy=0.938kWh, SoC=60.8%
+
+--- Current Status ---
+Location: 59
+Unserved customers: 60
+Current SoC: 60.8%
+Selected customer: 466
+Nearest BSS from customer: 179
+Required energy: 21.144kWh, Current: 60.840kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 59 -> 466: Distance=2.67km, Time=2.81min, Energy=0.834kWh, SoC=60.0%
+Serving customer 466
+Load reduced to 295.0kg
+
+--- Current Status ---
+Location: 466
+Unserved customers: 59
+Current SoC: 60.0%
+Selected customer: 17
+Nearest BSS from customer: 244
+Required energy: 21.448kWh, Current: 60.006kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 3 BSS within range: ['179', '182', '279']
+BSS not cost-effective - moving towards customer
+Step: 466 -> 17: Distance=7.86km, Time=11.03min, Energy=1.100kWh, SoC=58.9%
+Serving customer 17
+Load reduced to 290.0kg
+
+--- Current Status ---
+Location: 17
+Unserved customers: 58
+Current SoC: 58.9%
+Selected customer: 256
+Nearest BSS from customer: 315
+Required energy: 21.189kWh, Current: 58.906kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 17 -> 256: Distance=2.00km, Time=2.43min, Energy=0.290kWh, SoC=58.6%
+Serving customer 256
+Load reduced to 285.0kg
+
+--- Current Status ---
+Location: 256
+Unserved customers: 57
+Current SoC: 58.6%
+Selected customer: 91
+Nearest BSS from customer: 56
+Required energy: 20.735kWh, Current: 58.616kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 256 -> 91: Distance=0.38km, Time=0.53min, Energy=0.053kWh, SoC=58.6%
+Serving customer 91
+Load reduced to 280.0kg
+
+--- Current Status ---
+Location: 91
+Unserved customers: 56
+Current SoC: 58.6%
+Selected customer: 124
+Nearest BSS from customer: 244
+Required energy: 20.617kWh, Current: 58.562kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 91 -> 124: Distance=1.44km, Time=1.69min, Energy=0.436kWh, SoC=58.1%
+Serving customer 124
+Load reduced to 275.0kg
+
+--- Current Status ---
+Location: 124
+Unserved customers: 55
+Current SoC: 58.1%
+Selected customer: 461
+Nearest BSS from customer: 307
+Required energy: 21.935kWh, Current: 58.126kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['244', '56']
+BSS not cost-effective - moving towards customer
+Step: 124 -> 461: Distance=2.92km, Time=3.49min, Energy=0.879kWh, SoC=57.2%
+Serving customer 461
+Load reduced to 270.0kg
+
+--- Current Status ---
+Location: 461
+Unserved customers: 54
+Current SoC: 57.2%
+Selected customer: 223
+Nearest BSS from customer: 244
+Required energy: 21.081kWh, Current: 57.247kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 461 -> 223: Distance=3.22km, Time=4.36min, Energy=0.449kWh, SoC=56.8%
+Serving customer 223
+Load reduced to 265.0kg
+
+--- Current Status ---
+Location: 223
+Unserved customers: 53
+Current SoC: 56.8%
+Selected customer: 162
+Nearest BSS from customer: 96
+Required energy: 24.645kWh, Current: 56.798kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 14 BSS within range: ['105', '146', '210', '222', '244', '272', '307', '329', '37', '371', '438', '475', '48', '96']
+BSS not cost-effective - moving towards customer
+Step: 223 -> 1: Distance=9.91km, Time=14.09min, Energy=1.361kWh, SoC=55.4%
+
+--- Current Status ---
+Location: 1
+Unserved customers: 53
+Current SoC: 55.4%
+Selected customer: 162
+Nearest BSS from customer: 96
+Required energy: 23.284kWh, Current: 55.437kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 4 BSS within range: ['146', '329', '371', '430']
+BSS not cost-effective - moving towards customer
+Step: 1 -> 162: Distance=6.99km, Time=7.07min, Energy=2.163kWh, SoC=53.3%
+Serving customer 162
+Load reduced to 260.0kg
+
+--- Current Status ---
+Location: 162
+Unserved customers: 52
+Current SoC: 53.3%
+Selected customer: 136
+Nearest BSS from customer: 56
+Required energy: 22.323kWh, Current: 53.274kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['96']
+BSS not cost-effective - moving towards customer
+Step: 162 -> 136: Distance=5.98km, Time=6.01min, Energy=1.849kWh, SoC=51.4%
+Serving customer 136
+Load reduced to 255.0kg
+
+--- Current Status ---
+Location: 136
+Unserved customers: 51
+Current SoC: 51.4%
+Selected customer: 233
+Nearest BSS from customer: 384
+Required energy: 22.953kWh, Current: 51.425kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 9 BSS within range: ['105', '123', '182', '265', '279', '285', '329', '371', '56']
+BSS not cost-effective - moving towards customer
+Step: 136 -> 233: Distance=17.02km, Time=23.07min, Energy=2.357kWh, SoC=49.1%
+Serving customer 233
+Load reduced to 250.0kg
+
+--- Current Status ---
+Location: 233
+Unserved customers: 50
+Current SoC: 49.1%
+Selected customer: 381
+Nearest BSS from customer: 79
+Required energy: 20.641kWh, Current: 49.067kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['197', '384']
+BSS not cost-effective - moving towards customer
+Step: 233 -> 381: Distance=3.59km, Time=5.28min, Energy=0.485kWh, SoC=48.6%
+Serving customer 381
+Load reduced to 245.0kg
+
+--- Current Status ---
+Location: 381
+Unserved customers: 49
+Current SoC: 48.6%
+Selected customer: 165
+Nearest BSS from customer: 368
+Required energy: 21.097kWh, Current: 48.582kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['79', '92']
+BSS not cost-effective - moving towards customer
+Step: 381 -> 165: Distance=3.56km, Time=4.95min, Energy=0.487kWh, SoC=48.1%
+Serving customer 165
+Load reduced to 240.0kg
+
+--- Current Status ---
+Location: 165
+Unserved customers: 48
+Current SoC: 48.1%
+Selected customer: 151
+Nearest BSS from customer: 105
+Required energy: 21.035kWh, Current: 48.095kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 3 BSS within range: ['285', '368', '452']
+BSS not cost-effective - moving towards customer
+Step: 165 -> 151: Distance=5.90km, Time=7.84min, Energy=0.815kWh, SoC=47.3%
+Serving customer 151
+Load reduced to 235.0kg
+
+--- Current Status ---
+Location: 151
+Unserved customers: 47
+Current SoC: 47.3%
+Selected customer: 241
+Nearest BSS from customer: 286
+Required energy: 20.632kWh, Current: 47.280kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 3 BSS within range: ['105', '475', '489']
+BSS not cost-effective - moving towards customer
+Step: 151 -> 241: Distance=2.79km, Time=3.48min, Energy=0.391kWh, SoC=46.9%
+Serving customer 241
+Load reduced to 230.0kg
+
+--- Current Status ---
+Location: 241
+Unserved customers: 46
+Current SoC: 46.9%
+Selected customer: 402
+Nearest BSS from customer: 432
+Required energy: 21.778kWh, Current: 46.889kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['286', '432']
+BSS not cost-effective - moving towards customer
+Step: 241 -> 402: Distance=3.16km, Time=3.25min, Energy=0.960kWh, SoC=45.9%
+Serving customer 402
+Load reduced to 225.0kg
+
+--- Current Status ---
+Location: 402
+Unserved customers: 45
+Current SoC: 45.9%
+Selected customer: 226
+Nearest BSS from customer: 123
+Required energy: 21.137kWh, Current: 45.929kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 402 -> 226: Distance=4.61km, Time=6.03min, Energy=0.636kWh, SoC=45.3%
+Serving customer 226
+Load reduced to 220.0kg
+
+--- Current Status ---
+Location: 226
+Unserved customers: 44
+Current SoC: 45.3%
+Selected customer: 237
+Nearest BSS from customer: 123
+Required energy: 21.883kWh, Current: 45.293kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 2 BSS within range: ['123', '197']
+BSS not cost-effective - moving towards customer
+Step: 226 -> 237: Distance=3.61km, Time=4.29min, Energy=1.059kWh, SoC=44.2%
+Serving customer 237
+Load reduced to 215.0kg
+
+--- Current Status ---
+Location: 237
+Unserved customers: 43
+Current SoC: 44.2%
+Selected customer: 337
+Nearest BSS from customer: 285
+Required energy: 22.405kWh, Current: 44.234kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['123']
+BSS not cost-effective - moving towards customer
+Step: 237 -> 337: Distance=3.60km, Time=4.57min, Energy=0.497kWh, SoC=43.7%
+Serving customer 337
+Load reduced to 210.0kg
+
+--- Current Status ---
+Location: 337
+Unserved customers: 42
+Current SoC: 43.7%
+Selected customer: 0
+Nearest BSS from customer: 275
+Required energy: 22.038kWh, Current: 43.736kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 337 -> 0: Distance=1.32km, Time=1.34min, Energy=0.399kWh, SoC=43.3%
+Serving customer 0
+Load reduced to 205.0kg
+
+--- Current Status ---
+Location: 0
+Unserved customers: 41
+Current SoC: 43.3%
+Selected customer: 288
+Nearest BSS from customer: 3
+Required energy: 23.076kWh, Current: 43.337kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 1 BSS within range: ['275']
+BSS not cost-effective - moving towards customer
+Step: 0 -> 288: Distance=6.45km, Time=6.73min, Energy=1.924kWh, SoC=41.4%
+Serving customer 288
+Load reduced to 200.0kg
+
+--- Current Status ---
+Location: 288
+Unserved customers: 40
+Current SoC: 41.4%
+Selected customer: 421
+Nearest BSS from customer: 365
+Required energy: 21.637kWh, Current: 41.413kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 288 -> 421: Distance=1.37km, Time=1.65min, Energy=0.191kWh, SoC=41.2%
+Serving customer 421
+Load reduced to 195.0kg
+
+--- Current Status ---
+Location: 421
+Unserved customers: 39
+Current SoC: 41.2%
+Selected customer: 95
+Nearest BSS from customer: 3
+Required energy: 20.582kWh, Current: 41.222kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+No BSS within range - moving towards customer
+Step: 421 -> 95: Distance=2.87km, Time=4.13min, Energy=0.380kWh, SoC=40.8%
+Serving customer 95
+Load reduced to 190.0kg
+
+--- Current Status ---
+Location: 95
+Unserved customers: 38
+Current SoC: 40.8%
+Selected customer: 468
+Nearest BSS from customer: 22
+Required energy: 22.200kWh, Current: 40.842kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['3']
+BSS not cost-effective - moving towards customer
+Step: 95 -> 468: Distance=2.31km, Time=2.44min, Energy=0.684kWh, SoC=40.2%
+Serving customer 468
+Load reduced to 185.0kg
+
+--- Current Status ---
+Location: 468
+Unserved customers: 37
+Current SoC: 40.2%
+Selected customer: 230
+Nearest BSS from customer: 469
+Required energy: 21.556kWh, Current: 40.159kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['79']
+BSS not cost-effective - moving towards customer
+Step: 468 -> 230: Distance=9.51km, Time=13.37min, Energy=1.259kWh, SoC=38.9%
+Serving customer 230
+Load reduced to 180.0kg
+
+--- Current Status ---
+Location: 230
+Unserved customers: 36
+Current SoC: 38.9%
+Selected customer: 178
+Nearest BSS from customer: 103
+Required energy: 21.481kWh, Current: 38.900kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['469']
+BSS not cost-effective - moving towards customer
+Step: 230 -> 178: Distance=3.23km, Time=4.14min, Energy=0.438kWh, SoC=38.5%
+Serving customer 178
+Load reduced to 175.0kg
+
+--- Current Status ---
+Location: 178
+Unserved customers: 35
+Current SoC: 38.5%
+Selected customer: 361
+Nearest BSS from customer: 377
+Required energy: 21.007kWh, Current: 38.462kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['103']
+BSS not cost-effective - moving towards customer
+Step: 178 -> 361: Distance=4.75km, Time=5.77min, Energy=0.654kWh, SoC=37.8%
+Serving customer 361
+Load reduced to 170.0kg
+
+--- Current Status ---
+Location: 361
+Unserved customers: 34
+Current SoC: 37.8%
+Selected customer: 264
+Nearest BSS from customer: 3
+Required energy: 20.509kWh, Current: 37.808kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 2 BSS within range: ['365', '377']
+BSS not cost-effective - moving towards customer
+Step: 361 -> 264: Distance=3.80km, Time=5.33min, Energy=0.500kWh, SoC=37.3%
+Serving customer 264
+Load reduced to 165.0kg
+
+--- Current Status ---
+Location: 264
+Unserved customers: 33
+Current SoC: 37.3%
+Selected customer: 16
+Nearest BSS from customer: 3
+Required energy: 21.608kWh, Current: 37.309kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 2 depleted modules: [1, 2]
+Found 1 BSS within range: ['3']
+BSS not cost-effective - moving towards customer
+Step: 264 -> 3: Distance=0.07km, Time=0.09min, Energy=0.009kWh, SoC=37.3%
+
+=== HANDLING BSS VISIT AT 3 ===
+Re-evaluating customer and BSS selection from current BSS location...
+New selected customer from BSS: 16
+New nearest BSS from customer: 3
+Selected journey energy: 21.599 kWh
+Current energy: 37.300 kWh
+Current SoC sufficient for selected journey
+Swapping 2 depleted modules: [1, 2]
+Swapping time: 4.0 minutes
+Moving to selected customer...
+Step: 3 -> 16: Distance=2.79km, Time=3.19min, Energy=0.800kWh, SoC=76.5%
+Serving customer 16
+Load reduced to 160.0kg
+
+--- Current Status ---
+Location: 16
+Unserved customers: 32
+Current SoC: 76.5%
+Selected customer: 34
+Nearest BSS from customer: 476
+Required energy: 20.711kWh, Current: 76.500kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 16 -> 34: Distance=1.25km, Time=1.51min, Energy=0.171kWh, SoC=76.3%
+Serving customer 34
+Load reduced to 155.0kg
+
+--- Current Status ---
+Location: 34
+Unserved customers: 31
+Current SoC: 76.3%
+Selected customer: 392
+Nearest BSS from customer: 377
+Required energy: 21.603kWh, Current: 76.329kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 34 -> 16: Distance=1.25km, Time=1.51min, Energy=0.171kWh, SoC=76.2%
+
+--- Current Status ---
+Location: 16
+Unserved customers: 31
+Current SoC: 76.2%
+Selected customer: 392
+Nearest BSS from customer: 377
+Required energy: 21.432kWh, Current: 76.158kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 16 -> 392: Distance=3.38km, Time=4.72min, Energy=0.441kWh, SoC=75.7%
+Serving customer 392
+Load reduced to 150.0kg
+
+--- Current Status ---
+Location: 392
+Unserved customers: 30
+Current SoC: 75.7%
+Selected customer: 36
+Nearest BSS from customer: 377
+Required energy: 23.137kWh, Current: 75.718kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 392 -> 36: Distance=6.66km, Time=6.85min, Energy=1.937kWh, SoC=73.8%
+Serving customer 36
+Load reduced to 145.0kg
+
+--- Current Status ---
+Location: 36
+Unserved customers: 29
+Current SoC: 73.8%
+Selected customer: 218
+Nearest BSS from customer: 365
+Required energy: 21.244kWh, Current: 73.780kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 36 -> 218: Distance=1.78km, Time=1.95min, Energy=0.511kWh, SoC=73.3%
+Serving customer 218
+Load reduced to 140.0kg
+
+--- Current Status ---
+Location: 218
+Unserved customers: 28
+Current SoC: 73.3%
+Selected customer: 311
+Nearest BSS from customer: 432
+Required energy: 22.087kWh, Current: 73.269kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 218 -> 311: Distance=13.11km, Time=16.34min, Energy=1.759kWh, SoC=71.5%
+Serving customer 311
+Load reduced to 135.0kg
+
+--- Current Status ---
+Location: 311
+Unserved customers: 27
+Current SoC: 71.5%
+Selected customer: 435
+Nearest BSS from customer: 164
+Required energy: 20.988kWh, Current: 71.510kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 311 -> 435: Distance=5.85km, Time=7.77min, Energy=0.766kWh, SoC=70.7%
+Serving customer 435
+Load reduced to 130.0kg
+
+--- Current Status ---
+Location: 435
+Unserved customers: 26
+Current SoC: 70.7%
+Selected customer: 283
+Nearest BSS from customer: 8
+Required energy: 21.879kWh, Current: 70.744kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 435 -> 283: Distance=4.80km, Time=5.09min, Energy=1.375kWh, SoC=69.4%
+Serving customer 283
+Load reduced to 125.0kg
+
+--- Current Status ---
+Location: 283
+Unserved customers: 25
+Current SoC: 69.4%
+Selected customer: 391
+Nearest BSS from customer: 42
+Required energy: 22.073kWh, Current: 69.369kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 283 -> 391: Distance=5.23km, Time=5.26min, Energy=1.511kWh, SoC=67.9%
+Serving customer 391
+Load reduced to 120.0kg
+
+--- Current Status ---
+Location: 391
+Unserved customers: 24
+Current SoC: 67.9%
+Selected customer: 386
+Nearest BSS from customer: 338
+Required energy: 21.185kWh, Current: 67.858kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 391 -> 386: Distance=3.76km, Time=4.47min, Energy=1.045kWh, SoC=66.8%
+Serving customer 386
+Load reduced to 115.0kg
+
+--- Current Status ---
+Location: 386
+Unserved customers: 23
+Current SoC: 66.8%
+Selected customer: 444
+Nearest BSS from customer: 74
+Required energy: 21.452kWh, Current: 66.813kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 386 -> 444: Distance=4.28km, Time=4.91min, Energy=1.196kWh, SoC=65.6%
+Serving customer 444
+Load reduced to 110.0kg
+
+--- Current Status ---
+Location: 444
+Unserved customers: 22
+Current SoC: 65.6%
+Selected customer: 308
+Nearest BSS from customer: 334
+Required energy: 20.973kWh, Current: 65.616kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 444 -> 308: Distance=1.64km, Time=1.68min, Energy=0.469kWh, SoC=65.1%
+Serving customer 308
+Load reduced to 105.0kg
+
+--- Current Status ---
+Location: 308
+Unserved customers: 21
+Current SoC: 65.1%
+Selected customer: 314
+Nearest BSS from customer: 74
+Required energy: 20.390kWh, Current: 65.147kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 308 -> 314: Distance=1.15km, Time=1.47min, Energy=0.150kWh, SoC=65.0%
+Serving customer 314
+Load reduced to 100.0kg
+
+--- Current Status ---
+Location: 314
+Unserved customers: 20
+Current SoC: 65.0%
+Selected customer: 111
+Nearest BSS from customer: 317
+Required energy: 20.798kWh, Current: 64.998kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 314 -> 111: Distance=3.68km, Time=5.03min, Energy=0.470kWh, SoC=64.5%
+Serving customer 111
+Load reduced to 95.0kg
+
+--- Current Status ---
+Location: 111
+Unserved customers: 19
+Current SoC: 64.5%
+Selected customer: 104
+Nearest BSS from customer: 74
+Required energy: 22.565kWh, Current: 64.528kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 111 -> 28: Distance=5.15km, Time=5.22min, Energy=1.461kWh, SoC=63.1%
+
+--- Current Status ---
+Location: 28
+Unserved customers: 19
+Current SoC: 63.1%
+Selected customer: 104
+Nearest BSS from customer: 74
+Required energy: 21.104kWh, Current: 63.067kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 28 -> 104: Distance=2.41km, Time=2.51min, Energy=0.680kWh, SoC=62.4%
+Serving customer 104
+Load reduced to 90.0kg
+
+--- Current Status ---
+Location: 104
+Unserved customers: 18
+Current SoC: 62.4%
+Selected customer: 227
+Nearest BSS from customer: 325
+Required energy: 23.264kWh, Current: 62.387kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 104 -> 227: Distance=10.19km, Time=10.29min, Energy=2.886kWh, SoC=59.5%
+Serving customer 227
+Load reduced to 85.0kg
+
+--- Current Status ---
+Location: 227
+Unserved customers: 17
+Current SoC: 59.5%
+Selected customer: 433
+Nearest BSS from customer: 278
+Required energy: 21.609kWh, Current: 59.501kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 227 -> 433: Distance=8.71km, Time=12.17min, Energy=1.096kWh, SoC=58.4%
+Serving customer 433
+Load reduced to 80.0kg
+
+--- Current Status ---
+Location: 433
+Unserved customers: 16
+Current SoC: 58.4%
+Selected customer: 83
+Nearest BSS from customer: 224
+Required energy: 22.662kWh, Current: 58.405kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 433 -> 74: Distance=4.06km, Time=4.19min, Energy=1.138kWh, SoC=57.3%
+
+=== HANDLING BSS VISIT AT 74 ===
+Re-evaluating customer and BSS selection from current BSS location...
+New selected customer from BSS: 185
+New nearest BSS from customer: 49
+Selected journey energy: 21.436 kWh
+Current energy: 57.267 kWh
+Current SoC sufficient for selected journey
+Swapping 1 depleted modules: [1]
+Swapping time: 2.0 minutes
+Moving to selected customer...
+Step: 74 -> 185: Distance=8.33km, Time=11.77min, Energy=1.042kWh, SoC=76.2%
+Serving customer 185
+Load reduced to 75.0kg
+
+--- Current Status ---
+Location: 185
+Unserved customers: 15
+Current SoC: 76.2%
+Selected customer: 83
+Nearest BSS from customer: 224
+Required energy: 21.572kWh, Current: 76.225kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 185 -> 18: Distance=6.23km, Time=8.02min, Energy=0.799kWh, SoC=75.4%
+
+--- Current Status ---
+Location: 18
+Unserved customers: 15
+Current SoC: 75.4%
+Selected customer: 83
+Nearest BSS from customer: 224
+Required energy: 20.772kWh, Current: 75.426kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 18 -> 83: Distance=2.89km, Time=3.59min, Energy=0.374kWh, SoC=75.1%
+Serving customer 83
+Load reduced to 70.0kg
+
+--- Current Status ---
+Location: 83
+Unserved customers: 14
+Current SoC: 75.1%
+Selected customer: 24
+Nearest BSS from customer: 272
+Required energy: 21.502kWh, Current: 75.051kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 83 -> 24: Distance=6.32km, Time=8.58min, Energy=0.795kWh, SoC=74.3%
+Serving customer 24
+Load reduced to 65.0kg
+
+--- Current Status ---
+Location: 24
+Unserved customers: 13
+Current SoC: 74.3%
+Selected customer: 478
+Nearest BSS from customer: 38
+Required energy: 21.674kWh, Current: 74.257kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 24 -> 478: Distance=4.60km, Time=5.68min, Energy=0.594kWh, SoC=73.7%
+Serving customer 478
+Load reduced to 60.0kg
+
+--- Current Status ---
+Location: 478
+Unserved customers: 12
+Current SoC: 73.7%
+Selected customer: 43
+Nearest BSS from customer: 438
+Required energy: 22.811kWh, Current: 73.662kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 478 -> 43: Distance=20.01km, Time=24.23min, Energy=2.600kWh, SoC=71.1%
+Serving customer 43
+Load reduced to 55.0kg
+
+--- Current Status ---
+Location: 43
+Unserved customers: 11
+Current SoC: 71.1%
+Selected customer: 199
+Nearest BSS from customer: 326
+Required energy: 21.736kWh, Current: 71.062kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 43 -> 199: Distance=3.86km, Time=4.17min, Energy=1.058kWh, SoC=70.0%
+Serving customer 199
+Load reduced to 50.0kg
+
+--- Current Status ---
+Location: 199
+Unserved customers: 10
+Current SoC: 70.0%
+Selected customer: 183
+Nearest BSS from customer: 244
+Required energy: 22.085kWh, Current: 70.004kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 199 -> 183: Distance=7.48km, Time=9.90min, Energy=0.939kWh, SoC=69.1%
+Serving customer 183
+Load reduced to 45.0kg
+
+--- Current Status ---
+Location: 183
+Unserved customers: 9
+Current SoC: 69.1%
+Selected customer: 276
+Nearest BSS from customer: 475
+Required energy: 22.400kWh, Current: 69.066kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 183 -> 276: Distance=15.34km, Time=19.74min, Energy=1.937kWh, SoC=67.1%
+Serving customer 276
+Load reduced to 40.0kg
+
+--- Current Status ---
+Location: 276
+Unserved customers: 8
+Current SoC: 67.1%
+Selected customer: 128
+Nearest BSS from customer: 438
+Required energy: 24.260kWh, Current: 67.128kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 276 -> 128: Distance=12.32km, Time=13.03min, Energy=3.360kWh, SoC=63.8%
+Serving customer 128
+Load reduced to 35.0kg
+
+--- Current Status ---
+Location: 128
+Unserved customers: 7
+Current SoC: 63.8%
+Selected customer: 2
+Nearest BSS from customer: 416
+Required energy: 24.757kWh, Current: 63.768kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 128 -> 30: Distance=20.33km, Time=29.63min, Energy=2.458kWh, SoC=61.3%
+
+--- Current Status ---
+Location: 30
+Unserved customers: 7
+Current SoC: 61.3%
+Selected customer: 2
+Nearest BSS from customer: 416
+Required energy: 22.299kWh, Current: 61.310kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 30 -> 2: Distance=7.67km, Time=8.32min, Energy=2.075kWh, SoC=59.2%
+Serving customer 2
+Load reduced to 30.0kg
+
+--- Current Status ---
+Location: 2
+Unserved customers: 6
+Current SoC: 59.2%
+Selected customer: 273
+Nearest BSS from customer: 377
+Required energy: 22.327kWh, Current: 59.236kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 2 -> 273: Distance=15.89km, Time=22.76min, Energy=1.925kWh, SoC=57.3%
+Serving customer 273
+Load reduced to 25.0kg
+
+--- Current Status ---
+Location: 273
+Unserved customers: 5
+Current SoC: 57.3%
+Selected customer: 395
+Nearest BSS from customer: 103
+Required energy: 21.535kWh, Current: 57.311kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+No BSS within range - moving towards customer
+Step: 273 -> 395: Distance=2.62km, Time=2.89min, Energy=0.701kWh, SoC=56.6%
+Serving customer 395
+Load reduced to 20.0kg
+
+--- Current Status ---
+Location: 395
+Unserved customers: 4
+Current SoC: 56.6%
+Selected customer: 439
+Nearest BSS from customer: 416
+Required energy: 23.644kWh, Current: 56.610kWh
+Sufficient energy for journey - checking for BSS opportunities...
+Found 1 depleted modules: [1]
+Found 30 BSS within range: ['103', '164', '22', '221', '228', '242', '260', '272', '286', '3', '313', '326', '332', '338', '365', '368', '37', '377', '415', '416', '42', '432', '438', '469', '48', '49', '7', '79', '8', '92']
+BSS visit is cost-effective - moving towards BSS
+Step: 395 -> 338: Distance=5.59km, Time=7.41min, Energy=0.689kWh, SoC=55.9%
+
+=== HANDLING BSS VISIT AT 338 ===
+Re-evaluating customer and BSS selection from current BSS location...
+New selected customer from BSS: 439
+New nearest BSS from customer: 416
+Selected journey energy: 22.272 kWh
+Current energy: 55.921 kWh
+Current SoC sufficient for selected journey
+Swapping 1 depleted modules: [1]
+Swapping time: 2.0 minutes
+Moving to selected customer...
+Step: 338 -> 439: Distance=5.27km, Time=6.27min, Energy=1.386kWh, SoC=74.5%
+Serving customer 439
+Load reduced to 15.0kg
+
+--- Current Status ---
+Location: 439
+Unserved customers: 3
+Current SoC: 74.5%
+Selected customer: 462
+Nearest BSS from customer: 224
+Required energy: 23.525kWh, Current: 74.535kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 439 -> 462: Distance=11.79km, Time=11.84min, Energy=3.211kWh, SoC=71.3%
+Serving customer 462
+Load reduced to 10.0kg
+
+--- Current Status ---
+Location: 462
+Unserved customers: 2
+Current SoC: 71.3%
+Selected customer: 120
+Nearest BSS from customer: 307
+Required energy: 28.751kWh, Current: 71.324kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 462 -> 18: Distance=4.29km, Time=5.58min, Energy=0.529kWh, SoC=70.8%
+
+--- Current Status ---
+Location: 18
+Unserved customers: 2
+Current SoC: 70.8%
+Selected customer: 120
+Nearest BSS from customer: 307
+Required energy: 28.222kWh, Current: 70.795kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 18 -> 120: Distance=28.60km, Time=31.54min, Energy=7.599kWh, SoC=63.2%
+Serving customer 120
+Load reduced to 5.0kg
+
+--- Current Status ---
+Location: 120
+Unserved customers: 1
+Current SoC: 63.2%
+Selected customer: 423
+Nearest BSS from customer: 476
+Required energy: 27.496kWh, Current: 63.197kWh
+Sufficient energy for journey - checking for BSS opportunities...
+No depleted modules - moving towards customer
+Step: 120 -> 423: Distance=24.31km, Time=25.31min, Energy=6.525kWh, SoC=56.7%
+Serving customer 423
+Load reduced to 0.0kg
+
+--- Current Status ---
+Location: 423
+Unserved customers: 0
+Current SoC: 56.7%
+[DEPOT] All customers served - heading to depot
+Moving towards depot
+Step: 423 -> 2: Distance=24.89km, Time=25.84min, Energy=6.667kWh, SoC=50.0%
+
+--- Current Status ---
+Location: 2
+Unserved customers: 0
+Current SoC: 50.0%
+[DEPOT] All customers served - heading to depot
+Moving towards depot
+Step: 2 -> 143: Distance=13.73km, Time=15.52min, Energy=3.609kWh, SoC=46.4%
+[SUCCESS] All customers served and returned to depot!
+
+============================================================
+FINAL JOURNEY STATUS
+============================================================
+Current location: 143
+Total Travel Time: 1177.30 minutes
+Total Energy Consumed: 193.604 kWh
+Total Distance Covered: 937.88 km
+Current SoC: 46.4%
+Charge of modules:
+  M1 = 0.0%
+  M2 = 45.5%
+  M3 = 76.3%
+  M4 = 10.2%
+  M5 = 100.0%
+Number of Modules Swapped: 7
+Number of Packages: 200
+Payload: 0.0 kg
+Number of unserved customers: 0
+Served Customers: ['170', '181', '163', '68', '323', '419', '304', '53', '160', '213', '12', '290', '57', '133', '157', '138', '40', '324', '297', '59', '206', '239', '284', '140', '70', '121', '198', '31', '483', '154', '453', '387', '498', '77', '259', '89', '340', '58', '126', '418', '115', '492', '499', '113', '47', '342', '390', '414', '262', '106', '119', '10', '289', '94', '9', '263', '97', '125', '345', '62', '349', '76', '422', '302', '382', '84', '238', '150', '211', '336', '131', '348', '440', '388', '470', '496', '51', '373', '413', '112', '427', '184', '118', '497', '351', '41', '72', '299', '166', '467', '321', '171', '481', '23', '174', '80', '108', '202', '448', '353', '490', '251', '258', '205', '69', '330', '201', '175', '274', '471', '191', '60', '194', '98', '267', '78', '401', '366', '408', '161', '176', '486', '400', '456', '393', '255', '15', '219', '102', '350', '100', '14', '169', '306', '88', '442', '204', '114', '168', '99', '466', '17', '256', '91', '124', '461', '223', '162', '136', '233', '381', '165', '151', '241', '402', '226', '237', '337', '0', '288', '421', '95', '468', '230', '178', '361', '264', '16', '34', '392', '36', '218', '311', '435', '283', '391', '386', '444', '308', '314', '111', '104', '227', '433', '185', '83', '24', '478', '43', '199', '183', '276', '128', '2', '273', '395', '439', '462', '120', '423']
+Path Taken: 143 -> 170 -> 181 -> 163 -> 68 -> 323 -> 419 -> 304 -> 53 -> 160 -> 213 -> 12 -> 290 -> 57 -> 133 -> 157 -> 138 -> 40 -> 324 -> 297 -> 59 -> 206 -> 239 -> 284 -> 140 -> 70 -> 121 -> 198 -> 31 -> 483 -> 154 -> 453 -> 387 -> 498 -> 77 -> 259 -> 89 -> 340 -> 58 -> 126 -> 418 -> 115 -> 492 -> 499 -> 113 -> 47 -> 342 -> 390 -> 414 -> 262 -> 106 -> 119 -> 10 -> 289 -> 94 -> 9 -> 263 -> 97 -> 125 -> 345 -> 62 -> 349 -> 76 -> 422 -> 302 -> 382 -> 84 -> 238 -> 150 -> 211 -> 336 -> 131 -> 348 -> 440 -> 388 -> 470 -> 496 -> 51 -> 373 -> 413 -> 112 -> 427 -> 184 -> 118 -> 497 -> 351 -> 18 -> 41 -> 72 -> 299 -> 166 -> 467 -> 321 -> 171 -> 481 -> 23 -> 174 -> 80 -> 108 -> 202 -> 448 -> 353 -> 490 -> 251 -> 258 -> 205 -> 69 -> 330 -> 201 -> 175 -> 274 -> 471 -> 191 -> 60 -> 194 -> 98 -> 315 -> 267 -> 78 -> 401 -> 366 -> 408 -> 161 -> 176 -> 486 -> 400 -> 456 -> 393 -> 255 -> 15 -> 219 -> 102 -> 350 -> 100 -> 14 -> 169 -> 306 -> 88 -> 442 -> 204 -> 114 -> 168 -> 99 -> 59 -> 466 -> 17 -> 256 -> 91 -> 124 -> 461 -> 223 -> 1 -> 162 -> 136 -> 233 -> 381 -> 165 -> 151 -> 241 -> 402 -> 226 -> 237 -> 337 -> 0 -> 288 -> 421 -> 95 -> 468 -> 230 -> 178 -> 361 -> 264 -> 3 -> 16 -> 34 -> 16 -> 392 -> 36 -> 218 -> 311 -> 435 -> 283 -> 391 -> 386 -> 444 -> 308 -> 314 -> 111 -> 28 -> 104 -> 227 -> 433 -> 74 -> 185 -> 18 -> 83 -> 24 -> 478 -> 43 -> 199 -> 183 -> 276 -> 128 -> 30 -> 2 -> 273 -> 395 -> 338 -> 439 -> 462 -> 18 -> 120 -> 423 -> 2 -> 143
+
+
+SoC Trail: 143(100.0%) -> 170(99.6%) -> 181(99.1%) -> 163(98.5%) -> 68(98.0%) -> 323(97.5%) -> 419(97.2%) -> 304(96.7%) -> 53(96.1%) -> 160(95.4%) -> 213(94.3%) -> 12(93.7%) -> 290(92.5%) -> 57(90.0%) -> 133(89.1%) -> 157(88.4%) -> 138(87.7%) -> 40(86.8%) -> 324(86.1%) -> 297(84.8%) -> 59(84.4%) -> 206(84.1%) -> 239(83.5%) -> 284(81.4%) -> 140(81.2%) -> 70(80.7%) -> 121(79.9%) -> 198(79.5%) -> 31(79.1%) -> 483(78.5%) -> 154(78.0%) -> 453(77.2%) -> 387(76.3%) -> 498(74.9%) -> 77(74.3%) -> 259(73.8%) -> 89(73.1%) -> 340(72.3%) -> 58(71.4%) -> 126(70.7%) -> 418(69.7%) -> 115(68.8%) -> 492(68.4%) -> 499(67.3%) -> 113(67.0%) -> 47(65.9%) -> 342(64.9%) -> 390(63.7%) -> 414(63.2%) -> 262(62.7%) -> 106(61.3%) -> 119(61.1%) -> 10(60.5%) -> 289(59.7%) -> 94(59.5%) -> 9(58.3%) -> 263(58.1%) -> 97(57.5%) -> 125(56.8%) -> 345(56.5%) -> 62(56.1%) -> 349(55.6%) -> 76(55.5%) -> 422(54.7%) -> 302(54.2%) -> 382(53.5%) -> 84(53.3%) -> 238(53.0%) -> 150(52.7%) -> 211(52.4%) -> 336(52.0%) -> 131(51.7%) -> 348(50.9%) -> 440(49.7%) -> 388(49.2%) -> 470(48.3%) -> 496(48.1%) -> 51(47.6%) -> 373(47.2%) -> 413(46.3%) -> 112(45.7%) -> 427(44.8%) -> 184(43.5%) -> 118(43.1%) -> 497(42.0%) -> 351(41.4%) -> 18(41.2%) -> 41(41.0%) -> 72(40.3%) -> 299(39.4%) -> 166(38.4%) -> 467(36.2%) -> 321(35.8%) -> 171(35.3%) -> 481(34.9%) -> 23(34.2%) -> 174(32.8%) -> 80(32.7%) -> 108(32.1%) -> 202(30.5%) -> 448(30.4%) -> 353(30.0%) -> 490(29.6%) -> 251(29.4%) -> 258(28.8%) -> 205(28.1%) -> 69(27.6%) -> 330(27.5%) -> 201(26.6%) -> 175(26.4%) -> 274(25.5%) -> 471(24.8%) -> 191(24.5%) -> 60(22.9%) -> 194(22.5%) -> 98(22.1%) -> 315(22.0%) -> 267(81.3%) -> 78(80.5%) -> 401(79.7%) -> 366(79.1%) -> 408(77.6%) -> 161(77.0%) -> 176(76.5%) -> 486(76.1%) -> 400(75.8%) -> 456(74.6%) -> 393(74.2%) -> 255(74.1%) -> 15(73.0%) -> 219(72.3%) -> 102(71.7%) -> 350(71.3%) -> 100(70.3%) -> 14(70.1%) -> 169(69.5%) -> 306(67.9%) -> 88(66.5%) -> 442(65.5%) -> 204(64.9%) -> 114(62.8%) -> 168(62.1%) -> 99(61.8%) -> 59(60.8%) -> 466(60.0%) -> 17(58.9%) -> 256(58.6%) -> 91(58.6%) -> 124(58.1%) -> 461(57.2%) -> 223(56.8%) -> 1(55.4%) -> 162(53.3%) -> 136(51.4%) -> 233(49.1%) -> 381(48.6%) -> 165(48.1%) -> 151(47.3%) -> 241(46.9%) -> 402(45.9%) -> 226(45.3%) -> 237(44.2%) -> 337(43.7%) -> 0(43.3%) -> 288(41.4%) -> 421(41.2%) -> 95(40.8%) -> 468(40.2%) -> 230(38.9%) -> 178(38.5%) -> 361(37.8%) -> 264(37.3%) -> 3(37.3%) -> 16(76.5%) -> 34(76.3%) -> 16(76.2%) -> 392(75.7%) -> 36(73.8%) -> 218(73.3%) -> 311(71.5%) -> 435(70.7%) -> 283(69.4%) -> 391(67.9%) -> 386(66.8%) -> 444(65.6%) -> 308(65.1%) -> 314(65.0%) -> 111(64.5%) -> 28(63.1%) -> 104(62.4%) -> 227(59.5%) -> 433(58.4%) -> 74(57.3%) -> 185(76.2%) -> 18(75.4%) -> 83(75.1%) -> 24(74.3%) -> 478(73.7%) -> 43(71.1%) -> 199(70.0%) -> 183(69.1%) -> 276(67.1%) -> 128(63.8%) -> 30(61.3%) -> 2(59.2%) -> 273(57.3%) -> 395(56.6%) -> 338(55.9%) -> 439(74.5%) -> 462(71.3%) -> 18(70.8%) -> 120(63.2%) -> 423(56.7%) -> 2(50.0%) -> 143(46.4%)
+
+
+Energy Trail: 143 - 0.446 kWh > 170 - 0.491 kWh > 181 - 0.607 kWh > 163 - 0.503 kWh > 68 - 0.440 kWh > 323 - 0.294 kWh > 419 - 0.496 kWh > 304 - 0.604 kWh > 53 - 0.733 kWh > 160 - 1.039 kWh > 213 - 0.654 kWh > 12 - 1.159 kWh > 290 - 2.503 kWh > 57 - 0.901 kWh > 133 - 0.703 kWh > 157 - 0.692 kWh > 138 - 0.903 kWh > 40 - 0.756 kWh > 324 - 1.322 kWh > 297 - 0.335 kWh > 59 - 0.352 kWh > 206 - 0.578 kWh > 239 - 2.049 kWh > 284 - 0.219 kWh > 140 - 0.557 kWh > 70 - 0.737 kWh > 121 - 0.472 kWh > 198 - 0.376 kWh > 31 - 0.604 kWh > 483 - 0.446 kWh > 154 - 0.792 kWh > 453 - 0.933 kWh > 387 - 1.428 kWh > 498 - 0.604 kWh > 77 - 0.520 kWh > 259 - 0.609 kWh > 89 - 0.863 kWh > 340 - 0.905 kWh > 58 - 0.686 kWh > 126 - 1.012 kWh > 418 - 0.898 kWh > 115 - 0.358 kWh > 492 - 1.132 kWh > 499 - 0.280 kWh > 113 - 1.153 kWh > 47 - 0.974 kWh > 342 - 1.135 kWh > 390 - 0.525 kWh > 414 - 0.482 kWh > 262 - 1.466 kWh > 106 - 0.222 kWh > 119 - 0.546 kWh > 10 - 0.813 kWh > 289 - 0.237 kWh > 94 - 1.209 kWh > 9 - 0.130 kWh > 263 - 0.585 kWh > 97 - 0.700 kWh > 125 - 0.287 kWh > 345 - 0.461 kWh > 62 - 0.447 kWh > 349 - 0.155 kWh > 76 - 0.776 kWh > 422 - 0.557 kWh > 302 - 0.648 kWh > 382 - 0.242 kWh > 84 - 0.251 kWh > 238 - 0.349 kWh > 150 - 0.290 kWh > 211 - 0.376 kWh > 336 - 0.272 kWh > 131 - 0.785 kWh > 348 - 1.227 kWh > 440 - 0.540 kWh > 388 - 0.896 kWh > 470 - 0.187 kWh > 496 - 0.492 kWh > 51 - 0.420 kWh > 373 - 0.900 kWh > 413 - 0.560 kWh > 112 - 0.934 kWh > 427 - 1.239 kWh > 184 - 0.451 kWh > 118 - 1.107 kWh > 497 - 0.549 kWh > 351 - 0.240 kWh > 18 - 0.233 kWh > 41 - 0.629 kWh > 72 - 0.934 kWh > 299 - 1.045 kWh > 166 - 2.181 kWh > 467 - 0.337 kWh > 321 - 0.502 kWh > 171 - 0.400 kWh > 481 - 0.742 kWh > 23 - 1.414 kWh > 174 - 0.097 kWh > 80 - 0.533 kWh > 108 - 1.604 kWh > 202 - 0.125 kWh > 448 - 0.393 kWh > 353 - 0.420 kWh > 490 - 0.211 kWh > 251 - 0.602 kWh > 258 - 0.693 kWh > 205 - 0.456 kWh > 69 - 0.150 kWh > 330 - 0.924 kWh > 201 - 0.140 kWh > 175 - 0.961 kWh > 274 - 0.694 kWh > 471 - 0.234 kWh > 191 - 1.610 kWh > 60 - 0.426 kWh > 194 - 0.398 kWh > 98 - 0.059 kWh > 315 - 0.758 kWh > 267 - 0.820 kWh > 78 - 0.810 kWh > 401 - 0.556 kWh > 366 - 1.543 kWh > 408 - 0.567 kWh > 161 - 0.517 kWh > 176 - 0.351 kWh > 486 - 0.283 kWh > 400 - 1.239 kWh > 456 - 0.389 kWh > 393 - 0.163 kWh > 255 - 1.076 kWh > 15 - 0.651 kWh > 219 - 0.587 kWh > 102 - 0.388 kWh > 350 - 1.025 kWh > 100 - 0.258 kWh > 14 - 0.575 kWh > 169 - 1.601 kWh > 306 - 1.355 kWh > 88 - 1.026 kWh > 442 - 0.564 kWh > 204 - 2.115 kWh > 114 - 0.726 kWh > 168 - 0.325 kWh > 99 - 0.938 kWh > 59 - 0.834 kWh > 466 - 1.100 kWh > 17 - 0.290 kWh > 256 - 0.053 kWh > 91 - 0.436 kWh > 124 - 0.879 kWh > 461 - 0.449 kWh > 223 - 1.361 kWh > 1 - 2.163 kWh > 162 - 1.849 kWh > 136 - 2.357 kWh > 233 - 0.485 kWh > 381 - 0.487 kWh > 165 - 0.815 kWh > 151 - 0.391 kWh > 241 - 0.960 kWh > 402 - 0.636 kWh > 226 - 1.059 kWh > 237 - 0.497 kWh > 337 - 0.399 kWh > 0 - 1.924 kWh > 288 - 0.191 kWh > 421 - 0.380 kWh > 95 - 0.684 kWh > 468 - 1.259 kWh > 230 - 0.438 kWh > 178 - 0.654 kWh > 361 - 0.500 kWh > 264 - 0.009 kWh > 3 - 0.800 kWh > 16 - 0.171 kWh > 34 - 0.171 kWh > 16 - 0.441 kWh > 392 - 1.937 kWh > 36 - 0.511 kWh > 218 - 1.759 kWh > 311 - 0.766 kWh > 435 - 1.375 kWh > 283 - 1.511 kWh > 391 - 1.045 kWh > 386 - 1.196 kWh > 444 - 0.469 kWh > 308 - 0.150 kWh > 314 - 0.470 kWh > 111 - 1.461 kWh > 28 - 0.680 kWh > 104 - 2.886 kWh > 227 - 1.096 kWh > 433 - 1.138 kWh > 74 - 1.042 kWh > 185 - 0.799 kWh > 18 - 0.374 kWh > 83 - 0.795 kWh > 24 - 0.594 kWh > 478 - 2.600 kWh > 43 - 1.058 kWh > 199 - 0.939 kWh > 183 - 1.937 kWh > 276 - 3.360 kWh > 128 - 2.458 kWh > 30 - 2.075 kWh > 2 - 1.925 kWh > 273 - 0.701 kWh > 395 - 0.689 kWh > 338 - 1.386 kWh > 439 - 3.211 kWh > 462 - 0.529 kWh > 18 - 7.599 kWh > 120 - 6.525 kWh > 423 - 6.667 kWh > 2 - 3.609 kWh > 143
+Final status saved to: output\final_status_erdos_renyi_500nodes_200customers_seed_42.txt
+[PASS] SUCCESS: Served 200/200 customers
+Runtime: 51.724 seconds
+
+Generating visualization...
+Runtime: 51.724 seconds
+
+Detailed Results:
+  erdos_renyi_500nodes_200customers: [PASS] PASSED (51.724s) - 200/200 customers

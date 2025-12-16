@@ -1,0 +1,3151 @@
+{
+  "nodes": {
+    "D": {
+      "type": "depot"
+    },
+    "1": {
+      "type": "intersection"
+    },
+    "2": {
+      "type": "intersection"
+    },
+    "C1": {
+      "type": "customer"
+    },
+    "BSS1": {
+      "type": "bss"
+    },
+    "3": {
+      "type": "intersection"
+    },
+    "BSS2": {
+      "type": "bss"
+    },
+    "4": {
+      "type": "intersection"
+    },
+    "5": {
+      "type": "intersection"
+    },
+    "6": {
+      "type": "intersection"
+    },
+    "7": {
+      "type": "intersection"
+    },
+    "BSS3": {
+      "type": "bss"
+    },
+    "C2": {
+      "type": "customer"
+    },
+    "C3": {
+      "type": "customer"
+    },
+    "8": {
+      "type": "intersection"
+    },
+    "C4": {
+      "type": "customer"
+    },
+    "C5": {
+      "type": "customer"
+    },
+    "BSS4": {
+      "type": "bss"
+    },
+    "9": {
+      "type": "intersection"
+    },
+    "C6": {
+      "type": "customer"
+    },
+    "BSS5": {
+      "type": "bss"
+    },
+    "10": {
+      "type": "intersection"
+    },
+    "C7": {
+      "type": "customer"
+    },
+    "11": {
+      "type": "intersection"
+    },
+    "BSS6": {
+      "type": "bss"
+    },
+    "C8": {
+      "type": "customer"
+    },
+    "BSS7": {
+      "type": "bss"
+    },
+    "C9": {
+      "type": "customer"
+    },
+    "12": {
+      "type": "intersection"
+    },
+    "BSS8": {
+      "type": "bss"
+    },
+    "C10": {
+      "type": "customer"
+    },
+    "C11": {
+      "type": "customer"
+    },
+    "BSS9": {
+      "type": "bss"
+    },
+    "BSS10": {
+      "type": "bss"
+    },
+    "C12": {
+      "type": "customer"
+    },
+    "13": {
+      "type": "intersection"
+    },
+    "14": {
+      "type": "intersection"
+    },
+    "15": {
+      "type": "intersection"
+    },
+    "BSS11": {
+      "type": "bss"
+    },
+    "BSS12": {
+      "type": "bss"
+    },
+    "16": {
+      "type": "intersection"
+    },
+    "17": {
+      "type": "intersection"
+    },
+    "C13": {
+      "type": "customer"
+    },
+    "C14": {
+      "type": "customer"
+    },
+    "18": {
+      "type": "intersection"
+    },
+    "19": {
+      "type": "intersection"
+    },
+    "C15": {
+      "type": "customer"
+    },
+    "C16": {
+      "type": "customer"
+    },
+    "BSS13": {
+      "type": "bss"
+    },
+    "20": {
+      "type": "intersection"
+    },
+    "21": {
+      "type": "intersection"
+    },
+    "C17": {
+      "type": "customer"
+    },
+    "BSS14": {
+      "type": "bss"
+    },
+    "C18": {
+      "type": "customer"
+    },
+    "C19": {
+      "type": "customer"
+    },
+    "C20": {
+      "type": "customer"
+    },
+    "22": {
+      "type": "intersection"
+    },
+    "23": {
+      "type": "intersection"
+    },
+    "C21": {
+      "type": "customer"
+    },
+    "24": {
+      "type": "intersection"
+    },
+    "25": {
+      "type": "intersection"
+    },
+    "C22": {
+      "type": "customer"
+    },
+    "26": {
+      "type": "intersection"
+    },
+    "C23": {
+      "type": "customer"
+    },
+    "27": {
+      "type": "intersection"
+    },
+    "28": {
+      "type": "intersection"
+    },
+    "C24": {
+      "type": "customer"
+    },
+    "C25": {
+      "type": "customer"
+    },
+    "C26": {
+      "type": "customer"
+    },
+    "C27": {
+      "type": "customer"
+    },
+    "C28": {
+      "type": "customer"
+    },
+    "C29": {
+      "type": "customer"
+    },
+    "29": {
+      "type": "intersection"
+    },
+    "30": {
+      "type": "intersection"
+    },
+    "BSS15": {
+      "type": "bss"
+    },
+    "C30": {
+      "type": "customer"
+    },
+    "BSS16": {
+      "type": "bss"
+    },
+    "31": {
+      "type": "intersection"
+    },
+    "BSS17": {
+      "type": "bss"
+    },
+    "C31": {
+      "type": "customer"
+    },
+    "32": {
+      "type": "intersection"
+    },
+    "C32": {
+      "type": "customer"
+    },
+    "C33": {
+      "type": "customer"
+    },
+    "BSS18": {
+      "type": "bss"
+    },
+    "33": {
+      "type": "intersection"
+    },
+    "C34": {
+      "type": "customer"
+    },
+    "34": {
+      "type": "intersection"
+    },
+    "35": {
+      "type": "intersection"
+    },
+    "36": {
+      "type": "intersection"
+    },
+    "C35": {
+      "type": "customer"
+    },
+    "C36": {
+      "type": "customer"
+    },
+    "C37": {
+      "type": "customer"
+    },
+    "C38": {
+      "type": "customer"
+    },
+    "C39": {
+      "type": "customer"
+    },
+    "BSS19": {
+      "type": "bss"
+    },
+    "37": {
+      "type": "intersection"
+    },
+    "38": {
+      "type": "intersection"
+    },
+    "39": {
+      "type": "intersection"
+    },
+    "BSS20": {
+      "type": "bss"
+    },
+    "C40": {
+      "type": "customer"
+    },
+    "40": {
+      "type": "intersection"
+    },
+    "BSS21": {
+      "type": "bss"
+    },
+    "C41": {
+      "type": "customer"
+    },
+    "C42": {
+      "type": "customer"
+    },
+    "C43": {
+      "type": "customer"
+    },
+    "41": {
+      "type": "intersection"
+    },
+    "BSS22": {
+      "type": "bss"
+    },
+    "C44": {
+      "type": "customer"
+    },
+    "C45": {
+      "type": "customer"
+    },
+    "42": {
+      "type": "intersection"
+    },
+    "BSS23": {
+      "type": "bss"
+    },
+    "43": {
+      "type": "intersection"
+    },
+    "C46": {
+      "type": "customer"
+    },
+    "C47": {
+      "type": "customer"
+    },
+    "44": {
+      "type": "intersection"
+    },
+    "C48": {
+      "type": "customer"
+    },
+    "45": {
+      "type": "intersection"
+    },
+    "46": {
+      "type": "intersection"
+    },
+    "BSS24": {
+      "type": "bss"
+    },
+    "C49": {
+      "type": "customer"
+    },
+    "47": {
+      "type": "intersection"
+    },
+    "48": {
+      "type": "intersection"
+    },
+    "C50": {
+      "type": "customer"
+    },
+    "C51": {
+      "type": "customer"
+    },
+    "C52": {
+      "type": "customer"
+    },
+    "49": {
+      "type": "intersection"
+    },
+    "BSS25": {
+      "type": "bss"
+    },
+    "C53": {
+      "type": "customer"
+    },
+    "50": {
+      "type": "intersection"
+    },
+    "51": {
+      "type": "intersection"
+    },
+    "52": {
+      "type": "intersection"
+    },
+    "C54": {
+      "type": "customer"
+    },
+    "53": {
+      "type": "intersection"
+    },
+    "54": {
+      "type": "intersection"
+    },
+    "55": {
+      "type": "intersection"
+    },
+    "C55": {
+      "type": "customer"
+    },
+    "BSS26": {
+      "type": "bss"
+    },
+    "56": {
+      "type": "intersection"
+    },
+    "C56": {
+      "type": "customer"
+    },
+    "57": {
+      "type": "intersection"
+    },
+    "C57": {
+      "type": "customer"
+    },
+    "BSS27": {
+      "type": "bss"
+    },
+    "58": {
+      "type": "intersection"
+    },
+    "C58": {
+      "type": "customer"
+    },
+    "C59": {
+      "type": "customer"
+    },
+    "C60": {
+      "type": "customer"
+    },
+    "C61": {
+      "type": "customer"
+    },
+    "BSS28": {
+      "type": "bss"
+    },
+    "BSS29": {
+      "type": "bss"
+    },
+    "BSS30": {
+      "type": "bss"
+    },
+    "C62": {
+      "type": "customer"
+    },
+    "C63": {
+      "type": "customer"
+    },
+    "59": {
+      "type": "intersection"
+    },
+    "BSS31": {
+      "type": "bss"
+    },
+    "C64": {
+      "type": "customer"
+    },
+    "60": {
+      "type": "intersection"
+    },
+    "BSS32": {
+      "type": "bss"
+    },
+    "C65": {
+      "type": "customer"
+    },
+    "C66": {
+      "type": "customer"
+    },
+    "C67": {
+      "type": "customer"
+    },
+    "BSS33": {
+      "type": "bss"
+    },
+    "C68": {
+      "type": "customer"
+    },
+    "C69": {
+      "type": "customer"
+    },
+    "61": {
+      "type": "intersection"
+    },
+    "62": {
+      "type": "intersection"
+    },
+    "63": {
+      "type": "intersection"
+    },
+    "C70": {
+      "type": "customer"
+    },
+    "64": {
+      "type": "intersection"
+    },
+    "65": {
+      "type": "intersection"
+    },
+    "C71": {
+      "type": "customer"
+    },
+    "C72": {
+      "type": "customer"
+    },
+    "C73": {
+      "type": "customer"
+    },
+    "C74": {
+      "type": "customer"
+    },
+    "BSS34": {
+      "type": "bss"
+    },
+    "66": {
+      "type": "intersection"
+    },
+    "C75": {
+      "type": "customer"
+    },
+    "67": {
+      "type": "intersection"
+    },
+    "68": {
+      "type": "intersection"
+    },
+    "C76": {
+      "type": "customer"
+    },
+    "69": {
+      "type": "intersection"
+    },
+    "70": {
+      "type": "intersection"
+    },
+    "71": {
+      "type": "intersection"
+    },
+    "72": {
+      "type": "intersection"
+    },
+    "C77": {
+      "type": "customer"
+    },
+    "73": {
+      "type": "intersection"
+    },
+    "74": {
+      "type": "intersection"
+    },
+    "BSS35": {
+      "type": "bss"
+    },
+    "75": {
+      "type": "intersection"
+    },
+    "BSS36": {
+      "type": "bss"
+    },
+    "C78": {
+      "type": "customer"
+    },
+    "BSS37": {
+      "type": "bss"
+    },
+    "BSS38": {
+      "type": "bss"
+    },
+    "76": {
+      "type": "intersection"
+    },
+    "77": {
+      "type": "intersection"
+    },
+    "78": {
+      "type": "intersection"
+    },
+    "BSS39": {
+      "type": "bss"
+    },
+    "BSS40": {
+      "type": "bss"
+    },
+    "79": {
+      "type": "intersection"
+    },
+    "C79": {
+      "type": "customer"
+    },
+    "C80": {
+      "type": "customer"
+    }
+  },
+  "edges": [
+    {
+      "from": "D",
+      "to": "1",
+      "distance": 4.57,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "D",
+      "to": "2",
+      "distance": 4.57,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "1",
+      "to": "2",
+      "distance": 4.22,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "1",
+      "to": "30",
+      "distance": 4.53,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "1",
+      "to": "47",
+      "distance": 5.66,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "2",
+      "to": "C39",
+      "distance": 4.52,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "2",
+      "to": "C54",
+      "distance": 4.29,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "2",
+      "to": "59",
+      "distance": 7.13,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "C1",
+      "to": "C15",
+      "distance": 3.1,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "C1",
+      "to": "C19",
+      "distance": 7.93,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C1",
+      "to": "28",
+      "distance": 7.64,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "C1",
+      "to": "C34",
+      "distance": 3.43,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "C1",
+      "to": "C56",
+      "distance": 6.65,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "BSS1",
+      "to": "13",
+      "distance": 5.54,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "BSS1",
+      "to": "C64",
+      "distance": 3.34,
+      "traffic_factor": 0.69
+    },
+    {
+      "from": "BSS1",
+      "to": "BSS38",
+      "distance": 7.56,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "3",
+      "to": "24",
+      "distance": 4.11,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "3",
+      "to": "C58",
+      "distance": 6.02,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "3",
+      "to": "C76",
+      "distance": 3.06,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "3",
+      "to": "C80",
+      "distance": 5.17,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "BSS2",
+      "to": "26",
+      "distance": 3.18,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "BSS2",
+      "to": "C29",
+      "distance": 7.64,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "BSS2",
+      "to": "C52",
+      "distance": 3.16,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "BSS2",
+      "to": "C53",
+      "distance": 7.84,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "BSS2",
+      "to": "C71",
+      "distance": 7.68,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "4",
+      "to": "20",
+      "distance": 6.73,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "4",
+      "to": "BSS14",
+      "distance": 6.29,
+      "traffic_factor": 0.93
+    },
+    {
+      "from": "4",
+      "to": "36",
+      "distance": 7.63,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "5",
+      "to": "BSS8",
+      "distance": 5.78,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "5",
+      "to": "BSS9",
+      "distance": 3.27,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "5",
+      "to": "56",
+      "distance": 7.55,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "5",
+      "to": "C62",
+      "distance": 7.72,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "6",
+      "to": "C30",
+      "distance": 5.27,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "6",
+      "to": "64",
+      "distance": 6.25,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "6",
+      "to": "C79",
+      "distance": 5.97,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "7",
+      "to": "C5",
+      "distance": 3.26,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "7",
+      "to": "C16",
+      "distance": 7.71,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "7",
+      "to": "40",
+      "distance": 7.49,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "7",
+      "to": "48",
+      "distance": 4.0,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "7",
+      "to": "BSS37",
+      "distance": 3.84,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "BSS3",
+      "to": "C25",
+      "distance": 5.19,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "BSS3",
+      "to": "C26",
+      "distance": 6.39,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "BSS3",
+      "to": "C32",
+      "distance": 5.56,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "BSS3",
+      "to": "BSS19",
+      "distance": 3.87,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "BSS3",
+      "to": "49",
+      "distance": 4.97,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "C2",
+      "to": "C7",
+      "distance": 5.29,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "C2",
+      "to": "BSS26",
+      "distance": 7.51,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "C2",
+      "to": "C62",
+      "distance": 6.0,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "C2",
+      "to": "C63",
+      "distance": 3.86,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C3",
+      "to": "BSS5",
+      "distance": 3.5,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "C3",
+      "to": "17",
+      "distance": 5.48,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C3",
+      "to": "32",
+      "distance": 5.94,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "C3",
+      "to": "42",
+      "distance": 6.45,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "C3",
+      "to": "63",
+      "distance": 6.79,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "8",
+      "to": "BSS4",
+      "distance": 5.49,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "8",
+      "to": "C9",
+      "distance": 6.14,
+      "traffic_factor": 1.0
+    },
+    {
+      "from": "8",
+      "to": "BSS11",
+      "distance": 3.94,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "8",
+      "to": "36",
+      "distance": 3.85,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "8",
+      "to": "C35",
+      "distance": 6.47,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "C4",
+      "to": "C9",
+      "distance": 7.44,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "C4",
+      "to": "BSS11",
+      "distance": 5.18,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "C4",
+      "to": "C50",
+      "distance": 6.46,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "C4",
+      "to": "C65",
+      "distance": 5.62,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "C4",
+      "to": "69",
+      "distance": 3.69,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "C5",
+      "to": "11",
+      "distance": 7.25,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "C5",
+      "to": "48",
+      "distance": 5.79,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C5",
+      "to": "BSS29",
+      "distance": 6.54,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "BSS4",
+      "to": "BSS11",
+      "distance": 6.04,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "BSS4",
+      "to": "36",
+      "distance": 6.92,
+      "traffic_factor": 0.69
+    },
+    {
+      "from": "BSS4",
+      "to": "C35",
+      "distance": 4.38,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "BSS4",
+      "to": "BSS31",
+      "distance": 4.7,
+      "traffic_factor": 0.6
+    },
+    {
+      "from": "9",
+      "to": "C23",
+      "distance": 6.21,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "9",
+      "to": "BSS16",
+      "distance": 3.32,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "9",
+      "to": "BSS30",
+      "distance": 5.46,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "9",
+      "to": "C76",
+      "distance": 4.1,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "9",
+      "to": "C80",
+      "distance": 6.7,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C6",
+      "to": "17",
+      "distance": 6.1,
+      "traffic_factor": 1.0
+    },
+    {
+      "from": "C6",
+      "to": "C60",
+      "distance": 4.9,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C6",
+      "to": "63",
+      "distance": 6.96,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "C6",
+      "to": "C70",
+      "distance": 7.09,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C6",
+      "to": "66",
+      "distance": 6.39,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "BSS5",
+      "to": "C11",
+      "distance": 3.78,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "BSS5",
+      "to": "17",
+      "distance": 6.1,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "BSS5",
+      "to": "42",
+      "distance": 4.34,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "BSS5",
+      "to": "63",
+      "distance": 7.92,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "10",
+      "to": "45",
+      "distance": 7.19,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "10",
+      "to": "BSS24",
+      "distance": 3.02,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "10",
+      "to": "C64",
+      "distance": 7.55,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "C7",
+      "to": "BSS9",
+      "distance": 3.1,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C7",
+      "to": "C62",
+      "distance": 5.5,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "C7",
+      "to": "C63",
+      "distance": 3.14,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C7",
+      "to": "75",
+      "distance": 7.53,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "11",
+      "to": "21",
+      "distance": 6.43,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "11",
+      "to": "BSS29",
+      "distance": 3.84,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "11",
+      "to": "BSS40",
+      "distance": 5.23,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "BSS6",
+      "to": "22",
+      "distance": 3.27,
+      "traffic_factor": 0.69
+    },
+    {
+      "from": "BSS6",
+      "to": "C36",
+      "distance": 3.23,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "BSS6",
+      "to": "C73",
+      "distance": 3.14,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "C8",
+      "to": "15",
+      "distance": 7.53,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "C8",
+      "to": "C25",
+      "distance": 4.66,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "C8",
+      "to": "C26",
+      "distance": 6.01,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "C8",
+      "to": "BSS19",
+      "distance": 6.54,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "BSS7",
+      "to": "46",
+      "distance": 7.35,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "BSS7",
+      "to": "C49",
+      "distance": 7.44,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "BSS7",
+      "to": "52",
+      "distance": 5.55,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "BSS7",
+      "to": "BSS26",
+      "distance": 3.63,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "BSS7",
+      "to": "C63",
+      "distance": 3.62,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C9",
+      "to": "C50",
+      "distance": 6.56,
+      "traffic_factor": 0.93
+    },
+    {
+      "from": "C9",
+      "to": "C65",
+      "distance": 6.59,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C9",
+      "to": "69",
+      "distance": 3.08,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "12",
+      "to": "C12",
+      "distance": 4.73,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "12",
+      "to": "C13",
+      "distance": 3.73,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "12",
+      "to": "C20",
+      "distance": 5.3,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "12",
+      "to": "C48",
+      "distance": 3.73,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "12",
+      "to": "55",
+      "distance": 6.49,
+      "traffic_factor": 0.69
+    },
+    {
+      "from": "BSS8",
+      "to": "C18",
+      "distance": 6.38,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "BSS8",
+      "to": "BSS15",
+      "distance": 7.76,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "BSS8",
+      "to": "C44",
+      "distance": 6.35,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "BSS8",
+      "to": "56",
+      "distance": 6.3,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "C10",
+      "to": "21",
+      "distance": 3.22,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C10",
+      "to": "BSS17",
+      "distance": 7.21,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C10",
+      "to": "35",
+      "distance": 5.47,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "C10",
+      "to": "44",
+      "distance": 5.51,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "C10",
+      "to": "C49",
+      "distance": 3.85,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "C11",
+      "to": "C24",
+      "distance": 7.15,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "C11",
+      "to": "C60",
+      "distance": 3.24,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "C11",
+      "to": "63",
+      "distance": 4.94,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "BSS9",
+      "to": "C62",
+      "distance": 3.25,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "BSS9",
+      "to": "75",
+      "distance": 5.53,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "BSS10",
+      "to": "27",
+      "distance": 6.72,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "BSS10",
+      "to": "C34",
+      "distance": 4.68,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "C12",
+      "to": "C14",
+      "distance": 5.56,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "C12",
+      "to": "C36",
+      "distance": 7.5,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "C12",
+      "to": "55",
+      "distance": 7.55,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "13",
+      "to": "C31",
+      "distance": 4.37,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "13",
+      "to": "C40",
+      "distance": 5.82,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "13",
+      "to": "51",
+      "distance": 6.0,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "13",
+      "to": "BSS38",
+      "distance": 7.03,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "14",
+      "to": "C13",
+      "distance": 7.24,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "14",
+      "to": "23",
+      "distance": 4.48,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "14",
+      "to": "BSS20",
+      "distance": 5.28,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "14",
+      "to": "C59",
+      "distance": 3.74,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "14",
+      "to": "60",
+      "distance": 4.47,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "15",
+      "to": "C25",
+      "distance": 6.96,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "15",
+      "to": "BSS19",
+      "distance": 3.68,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "15",
+      "to": "C52",
+      "distance": 6.33,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "BSS11",
+      "to": "C35",
+      "distance": 7.47,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "BSS11",
+      "to": "BSS31",
+      "distance": 6.64,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "BSS12",
+      "to": "29",
+      "distance": 4.56,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "BSS12",
+      "to": "45",
+      "distance": 7.67,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "BSS12",
+      "to": "50",
+      "distance": 5.07,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "BSS12",
+      "to": "C55",
+      "distance": 5.92,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "16",
+      "to": "C21",
+      "distance": 6.95,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "16",
+      "to": "C37",
+      "distance": 4.19,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "16",
+      "to": "BSS33",
+      "distance": 6.95,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C13",
+      "to": "BSS20",
+      "distance": 6.27,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "C13",
+      "to": "C48",
+      "distance": 7.12,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "C13",
+      "to": "55",
+      "distance": 7.45,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "C14",
+      "to": "C36",
+      "distance": 6.69,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "C14",
+      "to": "C43",
+      "distance": 6.06,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "C14",
+      "to": "BSS28",
+      "distance": 6.22,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "18",
+      "to": "26",
+      "distance": 4.95,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "18",
+      "to": "C38",
+      "distance": 6.37,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "18",
+      "to": "C47",
+      "distance": 6.32,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "18",
+      "to": "C71",
+      "distance": 5.16,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "18",
+      "to": "BSS37",
+      "distance": 5.48,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "19",
+      "to": "C18",
+      "distance": 5.66,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "19",
+      "to": "C26",
+      "distance": 3.05,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "C15",
+      "to": "C19",
+      "distance": 6.93,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "C15",
+      "to": "65",
+      "distance": 3.77,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "C15",
+      "to": "75",
+      "distance": 7.89,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "C16",
+      "to": "40",
+      "distance": 3.25,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "C16",
+      "to": "48",
+      "distance": 5.87,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "BSS13",
+      "to": "24",
+      "distance": 6.95,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "BSS13",
+      "to": "53",
+      "distance": 3.5,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "BSS13",
+      "to": "C58",
+      "distance": 4.88,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "BSS13",
+      "to": "67",
+      "distance": 6.38,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "20",
+      "to": "BSS14",
+      "distance": 6.23,
+      "traffic_factor": 0.69
+    },
+    {
+      "from": "20",
+      "to": "C54",
+      "distance": 6.23,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "20",
+      "to": "59",
+      "distance": 7.1,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "20",
+      "to": "BSS36",
+      "distance": 4.07,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "21",
+      "to": "C27",
+      "distance": 3.01,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "21",
+      "to": "74",
+      "distance": 7.03,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "21",
+      "to": "BSS40",
+      "distance": 3.83,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "C17",
+      "to": "C28",
+      "distance": 6.54,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "C17",
+      "to": "C47",
+      "distance": 6.45,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "C17",
+      "to": "76",
+      "distance": 5.41,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C17",
+      "to": "BSS39",
+      "distance": 3.06,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "BSS14",
+      "to": "36",
+      "distance": 5.0,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "C18",
+      "to": "C26",
+      "distance": 4.59,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C18",
+      "to": "C45",
+      "distance": 3.04,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "C19",
+      "to": "27",
+      "distance": 4.83,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C19",
+      "to": "31",
+      "distance": 6.72,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "C19",
+      "to": "C34",
+      "distance": 3.31,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "C20",
+      "to": "22",
+      "distance": 4.39,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C20",
+      "to": "C36",
+      "distance": 7.38,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "C20",
+      "to": "C48",
+      "distance": 7.64,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "22",
+      "to": "C48",
+      "distance": 5.75,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "22",
+      "to": "C66",
+      "distance": 3.68,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "23",
+      "to": "28",
+      "distance": 5.63,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "23",
+      "to": "BSS20",
+      "distance": 6.98,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "23",
+      "to": "60",
+      "distance": 6.37,
+      "traffic_factor": 1.0
+    },
+    {
+      "from": "23",
+      "to": "65",
+      "distance": 6.6,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "C21",
+      "to": "C37",
+      "distance": 7.4,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "C21",
+      "to": "BSS33",
+      "distance": 5.18,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "C21",
+      "to": "70",
+      "distance": 3.03,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "C21",
+      "to": "77",
+      "distance": 4.79,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "24",
+      "to": "C58",
+      "distance": 4.22,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "24",
+      "to": "67",
+      "distance": 7.52,
+      "traffic_factor": 0.6
+    },
+    {
+      "from": "24",
+      "to": "C76",
+      "distance": 4.57,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "25",
+      "to": "C66",
+      "distance": 7.15,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "25",
+      "to": "C69",
+      "distance": 3.92,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "25",
+      "to": "C75",
+      "distance": 4.57,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "25",
+      "to": "79",
+      "distance": 3.75,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "C22",
+      "to": "C32",
+      "distance": 3.8,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C22",
+      "to": "34",
+      "distance": 4.42,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "C22",
+      "to": "BSS23",
+      "distance": 7.44,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "C22",
+      "to": "49",
+      "distance": 7.09,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C22",
+      "to": "72",
+      "distance": 4.72,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "26",
+      "to": "C38",
+      "distance": 6.9,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "26",
+      "to": "C53",
+      "distance": 7.81,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "26",
+      "to": "C71",
+      "distance": 3.27,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C23",
+      "to": "BSS30",
+      "distance": 6.52,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "C23",
+      "to": "BSS34",
+      "distance": 3.13,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "27",
+      "to": "C34",
+      "distance": 5.21,
+      "traffic_factor": 0.93
+    },
+    {
+      "from": "27",
+      "to": "BSS25",
+      "distance": 5.67,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "28",
+      "to": "BSS16",
+      "distance": 3.24,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "28",
+      "to": "C56",
+      "distance": 3.36,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "C24",
+      "to": "42",
+      "distance": 4.22,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "C24",
+      "to": "C50",
+      "distance": 5.37,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C24",
+      "to": "C65",
+      "distance": 7.76,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C24",
+      "to": "69",
+      "distance": 7.01,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "C25",
+      "to": "C26",
+      "distance": 6.81,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "C25",
+      "to": "BSS19",
+      "distance": 4.98,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "C27",
+      "to": "C49",
+      "distance": 5.57,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "C27",
+      "to": "BSS29",
+      "distance": 6.79,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C28",
+      "to": "C47",
+      "distance": 3.87,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "C28",
+      "to": "C74",
+      "distance": 3.26,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "C28",
+      "to": "76",
+      "distance": 4.02,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "C28",
+      "to": "BSS39",
+      "distance": 6.61,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "C29",
+      "to": "C41",
+      "distance": 6.3,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "C29",
+      "to": "C52",
+      "distance": 6.6,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "C29",
+      "to": "C57",
+      "distance": 4.35,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "C29",
+      "to": "C61",
+      "distance": 7.79,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "29",
+      "to": "50",
+      "distance": 6.05,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "29",
+      "to": "C55",
+      "distance": 7.47,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "30",
+      "to": "47",
+      "distance": 7.84,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "30",
+      "to": "57",
+      "distance": 3.31,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "30",
+      "to": "64",
+      "distance": 6.42,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "30",
+      "to": "BSS35",
+      "distance": 3.15,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "BSS15",
+      "to": "C38",
+      "distance": 5.22,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "BSS15",
+      "to": "C53",
+      "distance": 6.19,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "BSS15",
+      "to": "C71",
+      "distance": 4.14,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "C30",
+      "to": "C46",
+      "distance": 5.24,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C30",
+      "to": "57",
+      "distance": 4.97,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "C30",
+      "to": "C68",
+      "distance": 5.38,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C30",
+      "to": "C79",
+      "distance": 7.41,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "BSS16",
+      "to": "C56",
+      "distance": 5.79,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "31",
+      "to": "33",
+      "distance": 3.35,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "31",
+      "to": "C34",
+      "distance": 5.55,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "31",
+      "to": "BSS25",
+      "distance": 4.53,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "BSS17",
+      "to": "35",
+      "distance": 5.96,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "BSS17",
+      "to": "44",
+      "distance": 6.75,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "BSS17",
+      "to": "54",
+      "distance": 3.55,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "BSS17",
+      "to": "78",
+      "distance": 3.78,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "C31",
+      "to": "BSS24",
+      "distance": 4.16,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C31",
+      "to": "51",
+      "distance": 7.91,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "C31",
+      "to": "C64",
+      "distance": 4.97,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "C31",
+      "to": "BSS38",
+      "distance": 6.03,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "32",
+      "to": "37",
+      "distance": 3.52,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "32",
+      "to": "42",
+      "distance": 4.15,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "32",
+      "to": "BSS27",
+      "distance": 4.71,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C32",
+      "to": "49",
+      "distance": 7.4,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "C32",
+      "to": "C67",
+      "distance": 5.5,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C33",
+      "to": "53",
+      "distance": 6.43,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C33",
+      "to": "67",
+      "distance": 5.78,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "C33",
+      "to": "70",
+      "distance": 4.12,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "BSS18",
+      "to": "C60",
+      "distance": 4.03,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "BSS18",
+      "to": "C70",
+      "distance": 7.45,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "BSS18",
+      "to": "66",
+      "distance": 6.92,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "BSS18",
+      "to": "68",
+      "distance": 4.01,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "BSS18",
+      "to": "73",
+      "distance": 4.56,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "33",
+      "to": "37",
+      "distance": 4.43,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "33",
+      "to": "BSS25",
+      "distance": 3.09,
+      "traffic_factor": 1.0
+    },
+    {
+      "from": "33",
+      "to": "62",
+      "distance": 4.52,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "33",
+      "to": "71",
+      "distance": 7.09,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "34",
+      "to": "BSS23",
+      "distance": 7.9,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "34",
+      "to": "49",
+      "distance": 4.36,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "34",
+      "to": "C67",
+      "distance": 3.0,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "34",
+      "to": "72",
+      "distance": 4.36,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "35",
+      "to": "44",
+      "distance": 3.85,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "35",
+      "to": "C49",
+      "distance": 4.84,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "35",
+      "to": "78",
+      "distance": 7.8,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "36",
+      "to": "C35",
+      "distance": 7.13,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C37",
+      "to": "C43",
+      "distance": 4.25,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "C37",
+      "to": "BSS33",
+      "distance": 6.46,
+      "traffic_factor": 0.93
+    },
+    {
+      "from": "C37",
+      "to": "77",
+      "distance": 7.21,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "C39",
+      "to": "59",
+      "distance": 6.62,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "C39",
+      "to": "64",
+      "distance": 3.08,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "C39",
+      "to": "BSS36",
+      "distance": 6.99,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "37",
+      "to": "BSS27",
+      "distance": 5.48,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "37",
+      "to": "62",
+      "distance": 4.14,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "37",
+      "to": "71",
+      "distance": 4.38,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "38",
+      "to": "BSS21",
+      "distance": 3.4,
+      "traffic_factor": 0.69
+    },
+    {
+      "from": "38",
+      "to": "C44",
+      "distance": 7.93,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "38",
+      "to": "BSS25",
+      "distance": 7.35,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "39",
+      "to": "C40",
+      "distance": 4.42,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "39",
+      "to": "51",
+      "distance": 4.12,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "39",
+      "to": "BSS38",
+      "distance": 7.77,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "BSS20",
+      "to": "C48",
+      "distance": 7.46,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "BSS20",
+      "to": "60",
+      "distance": 5.82,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C40",
+      "to": "C41",
+      "distance": 6.63,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "C40",
+      "to": "BSS22",
+      "distance": 7.74,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "C40",
+      "to": "51",
+      "distance": 6.88,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "40",
+      "to": "48",
+      "distance": 6.26,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "40",
+      "to": "BSS37",
+      "distance": 7.44,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "40",
+      "to": "BSS39",
+      "distance": 5.07,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "BSS21",
+      "to": "C44",
+      "distance": 7.21,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "BSS21",
+      "to": "72",
+      "distance": 6.37,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "C41",
+      "to": "BSS22",
+      "distance": 3.35,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "C41",
+      "to": "C57",
+      "distance": 3.52,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "C41",
+      "to": "C61",
+      "distance": 6.68,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "C42",
+      "to": "41",
+      "distance": 7.01,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "C42",
+      "to": "BSS32",
+      "distance": 6.23,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C42",
+      "to": "61",
+      "distance": 4.19,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C42",
+      "to": "C74",
+      "distance": 6.47,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C42",
+      "to": "C78",
+      "distance": 3.88,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "C43",
+      "to": "BSS28",
+      "distance": 5.43,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "C43",
+      "to": "77",
+      "distance": 5.4,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "41",
+      "to": "BSS32",
+      "distance": 6.07,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "41",
+      "to": "61",
+      "distance": 3.57,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "41",
+      "to": "C74",
+      "distance": 4.76,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "41",
+      "to": "C78",
+      "distance": 3.81,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "BSS22",
+      "to": "C57",
+      "distance": 4.59,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "BSS22",
+      "to": "C61",
+      "distance": 3.28,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "C45",
+      "to": "BSS23",
+      "distance": 6.3,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C45",
+      "to": "58",
+      "distance": 3.83,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "C45",
+      "to": "72",
+      "distance": 7.41,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "42",
+      "to": "BSS27",
+      "distance": 7.3,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "BSS23",
+      "to": "49",
+      "distance": 5.24,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "BSS23",
+      "to": "58",
+      "distance": 4.41,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "43",
+      "to": "C51",
+      "distance": 3.34,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "43",
+      "to": "BSS26",
+      "distance": 4.61,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "43",
+      "to": "C75",
+      "distance": 5.19,
+      "traffic_factor": 0.83
+    },
+    {
+      "from": "C46",
+      "to": "BSS27",
+      "distance": 7.07,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C46",
+      "to": "C68",
+      "distance": 3.09,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C46",
+      "to": "C79",
+      "distance": 6.52,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C47",
+      "to": "BSS37",
+      "distance": 4.89,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "C47",
+      "to": "76",
+      "distance": 7.92,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "44",
+      "to": "54",
+      "distance": 4.52,
+      "traffic_factor": 0.91
+    },
+    {
+      "from": "44",
+      "to": "78",
+      "distance": 4.45,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "45",
+      "to": "BSS24",
+      "distance": 6.9,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "45",
+      "to": "50",
+      "distance": 6.43,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "46",
+      "to": "C51",
+      "distance": 4.1,
+      "traffic_factor": 0.98
+    },
+    {
+      "from": "46",
+      "to": "52",
+      "distance": 5.87,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "46",
+      "to": "BSS26",
+      "distance": 6.58,
+      "traffic_factor": 1.0
+    },
+    {
+      "from": "46",
+      "to": "C63",
+      "distance": 4.51,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "BSS24",
+      "to": "51",
+      "distance": 6.79,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "BSS24",
+      "to": "BSS38",
+      "distance": 3.6,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "C49",
+      "to": "52",
+      "distance": 7.36,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "47",
+      "to": "57",
+      "distance": 6.3,
+      "traffic_factor": 0.88
+    },
+    {
+      "from": "47",
+      "to": "C67",
+      "distance": 7.15,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "47",
+      "to": "BSS35",
+      "distance": 7.28,
+      "traffic_factor": 0.64
+    },
+    {
+      "from": "48",
+      "to": "BSS29",
+      "distance": 4.8,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C50",
+      "to": "C65",
+      "distance": 3.68,
+      "traffic_factor": 0.96
+    },
+    {
+      "from": "C51",
+      "to": "BSS26",
+      "distance": 4.55,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "C51",
+      "to": "78",
+      "distance": 7.57,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "C52",
+      "to": "C53",
+      "distance": 3.45,
+      "traffic_factor": 0.7
+    },
+    {
+      "from": "C52",
+      "to": "C71",
+      "distance": 3.96,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "BSS25",
+      "to": "62",
+      "distance": 7.41,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "50",
+      "to": "C55",
+      "distance": 6.12,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "50",
+      "to": "C64",
+      "distance": 7.87,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "C54",
+      "to": "59",
+      "distance": 3.15,
+      "traffic_factor": 0.66
+    },
+    {
+      "from": "C54",
+      "to": "64",
+      "distance": 6.83,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C54",
+      "to": "BSS36",
+      "distance": 7.71,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "53",
+      "to": "67",
+      "distance": 4.59,
+      "traffic_factor": 0.95
+    },
+    {
+      "from": "53",
+      "to": "70",
+      "distance": 7.24,
+      "traffic_factor": 0.94
+    },
+    {
+      "from": "54",
+      "to": "78",
+      "distance": 4.58,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "C55",
+      "to": "C64",
+      "distance": 7.31,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "C56",
+      "to": "C59",
+      "distance": 4.81,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "57",
+      "to": "BSS35",
+      "distance": 5.59,
+      "traffic_factor": 0.9
+    },
+    {
+      "from": "57",
+      "to": "C79",
+      "distance": 3.58,
+      "traffic_factor": 0.67
+    },
+    {
+      "from": "C57",
+      "to": "C61",
+      "distance": 7.7,
+      "traffic_factor": 0.92
+    },
+    {
+      "from": "58",
+      "to": "72",
+      "distance": 6.89,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "C60",
+      "to": "BSS31",
+      "distance": 5.03,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "BSS29",
+      "to": "74",
+      "distance": 5.11,
+      "traffic_factor": 1.0
+    },
+    {
+      "from": "BSS30",
+      "to": "BSS34",
+      "distance": 7.62,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "C62",
+      "to": "C63",
+      "distance": 4.12,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "59",
+      "to": "BSS36",
+      "distance": 6.19,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "BSS31",
+      "to": "C70",
+      "distance": 7.73,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "BSS31",
+      "to": "73",
+      "distance": 7.02,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "60",
+      "to": "65",
+      "distance": 5.47,
+      "traffic_factor": 0.63
+    },
+    {
+      "from": "BSS32",
+      "to": "61",
+      "distance": 4.24,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "BSS32",
+      "to": "C78",
+      "distance": 3.04,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C66",
+      "to": "C69",
+      "distance": 5.57,
+      "traffic_factor": 0.93
+    },
+    {
+      "from": "C66",
+      "to": "65",
+      "distance": 6.95,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "C67",
+      "to": "BSS35",
+      "distance": 6.64,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "C68",
+      "to": "C79",
+      "distance": 6.17,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C69",
+      "to": "65",
+      "distance": 4.94,
+      "traffic_factor": 0.65
+    },
+    {
+      "from": "61",
+      "to": "C77",
+      "distance": 3.99,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "61",
+      "to": "C78",
+      "distance": 5.82,
+      "traffic_factor": 0.99
+    },
+    {
+      "from": "62",
+      "to": "71",
+      "distance": 4.83,
+      "traffic_factor": 0.89
+    },
+    {
+      "from": "64",
+      "to": "BSS36",
+      "distance": 7.78,
+      "traffic_factor": 0.68
+    },
+    {
+      "from": "C72",
+      "to": "C73",
+      "distance": 4.15,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "C72",
+      "to": "C75",
+      "distance": 3.62,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C72",
+      "to": "79",
+      "distance": 7.08,
+      "traffic_factor": 0.76
+    },
+    {
+      "from": "C73",
+      "to": "C75",
+      "distance": 3.66,
+      "traffic_factor": 0.61
+    },
+    {
+      "from": "C73",
+      "to": "79",
+      "distance": 6.78,
+      "traffic_factor": 0.87
+    },
+    {
+      "from": "C74",
+      "to": "C78",
+      "distance": 3.75,
+      "traffic_factor": 0.71
+    },
+    {
+      "from": "C74",
+      "to": "76",
+      "distance": 5.02,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "BSS34",
+      "to": "68",
+      "distance": 5.82,
+      "traffic_factor": 0.97
+    },
+    {
+      "from": "66",
+      "to": "73",
+      "distance": 7.69,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C75",
+      "to": "79",
+      "distance": 7.56,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "C76",
+      "to": "C80",
+      "distance": 7.0,
+      "traffic_factor": 0.6
+    },
+    {
+      "from": "C77",
+      "to": "74",
+      "distance": 6.26,
+      "traffic_factor": 0.62
+    },
+    {
+      "from": "C77",
+      "to": "BSS39",
+      "distance": 3.62,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "C77",
+      "to": "BSS40",
+      "distance": 4.57,
+      "traffic_factor": 0.72
+    },
+    {
+      "from": "74",
+      "to": "BSS40",
+      "distance": 4.72,
+      "traffic_factor": 0.79
+    },
+    {
+      "from": "76",
+      "to": "BSS39",
+      "distance": 6.33,
+      "traffic_factor": 0.68
+    }
+  ],
+  "base_speed": 50,
+  "modules": [
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    }
+  ],
+  "starting_node": "D",
+  "vehicle": {
+    "base_mass": 1500,
+    "f": 0.01,
+    "Cx": 0.3,
+    "A": 2.5,
+    "m": 100
+  }
+}
