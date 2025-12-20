@@ -1,0 +1,35 @@
+================================================================================
+FINAL JOURNEY STATUS (Solution #1 - Best Cost)
+================================================================================
+
+Path Taken: D -> 1 -> C11 -> 2 -> BSS8 -> C13 -> C5 -> C9 -> C6 -> BSS3 -> C12 -> C16 -> BSS7 -> 2 -> BSS8 -> C5 -> C16 -> 11 -> 16 -> BSS1 -> C1 -> 4 -> C2 -> BSS5 -> 18 -> C15 -> C17 -> C4 -> BSS2 -> C18 -> BSS4 -> 18 -> C20 -> C8 -> C7 -> 12 -> C19 -> C14 -> C3 -> C10 -> 14 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 1(99.4%) -> C11(98.4%) -> 2(96.5%) -> BSS8(96.1%) -> C13(95.3%) -> C5(94.7%) -> C9(94.3%) -> C6(93.9%) -> BSS3(93.4%) -> C12(92.9%) -> C16(92.0%) -> BSS7(91.6%) -> 2(91.0%) -> BSS8(90.6%) -> C5(89.7%) -> C16(88.9%) -> 11(88.5%) -> 16(87.2%) -> BSS1(86.4%) -> C1(85.8%) -> 4(84.9%) -> C2(84.0%) -> BSS5(83.6%) -> 18(82.6%) -> C15(82.0%) -> C17(81.4%) -> C4(80.2%) -> BSS2(79.7%) -> C18(99.0%) -> BSS4(98.5%) -> 18(97.6%) -> C20(96.8%) -> C8(96.1%) -> C7(95.8%) -> 12(95.4%) -> C19(95.0%) -> C14(94.4%) -> C3(93.6%) -> C10(93.1%) -> 14(92.5%) -> 1(91.5%) -> D(91.0%)
+
+Energy Trail: D - 0.56 kWh > 1 - 1 - 1.02 kWh > C11 - C11 - 1.87 kWh > 2 - 2 - 0.45 kWh > BSS8 - BSS8 - 0.74 kWh > C13 - C13 - 0.67 kWh > C5 - C5 - 0.40 kWh > C9 - C9 - 0.38 kWh > C6 - C6 - 0.50 kWh > BSS3 - BSS3 - 0.48 kWh > C12 - C12 - 0.88 kWh > C16 - C16 - 0.45 kWh > BSS7 - BSS7 - 0.53 kWh > 2 - 2 - 0.45 kWh > BSS8 - BSS8 - 0.93 kWh > C5 - C5 - 0.76 kWh > C16 - C16 - 0.39 kWh > 11 - 11 - 1.33 kWh > 16 - 16 - 0.77 kWh > BSS1 - BSS1 - 0.59 kWh > C1 - C1 - 0.92 kWh > 4 - 4 - 0.91 kWh > C2 - C2 - 0.43 kWh > BSS5 - BSS5 - 1.00 kWh > 18 - 18 - 0.54 kWh > C15 - C15 - 0.66 kWh > C17 - C17 - 1.20 kWh > C4 - C4 - 0.43 kWh > BSS2 - BSS2 - 0.76 kWh > C18 - C18 - 0.45 kWh > BSS4 - BSS4 - 0.96 kWh > 18 - 18 - 0.79 kWh > C20 - C20 - 0.64 kWh > C8 - C8 - 0.36 kWh > C7 - C7 - 0.39 kWh > 12 - 12 - 0.42 kWh > C19 - C19 - 0.58 kWh > C14 - C14 - 0.80 kWh > C3 - C3 - 0.53 kWh > C10 - C10 - 0.61 kWh > 14 - 14 - 0.91 kWh > 1 - 1 - 0.53 kWh > D
+
+Travel Time Trail: D - 8.40 min > 1 - 1 - 9.35 min > C11 - C11 - 8.20 min > 2 - 2 - 5.77 min > BSS8 - BSS8 - 9.23 min > C13 - C13 - 6.35 min > C5 - C5 - 4.74 min > C9 - C9 - 5.18 min > C6 - C6 - 4.74 min > BSS3 - BSS3 - 6.30 min > C12 - C12 - 11.48 min > C16 - C16 - 5.95 min > BSS7 - BSS7 - 8.86 min > 2 - 2 - 5.77 min > BSS8 - BSS8 - 12.58 min > C5 - C5 - 7.07 min > C16 - C16 - 6.57 min > 11 - 11 - 5.94 min > 16 - 16 - 7.62 min > BSS1 - BSS1 - 7.31 min > C1 - C1 - 10.70 min > 4 - 4 - 13.01 min > C2 - C2 - 4.99 min > BSS5 - BSS5 - 9.49 min > 18 - 18 - 6.62 min > C15 - C15 - 6.15 min > C17 - C17 - 5.39 min > C4 - C4 - 5.72 min > BSS2 - BSS2 - 8.78 min > C18 - C18 - 5.33 min > BSS4 - BSS4 - 11.48 min > 18 - 18 - 11.05 min > C20 - C20 - 9.51 min > C8 - C8 - 4.75 min > C7 - C7 - 5.02 min > 12 - 12 - 6.86 min > C19 - C19 - 6.08 min > C14 - C14 - 9.36 min > C3 - C3 - 6.33 min > C10 - C10 - 8.06 min > 14 - 14 - 9.99 min > 1 - 1 - 8.40 min > D
+
+Current location: D
+
+Total Travel Time: 322.45 minutes
+
+Total Energy Consumed: 28.987 kWh
+
+Total Distance Covered: 217.66 km
+
+Current SoC: 91.0%
+
+Served Customers: ['C11', np.str_('C13'), 'C5', 'C9', 'C6', 'C12', 'C16', 'C1', 'C2', 'C15', 'C17', 'C4', 'C18', 'C20', np.str_('C8'), 'C7', 'C19', 'C14', 'C3', 'C10']
+
+Cost Breakdown (matching CPLEX objective):
+
+  Sum of Arrival Times (all nodes): 6846.67 minutes
+
+  Total Modules Swapped: 1
+
+  Swap Cost (50.0 per module): 50.00
+
+  Total Cost: 6896.67
+
+Program Runtime: 3.67 seconds

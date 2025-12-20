@@ -3,8 +3,8 @@ import csv
 from pathlib import Path
 
 
-# Extract identifier from filenames like "42.txt", "101.txt", "0_1.txt", "0_07.txt", "1min.txt", "2min.txt", "5p.txt", "10p.txt"
-FILE_PATTERN = re.compile(r"^([\d_]+[a-z]*|[\d_]+min)\.txt$", re.IGNORECASE)
+# Extract identifier from filenames like "42.txt", "101.txt", "0_1.txt", "0_07.txt", "1min.txt", "2min.txt"
+FILE_PATTERN = re.compile(r"^([\d_]+|[\d_]+min)\.txt$", re.IGNORECASE)
 
 
 def extract_travel_time(content: str):
@@ -125,9 +125,6 @@ def write_csvs(results: dict, output_dir: Path):
             # Handle "1min", "2min" format - extract number before "min"
             if fid_str.endswith('min'):
                 return float(fid_str[:-3])
-            # Handle "5p", "10p" format - extract number before "p"
-            if fid_str.endswith('p'):
-                return float(fid_str[:-1])
             # Handle "0_1" format - convert to float
             if '_' in fid_str:
                 return float(fid_str.replace('_', '.'))
@@ -157,8 +154,8 @@ def write_csvs(results: dict, output_dir: Path):
 
 
 if __name__ == "__main__":
-    # Process files in the ThresholdChange folder
-    base_dir = Path(__file__).parent / "sumo_examples" / "ThresholdChange"
+    # Process files in the SwapTimeChange folder
+    base_dir = Path(__file__).parent / "sumo_examples" / "SwapTimeChange"
     print(f"Extracting metrics from files in {base_dir}...")
     metrics = process_all(base_dir)
     print("\nCreating CSV files...")

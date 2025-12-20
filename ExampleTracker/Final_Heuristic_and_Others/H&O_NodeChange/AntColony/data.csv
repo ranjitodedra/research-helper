@@ -1,0 +1,5 @@
+Nodes,Total Travel Time,Total Energy Consumed,Total Distance Covered,Run Time,Total Module Swapped
+50,322.45,28.987,217.66,3.729,1
+100,1020.01,85.816,674.6,11.113,3
+150,1612.03,131.212,1042.6,16.729,5
+200,1613.62,136.203,1044.25,23.786,6

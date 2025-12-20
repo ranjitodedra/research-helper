@@ -2,13 +2,13 @@
 FINAL JOURNEY STATUS
 ============================================================
 Current location: D
-Total Travel Time: 150.83 minutes
-Total Energy Consumed: 12.018 kWh
-Total Distance Covered: 95.26 km
+Total Travel Time: 196.86 minutes
+Total Energy Consumed: 14.684 kWh
+Total Distance Covered: 124.35 km
 Total Swapping Cost: 0
-Current SoC: 88.0%
+Current SoC: 85.3%
 Charge of modules:
-  M1 = 39.9%
+  M1 = 26.6%
   M2 = 100.0%
   M3 = 100.0%
   M4 = 100.0%
@@ -17,15 +17,15 @@ Number of Modules Swapped: 0
 Number of Packages: 10
 Payload: 0.0 kg
 Number of unserved customers: 0
-Served Customers: ['C2', 'C7', 'C8', 'C9', 'C6', 'C1', 'C5', 'C3', 'C4', 'C10']   
-Path Taken: D -> 1 -> C2 -> C7 -> C8 -> 3 -> C9 -> 7 -> C6 -> 7 -> C1 -> C5 -> C3 -> C4 -> C10 -> BSS2 -> 2 -> D
+Served Customers: ['C1', 'C10', 'C7', 'C5', 'C3', 'C4', 'C6', 'C2', 'C9', 'C8']
+Path Taken: D -> 1 -> C1 -> C10 -> C7 -> C5 -> C3 -> BSS2 -> C4 -> 4 -> C6 -> C2 -> BSS3 -> 4 -> C9 -> 4 -> BSS3 -> C2 -> C7 -> C10 -> 3 -> C8 -> 3 -> 2 -> D
 
 
-SoC Trail: D(100.0%) -> 1(99.3%) -> C2(98.5%) -> C7(97.6%) -> C8(96.7%) -> 3(96.1%) -> C9(95.2%) -> 7(94.4%) -> C6(93.9%) -> 7(93.4%) -> C1(92.1%) -> C5(91.6%) -> C3(91.1%) -> C4(90.4%) -> C10(89.6%) -> BSS2(89.2%) -> 2(88.7%) -> D(88.0%)        
+SoC Trail: D(100.0%) -> 1(99.5%) -> C1(98.9%) -> C10(98.4%) -> C7(97.9%) -> C5(97.2%) -> C3(96.6%) -> BSS2(95.9%) -> C4(95.2%) -> 4(94.3%) -> C6(93.8%) -> C2(93.0%) -> BSS3(92.6%) -> 4(91.8%) -> C9(90.9%) -> 4(90.0%) -> BSS3(89.3%) -> C2(88.9%) -> C7(88.0%) -> C10(87.5%) -> 3(87.1%) -> C8(86.7%) -> 3(86.3%) -> 2(85.8%) -> D(85.3%)
 
 
-Energy Trail: D - 0.735 kWh > 1 - 0.746 kWh > C2 - 0.932 kWh > C7 - 0.906 kWh > C8 - 0.545 kWh > 3 - 0.960 kWh > C9 - 0.771 kWh > 7 - 0.520 kWh > C6 - 0.519 kWh > 7 - 1.296 kWh > C1 - 0.459 kWh > C5 - 0.479 kWh > C3 - 0.708 kWh > C4 - 0.805 kWh > C10 - 0.460 kWh > BSS2 - 0.463 kWh > 2 - 0.714 kWh > D
+Energy Trail: D - 0.494 kWh > 1 - 0.602 kWh > C1 - 0.461 kWh > C10 - 0.510 kWh > C7 - 0.756 kWh > C5 - 0.558 kWh > C3 - 0.704 kWh > BSS2 - 0.744 kWh > C4 - 0.895 kWh > 4 - 0.478 kWh > C6 - 0.787 kWh > C2 - 0.431 kWh > BSS3 - 0.735 kWh > 4 - 0.912 kWh > C9 - 0.909 kWh > 4 - 0.733 kWh > BSS3 - 0.429 kWh > C2 - 0.884 kWh > C7 - 0.499 kWh > C10 - 0.377 kWh > 3 - 0.419 kWh > C8 - 0.418 kWh > 3 - 0.467 kWh > 2 - 0.481 kWh > D
 
 ============================================================
-JSON Scenario runtime: 0.066 seconds
+JSON Scenario runtime: 0.094 seconds
 ============================================================

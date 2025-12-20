@@ -1,5 +1,33 @@
 # Research Helper Tools
 
+Based on the three ranges we discussed:
+
+Low traffic (0.6 to 0.73):
+python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.6 --upper 0.73
+python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.6 --upper 0.73
+
+Mid traffic (0.73 to 0.87):
+python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.73 --upper 0.87
+python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.73 --upper 0.87
+
+High traffic (0.87 to 1.0):
+python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.87 --upper 1.0
+python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.87 --upper 1.0
+
+The script will print confirmation messages showing which files were created and how many edges were modified.
+
+# Basic usage with defaults (0.6-0.9 range)
+python modify_traffic.py
+
+# Custom range
+python modify_traffic.py --lower 0.7 --upper 0.95
+
+# With seed for reproducibility
+python modify_traffic.py --lower 0.65 --upper 0.85 --seed 42
+
+# Specify input files
+python modify_traffic.py --dat path/to/file.dat --json path/to/file.json
+
 ## UIG (Unified Input Generator)
 
 The UIG module combines `maintainRatio`, `NetworkGenerator`, `InputGenerator`, and `customer&bssLists` modules into a single unified interface. You only need to provide the total number of nodes, and it will automatically generate all necessary network configurations, matrices, and input files.
