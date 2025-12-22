@@ -1,0 +1,21 @@
+================================================================================
+FINAL JOURNEY STATUS (Solution #1 - Clarke-Wright Solution)
+================================================================================
+
+Path Taken: D -> C1 -> C4 -> C3 -> C2 -> C6 -> C7 -> C8 -> C5 -> D
+SoC Trail: D(100.0%) -> 1(97.9%) -> C1(95.7%) -> 1(93.6%) -> 2(91.5%) -> C4(89.4%) -> C3(87.3%) -> 4(85.2%) -> C2(83.1%) -> 7(81.0%) -> C6(78.9%) -> 20(76.8%) -> C7(74.7%) -> C8(72.6%) -> 19(70.5%) -> C5(68.4%) -> 5(66.3%) -> C4(64.3%) -> 2(62.2%) -> D(60.1%)
+Energy Trail: D - 2.13 kWh > 1 - 2.13 kWh > C1 - 2.12 kWh > 1 - 2.12 kWh > 2 - 2.12 kWh > C4 - 2.11 kWh > C3 - 2.11 kWh > 4 - 2.11 kWh > C2 - 2.10 kWh > 7 - 2.10 kWh > C6 - 2.10 kWh > 20 - 2.10 kWh > C7 - 2.09 kWh > C8 - 2.08 kWh > 19 - 2.08 kWh > C5 - 2.08 kWh > 5 - 2.08 kWh > C4 - 2.08 kWh > 2 - 2.08 kWh > D
+Travel Time Trail: D - 9.60 min > 1 - 9.60 min > C1 - 9.60 min > 1 - 9.60 min > 2 - 9.60 min > C4 - 9.60 min > C3 - 9.60 min > 4 - 9.60 min > C2 - 9.60 min > 7 - 9.60 min > C6 - 9.60 min > 20 - 9.60 min > C7 - 9.60 min > C8 - 9.60 min > 19 - 9.60 min > C5 - 9.60 min > 5 - 9.60 min > C4 - 9.60 min > 2 - 9.60 min > D
+
+Current location: D
+Total Travel Time: 182.40 minutes
+Total Energy Consumed: 39.901 kWh
+Total Distance Covered: 152.00 km
+Current SoC: 60.1%
+Number of Modules Swapped: 0
+Modules Swapped At: None
+Number of served customers: 8
+Served Customers: ['C1', 'C4', 'C3', 'C2', 'C6', 'C7', 'C8', 'C5']
+Constraint Violations: None
+
+================================================================================

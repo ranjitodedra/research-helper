@@ -1,0 +1,2 @@
+python example_generator.py --nodes 1000 --customers 400 --bss 200 --model erdos_renyi --modules 5 --verbose --output output
+

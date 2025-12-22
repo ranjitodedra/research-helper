@@ -1,0 +1,92 @@
+======================================================================
+NETWORK CONFIGURATION
+======================================================================
+
+Total Nodes: 24
+Customers: 10
+BSS Stations: 5
+Intersections: 8
+Depot: 1
+
+======================================================================
+
+table = [
+    [1, 2],  # Node 0: D (depot)
+    [0, 2, 6, 8, 18],  # Node 1: 1 (intersection)
+    [0, 1, 6, 14, 15],  # Node 2: 2 (intersection)
+    [4, 5, 11, 15, 17],  # Node 3: C1 (customer)
+    [3, 5, 9, 11],  # Node 4: C2 (customer)
+    [3, 4, 7, 9, 11],  # Node 5: BSS1 (bss)
+    [1, 2, 12, 15, 18],  # Node 6: C3 (customer)
+    [5, 10, 11, 16, 23],  # Node 7: BSS2 (bss)
+    [1, 13, 19, 21],  # Node 8: 3 (intersection)
+    [4, 5, 14, 20, 22],  # Node 9: BSS3 (bss)
+    [7, 16, 21, 22, 23],  # Node 10: 4 (intersection)
+    [3, 4, 5, 7, 17],  # Node 11: 5 (intersection)
+    [6, 14, 15, 18, 20],  # Node 12: BSS4 (bss)
+    [8, 16, 17, 19],  # Node 13: 6 (intersection)
+    [2, 9, 12, 15, 20],  # Node 14: 7 (intersection)
+    [2, 3, 6, 12, 14],  # Node 15: C4 (customer)
+    [7, 10, 13],  # Node 16: C5 (customer)
+    [3, 11, 13, 20],  # Node 17: C6 (customer)
+    [1, 6, 12, 20],  # Node 18: C7 (customer)
+    [8, 13],  # Node 19: BSS5 (bss)
+    [9, 12, 14, 17, 18],  # Node 20: C8 (customer)
+    [8, 10],  # Node 21: 8 (intersection)
+    [9, 10, 23],  # Node 22: C9 (customer)
+    [7, 10, 22],  # Node 23: C10 (customer)
+]
+
+idx2label = {
+    0: "D",
+    1: "1",
+    2: "2",
+    3: "C1",
+    4: "C2",
+    5: "BSS1",
+    6: "C3",
+    7: "BSS2",
+    8: "3",
+    9: "BSS3",
+    10: "4",
+    11: "5",
+    12: "BSS4",
+    13: "6",
+    14: "7",
+    15: "C4",
+    16: "C5",
+    17: "C6",
+    18: "C7",
+    19: "BSS5",
+    20: "C8",
+    21: "8",
+    22: "C9",
+    23: "C10",
+}
+
+node_types = {
+    "BSS1": "bss",
+    "BSS2": "bss",
+    "BSS3": "bss",
+    "BSS4": "bss",
+    "BSS5": "bss",
+    "C1": "customer",
+    "C10": "customer",
+    "C2": "customer",
+    "C3": "customer",
+    "C4": "customer",
+    "C5": "customer",
+    "C6": "customer",
+    "C7": "customer",
+    "C8": "customer",
+    "C9": "customer",
+    "D": "depot",
+    "1": "intersection",
+    "2": "intersection",
+    "3": "intersection",
+    "4": "intersection",
+    "5": "intersection",
+    "6": "intersection",
+    "7": "intersection",
+    "8": "intersection",
+}

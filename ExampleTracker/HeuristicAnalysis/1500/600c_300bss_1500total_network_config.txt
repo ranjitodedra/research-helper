@@ -1,0 +1,4520 @@
+======================================================================
+NETWORK CONFIGURATION
+======================================================================
+
+Total Nodes: 1500
+Customers: 600
+BSS Stations: 300
+Intersections: 599
+Depot: 1
+
+======================================================================
+
+table = [
+    [1, 2],  # Node 0: D (depot)
+    [0, 2, 779, 1162, 1443],  # Node 1: 1 (intersection)
+    [0, 1, 91, 187, 451],  # Node 2: 2 (intersection)
+    [97, 758, 1063, 1187],  # Node 3: C1 (customer)
+    [206, 397, 556, 1401],  # Node 4: 3 (intersection)
+    [346, 794, 800],  # Node 5: BSS1 (bss)
+    [779, 974, 1247, 1443],  # Node 6: BSS2 (bss)
+    [53, 313, 384, 1101, 1329],  # Node 7: C2 (customer)
+    [81, 413, 494, 660, 749],  # Node 8: C3 (customer)
+    [147, 168, 519, 745, 842],  # Node 9: C4 (customer)
+    [847, 1025, 1480],  # Node 10: C5 (customer)
+    [67, 337, 872, 928, 990],  # Node 11: 4 (intersection)
+    [123, 291, 424, 518, 1168],  # Node 12: 5 (intersection)
+    [1066, 1218, 1308, 1349, 1412],  # Node 13: C6 (customer)
+    [108, 791, 983, 1052, 1193],  # Node 14: C7 (customer)
+    [82, 573, 688, 796],  # Node 15: C8 (customer)
+    [18, 785, 1405, 1429],  # Node 16: C9 (customer)
+    [221, 434, 741, 888, 1150],  # Node 17: BSS3 (bss)
+    [16, 103, 513, 785, 1405],  # Node 18: BSS4 (bss)
+    [314, 330, 351, 1431],  # Node 19: C10 (customer)
+    [77, 422, 716, 799, 1292],  # Node 20: C11 (customer)
+    [126, 833],  # Node 21: BSS5 (bss)
+    [142, 491, 751, 985],  # Node 22: BSS6 (bss)
+    [299, 348, 753, 1097, 1485],  # Node 23: 6 (intersection)
+    [247, 1398, 1427],  # Node 24: 7 (intersection)
+    [62, 100, 1161, 1297, 1439],  # Node 25: 8 (intersection)
+    [498, 869, 1099],  # Node 26: C12 (customer)
+    [82, 573, 651],  # Node 27: C13 (customer)
+    [420, 699, 904, 1173, 1392],  # Node 28: BSS7 (bss)
+    [1016, 1111],  # Node 29: C14 (customer)
+    [140, 497, 1014, 1240, 1463],  # Node 30: C15 (customer)
+    [486, 743, 1184],  # Node 31: BSS8 (bss)
+    [105, 799, 826, 1080, 1292],  # Node 32: BSS9 (bss)
+    [462, 558, 648, 911, 1160],  # Node 33: 9 (intersection)
+    [133, 221, 881],  # Node 34: C16 (customer)
+    [188, 212, 442, 532, 696],  # Node 35: C17 (customer)
+    [191, 201, 1095, 1436, 1450],  # Node 36: BSS10 (bss)
+    [183, 205, 580, 916, 1020],  # Node 37: C18 (customer)
+    [47, 785, 1496],  # Node 38: 10 (intersection)
+    [224, 236, 1478],  # Node 39: C19 (customer)
+    [68, 94, 797, 865, 943],  # Node 40: C20 (customer)
+    [172, 753],  # Node 41: C21 (customer)
+    [158, 432, 541, 862],  # Node 42: C22 (customer)
+    [83, 765, 791, 1193, 1396],  # Node 43: C23 (customer)
+    [1194, 1292],  # Node 44: C24 (customer)
+    [553, 617, 1098, 1229, 1311],  # Node 45: C25 (customer)
+    [298, 489, 684],  # Node 46: BSS11 (bss)
+    [38, 177, 563, 1220, 1496],  # Node 47: C26 (customer)
+    [262, 463, 488, 617, 1047],  # Node 48: C27 (customer)
+    [202, 344, 473, 921, 1421],  # Node 49: C28 (customer)
+    [96, 167, 1036, 1329, 1338],  # Node 50: C29 (customer)
+    [96, 1128, 1293, 1408],  # Node 51: C30 (customer)
+    [179, 1077, 1447],  # Node 52: BSS12 (bss)
+    [7, 313, 1101, 1350],  # Node 53: C31 (customer)
+    [217, 312, 920, 976],  # Node 54: 11 (intersection)
+    [378, 958, 1451],  # Node 55: C32 (customer)
+    [668, 993, 994, 1326, 1435],  # Node 56: C33 (customer)
+    [75, 244, 758],  # Node 57: C34 (customer)
+    [687, 735, 989],  # Node 58: 12 (intersection)
+    [245, 249, 515, 534, 1375],  # Node 59: C35 (customer)
+    [356, 394, 453, 517, 919],  # Node 60: BSS13 (bss)
+    [288, 1069, 1102, 1233, 1307],  # Node 61: C36 (customer)
+    [25, 170, 601, 1270, 1439],  # Node 62: C37 (customer)
+    [152, 841, 1087, 1118, 1190],  # Node 63: 13 (intersection)
+    [568, 691, 1029, 1132, 1399],  # Node 64: 14 (intersection)
+    [408, 450, 1126],  # Node 65: C38 (customer)
+    [406, 445, 675, 895, 918],  # Node 66: BSS14 (bss)
+    [11, 361, 854, 928],  # Node 67: 15 (intersection)
+    [40, 94, 281, 797, 1248],  # Node 68: C39 (customer)
+    [204, 862, 965],  # Node 69: 16 (intersection)
+    [92, 523, 676, 853, 1204],  # Node 70: C40 (customer)
+    [355, 658, 788, 952, 1174],  # Node 71: C41 (customer)
+    [109, 243, 472, 1070, 1406],  # Node 72: 17 (intersection)
+    [171, 214, 889],  # Node 73: C42 (customer)
+    [979, 1335, 1339, 1371],  # Node 74: 18 (intersection)
+    [57, 244, 308, 437, 1187],  # Node 75: C43 (customer)
+    [418, 446, 555, 706, 1392],  # Node 76: BSS15 (bss)
+    [20, 808, 1292, 1477],  # Node 77: 19 (intersection)
+    [300, 476, 598, 844, 1059],  # Node 78: 20 (intersection)
+    [194, 443, 464, 764, 1472],  # Node 79: C44 (customer)
+    [197, 493, 1075, 1234],  # Node 80: C45 (customer)
+    [8, 749, 913, 1004, 1236],  # Node 81: 21 (intersection)
+    [15, 27, 688],  # Node 82: 22 (intersection)
+    [43, 765, 983, 1149, 1193],  # Node 83: BSS16 (bss)
+    [135, 564, 937, 1056, 1076],  # Node 84: BSS17 (bss)
+    [473, 624, 631, 921, 933],  # Node 85: C46 (customer)
+    [633, 707, 715, 1197, 1314],  # Node 86: 23 (intersection)
+    [111, 393, 865, 988, 1332],  # Node 87: 24 (intersection)
+    [318, 614, 682, 714],  # Node 88: C47 (customer)
+    [1303, 1467, 1469],  # Node 89: C48 (customer)
+    [136, 661, 1235, 1249],  # Node 90: C49 (customer)
+    [2, 187, 451, 757],  # Node 91: C50 (customer)
+    [70, 676, 853, 1131, 1204],  # Node 92: C51 (customer)
+    [222, 592, 933, 979, 1335],  # Node 93: BSS18 (bss)
+    [40, 68, 184, 865, 1186],  # Node 94: BSS19 (bss)
+    [278, 366, 1003, 1133],  # Node 95: C52 (customer)
+    [50, 51, 167, 1036, 1338],  # Node 96: C53 (customer)
+    [3, 244, 758, 1187],  # Node 97: C54 (customer)
+    [423, 887, 1189, 1310],  # Node 98: C55 (customer)
+    [149, 569, 802, 1471],  # Node 99: C56 (customer)
+    [25, 170, 1161, 1297],  # Node 100: BSS20 (bss)
+    [105, 490, 549, 570, 641],  # Node 101: C57 (customer)
+    [119, 470, 559, 750, 1448],  # Node 102: 25 (intersection)
+    [18, 513],  # Node 103: 26 (intersection)
+    [336, 1115, 1328, 1345, 1491],  # Node 104: BSS21 (bss)
+    [32, 101, 549, 826],  # Node 105: 27 (intersection)
+    [554, 1148, 1231, 1425],  # Node 106: 28 (intersection)
+    [208, 536, 542, 987],  # Node 107: C58 (customer)
+    [14, 239, 577, 1052, 1430],  # Node 108: BSS22 (bss)
+    [72, 243, 472, 1070],  # Node 109: 29 (intersection)
+    [269, 271, 471],  # Node 110: 30 (intersection)
+    [87, 806, 865, 988, 1332],  # Node 111: C59 (customer)
+    [385, 591, 944, 1086, 1199],  # Node 112: 31 (intersection)
+    [371, 830, 923],  # Node 113: BSS23 (bss)
+    [321, 1039, 1314, 1440],  # Node 114: C60 (customer)
+    [550, 894, 1288, 1324],  # Node 115: C61 (customer)
+    [310, 637, 731, 775, 951],  # Node 116: 32 (intersection)
+    [320, 786, 1152, 1282, 1499],  # Node 117: 33 (intersection)
+    [209, 312, 431, 920, 1269],  # Node 118: C62 (customer)
+    [102, 559, 602, 851, 1448],  # Node 119: 34 (intersection)
+    [317, 429, 762, 812, 992],  # Node 120: C63 (customer)
+    [408, 569, 907],  # Node 121: 35 (intersection)
+    [381, 412, 1319, 1463],  # Node 122: C64 (customer)
+    [12, 291, 518, 732, 1168],  # Node 123: BSS24 (bss)
+    [250, 368, 509, 840, 1220],  # Node 124: BSS25 (bss)
+    [407, 593, 768, 984],  # Node 125: C65 (customer)
+    [21, 833, 1480],  # Node 126: 36 (intersection)
+    [424, 499, 518, 645, 792],  # Node 127: BSS26 (bss)
+    [543, 739, 1012],  # Node 128: 37 (intersection)
+    [426, 702, 805, 1346],  # Node 129: C66 (customer)
+    [147, 842, 991, 1325],  # Node 130: C67 (customer)
+    [146, 557, 837, 1209, 1310],  # Node 131: C68 (customer)
+    [396, 672, 721, 809, 1419],  # Node 132: C69 (customer)
+    [34, 881, 888],  # Node 133: C70 (customer)
+    [731, 828, 896, 1071, 1336],  # Node 134: 38 (intersection)
+    [84, 543, 1010, 1012],  # Node 135: C71 (customer)
+    [90, 948, 1235, 1249],  # Node 136: BSS27 (bss)
+    [719, 854, 928],  # Node 137: 39 (intersection)
+    [612, 638, 776],  # Node 138: C72 (customer)
+    [878, 952, 1174],  # Node 139: C73 (customer)
+    [30, 230, 497, 1196, 1463],  # Node 140: BSS28 (bss)
+    [164, 235, 453, 659, 982],  # Node 141: C74 (customer)
+    [22, 150, 460, 940],  # Node 142: C75 (customer)
+    [216, 708, 1096, 1175, 1317],  # Node 143: C76 (customer)
+    [398, 429, 487, 1243, 1342],  # Node 144: 40 (intersection)
+    [268, 325, 522, 1093, 1225],  # Node 145: 41 (intersection)
+    [131, 557, 837, 1209, 1310],  # Node 146: BSS29 (bss)
+    [9, 130, 168, 519, 842],  # Node 147: C77 (customer)
+    [174, 504, 579, 1032, 1490],  # Node 148: C78 (customer)
+    [99, 802, 907, 1471],  # Node 149: C79 (customer)
+    [142, 460, 639, 940, 1484],  # Node 150: C80 (customer)
+    [513, 990, 1359, 1413, 1493],  # Node 151: C81 (customer)
+    [63, 841, 1087, 1118],  # Node 152: 42 (intersection)
+    [238, 411, 628, 861, 1000],  # Node 153: C82 (customer)
+    [398, 450, 715, 1262, 1370],  # Node 154: C83 (customer)
+    [237, 319, 414, 815, 1031],  # Node 155: 43 (intersection)
+    [392, 406, 813, 1045],  # Node 156: C84 (customer)
+    [329, 576, 893, 1257, 1280],  # Node 157: 44 (intersection)
+    [42, 432, 541, 742, 862],  # Node 158: 45 (intersection)
+    [454, 666, 746, 884],  # Node 159: 46 (intersection)
+    [415, 754, 824, 1006, 1473],  # Node 160: 47 (intersection)
+    [252, 386, 720, 767, 1452],  # Node 161: C85 (customer)
+    [165, 253, 255, 614, 884],  # Node 162: 48 (intersection)
+    [208, 397, 542, 987],  # Node 163: 49 (intersection)
+    [141, 1007, 1206, 1385],  # Node 164: BSS30 (bss)
+    [162, 253, 255, 614],  # Node 165: C86 (customer)
+    [185, 553, 783, 1287, 1379],  # Node 166: 50 (intersection)
+    [50, 96, 1036, 1408],  # Node 167: 51 (intersection)
+    [9, 147, 519, 842],  # Node 168: C87 (customer)
+    [305, 561, 817, 1154, 1382],  # Node 169: 52 (intersection)
+    [62, 100, 601, 1297, 1439],  # Node 170: 53 (intersection)
+    [73, 727, 1035],  # Node 171: 54 (intersection)
+    [41, 860, 1144],  # Node 172: C88 (customer)
+    [405, 883, 910, 1200, 1268],  # Node 173: BSS31 (bss)
+    [148, 504, 514, 1032, 1461],  # Node 174: C89 (customer)
+    [900, 1061, 1274, 1286],  # Node 175: C90 (customer)
+    [286, 495, 626, 650, 761],  # Node 176: C91 (customer)
+    [47, 195, 563, 785],  # Node 177: 55 (intersection)
+    [874, 1267, 1368],  # Node 178: C92 (customer)
+    [52, 539, 1077, 1447],  # Node 179: C93 (customer)
+    [484, 1428],  # Node 180: C94 (customer)
+    [673, 974, 1475],  # Node 181: BSS32 (bss)
+    [574, 610, 850, 1091],  # Node 182: C95 (customer)
+    [37, 205, 580, 606, 916],  # Node 183: BSS33 (bss)
+    [94, 207, 393, 485, 1215],  # Node 184: 56 (intersection)
+    [166, 717, 1065, 1092, 1337],  # Node 185: C96 (customer)
+    [258, 478, 599, 629],  # Node 186: C97 (customer)
+    [2, 91, 511, 757],  # Node 187: BSS34 (bss)
+    [35, 212, 532, 696, 1289],  # Node 188: 57 (intersection)
+    [196, 200, 338, 657, 1134],  # Node 189: 58 (intersection)
+    [600, 1077, 1122, 1365],  # Node 190: C98 (customer)
+    [36, 671, 1436],  # Node 191: 59 (intersection)
+    [203, 332, 757, 1213],  # Node 192: 60 (intersection)
+    [315, 324, 401, 950, 1242],  # Node 193: 61 (intersection)
+    [79, 443, 764, 945, 1095],  # Node 194: BSS35 (bss)
+    [177, 266, 563],  # Node 195: BSS36 (bss)
+    [189, 867, 1062],  # Node 196: BSS37 (bss)
+    [80, 728, 1075, 1192, 1234],  # Node 197: C99 (customer)
+    [483, 512, 863, 929, 1294],  # Node 198: C100 (customer)
+    [241, 627, 1210, 1244, 1470],  # Node 199: 62 (intersection)
+    [189, 309, 338, 657, 1134],  # Node 200: 63 (intersection)
+    [36, 369, 545, 1095, 1450],  # Node 201: BSS38 (bss)
+    [49, 344, 391, 921, 1421],  # Node 202: 64 (intersection)
+    [192, 332, 846, 850],  # Node 203: 65 (intersection)
+    [69, 742, 862],  # Node 204: 66 (intersection)
+    [37, 183, 580, 1020],  # Node 205: 67 (intersection)
+    [4, 770, 1401],  # Node 206: C101 (customer)
+    [184, 656, 932, 1064, 1215],  # Node 207: C102 (customer)
+    [107, 163, 542, 710, 1255],  # Node 208: 68 (intersection)
+    [118, 929, 1088, 1098, 1269],  # Node 209: C103 (customer)
+    [669, 829, 938, 1082, 1183],  # Node 210: C104 (customer)
+    [484, 592, 631, 933],  # Node 211: BSS39 (bss)
+    [35, 188, 532, 818, 1289],  # Node 212: C105 (customer)
+    [686, 1094, 1241],  # Node 213: C106 (customer)
+    [73, 222, 354, 831, 889],  # Node 214: C107 (customer)
+    [267, 346, 359, 419],  # Node 215: C108 (customer)
+    [143, 654, 708, 1096],  # Node 216: 69 (intersection)
+    [54, 312, 613, 920, 976],  # Node 217: 70 (intersection)
+    [837, 1209, 1221, 1248],  # Node 218: C109 (customer)
+    [256, 291, 518],  # Node 219: 71 (intersection)
+    [505, 537, 571, 662],  # Node 220: BSS40 (bss)
+    [17, 34, 434, 888],  # Node 221: C110 (customer)
+    [93, 214, 354, 831, 905],  # Node 222: 72 (intersection)
+    [439, 525, 801, 857, 1284],  # Node 223: 73 (intersection)
+    [39, 648, 649, 911, 1156],  # Node 224: C111 (customer)
+    [972, 1008],  # Node 225: C112 (customer)
+    [726, 855, 935, 1009, 1244],  # Node 226: 74 (intersection)
+    [279, 288, 562, 1155, 1433],  # Node 227: C113 (customer)
+    [358, 983, 1320],  # Node 228: C114 (customer)
+    [502, 634, 635, 898, 1459],  # Node 229: BSS41 (bss)
+    [140, 235, 497, 1109],  # Node 230: C115 (customer)
+    [270, 403, 540, 849, 1129],  # Node 231: 75 (intersection)
+    [295, 321, 578, 1262],  # Node 232: C116 (customer)
+    [364, 633, 1005, 1222],  # Node 233: C117 (customer)
+    [615, 893, 1114, 1257],  # Node 234: C118 (customer)
+    [141, 230, 659, 982, 1143],  # Node 235: BSS42 (bss)
+    [39, 908, 967, 1478],  # Node 236: BSS43 (bss)
+    [155, 319, 414, 575, 880],  # Node 237: 76 (intersection)
+    [153, 411, 525, 1000, 1284],  # Node 238: 77 (intersection)
+    [108, 399, 577, 1430],  # Node 239: 78 (intersection)
+    [254, 1110, 1251, 1481, 1492],  # Node 240: C119 (customer)
+    [199, 855, 991, 1210],  # Node 241: BSS44 (bss)
+    [959, 1162, 1315, 1443, 1469],  # Node 242: 79 (intersection)
+    [72, 109, 342, 697],  # Node 243: BSS45 (bss)
+    [57, 75, 97, 758, 1187],  # Node 244: 80 (intersection)
+    [59, 515, 534, 593, 1409],  # Node 245: C120 (customer)
+    [478, 492, 526, 655, 730],  # Node 246: C121 (customer)
+    [24, 459, 870, 1204, 1427],  # Node 247: C122 (customer)
+    [294, 380, 653, 692],  # Node 248: C123 (customer)
+    [59, 1375],  # Node 249: BSS46 (bss)
+    [124, 368, 738, 840, 1245],  # Node 250: C124 (customer)
+    [787, 835, 1080, 1194],  # Node 251: C125 (customer)
+    [161, 386, 767, 1376, 1452],  # Node 252: C126 (customer)
+    [162, 165, 255, 322, 1420],  # Node 253: C127 (customer)
+    [240, 623, 1110, 1207, 1251],  # Node 254: C128 (customer)
+    [162, 165, 253, 322, 1420],  # Node 255: BSS47 (bss)
+    [219, 518, 790, 1060, 1106],  # Node 256: C129 (customer)
+    [326, 417, 782, 1065, 1245],  # Node 257: 81 (intersection)
+    [186, 596, 599, 629, 1163],  # Node 258: 82 (intersection)
+    [284, 804, 1377, 1475, 1487],  # Node 259: BSS48 (bss)
+    [531, 847, 1025],  # Node 260: BSS49 (bss)
+    [930, 1067, 1278],  # Node 261: C130 (customer)
+    [48, 463, 958, 1047],  # Node 262: BSS50 (bss)
+    [590, 744, 1308, 1309, 1349],  # Node 263: 83 (intersection)
+    [658, 1174, 1355, 1452, 1456],  # Node 264: C131 (customer)
+    [448, 646, 703],  # Node 265: C132 (customer)
+    [195, 563, 790, 1060],  # Node 266: 84 (intersection)
+    [215, 346, 359, 419, 652],  # Node 267: C133 (customer)
+    [145, 522, 839, 1093, 1146],  # Node 268: BSS51 (bss)
+    [110, 436, 471, 586],  # Node 269: 85 (intersection)
+    [231, 403, 626, 849, 1129],  # Node 270: C134 (customer)
+    [110, 456, 700, 1238],  # Node 271: C135 (customer)
+    [636, 821, 927],  # Node 272: C136 (customer)
+    [709, 793, 1145, 1228, 1390],  # Node 273: C137 (customer)
+    [293, 630, 678, 954, 1090],  # Node 274: C138 (customer)
+    [752, 913, 1004, 1236, 1246],  # Node 275: C139 (customer)
+    [724, 772, 1027, 1175],  # Node 276: C140 (customer)
+    [387, 896, 1013, 1336],  # Node 277: 86 (intersection)
+    [95, 538, 1133, 1273],  # Node 278: C141 (customer)
+    [227, 288, 1069, 1155, 1476],  # Node 279: 87 (intersection)
+    [341, 780, 1018],  # Node 280: C142 (customer)
+    [68, 685, 943, 1468],  # Node 281: 88 (intersection)
+    [379, 836, 1151, 1418],  # Node 282: C143 (customer)
+    [534, 669, 829, 1082, 1375],  # Node 283: BSS52 (bss)
+    [259, 670, 771, 804, 1377],  # Node 284: C144 (customer)
+    [823, 1444],  # Node 285: 89 (intersection)
+    [176, 565, 626, 650, 1137],  # Node 286: C145 (customer)
+    [588, 1255, 1256],  # Node 287: C146 (customer)
+    [61, 227, 279, 1017, 1307],  # Node 288: BSS53 (bss)
+    [363, 545, 945, 1176],  # Node 289: 90 (intersection)
+    [616, 946, 947, 1264],  # Node 290: C147 (customer)
+    [12, 123, 219, 732, 1168],  # Node 291: C148 (customer)
+    [435, 778, 881, 1276, 1302],  # Node 292: BSS54 (bss)
+    [274, 500, 630, 678],  # Node 293: C149 (customer)
+    [248, 692, 949, 1483],  # Node 294: 91 (intersection)
+    [232, 321, 1136],  # Node 295: 92 (intersection)
+    [345, 1053, 1366],  # Node 296: BSS55 (bss)
+    [410, 766, 999, 1149, 1465],  # Node 297: BSS56 (bss)
+    [46, 684, 1011, 1153],  # Node 298: 93 (intersection)
+    [23, 1432, 1458, 1495],  # Node 299: 94 (intersection)
+    [78, 598, 776, 1022, 1415],  # Node 300: BSS57 (bss)
+    [899, 1038, 1074, 1202],  # Node 301: C150 (customer)
+    [457, 732, 1321],  # Node 302: BSS58 (bss)
+    [735, 901, 962, 1402],  # Node 303: 95 (intersection)
+    [394, 819, 919, 1298],  # Node 304: C151 (customer)
+    [169, 561, 817, 1154, 1382],  # Node 305: C152 (customer)
+    [370, 728, 1192, 1201],  # Node 306: 96 (intersection)
+    [481, 1380],  # Node 307: 97 (intersection)
+    [75, 437, 747, 858, 1084],  # Node 308: C153 (customer)
+    [200, 338, 350, 1134],  # Node 309: 98 (intersection)
+    [116, 637, 775, 951, 1105],  # Node 310: BSS59 (bss)
+    [441, 1318],  # Node 311: BSS60 (bss)
+    [54, 118, 217, 920, 976],  # Node 312: BSS61 (bss)
+    [7, 53, 1101, 1247],  # Node 313: C154 (customer)
+    [19, 330, 400, 589, 1437],  # Node 314: 99 (intersection)
+    [193, 644, 950],  # Node 315: C155 (customer)
+    [704, 1049, 1147, 1221],  # Node 316: C156 (customer)
+    [120, 687, 762, 812, 1474],  # Node 317: 100 (intersection)
+    [88, 682, 927, 998],  # Node 318: 101 (intersection)
+    [155, 237, 414],  # Node 319: BSS62 (bss)
+    [117, 786, 1050, 1152, 1282],  # Node 320: 102 (intersection)
+    [114, 232, 295, 578, 1136],  # Node 321: C157 (customer)
+    [253, 255, 821, 1035],  # Node 322: C158 (customer)
+    [632, 1103, 1171, 1283],  # Node 323: C159 (customer)
+    [193, 401, 885, 1360, 1361],  # Node 324: BSS63 (bss)
+    [145, 944, 1086, 1225, 1300],  # Node 325: C160 (customer)
+    [257, 782, 783, 864, 1158],  # Node 326: 103 (intersection)
+    [343, 426, 594, 729, 739],  # Node 327: 104 (intersection)
+    [375, 389, 1279, 1354, 1436],  # Node 328: 105 (intersection)
+    [157, 576, 695, 1028, 1281],  # Node 329: 106 (intersection)
+    [19, 314, 1461],  # Node 330: C161 (customer)
+    [379, 882, 922, 1151, 1418],  # Node 331: C162 (customer)
+    [192, 203, 757, 1213, 1219],  # Node 332: BSS64 (bss)
+    [377, 718, 1019, 1195, 1383],  # Node 333: 107 (intersection)
+    [544, 607, 680, 932, 1313],  # Node 334: 108 (intersection)
+    [400, 579, 589, 1437, 1490],  # Node 335: 109 (intersection)
+    [104, 1063, 1345, 1491],  # Node 336: C163 (customer)
+    [11, 524, 872, 939],  # Node 337: C164 (customer)
+    [189, 200, 309, 350, 1134],  # Node 338: BSS65 (bss)
+    [722, 742, 1296, 1424],  # Node 339: 110 (intersection)
+    [489, 605, 1125, 1232, 1290],  # Node 340: 111 (intersection)
+    [280, 583, 596, 1464],  # Node 341: 112 (intersection)
+    [243, 697, 822, 903],  # Node 342: 113 (intersection)
+    [327, 729, 739, 1327, 1466],  # Node 343: BSS66 (bss)
+    [49, 202, 921, 1421],  # Node 344: C165 (customer)
+    [296, 1053, 1357, 1366],  # Node 345: C166 (customer)
+    [5, 215, 267, 800],  # Node 346: C167 (customer)
+    [908, 1478],  # Node 347: C168 (customer)
+    [23, 753, 1019, 1097, 1485],  # Node 348: C169 (customer)
+    [383, 544, 607, 1313],  # Node 349: 114 (intersection)
+    [309, 338, 1134],  # Node 350: 115 (intersection)
+    [19, 1063, 1431],  # Node 351: BSS67 (bss)
+    [594, 729, 1076, 1227],  # Node 352: C170 (customer)
+    [1142, 1183, 1306, 1381, 1460],  # Node 353: BSS68 (bss)
+    [214, 222, 666, 831],  # Node 354: C171 (customer)
+    [71, 658, 681, 788, 1482],  # Node 355: 116 (intersection)
+    [60, 394, 919],  # Node 356: 117 (intersection)
+    [681, 1482],  # Node 357: 118 (intersection)
+    [228, 1320, 1486],  # Node 358: C172 (customer)
+    [215, 267, 956, 1486],  # Node 359: C173 (customer)
+    [1003, 1135, 1164, 1189, 1242],  # Node 360: 119 (intersection)
+    [67, 854, 928, 939, 1059],  # Node 361: 120 (intersection)
+    [875, 1137],  # Node 362: C174 (customer)
+    [289, 537, 662, 1176],  # Node 363: BSS69 (bss)
+    [233, 860, 1144, 1222],  # Node 364: C175 (customer)
+    [442, 778, 973, 987, 1276],  # Node 365: BSS70 (bss)
+    [95, 1003, 1291, 1316],  # Node 366: C176 (customer)
+    [490, 641, 1411],  # Node 367: 121 (intersection)
+    [124, 250, 840, 1220, 1496],  # Node 368: 122 (intersection)
+    [201, 545, 1095, 1417],  # Node 369: 123 (intersection)
+    [306, 728, 1211, 1391, 1481],  # Node 370: C177 (customer)
+    [113, 465, 1081],  # Node 371: 124 (intersection)
+    [436, 1398, 1427],  # Node 372: 125 (intersection)
+    [376, 834, 1114, 1367],  # Node 373: 126 (intersection)
+    [548, 934, 1139],  # Node 374: C178 (customer)
+    [328, 389, 986, 1270, 1279],  # Node 375: 127 (intersection)
+    [373, 501, 1028, 1367, 1394],  # Node 376: C179 (customer)
+    [333, 718, 1195, 1383],  # Node 377: 128 (intersection)
+    [55, 774, 809, 827, 1451],  # Node 378: 129 (intersection)
+    [282, 331, 836, 1151, 1418],  # Node 379: BSS71 (bss)
+    [248, 582, 1333, 1348, 1400],  # Node 380: 130 (intersection)
+    [122, 412, 755, 1014, 1463],  # Node 381: 131 (intersection)
+    [421, 819],  # Node 382: BSS72 (bss)
+    [349, 544, 995],  # Node 383: 132 (intersection)
+    [7, 1008, 1247, 1329],  # Node 384: C180 (customer)
+    [112, 591],  # Node 385: C181 (customer)
+    [161, 252, 444, 750, 1376],  # Node 386: C182 (customer)
+    [277, 1013, 1341],  # Node 387: BSS73 (bss)
+    [1121, 1347, 1388],  # Node 388: BSS74 (bss)
+    [328, 375, 671, 1279],  # Node 389: BSS75 (bss)
+    [396, 479, 575, 880, 1344],  # Node 390: BSS76 (bss)
+    [202, 625, 883, 1163, 1268],  # Node 391: 133 (intersection)
+    [156, 747, 909, 1167],  # Node 392: C183 (customer)
+    [87, 184, 485, 1215, 1332],  # Node 393: 134 (intersection)
+    [60, 304, 356, 819, 919],  # Node 394: C184 (customer)
+    [405, 664, 1385],  # Node 395: C185 (customer)
+    [132, 390, 575, 672, 777],  # Node 396: C186 (customer)
+    [4, 163, 461, 710, 770],  # Node 397: BSS77 (bss)
+    [144, 154, 487, 1243, 1262],  # Node 398: BSS78 (bss)
+    [239, 577, 702, 1327],  # Node 399: 135 (intersection)
+    [314, 335, 579, 589, 1437],  # Node 400: 136 (intersection)
+    [193, 324, 586, 950],  # Node 401: BSS79 (bss)
+    [640, 830, 986, 1422],  # Node 402: 137 (intersection)
+    [231, 270, 626, 849],  # Node 403: BSS80 (bss)
+    [416, 667, 769, 1102, 1124],  # Node 404: 138 (intersection)
+    [173, 395, 664, 960, 1385],  # Node 405: 139 (intersection)
+    [66, 156, 500, 675, 1138],  # Node 406: 140 (intersection)
+    [125, 520, 768, 984, 1254],  # Node 407: 141 (intersection)
+    [65, 121, 450, 1126],  # Node 408: 142 (intersection)
+    [572, 924, 1108, 1230, 1356],  # Node 409: C187 (customer)
+    [297, 652, 1042, 1446],  # Node 410: C188 (customer)
+    [153, 238, 525, 584, 861],  # Node 411: BSS81 (bss)
+    [122, 381, 755, 1303, 1319],  # Node 412: BSS82 (bss)
+    [8, 749, 886, 1037, 1267],  # Node 413: 143 (intersection)
+    [155, 237, 319, 575, 721],  # Node 414: 144 (intersection)
+    [160, 754, 824, 1473],  # Node 415: BSS83 (bss)
+    [404, 769, 1124, 1147, 1252],  # Node 416: BSS84 (bss)
+    [257, 1065, 1245],  # Node 417: 145 (intersection)
+    [76, 555, 1392],  # Node 418: 146 (intersection)
+    [215, 267],  # Node 419: C189 (customer)
+    [28, 634, 699, 914],  # Node 420: C190 (customer)
+    [382, 1038, 1074, 1202],  # Node 421: C191 (customer)
+    [20, 716, 799, 1331, 1477],  # Node 422: C192 (customer)
+    [98, 619, 887, 1133, 1177],  # Node 423: BSS85 (bss)
+    [12, 127, 499, 645, 792],  # Node 424: 147 (intersection)
+    [817, 1154],  # Node 425: C193 (customer)
+    [129, 327, 805, 825, 1346],  # Node 426: 148 (intersection)
+    [452, 982],  # Node 427: 149 (intersection)
+    [581, 787, 1391],  # Node 428: 150 (intersection)
+    [120, 144, 560, 992],  # Node 429: C194 (customer)
+    [491, 503, 639, 1484],  # Node 430: 151 (intersection)
+    [118, 863, 931, 1294],  # Node 431: 152 (intersection)
+    [42, 158, 541, 862, 1022],  # Node 432: 153 (intersection)
+    [620, 638, 856, 1006],  # Node 433: 154 (intersection)
+    [17, 221, 741, 888, 1150],  # Node 434: BSS86 (bss)
+    [292, 477, 784],  # Node 435: C195 (customer)
+    [269, 372, 792, 1360, 1398],  # Node 436: 155 (intersection)
+    [75, 308, 1084],  # Node 437: C196 (customer)
+    [700, 738, 1238],  # Node 438: BSS87 (bss)
+    [223, 560, 723, 801, 996],  # Node 439: BSS88 (bss)
+    [891, 892, 1043, 1191, 1233],  # Node 440: 156 (intersection)
+    [311, 810, 931, 1318],  # Node 441: C197 (customer)
+    [35, 365, 784],  # Node 442: 157 (intersection)
+    [79, 194, 764, 945, 1472],  # Node 443: C198 (customer)
+    [386, 1363, 1376],  # Node 444: BSS89 (bss)
+    [66, 611, 918],  # Node 445: C199 (customer)
+    [76, 480, 555, 618],  # Node 446: C200 (customer)
+    [628, 1000, 1172],  # Node 447: 158 (intersection)
+    [265, 703, 882, 1142, 1223],  # Node 448: C201 (customer)
+    [667, 769, 1221, 1239],  # Node 449: 159 (intersection)
+    [65, 154, 408, 1126],  # Node 450: 160 (intersection)
+    [2, 91, 466, 1207],  # Node 451: 161 (intersection)
+    [427, 982],  # Node 452: BSS90 (bss)
+    [60, 141, 517, 966, 1007],  # Node 453: C202 (customer)
+    [159, 666, 746, 831, 1263],  # Node 454: BSS91 (bss)
+    [826, 1080],  # Node 455: BSS92 (bss)
+    [271, 509, 700, 790, 1238],  # Node 456: 162 (intersection)
+    [302, 696, 1289, 1321],  # Node 457: C203 (customer)
+    [656, 1195, 1362, 1368, 1383],  # Node 458: 163 (intersection)
+    [247, 523, 870, 1058, 1204],  # Node 459: BSS93 (bss)
+    [142, 150, 807, 940],  # Node 460: 164 (intersection)
+    [397, 710, 1058, 1255, 1256],  # Node 461: C204 (customer)
+    [33, 558, 968],  # Node 462: C205 (customer)
+    [48, 262, 488, 1304],  # Node 463: 165 (intersection)
+    [79, 1161],  # Node 464: BSS94 (bss)
+    [371, 467, 763, 1081, 1203],  # Node 465: 166 (intersection)
+    [451, 623, 1207],  # Node 466: BSS95 (bss)
+    [465, 763, 1203],  # Node 467: 167 (intersection)
+    [527, 611, 895, 1121],  # Node 468: 168 (intersection)
+    [923, 1454, 1488],  # Node 469: BSS96 (bss)
+    [102, 750, 861, 1448],  # Node 470: BSS97 (bss)
+    [110, 269, 926],  # Node 471: BSS98 (bss)
+    [72, 109, 520, 1157],  # Node 472: C206 (customer)
+    [49, 85, 567, 624, 683],  # Node 473: C207 (customer)
+    [1002, 1127, 1237, 1438, 1447],  # Node 474: 169 (intersection)
+    [1021, 1374],  # Node 475: C208 (customer)
+    [78, 1059],  # Node 476: C209 (customer)
+    [435, 612, 970],  # Node 477: 170 (intersection)
+    [186, 246, 655, 941],  # Node 478: C210 (customer)
+    [390, 1295, 1344],  # Node 479: 171 (intersection)
+    [446, 555, 618],  # Node 480: BSS99 (bss)
+    [307, 1155, 1476],  # Node 481: BSS100 (bss)
+    [1272, 1337],  # Node 482: C211 (customer)
+    [198, 512, 795],  # Node 483: C212 (customer)
+    [180, 211, 631, 1298, 1428],  # Node 484: 172 (intersection)
+    [184, 393, 1215],  # Node 485: BSS101 (bss)
+    [31, 507, 743, 1184],  # Node 486: C213 (customer)
+    [144, 398, 1243, 1260],  # Node 487: 173 (intersection)
+    [48, 463, 617, 963, 1229],  # Node 488: C214 (customer)
+    [46, 340, 605, 684, 1290],  # Node 489: C215 (customer)
+    [101, 367],  # Node 490: C216 (customer)
+    [22, 430, 503, 751, 985],  # Node 491: C217 (customer)
+    [246, 526, 528, 655, 730],  # Node 492: BSS102 (bss)
+    [80, 585, 823, 1234, 1444],  # Node 493: 174 (intersection)
+    [8, 660, 749, 981, 1037],  # Node 494: 175 (intersection)
+    [176, 761, 997, 1166, 1416],  # Node 495: 176 (intersection)
+    [1078, 1414, 1489],  # Node 496: 177 (intersection)
+    [30, 140, 230],  # Node 497: C218 (customer)
+    [26, 597, 1099],  # Node 498: 178 (intersection)
+    [127, 424, 588],  # Node 499: 179 (intersection)
+    [293, 406, 630, 954],  # Node 500: 180 (intersection)
+    [376, 695, 1028, 1114],  # Node 501: 181 (intersection)
+    [229, 635, 1277, 1459],  # Node 502: C219 (customer)
+    [430, 491, 751, 985],  # Node 503: C220 (customer)
+    [148, 174, 654, 1096],  # Node 504: 182 (intersection)
+    [220, 511, 537, 571, 975],  # Node 505: 183 (intersection)
+    [760, 922, 1170],  # Node 506: BSS103 (bss)
+    [486, 537, 621, 743],  # Node 507: 184 (intersection)
+    [868, 904, 1173, 1492],  # Node 508: BSS104 (bss)
+    [124, 456, 738, 1220],  # Node 509: 185 (intersection)
+    [620, 965, 1006, 1430, 1473],  # Node 510: 186 (intersection)
+    [187, 505],  # Node 511: C221 (customer)
+    [198, 483, 931],  # Node 512: C222 (customer)
+    [18, 103, 151, 1359, 1413],  # Node 513: 187 (intersection)
+    [174, 674, 1382],  # Node 514: 188 (intersection)
+    [59, 245, 593],  # Node 515: C223 (customer)
+    [725, 827, 1393],  # Node 516: 189 (intersection)
+    [60, 453, 966, 1007, 1428],  # Node 517: 190 (intersection)
+    [12, 123, 127, 219, 256],  # Node 518: 191 (intersection)
+    [9, 147, 168, 745, 1170],  # Node 519: 192 (intersection)
+    [407, 472, 984, 1169, 1254],  # Node 520: C224 (customer)
+    [529, 622, 693, 964, 1179],  # Node 521: BSS105 (bss)
+    [145, 268, 591, 1146, 1300],  # Node 522: C225 (customer)
+    [70, 459, 870, 1204],  # Node 523: C226 (customer)
+    [337, 872, 939, 990],  # Node 524: C227 (customer)
+    [223, 238, 411, 584, 857],  # Node 525: BSS106 (bss)
+    [246, 492, 655, 1034, 1487],  # Node 526: 193 (intersection)
+    [468, 1121],  # Node 527: C228 (customer)
+    [492, 740, 941, 1104],  # Node 528: 194 (intersection)
+    [521, 693, 1179, 1181, 1474],  # Node 529: 195 (intersection)
+    [705, 793, 1228, 1253],  # Node 530: C229 (customer)
+    [260, 595, 847, 978, 1449],  # Node 531: C230 (customer)
+    [35, 188, 212, 696, 1289],  # Node 532: BSS107 (bss)
+    [661, 936, 1027, 1330],  # Node 533: 196 (intersection)
+    [59, 245, 283, 1409],  # Node 534: C231 (customer)
+    [816, 832, 1400],  # Node 535: 197 (intersection)
+    [107, 604, 732, 1258, 1441],  # Node 536: C232 (customer)
+    [220, 363, 505, 507, 571],  # Node 537: BSS108 (bss)
+    [278, 1273, 1291],  # Node 538: C233 (customer)
+    [179, 774, 809, 827, 1057],  # Node 539: C234 (customer)
+    [231, 722, 1129, 1296],  # Node 540: 198 (intersection)
+    [42, 158, 432, 598],  # Node 541: C235 (customer)
+    [107, 163, 208, 710, 973],  # Node 542: BSS109 (bss)
+    [128, 135, 1010, 1012],  # Node 543: 199 (intersection)
+    [334, 349, 383, 607, 1313],  # Node 544: BSS110 (bss)
+    [201, 289, 369, 1095],  # Node 545: 200 (intersection)
+    [953, 1072, 1180],  # Node 546: 201 (intersection)
+    [552, 834, 1226, 1317, 1334],  # Node 547: BSS111 (bss)
+    [374, 934, 1139, 1397],  # Node 548: C236 (customer)
+    [101, 105, 570, 641],  # Node 549: 202 (intersection)
+    [115, 894, 1135, 1164],  # Node 550: C237 (customer)
+    [875, 1016, 1137],  # Node 551: C238 (customer)
+    [547, 708, 834, 1317],  # Node 552: 203 (intersection)
+    [45, 166, 963, 1311],  # Node 553: BSS112 (bss)
+    [106, 855, 1148, 1231, 1425],  # Node 554: BSS113 (bss)
+    [76, 418, 446, 480, 1021],  # Node 555: C239 (customer)
+    [4, 1341, 1401],  # Node 556: C240 (customer)
+    [131, 146, 837, 1209],  # Node 557: C241 (customer)
+    [33, 462, 648, 1160, 1227],  # Node 558: BSS114 (bss)
+    [102, 119, 750, 851, 1448],  # Node 559: BSS115 (bss)
+    [429, 439, 584, 801, 1342],  # Node 560: BSS116 (bss)
+    [169, 305, 1154, 1382, 1461],  # Node 561: 204 (intersection)
+    [227, 725, 1057, 1433],  # Node 562: C242 (customer)
+    [47, 177, 195, 266],  # Node 563: C243 (customer)
+    [84, 1056],  # Node 564: 205 (intersection)
+    [286, 836, 1137, 1151],  # Node 565: BSS117 (bss)
+    [587, 955, 991, 1210, 1325],  # Node 566: 206 (intersection)
+    [473, 624, 683, 1061, 1286],  # Node 567: C244 (customer)
+    [64, 619, 712, 1029, 1132],  # Node 568: 207 (intersection)
+    [99, 121, 907, 980, 1126],  # Node 569: BSS118 (bss)
+    [101, 549, 609, 1203],  # Node 570: BSS119 (bss)
+    [220, 505, 537, 621],  # Node 571: C245 (customer)
+    [409, 864, 924, 1089, 1108],  # Node 572: C246 (customer)
+    [15, 27, 651, 688],  # Node 573: BSS120 (bss)
+    [182, 610, 1091],  # Node 574: C247 (customer)
+    [237, 390, 396, 414, 880],  # Node 575: C248 (customer)
+    [157, 329, 1281, 1282],  # Node 576: BSS121 (bss)
+    [108, 239, 399],  # Node 577: 208 (intersection)
+    [232, 321],  # Node 578: BSS122 (bss)
+    [148, 335, 400, 1490],  # Node 579: C249 (customer)
+    [37, 183, 205, 916, 1119],  # Node 580: 209 (intersection)
+    [428, 787, 917, 1372, 1391],  # Node 581: 210 (intersection)
+    [380, 1333, 1348, 1400],  # Node 582: BSS123 (bss)
+    [341, 596],  # Node 583: C250 (customer)
+    [411, 525, 560, 801, 1284],  # Node 584: 211 (intersection)
+    [493, 662, 1417],  # Node 585: 212 (intersection)
+    [269, 401, 926, 1360],  # Node 586: 213 (intersection)
+    [566, 845, 955, 1210, 1266],  # Node 587: BSS124 (bss)
+    [287, 499, 1256],  # Node 588: C251 (customer)
+    [314, 335, 400, 1217, 1437],  # Node 589: C252 (customer)
+    [263, 744, 1116, 1349, 1357],  # Node 590: C253 (customer)
+    [112, 385, 522, 1086, 1300],  # Node 591: BSS125 (bss)
+    [93, 211, 933, 1335],  # Node 592: C254 (customer)
+    [125, 245, 515, 768],  # Node 593: C255 (customer)
+    [327, 352, 1076, 1227],  # Node 594: BSS126 (bss)
+    [531, 711, 978, 1275, 1449],  # Node 595: 214 (intersection)
+    [258, 341, 583, 910, 1464],  # Node 596: BSS127 (bss)
+    [498, 613, 869, 1099, 1407],  # Node 597: 215 (intersection)
+    [78, 300, 541, 844, 1022],  # Node 598: C256 (customer)
+    [186, 258, 625, 629, 1163],  # Node 599: 216 (intersection)
+    [190, 892, 1017, 1122, 1365],  # Node 600: 217 (intersection)
+    [62, 170, 1270, 1422, 1439],  # Node 601: BSS128 (bss)
+    [119, 690, 851, 1364, 1378],  # Node 602: BSS129 (bss)
+    [898, 1046, 1141, 1205, 1489],  # Node 603: 218 (intersection)
+    [536, 696, 1258, 1321, 1441],  # Node 604: 219 (intersection)
+    [340, 489, 1079, 1125, 1290],  # Node 605: BSS130 (bss)
+    [183, 1119, 1387],  # Node 606: BSS131 (bss)
+    [334, 349, 544],  # Node 607: 220 (intersection)
+    [618, 971, 1323, 1372],  # Node 608: 221 (intersection)
+    [570, 763, 1203],  # Node 609: C257 (customer)
+    [182, 574, 846, 850],  # Node 610: C258 (customer)
+    [445, 468, 675, 895, 1138],  # Node 611: BSS132 (bss)
+    [138, 477, 638, 970],  # Node 612: C259 (customer)
+    [217, 597, 976, 1099, 1407],  # Node 613: 222 (intersection)
+    [88, 162, 165, 714, 1298],  # Node 614: 223 (intersection)
+    [234, 893, 1235, 1249],  # Node 615: BSS133 (bss)
+    [290, 843, 946, 1459],  # Node 616: BSS134 (bss)
+    [45, 48, 488, 795, 1229],  # Node 617: C260 (customer)
+    [446, 480, 608, 808],  # Node 618: 224 (intersection)
+    [423, 568, 712, 1023, 1048],  # Node 619: 225 (intersection)
+    [433, 510, 856, 1006, 1473],  # Node 620: BSS135 (bss)
+    [507, 571, 846, 975, 1184],  # Node 621: 226 (intersection)
+    [521, 964, 1179, 1495],  # Node 622: C261 (customer)
+    [254, 466, 823, 1110, 1251],  # Node 623: BSS136 (bss)
+    [85, 473, 567, 1286],  # Node 624: C262 (customer)
+    [391, 599, 629, 883, 1163],  # Node 625: C263 (customer)
+    [176, 270, 286, 403, 650],  # Node 626: 227 (intersection)
+    [199, 997, 1166, 1465, 1470],  # Node 627: 228 (intersection)
+    [153, 447, 1000, 1172],  # Node 628: BSS137 (bss)
+    [186, 258, 599, 625, 1163],  # Node 629: BSS138 (bss)
+    [274, 293, 500, 678, 1090],  # Node 630: BSS139 (bss)
+    [85, 211, 484, 933, 1335],  # Node 631: 229 (intersection)
+    [323, 1054, 1103, 1283, 1299],  # Node 632: 230 (intersection)
+    [86, 233, 707, 1005],  # Node 633: 231 (intersection)
+    [229, 420, 699],  # Node 634: 232 (intersection)
+    [229, 502, 898, 1141, 1445],  # Node 635: C264 (customer)
+    [272, 724, 821, 927],  # Node 636: C265 (customer)
+    [116, 310, 733, 873, 1336],  # Node 637: 233 (intersection)
+    [138, 433, 612, 970],  # Node 638: 234 (intersection)
+    [150, 430, 1484],  # Node 639: 235 (intersection)
+    [402, 986, 1270, 1422],  # Node 640: BSS140 (bss)
+    [101, 367, 549, 1411],  # Node 641: BSS141 (bss)
+    [701, 890, 1073, 1185, 1250],  # Node 642: 236 (intersection)
+    [673, 740, 961, 1104, 1475],  # Node 643: 237 (intersection)
+    [315, 950, 1398],  # Node 644: C266 (customer)
+    [127, 424],  # Node 645: 238 (intersection)
+    [265, 689, 703, 781, 1223],  # Node 646: C267 (customer)
+    [694, 871, 930, 1146, 1278],  # Node 647: 239 (intersection)
+    [33, 224, 558],  # Node 648: C268 (customer)
+    [224, 825, 911, 1156],  # Node 649: 240 (intersection)
+    [176, 286, 626, 875],  # Node 650: C269 (customer)
+    [27, 573, 688],  # Node 651: 241 (intersection)
+    [267, 410],  # Node 652: BSS142 (bss)
+    [248, 692, 852, 1395],  # Node 653: 242 (intersection)
+    [216, 504, 708, 1096],  # Node 654: C270 (customer)
+    [246, 478, 492, 526, 730],  # Node 655: 243 (intersection)
+    [207, 458, 1215, 1362],  # Node 656: 244 (intersection)
+    [189, 200, 1062, 1435],  # Node 657: C271 (customer)
+    [71, 264, 355, 681, 1355],  # Node 658: 245 (intersection)
+    [141, 235, 1143],  # Node 659: 246 (intersection)
+    [8, 494, 886],  # Node 660: C272 (customer)
+    [90, 533, 727, 936, 948],  # Node 661: BSS143 (bss)
+    [220, 363, 585, 1417],  # Node 662: 247 (intersection)
+    [690, 698, 1208, 1224, 1364],  # Node 663: 248 (intersection)
+    [395, 405, 910, 1385, 1464],  # Node 664: 249 (intersection)
+    [944, 1086, 1199, 1225, 1322],  # Node 665: BSS144 (bss)
+    [159, 354, 454, 746],  # Node 666: 250 (intersection)
+    [404, 449, 1239, 1252],  # Node 667: 251 (intersection)
+    [56, 876, 993, 994, 1331],  # Node 668: 252 (intersection)
+    [210, 283],  # Node 669: C273 (customer)
+    [284, 771, 804, 1087, 1118],  # Node 670: BSS145 (bss)
+    [191, 389, 1033, 1472],  # Node 671: C274 (customer)
+    [132, 396, 721, 734, 777],  # Node 672: C275 (customer)
+    [181, 643, 780, 961, 974],  # Node 673: C276 (customer)
+    [514, 737, 1117],  # Node 674: C277 (customer)
+    [66, 406, 611, 918, 1138],  # Node 675: 253 (intersection)
+    [70, 92, 853],  # Node 676: 254 (intersection)
+    [691, 915, 1445],  # Node 677: C278 (customer)
+    [274, 293, 630, 813, 954],  # Node 678: 255 (intersection)
+    [885, 969, 1242, 1361, 1423],  # Node 679: 256 (intersection)
+    [334, 848, 932, 1064, 1457],  # Node 680: BSS146 (bss)
+    [355, 357, 658, 1482],  # Node 681: C279 (customer)
+    [88, 318, 877, 927, 998],  # Node 682: BSS147 (bss)
+    [473, 567, 1286],  # Node 683: BSS148 (bss)
+    [46, 298, 489, 938, 1153],  # Node 684: 257 (intersection)
+    [281, 797, 943, 1041, 1468],  # Node 685: 258 (intersection)
+    [213, 908, 956, 1241],  # Node 686: C280 (customer)
+    [58, 317, 735, 762, 812],  # Node 687: BSS149 (bss)
+    [15, 82, 573, 651],  # Node 688: 259 (intersection)
+    [646, 781, 1016, 1153],  # Node 689: C281 (customer)
+    [602, 663, 698, 1224, 1364],  # Node 690: C282 (customer)
+    [64, 677, 915, 1041, 1132],  # Node 691: 260 (intersection)
+    [248, 294, 653, 949, 1483],  # Node 692: 261 (intersection)
+    [521, 529, 964, 1179],  # Node 693: C283 (customer)
+    [647, 773, 871, 1026, 1278],  # Node 694: 262 (intersection)
+    [329, 501, 1114],  # Node 695: BSS150 (bss)
+    [35, 188, 457, 532, 604],  # Node 696: 263 (intersection)
+    [243, 342, 822, 903],  # Node 697: C284 (customer)
+    [663, 690, 1208],  # Node 698: C285 (customer)
+    [28, 420, 634, 904, 1392],  # Node 699: C286 (customer)
+    [271, 438, 456, 1238],  # Node 700: C287 (customer)
+    [642, 828, 905, 1071],  # Node 701: BSS151 (bss)
+    [129, 399, 1112, 1327, 1466],  # Node 702: 264 (intersection)
+    [265, 448, 646],  # Node 703: BSS152 (bss)
+    [316, 1049, 1221],  # Node 704: 265 (intersection)
+    [530, 890, 979, 1228, 1250],  # Node 705: C288 (customer)
+    [76, 868],  # Node 706: 266 (intersection)
+    [86, 633, 1005],  # Node 707: BSS153 (bss)
+    [143, 216, 552, 654, 737],  # Node 708: C289 (customer)
+    [273, 793, 1253, 1371],  # Node 709: 267 (intersection)
+    [208, 397, 461, 542, 770],  # Node 710: 268 (intersection)
+    [595, 839, 978, 1275, 1479],  # Node 711: C290 (customer)
+    [568, 619, 1046],  # Node 712: 269 (intersection)
+    [880, 916, 1295, 1344, 1387],  # Node 713: 270 (intersection)
+    [88, 614, 877, 1055, 1202],  # Node 714: C291 (customer)
+    [86, 154],  # Node 715: C292 (customer)
+    [20, 422, 808, 1198, 1331],  # Node 716: 271 (intersection)
+    [185, 1040, 1065, 1092, 1340],  # Node 717: 272 (intersection)
+    [333, 377, 874, 1383],  # Node 718: C293 (customer)
+    [137, 928],  # Node 719: 273 (intersection)
+    [161, 767, 1285, 1452, 1456],  # Node 720: 274 (intersection)
+    [132, 414, 672, 1130, 1419],  # Node 721: BSS154 (bss)
+    [339, 540, 742, 1296, 1424],  # Node 722: C294 (customer)
+    [439, 996, 1243, 1260],  # Node 723: C295 (customer)
+    [276, 636, 772, 936, 1027],  # Node 724: 275 (intersection)
+    [516, 562, 1393, 1433],  # Node 725: 276 (intersection)
+    [226, 1009, 1042, 1244],  # Node 726: C296 (customer)
+    [171, 661, 948, 1035],  # Node 727: C297 (customer)
+    [197, 306, 370],  # Node 728: BSS155 (bss)
+    [327, 343, 352, 739],  # Node 729: 277 (intersection)
+    [246, 492, 655, 1034],  # Node 730: C298 (customer)
+    [116, 134, 775, 828, 889],  # Node 731: 278 (intersection)
+    [123, 291, 302, 536, 1321],  # Node 732: 279 (intersection)
+    [637, 873, 1105, 1116, 1309],  # Node 733: 280 (intersection)
+    [672, 777, 958, 1047, 1140],  # Node 734: C299 (customer)
+    [58, 303, 687, 902, 989],  # Node 735: BSS156 (bss)
+    [843, 1120, 1212, 1264],  # Node 736: BSS157 (bss)
+    [674, 708],  # Node 737: C300 (customer)
+    [250, 438, 509, 1238],  # Node 738: C301 (customer)
+    [128, 327, 343, 729, 1010],  # Node 739: 281 (intersection)
+    [528, 643, 941, 1104],  # Node 740: C302 (customer)
+    [17, 434, 754, 824, 1150],  # Node 741: 282 (intersection)
+    [158, 204, 339, 722],  # Node 742: C303 (customer)
+    [31, 486, 507, 925],  # Node 743: C304 (customer)
+    [263, 590, 1053, 1349, 1357],  # Node 744: 283 (intersection)
+    [9, 519, 760, 789, 1170],  # Node 745: C305 (customer)
+    [159, 454, 666, 831, 1263],  # Node 746: C306 (customer)
+    [308, 392, 909, 1084],  # Node 747: C307 (customer)
+    [1117, 1139, 1351, 1397],  # Node 748: BSS158 (bss)
+    [8, 81, 413, 494, 886],  # Node 749: BSS159 (bss)
+    [102, 386, 470, 559, 1498],  # Node 750: C308 (customer)
+    [22, 491, 503, 985],  # Node 751: 284 (intersection)
+    [275, 1004, 1182, 1236, 1411],  # Node 752: 285 (intersection)
+    [23, 41, 348, 1097],  # Node 753: C309 (customer)
+    [160, 415, 741, 957, 1100],  # Node 754: C310 (customer)
+    [381, 412, 1303, 1467],  # Node 755: 286 (intersection)
+    [901, 942, 962, 1438],  # Node 756: C311 (customer)
+    [91, 187, 192, 332],  # Node 757: 287 (intersection)
+    [3, 57, 97, 244, 1187],  # Node 758: 288 (intersection)
+    [879, 1050, 1051, 1271],  # Node 759: BSS160 (bss)
+    [506, 745, 922, 1170, 1418],  # Node 760: 289 (intersection)
+    [176, 495, 789, 803, 1266],  # Node 761: 290 (intersection)
+    [120, 317, 687, 812, 992],  # Node 762: C312 (customer)
+    [465, 467, 609],  # Node 763: BSS161 (bss)
+    [79, 194, 443, 945],  # Node 764: 291 (intersection)
+    [43, 83],  # Node 765: C313 (customer)
+    [297, 999, 1149, 1465, 1486],  # Node 766: 292 (intersection)
+    [161, 252, 720, 1044, 1285],  # Node 767: 293 (intersection)
+    [125, 407, 593],  # Node 768: 294 (intersection)
+    [404, 416, 449, 1124, 1252],  # Node 769: 295 (intersection)
+    [206, 397, 710, 1058, 1073],  # Node 770: C314 (customer)
+    [284, 670, 804, 1118, 1377],  # Node 771: 296 (intersection)
+    [276, 724, 1027, 1175, 1226],  # Node 772: C315 (customer)
+    [694, 871, 1026, 1067, 1278],  # Node 773: 297 (intersection)
+    [378, 539, 809, 1140],  # Node 774: BSS162 (bss)
+    [116, 310, 731, 951, 1336],  # Node 775: 298 (intersection)
+    [138, 300, 1022],  # Node 776: 299 (intersection)
+    [396, 672, 734, 1047],  # Node 777: C316 (customer)
+    [292, 365, 973, 987, 1276],  # Node 778: C317 (customer)
+    [1, 6, 1443],  # Node 779: 300 (intersection)
+    [280, 673, 961, 1018, 1214],  # Node 780: 301 (intersection)
+    [646, 689],  # Node 781: 302 (intersection)
+    [257, 326, 783, 864, 1158],  # Node 782: C318 (customer)
+    [166, 326, 782, 1287, 1358],  # Node 783: 303 (intersection)
+    [435, 442],  # Node 784: C319 (customer)
+    [16, 18, 38, 177],  # Node 785: BSS163 (bss)
+    [117, 320, 968, 1050, 1051],  # Node 786: C320 (customer)
+    [251, 428, 581, 1194, 1494],  # Node 787: C321 (customer)
+    [71, 355, 952, 1355],  # Node 788: BSS164 (bss)
+    [745, 761, 803, 1266, 1325],  # Node 789: C322 (customer)
+    [256, 266, 456, 1060, 1106],  # Node 790: BSS165 (bss)
+    [14, 43, 1396],  # Node 791: C323 (customer)
+    [127, 424, 436],  # Node 792: 304 (intersection)
+    [273, 530, 709, 1073, 1228],  # Node 793: 305 (intersection)
+    [5, 800, 935, 1009, 1148],  # Node 794: 306 (intersection)
+    [483, 617, 1047, 1295],  # Node 795: C324 (customer)
+    [15, 1072],  # Node 796: 307 (intersection)
+    [40, 68, 685, 943, 1248],  # Node 797: C325 (customer)
+    [1188, 1299, 1426, 1434, 1453],  # Node 798: C326 (customer)
+    [20, 32, 422],  # Node 799: C327 (customer)
+    [5, 346, 794],  # Node 800: 308 (intersection)
+    [223, 439, 560, 584, 996],  # Node 801: 309 (intersection)
+    [99, 149, 1172, 1471],  # Node 802: C328 (customer)
+    [761, 789, 845, 1266, 1416],  # Node 803: BSS166 (bss)
+    [259, 284, 670, 771, 1377],  # Node 804: C329 (customer)
+    [129, 426, 977, 1346],  # Node 805: BSS167 (bss)
+    [111, 867, 988, 1332],  # Node 806: 310 (intersection)
+    [460, 869, 1099, 1407],  # Node 807: 311 (intersection)
+    [77, 618, 716, 1477],  # Node 808: BSS168 (bss)
+    [132, 378, 539, 774, 1140],  # Node 809: 312 (intersection)
+    [441, 931],  # Node 810: C330 (customer)
+    [972, 1212, 1301, 1403],  # Node 811: 313 (intersection)
+    [120, 317, 687, 762],  # Node 812: C331 (customer)
+    [156, 678, 1045, 1199],  # Node 813: 314 (intersection)
+    [968, 1152, 1499],  # Node 814: BSS169 (bss)
+    [155, 1031, 1130, 1369],  # Node 815: C332 (customer)
+    [535, 832, 1024],  # Node 816: C333 (customer)
+    [169, 305, 425, 1154],  # Node 817: 315 (intersection)
+    [212, 1415],  # Node 818: 316 (intersection)
+    [304, 382, 394, 919, 1202],  # Node 819: 317 (intersection)
+    [906, 1001, 1280],  # Node 820: 318 (intersection)
+    [272, 322, 636, 1420],  # Node 821: C334 (customer)
+    [342, 697, 903, 1125, 1232],  # Node 822: C335 (customer)
+    [285, 493, 623, 1444],  # Node 823: 319 (intersection)
+    [160, 415, 741, 957, 1100],  # Node 824: 320 (intersection)
+    [426, 649, 911, 1156, 1160],  # Node 825: BSS170 (bss)
+    [32, 105, 455, 1080],  # Node 826: 321 (intersection)
+    [378, 516, 539, 1057, 1393],  # Node 827: C336 (customer)
+    [134, 701, 731, 889, 1071],  # Node 828: BSS171 (bss)
+    [210, 283, 1375],  # Node 829: 322 (intersection)
+    [113, 402, 923],  # Node 830: 323 (intersection)
+    [214, 222, 354, 454, 746],  # Node 831: C337 (customer)
+    [535, 816, 900, 1024, 1390],  # Node 832: 324 (intersection)
+    [21, 126, 1026, 1067],  # Node 833: C338 (customer)
+    [373, 547, 552, 1114, 1394],  # Node 834: C339 (customer)
+    [251, 1494],  # Node 835: 325 (intersection)
+    [282, 379, 565],  # Node 836: 326 (intersection)
+    [131, 146, 218, 557, 1209],  # Node 837: 327 (intersection)
+    [1107, 1123, 1404, 1429],  # Node 838: C340 (customer)
+    [268, 711, 1093, 1480],  # Node 839: 328 (intersection)
+    [124, 250, 368, 1220, 1496],  # Node 840: C341 (customer)
+    [63, 152, 912, 1190],  # Node 841: BSS172 (bss)
+    [9, 130, 147, 168, 991],  # Node 842: C342 (customer)
+    [616, 736, 946, 1264, 1301],  # Node 843: 329 (intersection)
+    [78, 598, 1022],  # Node 844: 330 (intersection)
+    [587, 803, 955, 1416],  # Node 845: C343 (customer)
+    [203, 610, 621, 975],  # Node 846: C344 (customer)
+    [10, 260, 531, 1025, 1480],  # Node 847: C345 (customer)
+    [680, 932, 1064, 1147, 1457],  # Node 848: 331 (intersection)
+    [231, 270, 403, 1129],  # Node 849: 332 (intersection)
+    [182, 203, 610],  # Node 850: 333 (intersection)
+    [119, 559, 602, 1378, 1448],  # Node 851: 334 (intersection)
+    [653, 912, 1034, 1190],  # Node 852: 335 (intersection)
+    [70, 92, 676, 1131, 1316],  # Node 853: C346 (customer)
+    [67, 137, 361, 1059],  # Node 854: C347 (customer)
+    [226, 241, 554, 1244, 1425],  # Node 855: C348 (customer)
+    [433, 620, 1006, 1150, 1473],  # Node 856: 336 (intersection)
+    [223, 525, 996],  # Node 857: C349 (customer)
+    [308, 1491],  # Node 858: C350 (customer)
+    [917, 1211, 1481, 1492],  # Node 859: BSS173 (bss)
+    [172, 364, 1144],  # Node 860: C351 (customer)
+    [153, 411, 470, 1031, 1498],  # Node 861: C352 (customer)
+    [42, 69, 158, 204, 432],  # Node 862: BSS174 (bss)
+    [198, 431, 929, 1269, 1294],  # Node 863: BSS175 (bss)
+    [326, 572, 782, 1015, 1158],  # Node 864: C353 (customer)
+    [40, 87, 94, 111, 988],  # Node 865: BSS176 (bss)
+    [1279, 1354, 1454, 1488, 1494],  # Node 866: BSS177 (bss)
+    [196, 806, 988, 1062, 1332],  # Node 867: 337 (intersection)
+    [508, 706, 1323],  # Node 868: BSS178 (bss)
+    [26, 597, 807],  # Node 869: C354 (customer)
+    [247, 459, 523, 1058, 1427],  # Node 870: 338 (intersection)
+    [647, 694, 773, 1067, 1278],  # Node 871: BSS179 (bss)
+    [11, 337, 524, 939],  # Node 872: C355 (customer)
+    [637, 733, 1116],  # Node 873: C356 (customer)
+    [178, 718, 1019, 1362, 1368],  # Node 874: 339 (intersection)
+    [362, 551, 650, 1111, 1137],  # Node 875: BSS180 (bss)
+    [668, 1182, 1331, 1411],  # Node 876: C357 (customer)
+    [682, 714, 998, 1055],  # Node 877: 340 (intersection)
+    [139, 1044, 1119, 1174, 1285],  # Node 878: 341 (intersection)
+    [759, 1218, 1410],  # Node 879: C358 (customer)
+    [237, 390, 575, 713, 1344],  # Node 880: 342 (intersection)
+    [34, 133, 292, 888, 1302],  # Node 881: BSS181 (bss)
+    [331, 448, 1142],  # Node 882: 343 (intersection)
+    [173, 391, 625, 1200, 1268],  # Node 883: C359 (customer)
+    [159, 162, 1263, 1298],  # Node 884: C360 (customer)
+    [324, 679, 969, 1361],  # Node 885: 344 (intersection)
+    [413, 660, 749, 1037, 1267],  # Node 886: BSS182 (bss)
+    [98, 423, 1003, 1133],  # Node 887: C361 (customer)
+    [17, 133, 221, 434, 881],  # Node 888: 345 (intersection)
+    [73, 214, 731, 828, 1071],  # Node 889: 346 (intersection)
+    [642, 705, 905, 1185, 1250],  # Node 890: C362 (customer)
+    [440, 1043, 1233],  # Node 891: C363 (customer)
+    [440, 600, 1043, 1191],  # Node 892: 347 (intersection)
+    [157, 234, 615, 1257],  # Node 893: 348 (intersection)
+    [115, 550, 1288, 1324],  # Node 894: C364 (customer)
+    [66, 468, 611, 1138],  # Node 895: 349 (intersection)
+    [134, 277, 1341],  # Node 896: C365 (customer)
+    [1040, 1340, 1496],  # Node 897: BSS183 (bss)
+    [229, 603, 635, 1141, 1445],  # Node 898: C366 (customer)
+    [301, 1074, 1115],  # Node 899: BSS184 (bss)
+    [175, 832, 1061, 1274, 1373],  # Node 900: C367 (customer)
+    [303, 756],  # Node 901: 350 (intersection)
+    [735, 1130, 1402],  # Node 902: 351 (intersection)
+    [342, 697, 822, 1079],  # Node 903: C368 (customer)
+    [28, 508, 699, 1173],  # Node 904: C369 (customer)
+    [222, 701, 890, 1185],  # Node 905: C370 (customer)
+    [820, 1001, 1271, 1280, 1386],  # Node 906: C371 (customer)
+    [121, 149, 569],  # Node 907: C372 (customer)
+    [236, 347, 686, 967],  # Node 908: C373 (customer)
+    [392, 747, 1167],  # Node 909: 352 (intersection)
+    [173, 596, 664],  # Node 910: C374 (customer)
+    [33, 224, 649, 825],  # Node 911: C375 (customer)
+    [841, 852, 1078, 1190, 1414],  # Node 912: 353 (intersection)
+    [81, 275, 1004, 1236, 1246],  # Node 913: 354 (intersection)
+    [420, 1021, 1392, 1445],  # Node 914: BSS185 (bss)
+    [677, 691, 1041],  # Node 915: BSS186 (bss)
+    [37, 183, 580, 713, 1020],  # Node 916: C376 (customer)
+    [581, 859, 1211, 1391],  # Node 917: 355 (intersection)
+    [66, 445, 675],  # Node 918: 356 (intersection)
+    [60, 304, 356, 394, 819],  # Node 919: BSS187 (bss)
+    [54, 118, 217, 312, 976],  # Node 920: C377 (customer)
+    [49, 85, 202, 344, 1421],  # Node 921: BSS188 (bss)
+    [331, 506, 760, 1170, 1418],  # Node 922: 357 (intersection)
+    [113, 469, 830, 986],  # Node 923: C378 (customer)
+    [409, 572, 1089],  # Node 924: C379 (customer)
+    [743, 1176],  # Node 925: BSS189 (bss)
+    [471, 586],  # Node 926: 358 (intersection)
+    [272, 318, 636, 682],  # Node 927: C380 (customer)
+    [11, 67, 137, 361, 719],  # Node 928: BSS190 (bss)
+    [198, 209, 863, 1269, 1294],  # Node 929: 359 (intersection)
+    [261, 647],  # Node 930: C381 (customer)
+    [431, 441, 512, 810, 1294],  # Node 931: C382 (customer)
+    [207, 334, 680, 848, 1064],  # Node 932: 360 (intersection)
+    [85, 93, 211, 592, 631],  # Node 933: 361 (intersection)
+    [374, 548, 1367, 1394],  # Node 934: 362 (intersection)
+    [226, 794, 1009, 1148, 1231],  # Node 935: C383 (customer)
+    [533, 661, 724, 1330],  # Node 936: C384 (customer)
+    [84, 1076, 1227],  # Node 937: BSS191 (bss)
+    [210, 684],  # Node 938: C385 (customer)
+    [337, 361, 524, 872, 1059],  # Node 939: BSS192 (bss)
+    [142, 150, 460],  # Node 940: BSS193 (bss)
+    [478, 528, 740, 961, 1104],  # Node 941: 363 (intersection)
+    [756, 962, 1002, 1402],  # Node 942: C386 (customer)
+    [40, 281, 685, 797, 1468],  # Node 943: C387 (customer)
+    [112, 325, 665, 1086],  # Node 944: C388 (customer)
+    [194, 289, 443, 764],  # Node 945: C389 (customer)
+    [290, 616, 843, 947, 1264],  # Node 946: C390 (customer)
+    [290, 946],  # Node 947: 364 (intersection)
+    [136, 661, 727],  # Node 948: 365 (intersection)
+    [294, 692, 1165, 1483],  # Node 949: 366 (intersection)
+    [193, 315, 401, 644, 1360],  # Node 950: 367 (intersection)
+    [116, 310, 775, 1105, 1159],  # Node 951: C391 (customer)
+    [71, 139, 788, 1174],  # Node 952: 368 (intersection)
+    [546, 1072, 1180, 1230],  # Node 953: C392 (customer)
+    [274, 500, 678, 1045, 1090],  # Node 954: 369 (intersection)
+    [566, 587, 845, 1210, 1266],  # Node 955: 370 (intersection)
+    [359, 686, 1486],  # Node 956: BSS194 (bss)
+    [754, 824, 1100, 1112, 1466],  # Node 957: C393 (customer)
+    [55, 262, 734, 1140, 1451],  # Node 958: 371 (intersection)
+    [242, 1030, 1259, 1315],  # Node 959: 372 (intersection)
+    [405, 966, 1200, 1343],  # Node 960: C394 (customer)
+    [643, 673, 780, 941, 974],  # Node 961: C395 (customer)
+    [303, 756, 942, 1402],  # Node 962: C396 (customer)
+    [488, 553, 1229, 1311, 1379],  # Node 963: 373 (intersection)
+    [521, 622, 693, 1495],  # Node 964: 374 (intersection)
+    [69, 510],  # Node 965: BSS195 (bss)
+    [453, 517, 960, 1343, 1428],  # Node 966: C397 (customer)
+    [236, 908, 977, 1094, 1241],  # Node 967: C398 (customer)
+    [462, 786, 814, 1499],  # Node 968: 375 (intersection)
+    [679, 885, 1423],  # Node 969: C399 (customer)
+    [477, 612, 638],  # Node 970: BSS196 (bss)
+    [608, 1323, 1372],  # Node 971: C400 (customer)
+    [225, 811, 1008, 1212, 1403],  # Node 972: C401 (customer)
+    [365, 542, 778, 987],  # Node 973: C402 (customer)
+    [6, 181, 673, 961, 1475],  # Node 974: 376 (intersection)
+    [505, 621, 846],  # Node 975: C403 (customer)
+    [54, 217, 312, 613, 920],  # Node 976: 377 (intersection)
+    [805, 967, 1094, 1241],  # Node 977: 378 (intersection)
+    [531, 595, 711, 1083, 1275],  # Node 978: BSS197 (bss)
+    [74, 93, 705, 1335],  # Node 979: 379 (intersection)
+    [569, 1260],  # Node 980: 380 (intersection)
+    [494, 1246, 1261, 1353],  # Node 981: 381 (intersection)
+    [141, 235, 427, 452, 1143],  # Node 982: C404 (customer)
+    [14, 83, 228, 1193, 1320],  # Node 983: C405 (customer)
+    [125, 407, 520, 1169, 1254],  # Node 984: BSS198 (bss)
+    [22, 491, 503, 751],  # Node 985: 382 (intersection)
+    [375, 402, 640, 923, 1422],  # Node 986: 383 (intersection)
+    [107, 163, 365, 778, 973],  # Node 987: 384 (intersection)
+    [87, 111, 806, 865, 867],  # Node 988: BSS199 (bss)
+    [58, 735],  # Node 989: 385 (intersection)
+    [11, 151, 524, 1413, 1493],  # Node 990: C406 (customer)
+    [130, 241, 566, 842, 1325],  # Node 991: C407 (customer)
+    [120, 429, 762],  # Node 992: 386 (intersection)
+    [56, 668, 994, 1182, 1326],  # Node 993: C408 (customer)
+    [56, 668, 993, 1182, 1326],  # Node 994: C409 (customer)
+    [383, 1113, 1127, 1181, 1237],  # Node 995: C410 (customer)
+    [439, 723, 801, 857, 1260],  # Node 996: 387 (intersection)
+    [495, 627, 1166, 1416],  # Node 997: BSS200 (bss)
+    [318, 682, 877, 1055],  # Node 998: C411 (customer)
+    [297, 766, 1149, 1166, 1465],  # Node 999: 388 (intersection)
+    [153, 238, 447, 628, 1172],  # Node 1000: 389 (intersection)
+    [820, 906, 1386],  # Node 1001: 390 (intersection)
+    [474, 942, 1438, 1447],  # Node 1002: C412 (customer)
+    [95, 360, 366, 887, 1133],  # Node 1003: C413 (customer)
+    [81, 275, 752, 913, 1265],  # Node 1004: C414 (customer)
+    [233, 633, 707, 1197],  # Node 1005: 391 (intersection)
+    [160, 433, 510, 620, 856],  # Node 1006: C415 (customer)
+    [164, 453, 517],  # Node 1007: C416 (customer)
+    [225, 384, 972, 1329],  # Node 1008: BSS201 (bss)
+    [226, 726, 794, 935, 1244],  # Node 1009: BSS202 (bss)
+    [135, 543, 739, 1012],  # Node 1010: C417 (customer)
+    [298, 1153],  # Node 1011: C418 (customer)
+    [128, 135, 543, 1010, 1366],  # Node 1012: BSS203 (bss)
+    [277, 387, 1336],  # Node 1013: C419 (customer)
+    [30, 381, 1196, 1240, 1463],  # Node 1014: C420 (customer)
+    [864, 1158, 1305, 1358],  # Node 1015: C421 (customer)
+    [29, 551, 689, 1111],  # Node 1016: 392 (intersection)
+    [288, 600, 1069, 1122, 1365],  # Node 1017: 393 (intersection)
+    [280, 780, 1214],  # Node 1018: BSS204 (bss)
+    [333, 348, 874, 1097, 1368],  # Node 1019: 394 (intersection)
+    [37, 205, 916, 1295],  # Node 1020: C422 (customer)
+    [475, 555, 914, 1374],  # Node 1021: C423 (customer)
+    [300, 432, 598, 776, 844],  # Node 1022: C424 (customer)
+    [619, 1048, 1177, 1310],  # Node 1023: C425 (customer)
+    [816, 832, 1274],  # Node 1024: 395 (intersection)
+    [10, 260, 847, 1449],  # Node 1025: 396 (intersection)
+    [694, 773, 833, 1067],  # Node 1026: C426 (customer)
+    [276, 533, 724, 772, 1226],  # Node 1027: 397 (intersection)
+    [329, 376, 501],  # Node 1028: C427 (customer)
+    [64, 568, 1132, 1399, 1489],  # Node 1029: 398 (intersection)
+    [959, 1259, 1315],  # Node 1030: BSS205 (bss)
+    [155, 815, 861, 1369],  # Node 1031: C428 (customer)
+    [148, 174, 1461, 1490],  # Node 1032: C429 (customer)
+    [671, 1297, 1472],  # Node 1033: BSS206 (bss)
+    [526, 730, 852],  # Node 1034: C430 (customer)
+    [171, 322, 727, 1263, 1420],  # Node 1035: BSS207 (bss)
+    [50, 96, 167, 1329, 1338],  # Node 1036: BSS208 (bss)
+    [413, 494, 886],  # Node 1037: 399 (intersection)
+    [301, 421, 1074, 1202],  # Node 1038: BSS209 (bss)
+    [114, 1136, 1314, 1440],  # Node 1039: 400 (intersection)
+    [717, 897, 1245, 1340],  # Node 1040: 401 (intersection)
+    [685, 691, 915, 1048, 1468],  # Node 1041: BSS210 (bss)
+    [410, 726, 1446],  # Node 1042: 402 (intersection)
+    [440, 891, 892, 1127, 1191],  # Node 1043: C431 (customer)
+    [767, 878, 1285],  # Node 1044: 403 (intersection)
+    [156, 813, 954, 1199],  # Node 1045: BSS211 (bss)
+    [603, 712, 1399, 1489],  # Node 1046: BSS212 (bss)
+    [48, 262, 734, 777, 795],  # Node 1047: 404 (intersection)
+    [619, 1023, 1041, 1132, 1177],  # Node 1048: C432 (customer)
+    [316, 704, 1147, 1221],  # Node 1049: BSS213 (bss)
+    [320, 759, 786, 1051, 1271],  # Node 1050: 405 (intersection)
+    [759, 786, 1050, 1271, 1410],  # Node 1051: 406 (intersection)
+    [14, 108, 1320, 1396],  # Node 1052: 407 (intersection)
+    [296, 345, 744, 1357, 1412],  # Node 1053: 408 (intersection)
+    [632, 1103, 1283, 1299, 1434],  # Node 1054: 409 (intersection)
+    [714, 877, 998],  # Node 1055: C433 (customer)
+    [84, 564, 1076],  # Node 1056: 410 (intersection)
+    [539, 562, 827, 1077, 1433],  # Node 1057: BSS214 (bss)
+    [459, 461, 770, 870],  # Node 1058: 411 (intersection)
+    [78, 361, 476, 854, 939],  # Node 1059: C434 (customer)
+    [256, 266, 790, 1106],  # Node 1060: 412 (intersection)
+    [175, 567, 900, 1274, 1373],  # Node 1061: 413 (intersection)
+    [196, 657, 867, 1265],  # Node 1062: 414 (intersection)
+    [3, 336, 351, 1345],  # Node 1063: 415 (intersection)
+    [207, 680, 848, 932, 1186],  # Node 1064: C435 (customer)
+    [185, 257, 417, 717, 1092],  # Node 1065: BSS215 (bss)
+    [13, 1218, 1412],  # Node 1066: 416 (intersection)
+    [261, 773, 833, 871, 1026],  # Node 1067: 417 (intersection)
+    [1347, 1388, 1442, 1462],  # Node 1068: 418 (intersection)
+    [61, 279, 1017, 1307],  # Node 1069: C436 (customer)
+    [72, 109, 1406],  # Node 1070: 419 (intersection)
+    [134, 701, 828, 889],  # Node 1071: BSS216 (bss)
+    [546, 796, 953, 1180, 1230],  # Node 1072: 420 (intersection)
+    [642, 770, 793],  # Node 1073: BSS217 (bss)
+    [301, 421, 899, 1038, 1497],  # Node 1074: 421 (intersection)
+    [80, 197, 1201, 1234],  # Node 1075: C437 (customer)
+    [84, 352, 594, 937, 1056],  # Node 1076: 422 (intersection)
+    [52, 179, 190, 1057, 1447],  # Node 1077: C438 (customer)
+    [496, 912, 1273, 1395, 1414],  # Node 1078: C439 (customer)
+    [605, 903, 1125],  # Node 1079: 423 (intersection)
+    [32, 251, 455, 826],  # Node 1080: 424 (intersection)
+    [371, 465],  # Node 1081: BSS218 (bss)
+    [210, 283, 1183],  # Node 1082: C440 (customer)
+    [978, 1275, 1449, 1479],  # Node 1083: 425 (intersection)
+    [308, 437, 747, 1178],  # Node 1084: BSS219 (bss)
+    [1197, 1432, 1458],  # Node 1085: 426 (intersection)
+    [112, 325, 591, 665, 944],  # Node 1086: C441 (customer)
+    [63, 152, 670, 1118, 1487],  # Node 1087: C442 (customer)
+    [209, 1098, 1269, 1311, 1407],  # Node 1088: C443 (customer)
+    [572, 924, 1108, 1230],  # Node 1089: 427 (intersection)
+    [274, 630, 954, 1453],  # Node 1090: C444 (customer)
+    [182, 574, 1184],  # Node 1091: C445 (customer)
+    [185, 717, 1065, 1157, 1337],  # Node 1092: C446 (customer)
+    [145, 268, 839, 1146, 1480],  # Node 1093: 428 (intersection)
+    [213, 967, 977, 1241, 1346],  # Node 1094: C447 (customer)
+    [36, 194, 201, 369, 545],  # Node 1095: 429 (intersection)
+    [143, 216, 504, 654, 1175],  # Node 1096: BSS220 (bss)
+    [23, 348, 753, 1019],  # Node 1097: 430 (intersection)
+    [45, 209, 1088, 1229, 1311],  # Node 1098: C448 (customer)
+    [26, 498, 597, 613, 807],  # Node 1099: BSS221 (bss)
+    [754, 824, 957],  # Node 1100: C449 (customer)
+    [7, 53, 313],  # Node 1101: C450 (customer)
+    [61, 404, 1252, 1307],  # Node 1102: BSS222 (bss)
+    [323, 632, 1054, 1171, 1283],  # Node 1103: BSS223 (bss)
+    [528, 643, 740, 941, 1475],  # Node 1104: C451 (customer)
+    [310, 733, 951, 1159],  # Node 1105: 431 (intersection)
+    [256, 790, 1060],  # Node 1106: 432 (intersection)
+    [838, 1404, 1429],  # Node 1107: C452 (customer)
+    [409, 572, 1089, 1305, 1356],  # Node 1108: 433 (intersection)
+    [230, 1462],  # Node 1109: 434 (intersection)
+    [240, 254, 623],  # Node 1110: C453 (customer)
+    [29, 875, 1016],  # Node 1111: BSS224 (bss)
+    [702, 957, 1327, 1466],  # Node 1112: 435 (intersection)
+    [995, 1181, 1237],  # Node 1113: 436 (intersection)
+    [234, 373, 501, 695, 834],  # Node 1114: BSS225 (bss)
+    [104, 899, 1328],  # Node 1115: C454 (customer)
+    [590, 733, 873, 1309],  # Node 1116: C455 (customer)
+    [674, 748, 1139, 1351],  # Node 1117: C456 (customer)
+    [63, 152, 670, 771, 1087],  # Node 1118: 437 (intersection)
+    [580, 606, 878, 1387],  # Node 1119: C457 (customer)
+    [736, 1128, 1212, 1264, 1312],  # Node 1120: 438 (intersection)
+    [388, 468, 527, 1347, 1388],  # Node 1121: 439 (intersection)
+    [190, 600, 1017, 1191],  # Node 1122: 440 (intersection)
+    [838, 1404, 1415],  # Node 1123: 441 (intersection)
+    [404, 416, 769, 1252, 1457],  # Node 1124: 442 (intersection)
+    [340, 605, 822, 1079, 1232],  # Node 1125: BSS226 (bss)
+    [65, 408, 450, 569],  # Node 1126: BSS227 (bss)
+    [474, 995, 1043, 1237, 1438],  # Node 1127: BSS228 (bss)
+    [51, 1120, 1408],  # Node 1128: BSS229 (bss)
+    [231, 270, 540, 849],  # Node 1129: C458 (customer)
+    [721, 815, 902, 1369, 1419],  # Node 1130: C459 (customer)
+    [92, 853, 1291, 1316],  # Node 1131: BSS230 (bss)
+    [64, 568, 691, 1029, 1048],  # Node 1132: 443 (intersection)
+    [95, 278, 423, 887, 1003],  # Node 1133: 444 (intersection)
+    [189, 200, 309, 338, 350],  # Node 1134: C460 (customer)
+    [360, 550, 1189],  # Node 1135: C461 (customer)
+    [295, 321, 1039],  # Node 1136: BSS231 (bss)
+    [286, 362, 551, 565, 875],  # Node 1137: 445 (intersection)
+    [406, 611, 675, 895],  # Node 1138: 446 (intersection)
+    [374, 548, 748, 1117, 1397],  # Node 1139: BSS232 (bss)
+    [734, 774, 809, 958, 1451],  # Node 1140: C462 (customer)
+    [603, 635, 898, 1205, 1445],  # Node 1141: C463 (customer)
+    [353, 448, 882, 1223, 1460],  # Node 1142: 447 (intersection)
+    [235, 659, 982, 1389, 1462],  # Node 1143: C464 (customer)
+    [172, 364, 860, 1353, 1384],  # Node 1144: 448 (intersection)
+    [273, 1390],  # Node 1145: 449 (intersection)
+    [268, 522, 647, 1093, 1300],  # Node 1146: 450 (intersection)
+    [316, 416, 848, 1049, 1457],  # Node 1147: C465 (customer)
+    [106, 554, 794, 935, 1231],  # Node 1148: 451 (intersection)
+    [83, 297, 766, 999],  # Node 1149: 452 (intersection)
+    [17, 434, 741, 856],  # Node 1150: 453 (intersection)
+    [282, 331, 379, 565],  # Node 1151: C466 (customer)
+    [117, 320, 814, 1282, 1499],  # Node 1152: BSS233 (bss)
+    [298, 684, 689, 1011],  # Node 1153: BSS234 (bss)
+    [169, 305, 425, 561, 817],  # Node 1154: BSS235 (bss)
+    [227, 279, 481, 1476],  # Node 1155: C467 (customer)
+    [224, 649, 825],  # Node 1156: C468 (customer)
+    [472, 1092, 1337],  # Node 1157: C469 (customer)
+    [326, 782, 864, 1015, 1358],  # Node 1158: C470 (customer)
+    [951, 1105, 1249, 1309, 1386],  # Node 1159: 454 (intersection)
+    [33, 558, 825, 1227],  # Node 1160: C471 (customer)
+    [25, 100, 464, 1297],  # Node 1161: C472 (customer)
+    [1, 242, 1443, 1467, 1469],  # Node 1162: 455 (intersection)
+    [258, 391, 599, 625, 629],  # Node 1163: BSS236 (bss)
+    [360, 550, 1242],  # Node 1164: BSS237 (bss)
+    [949, 1274],  # Node 1165: 456 (intersection)
+    [495, 627, 997, 999, 1465],  # Node 1166: C473 (customer)
+    [392, 909, 1178],  # Node 1167: C474 (customer)
+    [12, 123, 291],  # Node 1168: 457 (intersection)
+    [520, 984, 1254],  # Node 1169: 458 (intersection)
+    [506, 519, 745, 760, 922],  # Node 1170: C475 (customer)
+    [323, 1103, 1434],  # Node 1171: 459 (intersection)
+    [447, 628, 802, 1000, 1471],  # Node 1172: BSS238 (bss)
+    [28, 508, 904, 1492],  # Node 1173: 460 (intersection)
+    [71, 139, 264, 878, 952],  # Node 1174: C476 (customer)
+    [143, 276, 772, 1096],  # Node 1175: BSS239 (bss)
+    [289, 363, 925],  # Node 1176: C477 (customer)
+    [423, 1023, 1048, 1310],  # Node 1177: C478 (customer)
+    [1084, 1167, 1322],  # Node 1178: C479 (customer)
+    [521, 529, 622, 693, 1474],  # Node 1179: 461 (intersection)
+    [546, 953, 1072],  # Node 1180: BSS240 (bss)
+    [529, 995, 1113, 1474],  # Node 1181: BSS241 (bss)
+    [752, 876, 993, 994, 1326],  # Node 1182: BSS242 (bss)
+    [210, 353, 1082, 1381, 1460],  # Node 1183: 462 (intersection)
+    [31, 486, 621, 1091],  # Node 1184: C480 (customer)
+    [642, 890, 905, 1250],  # Node 1185: C481 (customer)
+    [94, 1064],  # Node 1186: 463 (intersection)
+    [3, 75, 97, 244, 758],  # Node 1187: BSS243 (bss)
+    [798, 1299, 1426, 1453],  # Node 1188: BSS244 (bss)
+    [98, 360, 1135],  # Node 1189: C482 (customer)
+    [63, 841, 852, 912, 1414],  # Node 1190: C483 (customer)
+    [440, 892, 1043, 1122, 1233],  # Node 1191: BSS245 (bss)
+    [197, 306, 1201],  # Node 1192: C484 (customer)
+    [14, 43, 83, 983, 1320],  # Node 1193: 464 (intersection)
+    [44, 251, 787, 1372],  # Node 1194: BSS246 (bss)
+    [333, 377, 458, 1383],  # Node 1195: C485 (customer)
+    [140, 1014, 1240],  # Node 1196: 465 (intersection)
+    [86, 1005, 1085, 1314, 1432],  # Node 1197: C486 (customer)
+    [716, 1435, 1477],  # Node 1198: 466 (intersection)
+    [112, 665, 813, 1045],  # Node 1199: 467 (intersection)
+    [173, 883, 960, 1268, 1343],  # Node 1200: 468 (intersection)
+    [306, 1075, 1192, 1450],  # Node 1201: C487 (customer)
+    [301, 421, 714, 819, 1038],  # Node 1202: 469 (intersection)
+    [465, 467, 570, 609],  # Node 1203: C488 (customer)
+    [70, 92, 247, 459, 523],  # Node 1204: 470 (intersection)
+    [603, 1141, 1489],  # Node 1205: BSS247 (bss)
+    [164, 1385],  # Node 1206: 471 (intersection)
+    [254, 451, 466, 1251],  # Node 1207: 472 (intersection)
+    [663, 698, 1224],  # Node 1208: C489 (customer)
+    [131, 146, 218, 557, 837],  # Node 1209: C490 (customer)
+    [199, 241, 566, 587, 955],  # Node 1210: 473 (intersection)
+    [370, 859, 917, 1481],  # Node 1211: C491 (customer)
+    [736, 811, 972, 1120, 1408],  # Node 1212: C492 (customer)
+    [192, 332, 1219, 1350],  # Node 1213: 474 (intersection)
+    [780, 1018],  # Node 1214: 475 (intersection)
+    [184, 207, 393, 485, 656],  # Node 1215: 476 (intersection)
+    [1246, 1261, 1353, 1384, 1411],  # Node 1216: BSS248 (bss)
+    [589, 1431, 1437],  # Node 1217: 477 (intersection)
+    [13, 879, 1066, 1410, 1412],  # Node 1218: C493 (customer)
+    [332, 1213, 1350],  # Node 1219: C494 (customer)
+    [47, 124, 368, 509, 840],  # Node 1220: 478 (intersection)
+    [218, 316, 449, 704, 1049],  # Node 1221: 479 (intersection)
+    [233, 364, 1261, 1353, 1384],  # Node 1222: C495 (customer)
+    [448, 646, 1142, 1306],  # Node 1223: 480 (intersection)
+    [663, 690, 1208, 1364, 1378],  # Node 1224: BSS249 (bss)
+    [145, 325, 665],  # Node 1225: C496 (customer)
+    [547, 772, 1027, 1317, 1330],  # Node 1226: 481 (intersection)
+    [352, 558, 594, 937, 1160],  # Node 1227: 482 (intersection)
+    [273, 530, 705, 793, 1253],  # Node 1228: BSS250 (bss)
+    [45, 488, 617, 963, 1098],  # Node 1229: C497 (customer)
+    [409, 953, 1072, 1089],  # Node 1230: 483 (intersection)
+    [106, 554, 935, 1148, 1425],  # Node 1231: 484 (intersection)
+    [340, 822, 1125, 1290],  # Node 1232: 485 (intersection)
+    [61, 440, 891, 1191],  # Node 1233: 486 (intersection)
+    [80, 197, 493, 1075, 1417],  # Node 1234: 487 (intersection)
+    [90, 136, 615],  # Node 1235: C498 (customer)
+    [81, 275, 752, 913, 1246],  # Node 1236: BSS251 (bss)
+    [474, 995, 1113, 1127, 1438],  # Node 1237: C499 (customer)
+    [271, 438, 456, 700, 738],  # Node 1238: 488 (intersection)
+    [449, 667],  # Node 1239: BSS252 (bss)
+    [30, 1014, 1196, 1464],  # Node 1240: C500 (customer)
+    [213, 686, 967, 977, 1094],  # Node 1241: 489 (intersection)
+    [193, 360, 679, 1164, 1361],  # Node 1242: 490 (intersection)
+    [144, 398, 487, 723, 1342],  # Node 1243: C501 (customer)
+    [199, 226, 726, 855, 1009],  # Node 1244: C502 (customer)
+    [250, 257, 417, 1040, 1340],  # Node 1245: 491 (intersection)
+    [275, 913, 981, 1216, 1236],  # Node 1246: 492 (intersection)
+    [6, 313, 384],  # Node 1247: C503 (customer)
+    [68, 218, 797],  # Node 1248: BSS253 (bss)
+    [90, 136, 615, 1159, 1386],  # Node 1249: C504 (customer)
+    [642, 705, 890, 1185],  # Node 1250: C505 (customer)
+    [240, 254, 623, 1207],  # Node 1251: 493 (intersection)
+    [416, 667, 769, 1102, 1124],  # Node 1252: C506 (customer)
+    [530, 709, 1228, 1339, 1371],  # Node 1253: 494 (intersection)
+    [407, 520, 984, 1169],  # Node 1254: C507 (customer)
+    [208, 287, 461, 1256],  # Node 1255: 495 (intersection)
+    [287, 461, 588, 1255],  # Node 1256: BSS254 (bss)
+    [157, 234, 893, 1280],  # Node 1257: BSS255 (bss)
+    [536, 604, 1441],  # Node 1258: C508 (customer)
+    [959, 1030],  # Node 1259: 496 (intersection)
+    [487, 723, 980, 996],  # Node 1260: C509 (customer)
+    [981, 1216, 1222, 1353, 1384],  # Node 1261: 497 (intersection)
+    [154, 232, 398, 1370],  # Node 1262: 498 (intersection)
+    [454, 746, 884, 1035],  # Node 1263: 499 (intersection)
+    [290, 736, 843, 946, 1120],  # Node 1264: C510 (customer)
+    [1004, 1062],  # Node 1265: C511 (customer)
+    [587, 761, 789, 803, 955],  # Node 1266: 500 (intersection)
+    [178, 413, 886],  # Node 1267: 501 (intersection)
+    [173, 391, 883, 1200],  # Node 1268: C512 (customer)
+    [118, 209, 863, 929, 1088],  # Node 1269: 502 (intersection)
+    [62, 375, 601, 640, 1439],  # Node 1270: 503 (intersection)
+    [759, 906, 1050, 1051],  # Node 1271: C513 (customer)
+    [482, 1337],  # Node 1272: BSS256 (bss)
+    [278, 538, 1078, 1348],  # Node 1273: 504 (intersection)
+    [175, 900, 1024, 1061, 1165],  # Node 1274: BSS257 (bss)
+    [595, 711, 978, 1083],  # Node 1275: C514 (customer)
+    [292, 365, 778],  # Node 1276: C515 (customer)
+    [502, 1301, 1455, 1459],  # Node 1277: C516 (customer)
+    [261, 647, 694, 773, 871],  # Node 1278: 505 (intersection)
+    [328, 375, 389, 866, 1354],  # Node 1279: C517 (customer)
+    [157, 820, 906, 1257],  # Node 1280: 506 (intersection)
+    [329, 576, 1282],  # Node 1281: C518 (customer)
+    [117, 320, 576, 1152, 1281],  # Node 1282: C519 (customer)
+    [323, 632, 1054, 1103, 1434],  # Node 1283: C520 (customer)
+    [223, 238, 584, 1471],  # Node 1284: C521 (customer)
+    [720, 767, 878, 1044],  # Node 1285: BSS258 (bss)
+    [175, 567, 624, 683],  # Node 1286: 507 (intersection)
+    [166, 783, 1304],  # Node 1287: C522 (customer)
+    [115, 894],  # Node 1288: 508 (intersection)
+    [188, 212, 457, 532, 1415],  # Node 1289: C523 (customer)
+    [340, 489, 605, 1232],  # Node 1290: 509 (intersection)
+    [366, 538, 1131, 1316, 1348],  # Node 1291: 510 (intersection)
+    [20, 32, 44, 77],  # Node 1292: 511 (intersection)
+    [51, 1312, 1408],  # Node 1293: C524 (customer)
+    [198, 431, 863, 929, 931],  # Node 1294: C525 (customer)
+    [479, 713, 795, 1020],  # Node 1295: 512 (intersection)
+    [339, 540, 722, 1424],  # Node 1296: BSS259 (bss)
+    [25, 100, 170, 1033, 1161],  # Node 1297: 513 (intersection)
+    [304, 484, 614, 884],  # Node 1298: BSS260 (bss)
+    [632, 798, 1054, 1188, 1426],  # Node 1299: 514 (intersection)
+    [325, 522, 591, 1146],  # Node 1300: 515 (intersection)
+    [811, 843, 1277, 1403],  # Node 1301: 516 (intersection)
+    [292, 881],  # Node 1302: C526 (customer)
+    [89, 412, 755, 1467],  # Node 1303: 517 (intersection)
+    [463, 1287, 1358, 1379],  # Node 1304: 518 (intersection)
+    [1015, 1108, 1356, 1393],  # Node 1305: C527 (customer)
+    [353, 1223, 1381],  # Node 1306: C528 (customer)
+    [61, 288, 1069, 1102],  # Node 1307: C529 (customer)
+    [13, 263, 1309, 1349, 1412],  # Node 1308: 519 (intersection)
+    [263, 733, 1116, 1159, 1308],  # Node 1309: C530 (customer)
+    [98, 131, 146, 1023, 1177],  # Node 1310: 520 (intersection)
+    [45, 553, 963, 1088, 1098],  # Node 1311: 521 (intersection)
+    [1120, 1293],  # Node 1312: C531 (customer)
+    [334, 349, 544],  # Node 1313: C532 (customer)
+    [86, 114, 1039, 1197, 1432],  # Node 1314: 522 (intersection)
+    [242, 959, 1030, 1469],  # Node 1315: BSS261 (bss)
+    [366, 853, 1131, 1291, 1348],  # Node 1316: 523 (intersection)
+    [143, 547, 552, 1226, 1334],  # Node 1317: C533 (customer)
+    [311, 441, 1482],  # Node 1318: C534 (customer)
+    [122, 412, 1442],  # Node 1319: 524 (intersection)
+    [228, 358, 983, 1052, 1193],  # Node 1320: C535 (customer)
+    [302, 457, 604, 732, 1441],  # Node 1321: 525 (intersection)
+    [665, 1178],  # Node 1322: 526 (intersection)
+    [608, 868, 971, 1372],  # Node 1323: C536 (customer)
+    [115, 894, 1352, 1380, 1423],  # Node 1324: 527 (intersection)
+    [130, 566, 789, 991, 1425],  # Node 1325: BSS262 (bss)
+    [56, 993, 994, 1182, 1435],  # Node 1326: 528 (intersection)
+    [343, 399, 702, 1112, 1466],  # Node 1327: BSS263 (bss)
+    [104, 1115, 1345, 1497],  # Node 1328: 529 (intersection)
+    [7, 50, 384, 1008, 1036],  # Node 1329: 530 (intersection)
+    [533, 936, 1226],  # Node 1330: BSS264 (bss)
+    [422, 668, 716, 876],  # Node 1331: BSS265 (bss)
+    [87, 111, 393, 806, 867],  # Node 1332: 531 (intersection)
+    [380, 582, 1400],  # Node 1333: 532 (intersection)
+    [547, 1317],  # Node 1334: 533 (intersection)
+    [74, 93, 592, 631, 979],  # Node 1335: 534 (intersection)
+    [134, 277, 637, 775, 1013],  # Node 1336: BSS266 (bss)
+    [185, 482, 1092, 1157, 1272],  # Node 1337: 535 (intersection)
+    [50, 96, 1036, 1350],  # Node 1338: C537 (customer)
+    [74, 1253, 1371, 1373],  # Node 1339: C538 (customer)
+    [717, 897, 1040, 1245],  # Node 1340: C539 (customer)
+    [387, 556, 896, 1401],  # Node 1341: 536 (intersection)
+    [144, 560, 1243],  # Node 1342: 537 (intersection)
+    [960, 966, 1200],  # Node 1343: C540 (customer)
+    [390, 479, 713, 880],  # Node 1344: C541 (customer)
+    [104, 336, 1063, 1328, 1491],  # Node 1345: C542 (customer)
+    [129, 426, 805, 1094],  # Node 1346: 538 (intersection)
+    [388, 1068, 1121, 1388],  # Node 1347: BSS267 (bss)
+    [380, 582, 1273, 1291, 1316],  # Node 1348: 539 (intersection)
+    [13, 263, 590, 744, 1308],  # Node 1349: BSS268 (bss)
+    [53, 1213, 1219, 1338],  # Node 1350: C543 (customer)
+    [748, 1117],  # Node 1351: 540 (intersection)
+    [1324, 1423],  # Node 1352: C544 (customer)
+    [981, 1144, 1216, 1222, 1261],  # Node 1353: BSS269 (bss)
+    [328, 866, 1279, 1488],  # Node 1354: C545 (customer)
+    [264, 658, 788],  # Node 1355: C546 (customer)
+    [409, 1108, 1305, 1393],  # Node 1356: C547 (customer)
+    [345, 590, 744, 1053],  # Node 1357: 541 (intersection)
+    [783, 1015, 1158, 1304],  # Node 1358: BSS270 (bss)
+    [151, 513, 1413, 1493],  # Node 1359: C548 (customer)
+    [324, 436, 586, 950],  # Node 1360: C549 (customer)
+    [324, 679, 885, 1242],  # Node 1361: BSS271 (bss)
+    [458, 656, 874, 1368],  # Node 1362: BSS272 (bss)
+    [444, 1376, 1378],  # Node 1363: C550 (customer)
+    [602, 663, 690, 1224, 1378],  # Node 1364: 542 (intersection)
+    [190, 600, 1017],  # Node 1365: BSS273 (bss)
+    [296, 345, 1012],  # Node 1366: 543 (intersection)
+    [373, 376, 934, 1394],  # Node 1367: BSS274 (bss)
+    [178, 458, 874, 1019, 1362],  # Node 1368: 544 (intersection)
+    [815, 1031, 1130],  # Node 1369: C551 (customer)
+    [154, 1262],  # Node 1370: 545 (intersection)
+    [74, 709, 1253, 1339, 1373],  # Node 1371: BSS275 (bss)
+    [581, 608, 971, 1194, 1323],  # Node 1372: C552 (customer)
+    [900, 1061, 1339, 1371],  # Node 1373: C553 (customer)
+    [475, 1021],  # Node 1374: C554 (customer)
+    [59, 249, 283, 829],  # Node 1375: 546 (intersection)
+    [252, 386, 444, 1363, 1456],  # Node 1376: 547 (intersection)
+    [259, 284, 771, 804],  # Node 1377: C555 (customer)
+    [602, 851, 1224, 1363, 1364],  # Node 1378: 548 (intersection)
+    [166, 963, 1304],  # Node 1379: C556 (customer)
+    [307, 1324],  # Node 1380: C557 (customer)
+    [353, 1183, 1306, 1460],  # Node 1381: 549 (intersection)
+    [169, 305, 514, 561, 1461],  # Node 1382: BSS276 (bss)
+    [333, 377, 458, 718, 1195],  # Node 1383: 550 (intersection)
+    [1144, 1216, 1222, 1261],  # Node 1384: 551 (intersection)
+    [164, 395, 405, 664, 1206],  # Node 1385: 552 (intersection)
+    [906, 1001, 1159, 1249],  # Node 1386: BSS277 (bss)
+    [606, 713, 1119],  # Node 1387: 553 (intersection)
+    [388, 1068, 1121, 1347],  # Node 1388: 554 (intersection)
+    [1143, 1462],  # Node 1389: C558 (customer)
+    [273, 832, 1145],  # Node 1390: BSS278 (bss)
+    [370, 428, 581, 917],  # Node 1391: BSS279 (bss)
+    [28, 76, 418, 699, 914],  # Node 1392: 555 (intersection)
+    [516, 725, 827, 1305, 1356],  # Node 1393: BSS280 (bss)
+    [376, 834, 934, 1367],  # Node 1394: 556 (intersection)
+    [653, 1078, 1414],  # Node 1395: BSS281 (bss)
+    [43, 791, 1052, 1430],  # Node 1396: C559 (customer)
+    [548, 748, 1139],  # Node 1397: C560 (customer)
+    [24, 372, 436, 644],  # Node 1398: BSS282 (bss)
+    [64, 1029, 1046],  # Node 1399: BSS283 (bss)
+    [380, 535, 582, 1333],  # Node 1400: C561 (customer)
+    [4, 206, 556, 1341],  # Node 1401: BSS284 (bss)
+    [303, 902, 942, 962],  # Node 1402: C562 (customer)
+    [811, 972, 1301],  # Node 1403: C563 (customer)
+    [838, 1107, 1123, 1429],  # Node 1404: C564 (customer)
+    [16, 18],  # Node 1405: 557 (intersection)
+    [72, 1070, 1493],  # Node 1406: C565 (customer)
+    [597, 613, 807, 1088],  # Node 1407: 558 (intersection)
+    [51, 167, 1128, 1212, 1293],  # Node 1408: 559 (intersection)
+    [245, 534],  # Node 1409: BSS285 (bss)
+    [879, 1051, 1218],  # Node 1410: 560 (intersection)
+    [367, 641, 752, 876, 1216],  # Node 1411: C566 (customer)
+    [13, 1053, 1066, 1218, 1308],  # Node 1412: 561 (intersection)
+    [151, 513, 990, 1359, 1493],  # Node 1413: BSS286 (bss)
+    [496, 912, 1078, 1190, 1395],  # Node 1414: C567 (customer)
+    [300, 818, 1123, 1289],  # Node 1415: C568 (customer)
+    [495, 803, 845, 997],  # Node 1416: C569 (customer)
+    [369, 585, 662, 1234],  # Node 1417: 562 (intersection)
+    [282, 331, 379, 760, 922],  # Node 1418: 563 (intersection)
+    [132, 721, 1130],  # Node 1419: 564 (intersection)
+    [253, 255, 821, 1035],  # Node 1420: 565 (intersection)
+    [49, 202, 344, 921],  # Node 1421: 566 (intersection)
+    [402, 601, 640, 986],  # Node 1422: 567 (intersection)
+    [679, 969, 1324, 1352],  # Node 1423: BSS287 (bss)
+    [339, 722, 1296],  # Node 1424: 568 (intersection)
+    [106, 554, 855, 1231, 1325],  # Node 1425: C570 (customer)
+    [798, 1188, 1299, 1434, 1453],  # Node 1426: 569 (intersection)
+    [24, 247, 372, 870],  # Node 1427: 570 (intersection)
+    [180, 484, 517, 966],  # Node 1428: BSS288 (bss)
+    [16, 838, 1107, 1404],  # Node 1429: C571 (customer)
+    [108, 239, 510, 1396],  # Node 1430: C572 (customer)
+    [19, 351, 1217],  # Node 1431: 571 (intersection)
+    [299, 1085, 1197, 1314, 1458],  # Node 1432: C573 (customer)
+    [227, 562, 725, 1057],  # Node 1433: 572 (intersection)
+    [798, 1054, 1171, 1283, 1426],  # Node 1434: C574 (customer)
+    [56, 657, 1198, 1326, 1477],  # Node 1435: C575 (customer)
+    [36, 191, 328, 1450],  # Node 1436: C576 (customer)
+    [314, 335, 400, 589, 1217],  # Node 1437: BSS289 (bss)
+    [474, 756, 1002, 1127, 1237],  # Node 1438: C577 (customer)
+    [25, 62, 170, 601, 1270],  # Node 1439: 573 (intersection)
+    [114, 1039],  # Node 1440: C578 (customer)
+    [536, 604, 1258, 1321],  # Node 1441: C579 (customer)
+    [1068, 1319, 1462],  # Node 1442: 574 (intersection)
+    [1, 6, 242, 779, 1162],  # Node 1443: C580 (customer)
+    [285, 493, 823],  # Node 1444: BSS290 (bss)
+    [635, 677, 898, 914, 1141],  # Node 1445: 575 (intersection)
+    [410, 1042, 1470],  # Node 1446: C581 (customer)
+    [52, 179, 474, 1002, 1077],  # Node 1447: 576 (intersection)
+    [102, 119, 470, 559, 851],  # Node 1448: 577 (intersection)
+    [531, 595, 1025, 1083],  # Node 1449: C582 (customer)
+    [36, 201, 1201, 1436],  # Node 1450: 578 (intersection)
+    [55, 378, 958, 1140],  # Node 1451: C583 (customer)
+    [161, 252, 264, 720],  # Node 1452: C584 (customer)
+    [798, 1090, 1188, 1426],  # Node 1453: 579 (intersection)
+    [469, 866, 1488],  # Node 1454: 580 (intersection)
+    [1277, 1459],  # Node 1455: C585 (customer)
+    [264, 720, 1376],  # Node 1456: 581 (intersection)
+    [680, 848, 1124, 1147],  # Node 1457: C586 (customer)
+    [299, 1085, 1432, 1495],  # Node 1458: BSS291 (bss)
+    [229, 502, 616, 1277, 1455],  # Node 1459: 582 (intersection)
+    [353, 1142, 1183, 1381],  # Node 1460: C587 (customer)
+    [174, 330, 561, 1032, 1382],  # Node 1461: 583 (intersection)
+    [1068, 1109, 1143, 1389, 1442],  # Node 1462: BSS292 (bss)
+    [30, 122, 140, 381, 1014],  # Node 1463: 584 (intersection)
+    [341, 596, 664, 1240],  # Node 1464: C588 (customer)
+    [297, 627, 766, 999, 1166],  # Node 1465: 585 (intersection)
+    [343, 702, 957, 1112, 1327],  # Node 1466: C589 (customer)
+    [89, 755, 1162, 1303, 1469],  # Node 1467: 586 (intersection)
+    [281, 685, 943, 1041],  # Node 1468: BSS293 (bss)
+    [89, 242, 1162, 1315, 1467],  # Node 1469: BSS294 (bss)
+    [199, 627, 1446],  # Node 1470: BSS295 (bss)
+    [99, 149, 802, 1172, 1284],  # Node 1471: 587 (intersection)
+    [79, 443, 671, 1033],  # Node 1472: 588 (intersection)
+    [160, 415, 510, 620, 856],  # Node 1473: 589 (intersection)
+    [317, 529, 1179, 1181],  # Node 1474: C590 (customer)
+    [181, 259, 643, 974, 1104],  # Node 1475: C591 (customer)
+    [279, 481, 1155],  # Node 1476: 590 (intersection)
+    [77, 422, 808, 1198, 1435],  # Node 1477: 591 (intersection)
+    [39, 236, 347],  # Node 1478: 592 (intersection)
+    [711, 1083],  # Node 1479: 593 (intersection)
+    [10, 126, 839, 847, 1093],  # Node 1480: BSS296 (bss)
+    [240, 370, 859, 1211, 1492],  # Node 1481: C592 (customer)
+    [355, 357, 681, 1318],  # Node 1482: BSS297 (bss)
+    [294, 692, 949],  # Node 1483: BSS298 (bss)
+    [150, 430, 639],  # Node 1484: BSS299 (bss)
+    [23, 348],  # Node 1485: BSS300 (bss)
+    [358, 359, 766, 956],  # Node 1486: C593 (customer)
+    [259, 526, 1087],  # Node 1487: 594 (intersection)
+    [469, 866, 1354, 1454, 1494],  # Node 1488: C594 (customer)
+    [496, 603, 1029, 1046, 1205],  # Node 1489: C595 (customer)
+    [148, 335, 579, 1032],  # Node 1490: C596 (customer)
+    [104, 336, 858, 1345],  # Node 1491: 595 (intersection)
+    [240, 508, 859, 1173, 1481],  # Node 1492: 596 (intersection)
+    [151, 990, 1359, 1406, 1413],  # Node 1493: 597 (intersection)
+    [787, 835, 866, 1488],  # Node 1494: C597 (customer)
+    [299, 622, 964, 1458],  # Node 1495: 598 (intersection)
+    [38, 47, 368, 840, 897],  # Node 1496: C598 (customer)
+    [1074, 1328],  # Node 1497: C599 (customer)
+    [750, 861],  # Node 1498: 599 (intersection)
+    [117, 814, 968, 1152],  # Node 1499: C600 (customer)
+]
+
+idx2label = {
+    0: "D",
+    1: "1",
+    2: "2",
+    3: "C1",
+    4: "3",
+    5: "BSS1",
+    6: "BSS2",
+    7: "C2",
+    8: "C3",
+    9: "C4",
+    10: "C5",
+    11: "4",
+    12: "5",
+    13: "C6",
+    14: "C7",
+    15: "C8",
+    16: "C9",
+    17: "BSS3",
+    18: "BSS4",
+    19: "C10",
+    20: "C11",
+    21: "BSS5",
+    22: "BSS6",
+    23: "6",
+    24: "7",
+    25: "8",
+    26: "C12",
+    27: "C13",
+    28: "BSS7",
+    29: "C14",
+    30: "C15",
+    31: "BSS8",
+    32: "BSS9",
+    33: "9",
+    34: "C16",
+    35: "C17",
+    36: "BSS10",
+    37: "C18",
+    38: "10",
+    39: "C19",
+    40: "C20",
+    41: "C21",
+    42: "C22",
+    43: "C23",
+    44: "C24",
+    45: "C25",
+    46: "BSS11",
+    47: "C26",
+    48: "C27",
+    49: "C28",
+    50: "C29",
+    51: "C30",
+    52: "BSS12",
+    53: "C31",
+    54: "11",
+    55: "C32",
+    56: "C33",
+    57: "C34",
+    58: "12",
+    59: "C35",
+    60: "BSS13",
+    61: "C36",
+    62: "C37",
+    63: "13",
+    64: "14",
+    65: "C38",
+    66: "BSS14",
+    67: "15",
+    68: "C39",
+    69: "16",
+    70: "C40",
+    71: "C41",
+    72: "17",
+    73: "C42",
+    74: "18",
+    75: "C43",
+    76: "BSS15",
+    77: "19",
+    78: "20",
+    79: "C44",
+    80: "C45",
+    81: "21",
+    82: "22",
+    83: "BSS16",
+    84: "BSS17",
+    85: "C46",
+    86: "23",
+    87: "24",
+    88: "C47",
+    89: "C48",
+    90: "C49",
+    91: "C50",
+    92: "C51",
+    93: "BSS18",
+    94: "BSS19",
+    95: "C52",
+    96: "C53",
+    97: "C54",
+    98: "C55",
+    99: "C56",
+    100: "BSS20",
+    101: "C57",
+    102: "25",
+    103: "26",
+    104: "BSS21",
+    105: "27",
+    106: "28",
+    107: "C58",
+    108: "BSS22",
+    109: "29",
+    110: "30",
+    111: "C59",
+    112: "31",
+    113: "BSS23",
+    114: "C60",
+    115: "C61",
+    116: "32",
+    117: "33",
+    118: "C62",
+    119: "34",
+    120: "C63",
+    121: "35",
+    122: "C64",
+    123: "BSS24",
+    124: "BSS25",
+    125: "C65",
+    126: "36",
+    127: "BSS26",
+    128: "37",
+    129: "C66",
+    130: "C67",
+    131: "C68",
+    132: "C69",
+    133: "C70",
+    134: "38",
+    135: "C71",
+    136: "BSS27",
+    137: "39",
+    138: "C72",
+    139: "C73",
+    140: "BSS28",
+    141: "C74",
+    142: "C75",
+    143: "C76",
+    144: "40",
+    145: "41",
+    146: "BSS29",
+    147: "C77",
+    148: "C78",
+    149: "C79",
+    150: "C80",
+    151: "C81",
+    152: "42",
+    153: "C82",
+    154: "C83",
+    155: "43",
+    156: "C84",
+    157: "44",
+    158: "45",
+    159: "46",
+    160: "47",
+    161: "C85",
+    162: "48",
+    163: "49",
+    164: "BSS30",
+    165: "C86",
+    166: "50",
+    167: "51",
+    168: "C87",
+    169: "52",
+    170: "53",
+    171: "54",
+    172: "C88",
+    173: "BSS31",
+    174: "C89",
+    175: "C90",
+    176: "C91",
+    177: "55",
+    178: "C92",
+    179: "C93",
+    180: "C94",
+    181: "BSS32",
+    182: "C95",
+    183: "BSS33",
+    184: "56",
+    185: "C96",
+    186: "C97",
+    187: "BSS34",
+    188: "57",
+    189: "58",
+    190: "C98",
+    191: "59",
+    192: "60",
+    193: "61",
+    194: "BSS35",
+    195: "BSS36",
+    196: "BSS37",
+    197: "C99",
+    198: "C100",
+    199: "62",
+    200: "63",
+    201: "BSS38",
+    202: "64",
+    203: "65",
+    204: "66",
+    205: "67",
+    206: "C101",
+    207: "C102",
+    208: "68",
+    209: "C103",
+    210: "C104",
+    211: "BSS39",
+    212: "C105",
+    213: "C106",
+    214: "C107",
+    215: "C108",
+    216: "69",
+    217: "70",
+    218: "C109",
+    219: "71",
+    220: "BSS40",
+    221: "C110",
+    222: "72",
+    223: "73",
+    224: "C111",
+    225: "C112",
+    226: "74",
+    227: "C113",
+    228: "C114",
+    229: "BSS41",
+    230: "C115",
+    231: "75",
+    232: "C116",
+    233: "C117",
+    234: "C118",
+    235: "BSS42",
+    236: "BSS43",
+    237: "76",
+    238: "77",
+    239: "78",
+    240: "C119",
+    241: "BSS44",
+    242: "79",
+    243: "BSS45",
+    244: "80",
+    245: "C120",
+    246: "C121",
+    247: "C122",
+    248: "C123",
+    249: "BSS46",
+    250: "C124",
+    251: "C125",
+    252: "C126",
+    253: "C127",
+    254: "C128",
+    255: "BSS47",
+    256: "C129",
+    257: "81",
+    258: "82",
+    259: "BSS48",
+    260: "BSS49",
+    261: "C130",
+    262: "BSS50",
+    263: "83",
+    264: "C131",
+    265: "C132",
+    266: "84",
+    267: "C133",
+    268: "BSS51",
+    269: "85",
+    270: "C134",
+    271: "C135",
+    272: "C136",
+    273: "C137",
+    274: "C138",
+    275: "C139",
+    276: "C140",
+    277: "86",
+    278: "C141",
+    279: "87",
+    280: "C142",
+    281: "88",
+    282: "C143",
+    283: "BSS52",
+    284: "C144",
+    285: "89",
+    286: "C145",
+    287: "C146",
+    288: "BSS53",
+    289: "90",
+    290: "C147",
+    291: "C148",
+    292: "BSS54",
+    293: "C149",
+    294: "91",
+    295: "92",
+    296: "BSS55",
+    297: "BSS56",
+    298: "93",
+    299: "94",
+    300: "BSS57",
+    301: "C150",
+    302: "BSS58",
+    303: "95",
+    304: "C151",
+    305: "C152",
+    306: "96",
+    307: "97",
+    308: "C153",
+    309: "98",
+    310: "BSS59",
+    311: "BSS60",
+    312: "BSS61",
+    313: "C154",
+    314: "99",
+    315: "C155",
+    316: "C156",
+    317: "100",
+    318: "101",
+    319: "BSS62",
+    320: "102",
+    321: "C157",
+    322: "C158",
+    323: "C159",
+    324: "BSS63",
+    325: "C160",
+    326: "103",
+    327: "104",
+    328: "105",
+    329: "106",
+    330: "C161",
+    331: "C162",
+    332: "BSS64",
+    333: "107",
+    334: "108",
+    335: "109",
+    336: "C163",
+    337: "C164",
+    338: "BSS65",
+    339: "110",
+    340: "111",
+    341: "112",
+    342: "113",
+    343: "BSS66",
+    344: "C165",
+    345: "C166",
+    346: "C167",
+    347: "C168",
+    348: "C169",
+    349: "114",
+    350: "115",
+    351: "BSS67",
+    352: "C170",
+    353: "BSS68",
+    354: "C171",
+    355: "116",
+    356: "117",
+    357: "118",
+    358: "C172",
+    359: "C173",
+    360: "119",
+    361: "120",
+    362: "C174",
+    363: "BSS69",
+    364: "C175",
+    365: "BSS70",
+    366: "C176",
+    367: "121",
+    368: "122",
+    369: "123",
+    370: "C177",
+    371: "124",
+    372: "125",
+    373: "126",
+    374: "C178",
+    375: "127",
+    376: "C179",
+    377: "128",
+    378: "129",
+    379: "BSS71",
+    380: "130",
+    381: "131",
+    382: "BSS72",
+    383: "132",
+    384: "C180",
+    385: "C181",
+    386: "C182",
+    387: "BSS73",
+    388: "BSS74",
+    389: "BSS75",
+    390: "BSS76",
+    391: "133",
+    392: "C183",
+    393: "134",
+    394: "C184",
+    395: "C185",
+    396: "C186",
+    397: "BSS77",
+    398: "BSS78",
+    399: "135",
+    400: "136",
+    401: "BSS79",
+    402: "137",
+    403: "BSS80",
+    404: "138",
+    405: "139",
+    406: "140",
+    407: "141",
+    408: "142",
+    409: "C187",
+    410: "C188",
+    411: "BSS81",
+    412: "BSS82",
+    413: "143",
+    414: "144",
+    415: "BSS83",
+    416: "BSS84",
+    417: "145",
+    418: "146",
+    419: "C189",
+    420: "C190",
+    421: "C191",
+    422: "C192",
+    423: "BSS85",
+    424: "147",
+    425: "C193",
+    426: "148",
+    427: "149",
+    428: "150",
+    429: "C194",
+    430: "151",
+    431: "152",
+    432: "153",
+    433: "154",
+    434: "BSS86",
+    435: "C195",
+    436: "155",
+    437: "C196",
+    438: "BSS87",
+    439: "BSS88",
+    440: "156",
+    441: "C197",
+    442: "157",
+    443: "C198",
+    444: "BSS89",
+    445: "C199",
+    446: "C200",
+    447: "158",
+    448: "C201",
+    449: "159",
+    450: "160",
+    451: "161",
+    452: "BSS90",
+    453: "C202",
+    454: "BSS91",
+    455: "BSS92",
+    456: "162",
+    457: "C203",
+    458: "163",
+    459: "BSS93",
+    460: "164",
+    461: "C204",
+    462: "C205",
+    463: "165",
+    464: "BSS94",
+    465: "166",
+    466: "BSS95",
+    467: "167",
+    468: "168",
+    469: "BSS96",
+    470: "BSS97",
+    471: "BSS98",
+    472: "C206",
+    473: "C207",
+    474: "169",
+    475: "C208",
+    476: "C209",
+    477: "170",
+    478: "C210",
+    479: "171",
+    480: "BSS99",
+    481: "BSS100",
+    482: "C211",
+    483: "C212",
+    484: "172",
+    485: "BSS101",
+    486: "C213",
+    487: "173",
+    488: "C214",
+    489: "C215",
+    490: "C216",
+    491: "C217",
+    492: "BSS102",
+    493: "174",
+    494: "175",
+    495: "176",
+    496: "177",
+    497: "C218",
+    498: "178",
+    499: "179",
+    500: "180",
+    501: "181",
+    502: "C219",
+    503: "C220",
+    504: "182",
+    505: "183",
+    506: "BSS103",
+    507: "184",
+    508: "BSS104",
+    509: "185",
+    510: "186",
+    511: "C221",
+    512: "C222",
+    513: "187",
+    514: "188",
+    515: "C223",
+    516: "189",
+    517: "190",
+    518: "191",
+    519: "192",
+    520: "C224",
+    521: "BSS105",
+    522: "C225",
+    523: "C226",
+    524: "C227",
+    525: "BSS106",
+    526: "193",
+    527: "C228",
+    528: "194",
+    529: "195",
+    530: "C229",
+    531: "C230",
+    532: "BSS107",
+    533: "196",
+    534: "C231",
+    535: "197",
+    536: "C232",
+    537: "BSS108",
+    538: "C233",
+    539: "C234",
+    540: "198",
+    541: "C235",
+    542: "BSS109",
+    543: "199",
+    544: "BSS110",
+    545: "200",
+    546: "201",
+    547: "BSS111",
+    548: "C236",
+    549: "202",
+    550: "C237",
+    551: "C238",
+    552: "203",
+    553: "BSS112",
+    554: "BSS113",
+    555: "C239",
+    556: "C240",
+    557: "C241",
+    558: "BSS114",
+    559: "BSS115",
+    560: "BSS116",
+    561: "204",
+    562: "C242",
+    563: "C243",
+    564: "205",
+    565: "BSS117",
+    566: "206",
+    567: "C244",
+    568: "207",
+    569: "BSS118",
+    570: "BSS119",
+    571: "C245",
+    572: "C246",
+    573: "BSS120",
+    574: "C247",
+    575: "C248",
+    576: "BSS121",
+    577: "208",
+    578: "BSS122",
+    579: "C249",
+    580: "209",
+    581: "210",
+    582: "BSS123",
+    583: "C250",
+    584: "211",
+    585: "212",
+    586: "213",
+    587: "BSS124",
+    588: "C251",
+    589: "C252",
+    590: "C253",
+    591: "BSS125",
+    592: "C254",
+    593: "C255",
+    594: "BSS126",
+    595: "214",
+    596: "BSS127",
+    597: "215",
+    598: "C256",
+    599: "216",
+    600: "217",
+    601: "BSS128",
+    602: "BSS129",
+    603: "218",
+    604: "219",
+    605: "BSS130",
+    606: "BSS131",
+    607: "220",
+    608: "221",
+    609: "C257",
+    610: "C258",
+    611: "BSS132",
+    612: "C259",
+    613: "222",
+    614: "223",
+    615: "BSS133",
+    616: "BSS134",
+    617: "C260",
+    618: "224",
+    619: "225",
+    620: "BSS135",
+    621: "226",
+    622: "C261",
+    623: "BSS136",
+    624: "C262",
+    625: "C263",
+    626: "227",
+    627: "228",
+    628: "BSS137",
+    629: "BSS138",
+    630: "BSS139",
+    631: "229",
+    632: "230",
+    633: "231",
+    634: "232",
+    635: "C264",
+    636: "C265",
+    637: "233",
+    638: "234",
+    639: "235",
+    640: "BSS140",
+    641: "BSS141",
+    642: "236",
+    643: "237",
+    644: "C266",
+    645: "238",
+    646: "C267",
+    647: "239",
+    648: "C268",
+    649: "240",
+    650: "C269",
+    651: "241",
+    652: "BSS142",
+    653: "242",
+    654: "C270",
+    655: "243",
+    656: "244",
+    657: "C271",
+    658: "245",
+    659: "246",
+    660: "C272",
+    661: "BSS143",
+    662: "247",
+    663: "248",
+    664: "249",
+    665: "BSS144",
+    666: "250",
+    667: "251",
+    668: "252",
+    669: "C273",
+    670: "BSS145",
+    671: "C274",
+    672: "C275",
+    673: "C276",
+    674: "C277",
+    675: "253",
+    676: "254",
+    677: "C278",
+    678: "255",
+    679: "256",
+    680: "BSS146",
+    681: "C279",
+    682: "BSS147",
+    683: "BSS148",
+    684: "257",
+    685: "258",
+    686: "C280",
+    687: "BSS149",
+    688: "259",
+    689: "C281",
+    690: "C282",
+    691: "260",
+    692: "261",
+    693: "C283",
+    694: "262",
+    695: "BSS150",
+    696: "263",
+    697: "C284",
+    698: "C285",
+    699: "C286",
+    700: "C287",
+    701: "BSS151",
+    702: "264",
+    703: "BSS152",
+    704: "265",
+    705: "C288",
+    706: "266",
+    707: "BSS153",
+    708: "C289",
+    709: "267",
+    710: "268",
+    711: "C290",
+    712: "269",
+    713: "270",
+    714: "C291",
+    715: "C292",
+    716: "271",
+    717: "272",
+    718: "C293",
+    719: "273",
+    720: "274",
+    721: "BSS154",
+    722: "C294",
+    723: "C295",
+    724: "275",
+    725: "276",
+    726: "C296",
+    727: "C297",
+    728: "BSS155",
+    729: "277",
+    730: "C298",
+    731: "278",
+    732: "279",
+    733: "280",
+    734: "C299",
+    735: "BSS156",
+    736: "BSS157",
+    737: "C300",
+    738: "C301",
+    739: "281",
+    740: "C302",
+    741: "282",
+    742: "C303",
+    743: "C304",
+    744: "283",
+    745: "C305",
+    746: "C306",
+    747: "C307",
+    748: "BSS158",
+    749: "BSS159",
+    750: "C308",
+    751: "284",
+    752: "285",
+    753: "C309",
+    754: "C310",
+    755: "286",
+    756: "C311",
+    757: "287",
+    758: "288",
+    759: "BSS160",
+    760: "289",
+    761: "290",
+    762: "C312",
+    763: "BSS161",
+    764: "291",
+    765: "C313",
+    766: "292",
+    767: "293",
+    768: "294",
+    769: "295",
+    770: "C314",
+    771: "296",
+    772: "C315",
+    773: "297",
+    774: "BSS162",
+    775: "298",
+    776: "299",
+    777: "C316",
+    778: "C317",
+    779: "300",
+    780: "301",
+    781: "302",
+    782: "C318",
+    783: "303",
+    784: "C319",
+    785: "BSS163",
+    786: "C320",
+    787: "C321",
+    788: "BSS164",
+    789: "C322",
+    790: "BSS165",
+    791: "C323",
+    792: "304",
+    793: "305",
+    794: "306",
+    795: "C324",
+    796: "307",
+    797: "C325",
+    798: "C326",
+    799: "C327",
+    800: "308",
+    801: "309",
+    802: "C328",
+    803: "BSS166",
+    804: "C329",
+    805: "BSS167",
+    806: "310",
+    807: "311",
+    808: "BSS168",
+    809: "312",
+    810: "C330",
+    811: "313",
+    812: "C331",
+    813: "314",
+    814: "BSS169",
+    815: "C332",
+    816: "C333",
+    817: "315",
+    818: "316",
+    819: "317",
+    820: "318",
+    821: "C334",
+    822: "C335",
+    823: "319",
+    824: "320",
+    825: "BSS170",
+    826: "321",
+    827: "C336",
+    828: "BSS171",
+    829: "322",
+    830: "323",
+    831: "C337",
+    832: "324",
+    833: "C338",
+    834: "C339",
+    835: "325",
+    836: "326",
+    837: "327",
+    838: "C340",
+    839: "328",
+    840: "C341",
+    841: "BSS172",
+    842: "C342",
+    843: "329",
+    844: "330",
+    845: "C343",
+    846: "C344",
+    847: "C345",
+    848: "331",
+    849: "332",
+    850: "333",
+    851: "334",
+    852: "335",
+    853: "C346",
+    854: "C347",
+    855: "C348",
+    856: "336",
+    857: "C349",
+    858: "C350",
+    859: "BSS173",
+    860: "C351",
+    861: "C352",
+    862: "BSS174",
+    863: "BSS175",
+    864: "C353",
+    865: "BSS176",
+    866: "BSS177",
+    867: "337",
+    868: "BSS178",
+    869: "C354",
+    870: "338",
+    871: "BSS179",
+    872: "C355",
+    873: "C356",
+    874: "339",
+    875: "BSS180",
+    876: "C357",
+    877: "340",
+    878: "341",
+    879: "C358",
+    880: "342",
+    881: "BSS181",
+    882: "343",
+    883: "C359",
+    884: "C360",
+    885: "344",
+    886: "BSS182",
+    887: "C361",
+    888: "345",
+    889: "346",
+    890: "C362",
+    891: "C363",
+    892: "347",
+    893: "348",
+    894: "C364",
+    895: "349",
+    896: "C365",
+    897: "BSS183",
+    898: "C366",
+    899: "BSS184",
+    900: "C367",
+    901: "350",
+    902: "351",
+    903: "C368",
+    904: "C369",
+    905: "C370",
+    906: "C371",
+    907: "C372",
+    908: "C373",
+    909: "352",
+    910: "C374",
+    911: "C375",
+    912: "353",
+    913: "354",
+    914: "BSS185",
+    915: "BSS186",
+    916: "C376",
+    917: "355",
+    918: "356",
+    919: "BSS187",
+    920: "C377",
+    921: "BSS188",
+    922: "357",
+    923: "C378",
+    924: "C379",
+    925: "BSS189",
+    926: "358",
+    927: "C380",
+    928: "BSS190",
+    929: "359",
+    930: "C381",
+    931: "C382",
+    932: "360",
+    933: "361",
+    934: "362",
+    935: "C383",
+    936: "C384",
+    937: "BSS191",
+    938: "C385",
+    939: "BSS192",
+    940: "BSS193",
+    941: "363",
+    942: "C386",
+    943: "C387",
+    944: "C388",
+    945: "C389",
+    946: "C390",
+    947: "364",
+    948: "365",
+    949: "366",
+    950: "367",
+    951: "C391",
+    952: "368",
+    953: "C392",
+    954: "369",
+    955: "370",
+    956: "BSS194",
+    957: "C393",
+    958: "371",
+    959: "372",
+    960: "C394",
+    961: "C395",
+    962: "C396",
+    963: "373",
+    964: "374",
+    965: "BSS195",
+    966: "C397",
+    967: "C398",
+    968: "375",
+    969: "C399",
+    970: "BSS196",
+    971: "C400",
+    972: "C401",
+    973: "C402",
+    974: "376",
+    975: "C403",
+    976: "377",
+    977: "378",
+    978: "BSS197",
+    979: "379",
+    980: "380",
+    981: "381",
+    982: "C404",
+    983: "C405",
+    984: "BSS198",
+    985: "382",
+    986: "383",
+    987: "384",
+    988: "BSS199",
+    989: "385",
+    990: "C406",
+    991: "C407",
+    992: "386",
+    993: "C408",
+    994: "C409",
+    995: "C410",
+    996: "387",
+    997: "BSS200",
+    998: "C411",
+    999: "388",
+    1000: "389",
+    1001: "390",
+    1002: "C412",
+    1003: "C413",
+    1004: "C414",
+    1005: "391",
+    1006: "C415",
+    1007: "C416",
+    1008: "BSS201",
+    1009: "BSS202",
+    1010: "C417",
+    1011: "C418",
+    1012: "BSS203",
+    1013: "C419",
+    1014: "C420",
+    1015: "C421",
+    1016: "392",
+    1017: "393",
+    1018: "BSS204",
+    1019: "394",
+    1020: "C422",
+    1021: "C423",
+    1022: "C424",
+    1023: "C425",
+    1024: "395",
+    1025: "396",
+    1026: "C426",
+    1027: "397",
+    1028: "C427",
+    1029: "398",
+    1030: "BSS205",
+    1031: "C428",
+    1032: "C429",
+    1033: "BSS206",
+    1034: "C430",
+    1035: "BSS207",
+    1036: "BSS208",
+    1037: "399",
+    1038: "BSS209",
+    1039: "400",
+    1040: "401",
+    1041: "BSS210",
+    1042: "402",
+    1043: "C431",
+    1044: "403",
+    1045: "BSS211",
+    1046: "BSS212",
+    1047: "404",
+    1048: "C432",
+    1049: "BSS213",
+    1050: "405",
+    1051: "406",
+    1052: "407",
+    1053: "408",
+    1054: "409",
+    1055: "C433",
+    1056: "410",
+    1057: "BSS214",
+    1058: "411",
+    1059: "C434",
+    1060: "412",
+    1061: "413",
+    1062: "414",
+    1063: "415",
+    1064: "C435",
+    1065: "BSS215",
+    1066: "416",
+    1067: "417",
+    1068: "418",
+    1069: "C436",
+    1070: "419",
+    1071: "BSS216",
+    1072: "420",
+    1073: "BSS217",
+    1074: "421",
+    1075: "C437",
+    1076: "422",
+    1077: "C438",
+    1078: "C439",
+    1079: "423",
+    1080: "424",
+    1081: "BSS218",
+    1082: "C440",
+    1083: "425",
+    1084: "BSS219",
+    1085: "426",
+    1086: "C441",
+    1087: "C442",
+    1088: "C443",
+    1089: "427",
+    1090: "C444",
+    1091: "C445",
+    1092: "C446",
+    1093: "428",
+    1094: "C447",
+    1095: "429",
+    1096: "BSS220",
+    1097: "430",
+    1098: "C448",
+    1099: "BSS221",
+    1100: "C449",
+    1101: "C450",
+    1102: "BSS222",
+    1103: "BSS223",
+    1104: "C451",
+    1105: "431",
+    1106: "432",
+    1107: "C452",
+    1108: "433",
+    1109: "434",
+    1110: "C453",
+    1111: "BSS224",
+    1112: "435",
+    1113: "436",
+    1114: "BSS225",
+    1115: "C454",
+    1116: "C455",
+    1117: "C456",
+    1118: "437",
+    1119: "C457",
+    1120: "438",
+    1121: "439",
+    1122: "440",
+    1123: "441",
+    1124: "442",
+    1125: "BSS226",
+    1126: "BSS227",
+    1127: "BSS228",
+    1128: "BSS229",
+    1129: "C458",
+    1130: "C459",
+    1131: "BSS230",
+    1132: "443",
+    1133: "444",
+    1134: "C460",
+    1135: "C461",
+    1136: "BSS231",
+    1137: "445",
+    1138: "446",
+    1139: "BSS232",
+    1140: "C462",
+    1141: "C463",
+    1142: "447",
+    1143: "C464",
+    1144: "448",
+    1145: "449",
+    1146: "450",
+    1147: "C465",
+    1148: "451",
+    1149: "452",
+    1150: "453",
+    1151: "C466",
+    1152: "BSS233",
+    1153: "BSS234",
+    1154: "BSS235",
+    1155: "C467",
+    1156: "C468",
+    1157: "C469",
+    1158: "C470",
+    1159: "454",
+    1160: "C471",
+    1161: "C472",
+    1162: "455",
+    1163: "BSS236",
+    1164: "BSS237",
+    1165: "456",
+    1166: "C473",
+    1167: "C474",
+    1168: "457",
+    1169: "458",
+    1170: "C475",
+    1171: "459",
+    1172: "BSS238",
+    1173: "460",
+    1174: "C476",
+    1175: "BSS239",
+    1176: "C477",
+    1177: "C478",
+    1178: "C479",
+    1179: "461",
+    1180: "BSS240",
+    1181: "BSS241",
+    1182: "BSS242",
+    1183: "462",
+    1184: "C480",
+    1185: "C481",
+    1186: "463",
+    1187: "BSS243",
+    1188: "BSS244",
+    1189: "C482",
+    1190: "C483",
+    1191: "BSS245",
+    1192: "C484",
+    1193: "464",
+    1194: "BSS246",
+    1195: "C485",
+    1196: "465",
+    1197: "C486",
+    1198: "466",
+    1199: "467",
+    1200: "468",
+    1201: "C487",
+    1202: "469",
+    1203: "C488",
+    1204: "470",
+    1205: "BSS247",
+    1206: "471",
+    1207: "472",
+    1208: "C489",
+    1209: "C490",
+    1210: "473",
+    1211: "C491",
+    1212: "C492",
+    1213: "474",
+    1214: "475",
+    1215: "476",
+    1216: "BSS248",
+    1217: "477",
+    1218: "C493",
+    1219: "C494",
+    1220: "478",
+    1221: "479",
+    1222: "C495",
+    1223: "480",
+    1224: "BSS249",
+    1225: "C496",
+    1226: "481",
+    1227: "482",
+    1228: "BSS250",
+    1229: "C497",
+    1230: "483",
+    1231: "484",
+    1232: "485",
+    1233: "486",
+    1234: "487",
+    1235: "C498",
+    1236: "BSS251",
+    1237: "C499",
+    1238: "488",
+    1239: "BSS252",
+    1240: "C500",
+    1241: "489",
+    1242: "490",
+    1243: "C501",
+    1244: "C502",
+    1245: "491",
+    1246: "492",
+    1247: "C503",
+    1248: "BSS253",
+    1249: "C504",
+    1250: "C505",
+    1251: "493",
+    1252: "C506",
+    1253: "494",
+    1254: "C507",
+    1255: "495",
+    1256: "BSS254",
+    1257: "BSS255",
+    1258: "C508",
+    1259: "496",
+    1260: "C509",
+    1261: "497",
+    1262: "498",
+    1263: "499",
+    1264: "C510",
+    1265: "C511",
+    1266: "500",
+    1267: "501",
+    1268: "C512",
+    1269: "502",
+    1270: "503",
+    1271: "C513",
+    1272: "BSS256",
+    1273: "504",
+    1274: "BSS257",
+    1275: "C514",
+    1276: "C515",
+    1277: "C516",
+    1278: "505",
+    1279: "C517",
+    1280: "506",
+    1281: "C518",
+    1282: "C519",
+    1283: "C520",
+    1284: "C521",
+    1285: "BSS258",
+    1286: "507",
+    1287: "C522",
+    1288: "508",
+    1289: "C523",
+    1290: "509",
+    1291: "510",
+    1292: "511",
+    1293: "C524",
+    1294: "C525",
+    1295: "512",
+    1296: "BSS259",
+    1297: "513",
+    1298: "BSS260",
+    1299: "514",
+    1300: "515",
+    1301: "516",
+    1302: "C526",
+    1303: "517",
+    1304: "518",
+    1305: "C527",
+    1306: "C528",
+    1307: "C529",
+    1308: "519",
+    1309: "C530",
+    1310: "520",
+    1311: "521",
+    1312: "C531",
+    1313: "C532",
+    1314: "522",
+    1315: "BSS261",
+    1316: "523",
+    1317: "C533",
+    1318: "C534",
+    1319: "524",
+    1320: "C535",
+    1321: "525",
+    1322: "526",
+    1323: "C536",
+    1324: "527",
+    1325: "BSS262",
+    1326: "528",
+    1327: "BSS263",
+    1328: "529",
+    1329: "530",
+    1330: "BSS264",
+    1331: "BSS265",
+    1332: "531",
+    1333: "532",
+    1334: "533",
+    1335: "534",
+    1336: "BSS266",
+    1337: "535",
+    1338: "C537",
+    1339: "C538",
+    1340: "C539",
+    1341: "536",
+    1342: "537",
+    1343: "C540",
+    1344: "C541",
+    1345: "C542",
+    1346: "538",
+    1347: "BSS267",
+    1348: "539",
+    1349: "BSS268",
+    1350: "C543",
+    1351: "540",
+    1352: "C544",
+    1353: "BSS269",
+    1354: "C545",
+    1355: "C546",
+    1356: "C547",
+    1357: "541",
+    1358: "BSS270",
+    1359: "C548",
+    1360: "C549",
+    1361: "BSS271",
+    1362: "BSS272",
+    1363: "C550",
+    1364: "542",
+    1365: "BSS273",
+    1366: "543",
+    1367: "BSS274",
+    1368: "544",
+    1369: "C551",
+    1370: "545",
+    1371: "BSS275",
+    1372: "C552",
+    1373: "C553",
+    1374: "C554",
+    1375: "546",
+    1376: "547",
+    1377: "C555",
+    1378: "548",
+    1379: "C556",
+    1380: "C557",
+    1381: "549",
+    1382: "BSS276",
+    1383: "550",
+    1384: "551",
+    1385: "552",
+    1386: "BSS277",
+    1387: "553",
+    1388: "554",
+    1389: "C558",
+    1390: "BSS278",
+    1391: "BSS279",
+    1392: "555",
+    1393: "BSS280",
+    1394: "556",
+    1395: "BSS281",
+    1396: "C559",
+    1397: "C560",
+    1398: "BSS282",
+    1399: "BSS283",
+    1400: "C561",
+    1401: "BSS284",
+    1402: "C562",
+    1403: "C563",
+    1404: "C564",
+    1405: "557",
+    1406: "C565",
+    1407: "558",
+    1408: "559",
+    1409: "BSS285",
+    1410: "560",
+    1411: "C566",
+    1412: "561",
+    1413: "BSS286",
+    1414: "C567",
+    1415: "C568",
+    1416: "C569",
+    1417: "562",
+    1418: "563",
+    1419: "564",
+    1420: "565",
+    1421: "566",
+    1422: "567",
+    1423: "BSS287",
+    1424: "568",
+    1425: "C570",
+    1426: "569",
+    1427: "570",
+    1428: "BSS288",
+    1429: "C571",
+    1430: "C572",
+    1431: "571",
+    1432: "C573",
+    1433: "572",
+    1434: "C574",
+    1435: "C575",
+    1436: "C576",
+    1437: "BSS289",
+    1438: "C577",
+    1439: "573",
+    1440: "C578",
+    1441: "C579",
+    1442: "574",
+    1443: "C580",
+    1444: "BSS290",
+    1445: "575",
+    1446: "C581",
+    1447: "576",
+    1448: "577",
+    1449: "C582",
+    1450: "578",
+    1451: "C583",
+    1452: "C584",
+    1453: "579",
+    1454: "580",
+    1455: "C585",
+    1456: "581",
+    1457: "C586",
+    1458: "BSS291",
+    1459: "582",
+    1460: "C587",
+    1461: "583",
+    1462: "BSS292",
+    1463: "584",
+    1464: "C588",
+    1465: "585",
+    1466: "C589",
+    1467: "586",
+    1468: "BSS293",
+    1469: "BSS294",
+    1470: "BSS295",
+    1471: "587",
+    1472: "588",
+    1473: "589",
+    1474: "C590",
+    1475: "C591",
+    1476: "590",
+    1477: "591",
+    1478: "592",
+    1479: "593",
+    1480: "BSS296",
+    1481: "C592",
+    1482: "BSS297",
+    1483: "BSS298",
+    1484: "BSS299",
+    1485: "BSS300",
+    1486: "C593",
+    1487: "594",
+    1488: "C594",
+    1489: "C595",
+    1490: "C596",
+    1491: "595",
+    1492: "596",
+    1493: "597",
+    1494: "C597",
+    1495: "598",
+    1496: "C598",
+    1497: "C599",
+    1498: "599",
+    1499: "C600",
+}
+
+node_types = {
+    "BSS1": "bss",
+    "BSS10": "bss",
+    "BSS100": "bss",
+    "BSS101": "bss",
+    "BSS102": "bss",
+    "BSS103": "bss",
+    "BSS104": "bss",
+    "BSS105": "bss",
+    "BSS106": "bss",
+    "BSS107": "bss",
+    "BSS108": "bss",
+    "BSS109": "bss",
+    "BSS11": "bss",
+    "BSS110": "bss",
+    "BSS111": "bss",
+    "BSS112": "bss",
+    "BSS113": "bss",
+    "BSS114": "bss",
+    "BSS115": "bss",
+    "BSS116": "bss",
+    "BSS117": "bss",
+    "BSS118": "bss",
+    "BSS119": "bss",
+    "BSS12": "bss",
+    "BSS120": "bss",
+    "BSS121": "bss",
+    "BSS122": "bss",
+    "BSS123": "bss",
+    "BSS124": "bss",
+    "BSS125": "bss",
+    "BSS126": "bss",
+    "BSS127": "bss",
+    "BSS128": "bss",
+    "BSS129": "bss",
+    "BSS13": "bss",
+    "BSS130": "bss",
+    "BSS131": "bss",
+    "BSS132": "bss",
+    "BSS133": "bss",
+    "BSS134": "bss",
+    "BSS135": "bss",
+    "BSS136": "bss",
+    "BSS137": "bss",
+    "BSS138": "bss",
+    "BSS139": "bss",
+    "BSS14": "bss",
+    "BSS140": "bss",
+    "BSS141": "bss",
+    "BSS142": "bss",
+    "BSS143": "bss",
+    "BSS144": "bss",
+    "BSS145": "bss",
+    "BSS146": "bss",
+    "BSS147": "bss",
+    "BSS148": "bss",
+    "BSS149": "bss",
+    "BSS15": "bss",
+    "BSS150": "bss",
+    "BSS151": "bss",
+    "BSS152": "bss",
+    "BSS153": "bss",
+    "BSS154": "bss",
+    "BSS155": "bss",
+    "BSS156": "bss",
+    "BSS157": "bss",
+    "BSS158": "bss",
+    "BSS159": "bss",
+    "BSS16": "bss",
+    "BSS160": "bss",
+    "BSS161": "bss",
+    "BSS162": "bss",
+    "BSS163": "bss",
+    "BSS164": "bss",
+    "BSS165": "bss",
+    "BSS166": "bss",
+    "BSS167": "bss",
+    "BSS168": "bss",
+    "BSS169": "bss",
+    "BSS17": "bss",
+    "BSS170": "bss",
+    "BSS171": "bss",
+    "BSS172": "bss",
+    "BSS173": "bss",
+    "BSS174": "bss",
+    "BSS175": "bss",
+    "BSS176": "bss",
+    "BSS177": "bss",
+    "BSS178": "bss",
+    "BSS179": "bss",
+    "BSS18": "bss",
+    "BSS180": "bss",
+    "BSS181": "bss",
+    "BSS182": "bss",
+    "BSS183": "bss",
+    "BSS184": "bss",
+    "BSS185": "bss",
+    "BSS186": "bss",
+    "BSS187": "bss",
+    "BSS188": "bss",
+    "BSS189": "bss",
+    "BSS19": "bss",
+    "BSS190": "bss",
+    "BSS191": "bss",
+    "BSS192": "bss",
+    "BSS193": "bss",
+    "BSS194": "bss",
+    "BSS195": "bss",
+    "BSS196": "bss",
+    "BSS197": "bss",
+    "BSS198": "bss",
+    "BSS199": "bss",
+    "BSS2": "bss",
+    "BSS20": "bss",
+    "BSS200": "bss",
+    "BSS201": "bss",
+    "BSS202": "bss",
+    "BSS203": "bss",
+    "BSS204": "bss",
+    "BSS205": "bss",
+    "BSS206": "bss",
+    "BSS207": "bss",
+    "BSS208": "bss",
+    "BSS209": "bss",
+    "BSS21": "bss",
+    "BSS210": "bss",
+    "BSS211": "bss",
+    "BSS212": "bss",
+    "BSS213": "bss",
+    "BSS214": "bss",
+    "BSS215": "bss",
+    "BSS216": "bss",
+    "BSS217": "bss",
+    "BSS218": "bss",
+    "BSS219": "bss",
+    "BSS22": "bss",
+    "BSS220": "bss",
+    "BSS221": "bss",
+    "BSS222": "bss",
+    "BSS223": "bss",
+    "BSS224": "bss",
+    "BSS225": "bss",
+    "BSS226": "bss",
+    "BSS227": "bss",
+    "BSS228": "bss",
+    "BSS229": "bss",
+    "BSS23": "bss",
+    "BSS230": "bss",
+    "BSS231": "bss",
+    "BSS232": "bss",
+    "BSS233": "bss",
+    "BSS234": "bss",
+    "BSS235": "bss",
+    "BSS236": "bss",
+    "BSS237": "bss",
+    "BSS238": "bss",
+    "BSS239": "bss",
+    "BSS24": "bss",
+    "BSS240": "bss",
+    "BSS241": "bss",
+    "BSS242": "bss",
+    "BSS243": "bss",
+    "BSS244": "bss",
+    "BSS245": "bss",
+    "BSS246": "bss",
+    "BSS247": "bss",
+    "BSS248": "bss",
+    "BSS249": "bss",
+    "BSS25": "bss",
+    "BSS250": "bss",
+    "BSS251": "bss",
+    "BSS252": "bss",
+    "BSS253": "bss",
+    "BSS254": "bss",
+    "BSS255": "bss",
+    "BSS256": "bss",
+    "BSS257": "bss",
+    "BSS258": "bss",
+    "BSS259": "bss",
+    "BSS26": "bss",
+    "BSS260": "bss",
+    "BSS261": "bss",
+    "BSS262": "bss",
+    "BSS263": "bss",
+    "BSS264": "bss",
+    "BSS265": "bss",
+    "BSS266": "bss",
+    "BSS267": "bss",
+    "BSS268": "bss",
+    "BSS269": "bss",
+    "BSS27": "bss",
+    "BSS270": "bss",
+    "BSS271": "bss",
+    "BSS272": "bss",
+    "BSS273": "bss",
+    "BSS274": "bss",
+    "BSS275": "bss",
+    "BSS276": "bss",
+    "BSS277": "bss",
+    "BSS278": "bss",
+    "BSS279": "bss",
+    "BSS28": "bss",
+    "BSS280": "bss",
+    "BSS281": "bss",
+    "BSS282": "bss",
+    "BSS283": "bss",
+    "BSS284": "bss",
+    "BSS285": "bss",
+    "BSS286": "bss",
+    "BSS287": "bss",
+    "BSS288": "bss",
+    "BSS289": "bss",
+    "BSS29": "bss",
+    "BSS290": "bss",
+    "BSS291": "bss",
+    "BSS292": "bss",
+    "BSS293": "bss",
+    "BSS294": "bss",
+    "BSS295": "bss",
+    "BSS296": "bss",
+    "BSS297": "bss",
+    "BSS298": "bss",
+    "BSS299": "bss",
+    "BSS3": "bss",
+    "BSS30": "bss",
+    "BSS300": "bss",
+    "BSS31": "bss",
+    "BSS32": "bss",
+    "BSS33": "bss",
+    "BSS34": "bss",
+    "BSS35": "bss",
+    "BSS36": "bss",
+    "BSS37": "bss",
+    "BSS38": "bss",
+    "BSS39": "bss",
+    "BSS4": "bss",
+    "BSS40": "bss",
+    "BSS41": "bss",
+    "BSS42": "bss",
+    "BSS43": "bss",
+    "BSS44": "bss",
+    "BSS45": "bss",
+    "BSS46": "bss",
+    "BSS47": "bss",
+    "BSS48": "bss",
+    "BSS49": "bss",
+    "BSS5": "bss",
+    "BSS50": "bss",
+    "BSS51": "bss",
+    "BSS52": "bss",
+    "BSS53": "bss",
+    "BSS54": "bss",
+    "BSS55": "bss",
+    "BSS56": "bss",
+    "BSS57": "bss",
+    "BSS58": "bss",
+    "BSS59": "bss",
+    "BSS6": "bss",
+    "BSS60": "bss",
+    "BSS61": "bss",
+    "BSS62": "bss",
+    "BSS63": "bss",
+    "BSS64": "bss",
+    "BSS65": "bss",
+    "BSS66": "bss",
+    "BSS67": "bss",
+    "BSS68": "bss",
+    "BSS69": "bss",
+    "BSS7": "bss",
+    "BSS70": "bss",
+    "BSS71": "bss",
+    "BSS72": "bss",
+    "BSS73": "bss",
+    "BSS74": "bss",
+    "BSS75": "bss",
+    "BSS76": "bss",
+    "BSS77": "bss",
+    "BSS78": "bss",
+    "BSS79": "bss",
+    "BSS8": "bss",
+    "BSS80": "bss",
+    "BSS81": "bss",
+    "BSS82": "bss",
+    "BSS83": "bss",
+    "BSS84": "bss",
+    "BSS85": "bss",
+    "BSS86": "bss",
+    "BSS87": "bss",
+    "BSS88": "bss",
+    "BSS89": "bss",
+    "BSS9": "bss",
+    "BSS90": "bss",
+    "BSS91": "bss",
+    "BSS92": "bss",
+    "BSS93": "bss",
+    "BSS94": "bss",
+    "BSS95": "bss",
+    "BSS96": "bss",
+    "BSS97": "bss",
+    "BSS98": "bss",
+    "BSS99": "bss",
+    "C1": "customer",
+    "C10": "customer",
+    "C100": "customer",
+    "C101": "customer",
+    "C102": "customer",
+    "C103": "customer",
+    "C104": "customer",
+    "C105": "customer",
+    "C106": "customer",
+    "C107": "customer",
+    "C108": "customer",
+    "C109": "customer",
+    "C11": "customer",
+    "C110": "customer",
+    "C111": "customer",
+    "C112": "customer",
+    "C113": "customer",
+    "C114": "customer",
+    "C115": "customer",
+    "C116": "customer",
+    "C117": "customer",
+    "C118": "customer",
+    "C119": "customer",
+    "C12": "customer",
+    "C120": "customer",
+    "C121": "customer",
+    "C122": "customer",
+    "C123": "customer",
+    "C124": "customer",
+    "C125": "customer",
+    "C126": "customer",
+    "C127": "customer",
+    "C128": "customer",
+    "C129": "customer",
+    "C13": "customer",
+    "C130": "customer",
+    "C131": "customer",
+    "C132": "customer",
+    "C133": "customer",
+    "C134": "customer",
+    "C135": "customer",
+    "C136": "customer",
+    "C137": "customer",
+    "C138": "customer",
+    "C139": "customer",
+    "C14": "customer",
+    "C140": "customer",
+    "C141": "customer",
+    "C142": "customer",
+    "C143": "customer",
+    "C144": "customer",
+    "C145": "customer",
+    "C146": "customer",
+    "C147": "customer",
+    "C148": "customer",
+    "C149": "customer",
+    "C15": "customer",
+    "C150": "customer",
+    "C151": "customer",
+    "C152": "customer",
+    "C153": "customer",
+    "C154": "customer",
+    "C155": "customer",
+    "C156": "customer",
+    "C157": "customer",
+    "C158": "customer",
+    "C159": "customer",
+    "C16": "customer",
+    "C160": "customer",
+    "C161": "customer",
+    "C162": "customer",
+    "C163": "customer",
+    "C164": "customer",
+    "C165": "customer",
+    "C166": "customer",
+    "C167": "customer",
+    "C168": "customer",
+    "C169": "customer",
+    "C17": "customer",
+    "C170": "customer",
+    "C171": "customer",
+    "C172": "customer",
+    "C173": "customer",
+    "C174": "customer",
+    "C175": "customer",
+    "C176": "customer",
+    "C177": "customer",
+    "C178": "customer",
+    "C179": "customer",
+    "C18": "customer",
+    "C180": "customer",
+    "C181": "customer",
+    "C182": "customer",
+    "C183": "customer",
+    "C184": "customer",
+    "C185": "customer",
+    "C186": "customer",
+    "C187": "customer",
+    "C188": "customer",
+    "C189": "customer",
+    "C19": "customer",
+    "C190": "customer",
+    "C191": "customer",
+    "C192": "customer",
+    "C193": "customer",
+    "C194": "customer",
+    "C195": "customer",
+    "C196": "customer",
+    "C197": "customer",
+    "C198": "customer",
+    "C199": "customer",
+    "C2": "customer",
+    "C20": "customer",
+    "C200": "customer",
+    "C201": "customer",
+    "C202": "customer",
+    "C203": "customer",
+    "C204": "customer",
+    "C205": "customer",
+    "C206": "customer",
+    "C207": "customer",
+    "C208": "customer",
+    "C209": "customer",
+    "C21": "customer",
+    "C210": "customer",
+    "C211": "customer",
+    "C212": "customer",
+    "C213": "customer",
+    "C214": "customer",
+    "C215": "customer",
+    "C216": "customer",
+    "C217": "customer",
+    "C218": "customer",
+    "C219": "customer",
+    "C22": "customer",
+    "C220": "customer",
+    "C221": "customer",
+    "C222": "customer",
+    "C223": "customer",
+    "C224": "customer",
+    "C225": "customer",
+    "C226": "customer",
+    "C227": "customer",
+    "C228": "customer",
+    "C229": "customer",
+    "C23": "customer",
+    "C230": "customer",
+    "C231": "customer",
+    "C232": "customer",
+    "C233": "customer",
+    "C234": "customer",
+    "C235": "customer",
+    "C236": "customer",
+    "C237": "customer",
+    "C238": "customer",
+    "C239": "customer",
+    "C24": "customer",
+    "C240": "customer",
+    "C241": "customer",
+    "C242": "customer",
+    "C243": "customer",
+    "C244": "customer",
+    "C245": "customer",
+    "C246": "customer",
+    "C247": "customer",
+    "C248": "customer",
+    "C249": "customer",
+    "C25": "customer",
+    "C250": "customer",
+    "C251": "customer",
+    "C252": "customer",
+    "C253": "customer",
+    "C254": "customer",
+    "C255": "customer",
+    "C256": "customer",
+    "C257": "customer",
+    "C258": "customer",
+    "C259": "customer",
+    "C26": "customer",
+    "C260": "customer",
+    "C261": "customer",
+    "C262": "customer",
+    "C263": "customer",
+    "C264": "customer",
+    "C265": "customer",
+    "C266": "customer",
+    "C267": "customer",
+    "C268": "customer",
+    "C269": "customer",
+    "C27": "customer",
+    "C270": "customer",
+    "C271": "customer",
+    "C272": "customer",
+    "C273": "customer",
+    "C274": "customer",
+    "C275": "customer",
+    "C276": "customer",
+    "C277": "customer",
+    "C278": "customer",
+    "C279": "customer",
+    "C28": "customer",
+    "C280": "customer",
+    "C281": "customer",
+    "C282": "customer",
+    "C283": "customer",
+    "C284": "customer",
+    "C285": "customer",
+    "C286": "customer",
+    "C287": "customer",
+    "C288": "customer",
+    "C289": "customer",
+    "C29": "customer",
+    "C290": "customer",
+    "C291": "customer",
+    "C292": "customer",
+    "C293": "customer",
+    "C294": "customer",
+    "C295": "customer",
+    "C296": "customer",
+    "C297": "customer",
+    "C298": "customer",
+    "C299": "customer",
+    "C3": "customer",
+    "C30": "customer",
+    "C300": "customer",
+    "C301": "customer",
+    "C302": "customer",
+    "C303": "customer",
+    "C304": "customer",
+    "C305": "customer",
+    "C306": "customer",
+    "C307": "customer",
+    "C308": "customer",
+    "C309": "customer",
+    "C31": "customer",
+    "C310": "customer",
+    "C311": "customer",
+    "C312": "customer",
+    "C313": "customer",
+    "C314": "customer",
+    "C315": "customer",
+    "C316": "customer",
+    "C317": "customer",
+    "C318": "customer",
+    "C319": "customer",
+    "C32": "customer",
+    "C320": "customer",
+    "C321": "customer",
+    "C322": "customer",
+    "C323": "customer",
+    "C324": "customer",
+    "C325": "customer",
+    "C326": "customer",
+    "C327": "customer",
+    "C328": "customer",
+    "C329": "customer",
+    "C33": "customer",
+    "C330": "customer",
+    "C331": "customer",
+    "C332": "customer",
+    "C333": "customer",
+    "C334": "customer",
+    "C335": "customer",
+    "C336": "customer",
+    "C337": "customer",
+    "C338": "customer",
+    "C339": "customer",
+    "C34": "customer",
+    "C340": "customer",
+    "C341": "customer",
+    "C342": "customer",
+    "C343": "customer",
+    "C344": "customer",
+    "C345": "customer",
+    "C346": "customer",
+    "C347": "customer",
+    "C348": "customer",
+    "C349": "customer",
+    "C35": "customer",
+    "C350": "customer",
+    "C351": "customer",
+    "C352": "customer",
+    "C353": "customer",
+    "C354": "customer",
+    "C355": "customer",
+    "C356": "customer",
+    "C357": "customer",
+    "C358": "customer",
+    "C359": "customer",
+    "C36": "customer",
+    "C360": "customer",
+    "C361": "customer",
+    "C362": "customer",
+    "C363": "customer",
+    "C364": "customer",
+    "C365": "customer",
+    "C366": "customer",
+    "C367": "customer",
+    "C368": "customer",
+    "C369": "customer",
+    "C37": "customer",
+    "C370": "customer",
+    "C371": "customer",
+    "C372": "customer",
+    "C373": "customer",
+    "C374": "customer",
+    "C375": "customer",
+    "C376": "customer",
+    "C377": "customer",
+    "C378": "customer",
+    "C379": "customer",
+    "C38": "customer",
+    "C380": "customer",
+    "C381": "customer",
+    "C382": "customer",
+    "C383": "customer",
+    "C384": "customer",
+    "C385": "customer",
+    "C386": "customer",
+    "C387": "customer",
+    "C388": "customer",
+    "C389": "customer",
+    "C39": "customer",
+    "C390": "customer",
+    "C391": "customer",
+    "C392": "customer",
+    "C393": "customer",
+    "C394": "customer",
+    "C395": "customer",
+    "C396": "customer",
+    "C397": "customer",
+    "C398": "customer",
+    "C399": "customer",
+    "C4": "customer",
+    "C40": "customer",
+    "C400": "customer",
+    "C401": "customer",
+    "C402": "customer",
+    "C403": "customer",
+    "C404": "customer",
+    "C405": "customer",
+    "C406": "customer",
+    "C407": "customer",
+    "C408": "customer",
+    "C409": "customer",
+    "C41": "customer",
+    "C410": "customer",
+    "C411": "customer",
+    "C412": "customer",
+    "C413": "customer",
+    "C414": "customer",
+    "C415": "customer",
+    "C416": "customer",
+    "C417": "customer",
+    "C418": "customer",
+    "C419": "customer",
+    "C42": "customer",
+    "C420": "customer",
+    "C421": "customer",
+    "C422": "customer",
+    "C423": "customer",
+    "C424": "customer",
+    "C425": "customer",
+    "C426": "customer",
+    "C427": "customer",
+    "C428": "customer",
+    "C429": "customer",
+    "C43": "customer",
+    "C430": "customer",
+    "C431": "customer",
+    "C432": "customer",
+    "C433": "customer",
+    "C434": "customer",
+    "C435": "customer",
+    "C436": "customer",
+    "C437": "customer",
+    "C438": "customer",
+    "C439": "customer",
+    "C44": "customer",
+    "C440": "customer",
+    "C441": "customer",
+    "C442": "customer",
+    "C443": "customer",
+    "C444": "customer",
+    "C445": "customer",
+    "C446": "customer",
+    "C447": "customer",
+    "C448": "customer",
+    "C449": "customer",
+    "C45": "customer",
+    "C450": "customer",
+    "C451": "customer",
+    "C452": "customer",
+    "C453": "customer",
+    "C454": "customer",
+    "C455": "customer",
+    "C456": "customer",
+    "C457": "customer",
+    "C458": "customer",
+    "C459": "customer",
+    "C46": "customer",
+    "C460": "customer",
+    "C461": "customer",
+    "C462": "customer",
+    "C463": "customer",
+    "C464": "customer",
+    "C465": "customer",
+    "C466": "customer",
+    "C467": "customer",
+    "C468": "customer",
+    "C469": "customer",
+    "C47": "customer",
+    "C470": "customer",
+    "C471": "customer",
+    "C472": "customer",
+    "C473": "customer",
+    "C474": "customer",
+    "C475": "customer",
+    "C476": "customer",
+    "C477": "customer",
+    "C478": "customer",
+    "C479": "customer",
+    "C48": "customer",
+    "C480": "customer",
+    "C481": "customer",
+    "C482": "customer",
+    "C483": "customer",
+    "C484": "customer",
+    "C485": "customer",
+    "C486": "customer",
+    "C487": "customer",
+    "C488": "customer",
+    "C489": "customer",
+    "C49": "customer",
+    "C490": "customer",
+    "C491": "customer",
+    "C492": "customer",
+    "C493": "customer",
+    "C494": "customer",
+    "C495": "customer",
+    "C496": "customer",
+    "C497": "customer",
+    "C498": "customer",
+    "C499": "customer",
+    "C5": "customer",
+    "C50": "customer",
+    "C500": "customer",
+    "C501": "customer",
+    "C502": "customer",
+    "C503": "customer",
+    "C504": "customer",
+    "C505": "customer",
+    "C506": "customer",
+    "C507": "customer",
+    "C508": "customer",
+    "C509": "customer",
+    "C51": "customer",
+    "C510": "customer",
+    "C511": "customer",
+    "C512": "customer",
+    "C513": "customer",
+    "C514": "customer",
+    "C515": "customer",
+    "C516": "customer",
+    "C517": "customer",
+    "C518": "customer",
+    "C519": "customer",
+    "C52": "customer",
+    "C520": "customer",
+    "C521": "customer",
+    "C522": "customer",
+    "C523": "customer",
+    "C524": "customer",
+    "C525": "customer",
+    "C526": "customer",
+    "C527": "customer",
+    "C528": "customer",
+    "C529": "customer",
+    "C53": "customer",
+    "C530": "customer",
+    "C531": "customer",
+    "C532": "customer",
+    "C533": "customer",
+    "C534": "customer",
+    "C535": "customer",
+    "C536": "customer",
+    "C537": "customer",
+    "C538": "customer",
+    "C539": "customer",
+    "C54": "customer",
+    "C540": "customer",
+    "C541": "customer",
+    "C542": "customer",
+    "C543": "customer",
+    "C544": "customer",
+    "C545": "customer",
+    "C546": "customer",
+    "C547": "customer",
+    "C548": "customer",
+    "C549": "customer",
+    "C55": "customer",
+    "C550": "customer",
+    "C551": "customer",
+    "C552": "customer",
+    "C553": "customer",
+    "C554": "customer",
+    "C555": "customer",
+    "C556": "customer",
+    "C557": "customer",
+    "C558": "customer",
+    "C559": "customer",
+    "C56": "customer",
+    "C560": "customer",
+    "C561": "customer",
+    "C562": "customer",
+    "C563": "customer",
+    "C564": "customer",
+    "C565": "customer",
+    "C566": "customer",
+    "C567": "customer",
+    "C568": "customer",
+    "C569": "customer",
+    "C57": "customer",
+    "C570": "customer",
+    "C571": "customer",
+    "C572": "customer",
+    "C573": "customer",
+    "C574": "customer",
+    "C575": "customer",
+    "C576": "customer",
+    "C577": "customer",
+    "C578": "customer",
+    "C579": "customer",
+    "C58": "customer",
+    "C580": "customer",
+    "C581": "customer",
+    "C582": "customer",
+    "C583": "customer",
+    "C584": "customer",
+    "C585": "customer",
+    "C586": "customer",
+    "C587": "customer",
+    "C588": "customer",
+    "C589": "customer",
+    "C59": "customer",
+    "C590": "customer",
+    "C591": "customer",
+    "C592": "customer",
+    "C593": "customer",
+    "C594": "customer",
+    "C595": "customer",
+    "C596": "customer",
+    "C597": "customer",
+    "C598": "customer",
+    "C599": "customer",
+    "C6": "customer",
+    "C60": "customer",
+    "C600": "customer",
+    "C61": "customer",
+    "C62": "customer",
+    "C63": "customer",
+    "C64": "customer",
+    "C65": "customer",
+    "C66": "customer",
+    "C67": "customer",
+    "C68": "customer",
+    "C69": "customer",
+    "C7": "customer",
+    "C70": "customer",
+    "C71": "customer",
+    "C72": "customer",
+    "C73": "customer",
+    "C74": "customer",
+    "C75": "customer",
+    "C76": "customer",
+    "C77": "customer",
+    "C78": "customer",
+    "C79": "customer",
+    "C8": "customer",
+    "C80": "customer",
+    "C81": "customer",
+    "C82": "customer",
+    "C83": "customer",
+    "C84": "customer",
+    "C85": "customer",
+    "C86": "customer",
+    "C87": "customer",
+    "C88": "customer",
+    "C89": "customer",
+    "C9": "customer",
+    "C90": "customer",
+    "C91": "customer",
+    "C92": "customer",
+    "C93": "customer",
+    "C94": "customer",
+    "C95": "customer",
+    "C96": "customer",
+    "C97": "customer",
+    "C98": "customer",
+    "C99": "customer",
+    "D": "depot",
+    "1": "intersection",
+    "10": "intersection",
+    "100": "intersection",
+    "101": "intersection",
+    "102": "intersection",
+    "103": "intersection",
+    "104": "intersection",
+    "105": "intersection",
+    "106": "intersection",
+    "107": "intersection",
+    "108": "intersection",
+    "109": "intersection",
+    "11": "intersection",
+    "110": "intersection",
+    "111": "intersection",
+    "112": "intersection",
+    "113": "intersection",
+    "114": "intersection",
+    "115": "intersection",
+    "116": "intersection",
+    "117": "intersection",
+    "118": "intersection",
+    "119": "intersection",
+    "12": "intersection",
+    "120": "intersection",
+    "121": "intersection",
+    "122": "intersection",
+    "123": "intersection",
+    "124": "intersection",
+    "125": "intersection",
+    "126": "intersection",
+    "127": "intersection",
+    "128": "intersection",
+    "129": "intersection",
+    "13": "intersection",
+    "130": "intersection",
+    "131": "intersection",
+    "132": "intersection",
+    "133": "intersection",
+    "134": "intersection",
+    "135": "intersection",
+    "136": "intersection",
+    "137": "intersection",
+    "138": "intersection",
+    "139": "intersection",
+    "14": "intersection",
+    "140": "intersection",
+    "141": "intersection",
+    "142": "intersection",
+    "143": "intersection",
+    "144": "intersection",
+    "145": "intersection",
+    "146": "intersection",
+    "147": "intersection",
+    "148": "intersection",
+    "149": "intersection",
+    "15": "intersection",
+    "150": "intersection",
+    "151": "intersection",
+    "152": "intersection",
+    "153": "intersection",
+    "154": "intersection",
+    "155": "intersection",
+    "156": "intersection",
+    "157": "intersection",
+    "158": "intersection",
+    "159": "intersection",
+    "16": "intersection",
+    "160": "intersection",
+    "161": "intersection",
+    "162": "intersection",
+    "163": "intersection",
+    "164": "intersection",
+    "165": "intersection",
+    "166": "intersection",
+    "167": "intersection",
+    "168": "intersection",
+    "169": "intersection",
+    "17": "intersection",
+    "170": "intersection",
+    "171": "intersection",
+    "172": "intersection",
+    "173": "intersection",
+    "174": "intersection",
+    "175": "intersection",
+    "176": "intersection",
+    "177": "intersection",
+    "178": "intersection",
+    "179": "intersection",
+    "18": "intersection",
+    "180": "intersection",
+    "181": "intersection",
+    "182": "intersection",
+    "183": "intersection",
+    "184": "intersection",
+    "185": "intersection",
+    "186": "intersection",
+    "187": "intersection",
+    "188": "intersection",
+    "189": "intersection",
+    "19": "intersection",
+    "190": "intersection",
+    "191": "intersection",
+    "192": "intersection",
+    "193": "intersection",
+    "194": "intersection",
+    "195": "intersection",
+    "196": "intersection",
+    "197": "intersection",
+    "198": "intersection",
+    "199": "intersection",
+    "2": "intersection",
+    "20": "intersection",
+    "200": "intersection",
+    "201": "intersection",
+    "202": "intersection",
+    "203": "intersection",
+    "204": "intersection",
+    "205": "intersection",
+    "206": "intersection",
+    "207": "intersection",
+    "208": "intersection",
+    "209": "intersection",
+    "21": "intersection",
+    "210": "intersection",
+    "211": "intersection",
+    "212": "intersection",
+    "213": "intersection",
+    "214": "intersection",
+    "215": "intersection",
+    "216": "intersection",
+    "217": "intersection",
+    "218": "intersection",
+    "219": "intersection",
+    "22": "intersection",
+    "220": "intersection",
+    "221": "intersection",
+    "222": "intersection",
+    "223": "intersection",
+    "224": "intersection",
+    "225": "intersection",
+    "226": "intersection",
+    "227": "intersection",
+    "228": "intersection",
+    "229": "intersection",
+    "23": "intersection",
+    "230": "intersection",
+    "231": "intersection",
+    "232": "intersection",
+    "233": "intersection",
+    "234": "intersection",
+    "235": "intersection",
+    "236": "intersection",
+    "237": "intersection",
+    "238": "intersection",
+    "239": "intersection",
+    "24": "intersection",
+    "240": "intersection",
+    "241": "intersection",
+    "242": "intersection",
+    "243": "intersection",
+    "244": "intersection",
+    "245": "intersection",
+    "246": "intersection",
+    "247": "intersection",
+    "248": "intersection",
+    "249": "intersection",
+    "25": "intersection",
+    "250": "intersection",
+    "251": "intersection",
+    "252": "intersection",
+    "253": "intersection",
+    "254": "intersection",
+    "255": "intersection",
+    "256": "intersection",
+    "257": "intersection",
+    "258": "intersection",
+    "259": "intersection",
+    "26": "intersection",
+    "260": "intersection",
+    "261": "intersection",
+    "262": "intersection",
+    "263": "intersection",
+    "264": "intersection",
+    "265": "intersection",
+    "266": "intersection",
+    "267": "intersection",
+    "268": "intersection",
+    "269": "intersection",
+    "27": "intersection",
+    "270": "intersection",
+    "271": "intersection",
+    "272": "intersection",
+    "273": "intersection",
+    "274": "intersection",
+    "275": "intersection",
+    "276": "intersection",
+    "277": "intersection",
+    "278": "intersection",
+    "279": "intersection",
+    "28": "intersection",
+    "280": "intersection",
+    "281": "intersection",
+    "282": "intersection",
+    "283": "intersection",
+    "284": "intersection",
+    "285": "intersection",
+    "286": "intersection",
+    "287": "intersection",
+    "288": "intersection",
+    "289": "intersection",
+    "29": "intersection",
+    "290": "intersection",
+    "291": "intersection",
+    "292": "intersection",
+    "293": "intersection",
+    "294": "intersection",
+    "295": "intersection",
+    "296": "intersection",
+    "297": "intersection",
+    "298": "intersection",
+    "299": "intersection",
+    "3": "intersection",
+    "30": "intersection",
+    "300": "intersection",
+    "301": "intersection",
+    "302": "intersection",
+    "303": "intersection",
+    "304": "intersection",
+    "305": "intersection",
+    "306": "intersection",
+    "307": "intersection",
+    "308": "intersection",
+    "309": "intersection",
+    "31": "intersection",
+    "310": "intersection",
+    "311": "intersection",
+    "312": "intersection",
+    "313": "intersection",
+    "314": "intersection",
+    "315": "intersection",
+    "316": "intersection",
+    "317": "intersection",
+    "318": "intersection",
+    "319": "intersection",
+    "32": "intersection",
+    "320": "intersection",
+    "321": "intersection",
+    "322": "intersection",
+    "323": "intersection",
+    "324": "intersection",
+    "325": "intersection",
+    "326": "intersection",
+    "327": "intersection",
+    "328": "intersection",
+    "329": "intersection",
+    "33": "intersection",
+    "330": "intersection",
+    "331": "intersection",
+    "332": "intersection",
+    "333": "intersection",
+    "334": "intersection",
+    "335": "intersection",
+    "336": "intersection",
+    "337": "intersection",
+    "338": "intersection",
+    "339": "intersection",
+    "34": "intersection",
+    "340": "intersection",
+    "341": "intersection",
+    "342": "intersection",
+    "343": "intersection",
+    "344": "intersection",
+    "345": "intersection",
+    "346": "intersection",
+    "347": "intersection",
+    "348": "intersection",
+    "349": "intersection",
+    "35": "intersection",
+    "350": "intersection",
+    "351": "intersection",
+    "352": "intersection",
+    "353": "intersection",
+    "354": "intersection",
+    "355": "intersection",
+    "356": "intersection",
+    "357": "intersection",
+    "358": "intersection",
+    "359": "intersection",
+    "36": "intersection",
+    "360": "intersection",
+    "361": "intersection",
+    "362": "intersection",
+    "363": "intersection",
+    "364": "intersection",
+    "365": "intersection",
+    "366": "intersection",
+    "367": "intersection",
+    "368": "intersection",
+    "369": "intersection",
+    "37": "intersection",
+    "370": "intersection",
+    "371": "intersection",
+    "372": "intersection",
+    "373": "intersection",
+    "374": "intersection",
+    "375": "intersection",
+    "376": "intersection",
+    "377": "intersection",
+    "378": "intersection",
+    "379": "intersection",
+    "38": "intersection",
+    "380": "intersection",
+    "381": "intersection",
+    "382": "intersection",
+    "383": "intersection",
+    "384": "intersection",
+    "385": "intersection",
+    "386": "intersection",
+    "387": "intersection",
+    "388": "intersection",
+    "389": "intersection",
+    "39": "intersection",
+    "390": "intersection",
+    "391": "intersection",
+    "392": "intersection",
+    "393": "intersection",
+    "394": "intersection",
+    "395": "intersection",
+    "396": "intersection",
+    "397": "intersection",
+    "398": "intersection",
+    "399": "intersection",
+    "4": "intersection",
+    "40": "intersection",
+    "400": "intersection",
+    "401": "intersection",
+    "402": "intersection",
+    "403": "intersection",
+    "404": "intersection",
+    "405": "intersection",
+    "406": "intersection",
+    "407": "intersection",
+    "408": "intersection",
+    "409": "intersection",
+    "41": "intersection",
+    "410": "intersection",
+    "411": "intersection",
+    "412": "intersection",
+    "413": "intersection",
+    "414": "intersection",
+    "415": "intersection",
+    "416": "intersection",
+    "417": "intersection",
+    "418": "intersection",
+    "419": "intersection",
+    "42": "intersection",
+    "420": "intersection",
+    "421": "intersection",
+    "422": "intersection",
+    "423": "intersection",
+    "424": "intersection",
+    "425": "intersection",
+    "426": "intersection",
+    "427": "intersection",
+    "428": "intersection",
+    "429": "intersection",
+    "43": "intersection",
+    "430": "intersection",
+    "431": "intersection",
+    "432": "intersection",
+    "433": "intersection",
+    "434": "intersection",
+    "435": "intersection",
+    "436": "intersection",
+    "437": "intersection",
+    "438": "intersection",
+    "439": "intersection",
+    "44": "intersection",
+    "440": "intersection",
+    "441": "intersection",
+    "442": "intersection",
+    "443": "intersection",
+    "444": "intersection",
+    "445": "intersection",
+    "446": "intersection",
+    "447": "intersection",
+    "448": "intersection",
+    "449": "intersection",
+    "45": "intersection",
+    "450": "intersection",
+    "451": "intersection",
+    "452": "intersection",
+    "453": "intersection",
+    "454": "intersection",
+    "455": "intersection",
+    "456": "intersection",
+    "457": "intersection",
+    "458": "intersection",
+    "459": "intersection",
+    "46": "intersection",
+    "460": "intersection",
+    "461": "intersection",
+    "462": "intersection",
+    "463": "intersection",
+    "464": "intersection",
+    "465": "intersection",
+    "466": "intersection",
+    "467": "intersection",
+    "468": "intersection",
+    "469": "intersection",
+    "47": "intersection",
+    "470": "intersection",
+    "471": "intersection",
+    "472": "intersection",
+    "473": "intersection",
+    "474": "intersection",
+    "475": "intersection",
+    "476": "intersection",
+    "477": "intersection",
+    "478": "intersection",
+    "479": "intersection",
+    "48": "intersection",
+    "480": "intersection",
+    "481": "intersection",
+    "482": "intersection",
+    "483": "intersection",
+    "484": "intersection",
+    "485": "intersection",
+    "486": "intersection",
+    "487": "intersection",
+    "488": "intersection",
+    "489": "intersection",
+    "49": "intersection",
+    "490": "intersection",
+    "491": "intersection",
+    "492": "intersection",
+    "493": "intersection",
+    "494": "intersection",
+    "495": "intersection",
+    "496": "intersection",
+    "497": "intersection",
+    "498": "intersection",
+    "499": "intersection",
+    "5": "intersection",
+    "50": "intersection",
+    "500": "intersection",
+    "501": "intersection",
+    "502": "intersection",
+    "503": "intersection",
+    "504": "intersection",
+    "505": "intersection",
+    "506": "intersection",
+    "507": "intersection",
+    "508": "intersection",
+    "509": "intersection",
+    "51": "intersection",
+    "510": "intersection",
+    "511": "intersection",
+    "512": "intersection",
+    "513": "intersection",
+    "514": "intersection",
+    "515": "intersection",
+    "516": "intersection",
+    "517": "intersection",
+    "518": "intersection",
+    "519": "intersection",
+    "52": "intersection",
+    "520": "intersection",
+    "521": "intersection",
+    "522": "intersection",
+    "523": "intersection",
+    "524": "intersection",
+    "525": "intersection",
+    "526": "intersection",
+    "527": "intersection",
+    "528": "intersection",
+    "529": "intersection",
+    "53": "intersection",
+    "530": "intersection",
+    "531": "intersection",
+    "532": "intersection",
+    "533": "intersection",
+    "534": "intersection",
+    "535": "intersection",
+    "536": "intersection",
+    "537": "intersection",
+    "538": "intersection",
+    "539": "intersection",
+    "54": "intersection",
+    "540": "intersection",
+    "541": "intersection",
+    "542": "intersection",
+    "543": "intersection",
+    "544": "intersection",
+    "545": "intersection",
+    "546": "intersection",
+    "547": "intersection",
+    "548": "intersection",
+    "549": "intersection",
+    "55": "intersection",
+    "550": "intersection",
+    "551": "intersection",
+    "552": "intersection",
+    "553": "intersection",
+    "554": "intersection",
+    "555": "intersection",
+    "556": "intersection",
+    "557": "intersection",
+    "558": "intersection",
+    "559": "intersection",
+    "56": "intersection",
+    "560": "intersection",
+    "561": "intersection",
+    "562": "intersection",
+    "563": "intersection",
+    "564": "intersection",
+    "565": "intersection",
+    "566": "intersection",
+    "567": "intersection",
+    "568": "intersection",
+    "569": "intersection",
+    "57": "intersection",
+    "570": "intersection",
+    "571": "intersection",
+    "572": "intersection",
+    "573": "intersection",
+    "574": "intersection",
+    "575": "intersection",
+    "576": "intersection",
+    "577": "intersection",
+    "578": "intersection",
+    "579": "intersection",
+    "58": "intersection",
+    "580": "intersection",
+    "581": "intersection",
+    "582": "intersection",
+    "583": "intersection",
+    "584": "intersection",
+    "585": "intersection",
+    "586": "intersection",
+    "587": "intersection",
+    "588": "intersection",
+    "589": "intersection",
+    "59": "intersection",
+    "590": "intersection",
+    "591": "intersection",
+    "592": "intersection",
+    "593": "intersection",
+    "594": "intersection",
+    "595": "intersection",
+    "596": "intersection",
+    "597": "intersection",
+    "598": "intersection",
+    "599": "intersection",
+    "6": "intersection",
+    "60": "intersection",
+    "61": "intersection",
+    "62": "intersection",
+    "63": "intersection",
+    "64": "intersection",
+    "65": "intersection",
+    "66": "intersection",
+    "67": "intersection",
+    "68": "intersection",
+    "69": "intersection",
+    "7": "intersection",
+    "70": "intersection",
+    "71": "intersection",
+    "72": "intersection",
+    "73": "intersection",
+    "74": "intersection",
+    "75": "intersection",
+    "76": "intersection",
+    "77": "intersection",
+    "78": "intersection",
+    "79": "intersection",
+    "8": "intersection",
+    "80": "intersection",
+    "81": "intersection",
+    "82": "intersection",
+    "83": "intersection",
+    "84": "intersection",
+    "85": "intersection",
+    "86": "intersection",
+    "87": "intersection",
+    "88": "intersection",
+    "89": "intersection",
+    "9": "intersection",
+    "90": "intersection",
+    "91": "intersection",
+    "92": "intersection",
+    "93": "intersection",
+    "94": "intersection",
+    "95": "intersection",
+    "96": "intersection",
+    "97": "intersection",
+    "98": "intersection",
+    "99": "intersection",
+}

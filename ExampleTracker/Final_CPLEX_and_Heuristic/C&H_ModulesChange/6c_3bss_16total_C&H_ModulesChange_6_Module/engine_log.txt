@@ -1,0 +1,72 @@
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+Legacy callback                                  pi
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 8566 rows and 1367 columns.
+MIQCP Presolve modified 25 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIQCP has 20674 rows, 20526 columns, and 68365 nonzeros.
+Reduced MIQCP has 298 binaries, 47 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 3941 quadratic constraints.
+Presolve time = 0.86 sec. (80.14 ticks)
+Probing fixed 0 vars, tightened 12651 bounds.
+Probing changed sense of 6 constraints.
+Probing time = 0.75 sec. (105.64 ticks)
+Cover probing fixed 0 vars, tightened 1386 bounds.
+Clique table members: 2598.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time = 11.05 sec. (4932.20 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        4.7100     0                      0.0000    17931         
+      0     0        4.7100   156                      4.7100    17931         
+      0     2        4.7100    32                      4.7100    17931         
+Elapsed time = 22.59 sec. (8739.67 ticks, tree = 0.02 MB, solutions = 0)
+      2     4       14.6000    23                      4.7100    17940         
+      4     4       14.6000   143                      4.7100    19313         
+      6     8       14.6000   107                      4.7100    19931         
+     10    10       34.5200    65                      4.7100    20126         
+     14    12       34.5200   101                      4.7100    20311         
+     20    11       14.6000   137                      4.7100    20577         
+     24    14       34.5200    97                      4.7100    20810         
+     28     6        4.7100    28                      4.7100    19488         
+     31    22       24.4900    49                      4.7100    26390         
+     70    29       63.5200   102                      4.7100    31710         
+Elapsed time = 44.53 sec. (13059.16 ticks, tree = 0.22 MB, solutions = 0)
+    141    53    infeasible                            4.7100    49699         
+    198    28       93.7200     4                      4.7100    68156         
+    246    30      968.6100    23                      4.7100    76419         
+    306    30       14.6000    95                      4.7100    89872         
+    406    23     2325.9200     8                      4.7100    97416         
+*   413+   27                          931.1700        4.7100            99.49%
+    436    33       33.2700   109      931.1700        4.7100   101050   99.49%
+    468    36       14.6000   112      931.1700        4.7100   105405   99.49%
+    502    31       52.3500   120      931.1700        4.7100   109544   99.49%
+    530    35       93.5300    32      931.1700        4.7100   112487   99.49%
+    598    24        cutoff            931.1700        4.7100   118529   99.49%
+Elapsed time = 133.62 sec. (23094.33 ticks, tree = 0.23 MB, solutions = 2)
+    601    31   3.63153e+08    31      931.1700        4.7100    34263   99.49%
+    610    24    infeasible            931.1700        4.7100    70385   99.49%
+    663    15       73.6000    23      931.1700       18.2900   125311   98.04%
+    668    42    infeasible            931.1700       18.2900    82443   98.04%
+    671    29    infeasible            931.1700      931.1700    87247    0.00%
+    672    27    infeasible            931.1700      931.1700    91478    0.00%
+    673    25    infeasible            931.1700      931.1700    93061    0.00%
+    674    25    infeasible            931.1700      931.1700    94619    0.00%
+    675    19    infeasible            931.1700      931.1700    97520    0.00%
+
+Clique cuts applied:  4
+Implied bound cuts applied:  49
+Cone linearizations applied:  71
+
+Root node processing (before b&c):
+  Real time             =   21.16 sec. (8570.54 ticks)
+Parallel b&c, 12 threads:
+  Real time             = 1048.42 sec. (150430.27 ticks)
+  Sync time (average)   =  301.90 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) = 1069.58 sec. (159000.81 ticks)

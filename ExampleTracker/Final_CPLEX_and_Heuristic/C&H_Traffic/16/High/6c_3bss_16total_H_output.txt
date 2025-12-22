@@ -1,0 +1,31 @@
+============================================================
+FINAL JOURNEY STATUS
+============================================================
+Current location: D
+Total Travel Time: 147.67 minutes
+Total Energy Consumed: 9.138 kWh
+Total Distance Covered: 80.65 km
+Total Swapping Cost: 0
+Current SoC: 90.9%
+Charge of modules:
+  M1 = 54.3%
+  M2 = 100.0%
+  M3 = 100.0%
+  M4 = 100.0%
+  M5 = 100.0%
+Number of Modules Swapped: 0
+Number of Packages: 6
+Payload: 0.0 kg
+Number of unserved customers: 0
+Served Customers: ['C2', 'C3', 'C1', 'C6', 'C4', 'C5']
+Path Taken: D -> 1 -> C2 -> C3 -> C1 -> C6 -> 4 -> BSS3 -> C4 -> BSS3 -> C3 -> C2 -> 6 -> C5 -> 5 -> 1 -> D    
+
+
+SoC Trail: D(100.0%) -> 1(99.6%) -> C2(99.2%) -> C3(98.7%) -> C1(97.9%) -> C6(97.1%) -> 4(96.6%) -> BSS3(95.8%) -> C4(95.1%) -> BSS3(94.4%) -> C3(94.0%) -> C2(93.4%) -> 6(92.8%) -> C5(92.4%) -> 5(91.9%) -> 1(91.3%) -> D(90.9%)
+
+
+Energy Trail: D - 0.426 kWh > 1 - 0.362 kWh > C2 - 0.559 kWh > C3 - 0.791 kWh > C1 - 0.763 kWh > C6 - 0.466 kWh > 4 - 0.858 kWh > BSS3 - 0.666 kWh > C4 - 0.664 kWh > BSS3 - 0.495 kWh > C3 - 0.552 kWh > C2 - 0.559 kWh > 6 - 0.440 kWh > C5 - 0.533 kWh > 5 - 0.586 kWh > 1 - 0.418 kWh > D
+
+============================================================
+JSON Scenario runtime: 0.059 seconds
+============================================================

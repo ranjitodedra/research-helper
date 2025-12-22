@@ -1,0 +1,265 @@
+{
+  "nodes": {
+    "D": {
+      "type": "depot"
+    },
+    "1": {
+      "type": "intersection"
+    },
+    "2": {
+      "type": "intersection"
+    },
+    "BSS1": {
+      "type": "bss"
+    },
+    "BSS2": {
+      "type": "bss"
+    },
+    "C1": {
+      "type": "customer"
+    },
+    "3": {
+      "type": "intersection"
+    },
+    "C2": {
+      "type": "customer"
+    },
+    "BSS3": {
+      "type": "bss"
+    },
+    "C3": {
+      "type": "customer"
+    },
+    "C4": {
+      "type": "customer"
+    },
+    "4": {
+      "type": "intersection"
+    },
+    "5": {
+      "type": "intersection"
+    },
+    "6": {
+      "type": "intersection"
+    },
+    "C5": {
+      "type": "customer"
+    },
+    "C6": {
+      "type": "customer"
+    }
+  },
+  "edges": [
+    {
+      "from": "D",
+      "to": "1",
+      "distance": 3.73,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "D",
+      "to": "2",
+      "distance": 3.73,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "1",
+      "to": "2",
+      "distance": 4.88,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "1",
+      "to": "C2",
+      "distance": 3.11,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "1",
+      "to": "5",
+      "distance": 5.14,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "1",
+      "to": "6",
+      "distance": 4.92,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "2",
+      "to": "BSS1",
+      "distance": 3.64,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "2",
+      "to": "5",
+      "distance": 4.3,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "2",
+      "to": "6",
+      "distance": 4.05,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "BSS1",
+      "to": "C2",
+      "distance": 4.91,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "BSS1",
+      "to": "5",
+      "distance": 4.54,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "BSS1",
+      "to": "6",
+      "distance": 4.94,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "BSS1",
+      "to": "C5",
+      "distance": 3.86,
+      "traffic_factor": 0.73
+    },
+    {
+      "from": "BSS2",
+      "to": "3",
+      "distance": 4.02,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "BSS2",
+      "to": "BSS3",
+      "distance": 7.04,
+      "traffic_factor": 0.86
+    },
+    {
+      "from": "BSS2",
+      "to": "C4",
+      "distance": 6.1,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "C1",
+      "to": "C2",
+      "distance": 7.52,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "C1",
+      "to": "C3",
+      "distance": 6.96,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "C1",
+      "to": "4",
+      "distance": 5.3,
+      "traffic_factor": 0.82
+    },
+    {
+      "from": "C1",
+      "to": "C6",
+      "distance": 6.77,
+      "traffic_factor": 0.75
+    },
+    {
+      "from": "3",
+      "to": "BSS3",
+      "distance": 5.94,
+      "traffic_factor": 0.81
+    },
+    {
+      "from": "3",
+      "to": "C4",
+      "distance": 6.53,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "C2",
+      "to": "C3",
+      "distance": 4.9,
+      "traffic_factor": 0.74
+    },
+    {
+      "from": "C2",
+      "to": "6",
+      "distance": 4.89,
+      "traffic_factor": 0.8
+    },
+    {
+      "from": "BSS3",
+      "to": "C3",
+      "distance": 4.42,
+      "traffic_factor": 0.77
+    },
+    {
+      "from": "BSS3",
+      "to": "C4",
+      "distance": 5.84,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "BSS3",
+      "to": "4",
+      "distance": 7.59,
+      "traffic_factor": 0.85
+    },
+    {
+      "from": "4",
+      "to": "C6",
+      "distance": 4.11,
+      "traffic_factor": 0.78
+    },
+    {
+      "from": "5",
+      "to": "C5",
+      "distance": 4.78,
+      "traffic_factor": 0.84
+    },
+    {
+      "from": "6",
+      "to": "C5",
+      "distance": 3.94,
+      "traffic_factor": 0.79
+    }
+  ],
+  "base_speed": 50,
+  "modules": [
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    },
+    {
+      "capacity": 20,
+      "soc": 100
+    }
+  ],
+  "starting_node": "D",
+  "vehicle": {
+    "base_mass": 1500,
+    "f": 0.01,
+    "Cx": 0.3,
+    "A": 2.5,
+    "m": 100
+  }
+}

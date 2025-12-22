@@ -1,0 +1,21 @@
+================================================================================
+FINAL JOURNEY STATUS (Solution #1 - Clarke-Wright Solution)
+================================================================================
+
+Path Taken: D -> C9 -> C10 -> C3 -> C4 -> C5 -> C8 -> C7 -> C12 -> C13 -> C14 -> C11 -> C6 -> C2 -> C1 -> D
+SoC Trail: D(100.0%) -> 1(97.8%) -> C1(95.7%) -> 23(93.5%) -> C9(91.4%) -> BSS2(89.2%) -> C10(87.0%) -> BSS2(84.9%) -> 4(82.7%) -> C3(80.6%) -> C4(78.4%) -> 5(76.3%) -> C5(74.2%) -> 19(72.0%) -> C8(69.9%) -> C7(67.8%) -> 20(65.7%) -> C12(63.5%) -> 31(61.4%) -> C13(59.3%) -> 30(57.2%) -> C14(55.1%) -> 30(53.0%) -> C11(50.9%) -> 7(48.8%) -> C6(46.7%) -> 7(44.6%) -> C2(42.5%) -> 4(40.4%) -> C1(38.4%) -> 1(36.3%) -> D(34.2%)
+Energy Trail: D - 2.16 kWh > 1 - 2.16 kWh > C1 - 2.16 kWh > 23 - 2.16 kWh > C9 - 2.16 kWh > BSS2 - 2.16 kWh > C10 - 2.15 kWh > BSS2 - 2.15 kWh > 4 - 2.15 kWh > C3 - 2.14 kWh > C4 - 2.14 kWh > 5 - 2.14 kWh > C5 - 2.13 kWh > 19 - 2.13 kWh > C8 - 2.13 kWh > C7 - 2.12 kWh > 20 - 2.12 kWh > C12 - 2.11 kWh > 31 - 2.11 kWh > C13 - 2.11 kWh > 30 - 2.11 kWh > C14 - 2.10 kWh > 30 - 2.10 kWh > C11 - 2.10 kWh > 7 - 2.10 kWh > C6 - 2.09 kWh > 7 - 2.09 kWh > C2 - 2.08 kWh > 4 - 2.08 kWh > C1 - 2.08 kWh > 1 - 2.08 kWh > D
+Travel Time Trail: D - 9.60 min > 1 - 9.60 min > C1 - 9.60 min > 23 - 9.60 min > C9 - 9.60 min > BSS2 - 9.60 min > C10 - 9.60 min > BSS2 - 9.60 min > 4 - 9.60 min > C3 - 9.60 min > C4 - 9.60 min > 5 - 9.60 min > C5 - 9.60 min > 19 - 9.60 min > C8 - 9.60 min > C7 - 9.60 min > 20 - 9.60 min > C12 - 9.60 min > 31 - 9.60 min > C13 - 9.60 min > 30 - 9.60 min > C14 - 9.60 min > 30 - 9.60 min > C11 - 9.60 min > 7 - 9.60 min > C6 - 9.60 min > 7 - 9.60 min > C2 - 9.60 min > 4 - 9.60 min > C1 - 9.60 min > 1 - 9.60 min > D
+
+Current location: D
+Total Travel Time: 297.60 minutes
+Total Energy Consumed: 65.799 kWh
+Total Distance Covered: 248.00 km
+Current SoC: 34.2%
+Number of Modules Swapped: 0
+Modules Swapped At: None
+Number of served customers: 14
+Served Customers: ['C9', 'C10', 'C3', 'C4', 'C5', 'C8', 'C7', 'C12', 'C13', 'C14', 'C11', 'C6', 'C2', 'C1']
+Constraint Violations: None
+
+================================================================================

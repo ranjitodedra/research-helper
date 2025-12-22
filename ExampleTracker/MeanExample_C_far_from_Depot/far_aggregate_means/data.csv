@@ -1,6 +1,0 @@
-Examples,Total Travel Time,Total Energy Consumed,Total Distance Covered,Number of Modules Swapped,Runtime
-nodes 1000,1368.81,258.983,1081.37,11,470.273
-nodes 2000,1882.22,442.499,1474.65,20,7755.801
-nodes 3000,2230.62,636.904,1739.26,30,49431.117
-nodes 4000,2602.73,884.185,2021.99,42,37801.407
-nodes 5000,2884.0,1128.277,2222.19,54,138374.493
