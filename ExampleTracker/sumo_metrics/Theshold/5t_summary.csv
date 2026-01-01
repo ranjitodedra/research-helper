@@ -1,0 +1,11 @@
+runs,filename,Total Travel Time,Total Energy Consumed,Total Distance Covered,Run Time,Total Module Swapped
+1,sumo_routing_output_20251222_141154.txt,78.77,11.894,55.73,523.785,0
+2,sumo_routing_output_20251222_142150.txt,94.1,13.751,65.43,588.447,0
+3,sumo_routing_output_20251222_143616.txt,83.05,11.917,57.09,536.323,0
+4,sumo_routing_output_20251222_145343.txt,91.64,13.75,64.75,557.017,0
+5,sumo_routing_output_20251222_152613.txt,68.59,9.869,47.54,468.605,0
+6,sumo_routing_output_20251223_061901.txt,82.61,11.725,56.09,529.138,0
+7,sumo_routing_output_20251223_063104.txt,102.52,15.149,71.74,630.775,0
+8,sumo_routing_output_20251223_064319.txt,92.81,13.014,63.29,537.318,0
+9,sumo_routing_output_20251223_065426.txt,86.16,12.57,58.87,556.286,0
+10,sumo_routing_output_20251223_070817.txt,86.09,12.267,60.03,550.203,0

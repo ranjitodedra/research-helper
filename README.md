@@ -6,6 +6,10 @@ Low traffic (0.6 to 0.73):
 python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.6 --upper 0.73
 python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.6 --upper 0.73
 
+Low 0.6 - 0.73
+Mid  0.73 - 0.87
+High 0.87 - 1.0
+
 Mid traffic (0.73 to 0.87):
 python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.73 --upper 0.87
 python modify_traffic.py --dat your_file.dat --json your_file.json --lower 0.73 --upper 0.87
