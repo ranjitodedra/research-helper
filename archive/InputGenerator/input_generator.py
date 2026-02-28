@@ -197,7 +197,7 @@ def apply_special_transformation(matrix):
         matrix: A 2D list (list of lists)
     
     Returns:
-        Transformed matrix
+        Transformed matrix (size increased by 1 in both dimensions)
     """
     # Step 1: Add 0 to each row
     result = [row + [0 if isinstance(row[0], int) else 0.0] for row in matrix]

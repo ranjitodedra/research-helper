@@ -1,0 +1,33 @@
+============================================================
+  BEST SOLUTION SUMMARY
+============================================================
+  RAW Objective (OPL-compatible):  77.438271
+  Penalty Amount:                   0.000000
+  Fitness (GA selection):           77.438271
+  Feasibility Summary:
+    - Feasible:                    True
+    - Max battery violation:       0.000000 kWh
+    - Battery violations count:     0
+    - All customers visited:        True
+    - Returns to depot:             True
+  Objective Value (legacy):         77.438271
+  Total Travel Time:          5.5833 hours (335.00 min)
+  Total Distance:             219.8700 km
+  Total Energy Depletion:     42.0670 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 9.4962 kWh
+  Final Battery Level:        67.4292 kWh (67.4%)
+  Boxes Delivered:            20
+
+  Charging Stops:             None
+
+Route Sequence: D -> 1 -> 9 -> CS8 -> L19 -> CS5 -> L15 -> L4 -> L18 -> L16 -> L12 -> L13 -> CS1 -> L7 -> 11 -> L17 -> 2 -> 1 -> CS3 -> L8 -> L5 -> L2 -> L20 -> 18 -> L1 -> 7 -> L9 -> 10 -> L6 -> L11 -> CS7 -> L3 -> 8 -> L10 -> 13 -> L14 -> 7 -> CS6 -> 18 -> CS3 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 1(99.2%) -> 9(98.4%) -> CS8(98.3%) -> L19(97.5%) -> CS5(96.9%) -> L15(95.5%) -> L4(94.1%) -> L18(94.0%) -> L16(93.5%) -> L12(92.4%) -> L13(91.5%) -> CS1(90.4%) -> L7(90.3%) -> 11(89.2%) -> L17(89.2%) -> 2(88.5%) -> 1(87.9%) -> CS3(87.3%) -> L8(86.6%) -> L5(86.0%) -> L2(84.8%) -> L20(84.8%) -> 18(83.9%) -> L1(82.5%) -> 7(81.7%) -> L9(80.7%) -> 10(79.3%) -> L6(78.2%) -> L11(77.7%) -> CS7(76.7%) -> L3(75.6%) -> 8(75.6%) -> L10(74.6%) -> 13(73.5%) -> L14(72.6%) -> 7(71.2%) -> CS6(70.5%) -> 18(69.5%) -> CS3(68.7%) -> 1(68.1%) -> D(67.4%)
+
+Energy Consumption Trail: D - 0.8 kWh > 1 - 0.9 kWh > 9 - 1.3 kWh > CS8 - 0.9 kWh > L19 - 0.5 kWh > CS5 - 1.4 kWh > L15 - 1.4 kWh > L4 - 1.4 kWh > L18 - 0.6 kWh > L16 - 1.1 kWh > L12 - 0.8 kWh > L13 - 1.2 kWh > CS1 - 1.7 kWh > L7 - 1.1 kWh > 11 - 2.5 kWh > L17 - 0.7 kWh > 2 - 0.6 kWh > 1 - 0.6 kWh > CS3 - 0.8 kWh > L8 - 0.6 kWh > L5 - 1.1 kWh > L2 - 1.7 kWh > L20 - 0.9 kWh > 18 - 1.4 kWh > L1 - 0.8 kWh > 7 - 1.0 kWh > L9 - 1.4 kWh > 10 - 1.1 kWh > L6 - 0.5 kWh > L11 - 1.0 kWh > CS7 - 1.1 kWh > L3 - 1.2 kWh > 8 - 1.0 kWh > L10 - 1.1 kWh > 13 - 0.8 kWh > L14 - 1.5 kWh > 7 - 0.7 kWh > CS6 - 1.0 kWh > 18 - 0.8 kWh > CS3 - 0.6 kWh > 1 - 0.7 kWh > D
+
+Travel Time Trail: D - 9.80 min > 1 - 6.50 min > 9 - 4.22 min > CS8 - 8.45 min > L19 - 5.98 min > CS5 - 9.19 min > L15 - 10.05 min > L4 - 4.67 min > L18 - 5.93 min > L16 - 12.48 min > L12 - 7.57 min > L13 - 8.56 min > CS1 - 5.71 min > L7 - 10.09 min > 11 - 8.69 min > L17 - 5.09 min > 2 - 7.67 min > 1 - 3.81 min > CS3 - 9.95 min > L8 - 5.97 min > L5 - 8.58 min > L2 - 5.94 min > L20 - 6.07 min > 18 - 9.07 min > L1 - 6.28 min > 7 - 11.36 min > L9 - 10.10 min > 10 - 10.53 min > L6 - 5.90 min > L11 - 11.41 min > CS7 - 14.05 min > L3 - 4.28 min > 8 - 11.05 min > L10 - 12.96 min > 13 - 8.89 min > L14 - 9.56 min > 7 - 8.77 min > CS6 - 8.81 min > 18 - 7.37 min > CS3 - 3.81 min > 1 - 9.80 min > D
+
+  Runtime: 180.56 seconds
+  Results saved to: C:\Users\ranji\OneDrive\Documents\GitHub\EVRP-SCS-and-DWC-Genetic-Algorithm\results\20c_10bss_50total

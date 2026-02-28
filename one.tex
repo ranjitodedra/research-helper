@@ -1,0 +1,151 @@
+% ===== Add to preamble (before \begin{document}) =====
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{amsmath,amssymb}
+
+% ===== Place this in your document body =====
+\begin{algorithm}[t]
+\caption{MT2TE: Minimizing Total Travel Time and Total Energy}
+\label{alg:mt2te}
+\DontPrintSemicolon
+\SetAlFnt{\small}
+
+\KwData{
+Graph $G(V,E)$ with distance $d(e)$ and traffic factor $\phi(e)$;\;
+Sets: customers $\mathcal{C}$, BSS $\mathcal{B}$, depot $D$;\;
+Vehicle params, battery modules $\{Q_i\}_{i=1}^N$, reserve threshold $\tau$, swap time $t_{\text{swap}}$
+}
+\KwResult{Route serving all customers and returning to $D$}
+
+\BlankLine
+\SetKwFunction{FUpdate}{UpdateTraffic}
+\SetKwFunction{FBest}{SelectBestCustomer}
+\SetKwFunction{FBSS}{SelectBestBSS}
+\SetKwFunction{FEnergy}{EstimateEnergy}
+\SetKwFunction{FDep}{DepletedModules}
+\SetKwFunction{FNear}{FindBSSNear}
+\SetKwFunction{FOpp}{SelectOpportunityBSS}
+\SetKwFunction{FWorth}{IsBSSWorth}
+\SetKwFunction{FFind}{FindBSSForInsufficient}
+\SetKwFunction{FMove}{MoveOneStep}
+
+\tcp{Helper Functions}
+\Fn{\FUpdate{$G$}}{
+  \If{TraCI connected}{update $\phi(e)$ from SUMO\;}
+}
+
+\Fn{\FBest{$s$}}{
+  Find reachable customers from $s$ using BFS with energy budget $\sum_i Q_i$\;
+  Compute normalized cost $0.5\cdot\frac{T}{T_{\max}}+0.5\cdot\frac{E}{E_{\max}}$ for each\;
+  \Return customer with minimum cost\;
+}
+
+\Fn{\FBSS{$u$}}{
+  Find reachable BSS from $u$ using BFS with energy budget $\sum_i Q_i$\;
+  Compute normalized cost for each BSS\;
+  \Return BSS with minimum cost\;
+}
+
+\Fn{\FEnergy{$s,d$}}{
+  \uIf{$d\in\mathcal{C}$}{
+    \Return $E_{s\to d} + E_{d\to \text{nearest BSS}} + \frac{\tau}{100}Q^{\max}$\;
+  }
+  \Else{
+    \Return $E_{s\to d} + \frac{\tau}{100}Q^{\max}$\;
+  }
+}
+
+\Fn{\FWorth{$s,b,d$}}{
+  Compute cost of direct path $s\to d$ and via-BSS path $s\to b\to d$\;
+  Include swap time for depleted modules in via-BSS cost\;
+  \Return \textbf{True} if $(J_{\text{via}}-J_{\text{direct}})<\varepsilon_{\text{swap}}$\;
+}
+
+\BlankLine
+\tcp{Main Algorithm}
+Initialize $s\leftarrow D$, $\mathcal{C}_{\text{served}}\leftarrow\emptyset$, $L\leftarrow|\mathcal{C}|\cdot w_p$\;
+
+\While{$|\mathcal{C}_{\text{served}}|<|\mathcal{C}|$ \textbf{or} $s\neq D$}{
+  \tcp{If at unserved customer, serve it}
+  \If{$s\in\mathcal{C}$ \textbf{and} $s\notin\mathcal{C}_{\text{served}}$}{
+    $\mathcal{C}_{\text{served}}\leftarrow\mathcal{C}_{\text{served}}\cup\{s\}$\;
+    $L\leftarrow L-w_p$\;
+    \textbf{continue}\;
+  }
+  
+  \tcp{If at BSS, handle swapping logic}
+  \If{$s\in\mathcal{B}$}{
+    \FUpdate{$G$}\;
+    \eIf{$|\mathcal{C}_{\text{served}}|=|\mathcal{C}|$}{
+      $d\leftarrow D$\;
+    }{
+      $d\leftarrow$\FBest{$s$}\;
+      \If{$d=\textbf{None}$}{\Return \textbf{Fail}}
+    }
+    $E_{\text{req}}\leftarrow$\FEnergy{$s,d$}\;
+    $E_{\text{avail}}\leftarrow\sum_i Q_i$\;
+    
+    \uIf{$E_{\text{avail}}\geq E_{\text{req}}$}{
+      \If{$d\in\mathcal{C}$}{Swap depleted modules\;}
+      $s\leftarrow$\FMove{$s,d$}\;
+    }
+    \Else{
+      Try swapping minimum modules; if insufficient, swap all and find alternative BSS\;
+      $s\leftarrow$\FMove{$s,$ new target}\;
+    }
+    \textbf{continue}\;
+  }
+  
+  \tcp{Normal node: select next customer or go to depot}
+  \eIf{$|\mathcal{C}_{\text{served}}|<|\mathcal{C}|$}{
+    \FUpdate{$G$}\;
+    $d\leftarrow$\FBest{$s$}\;
+    \If{$d=\textbf{None}$}{\Return \textbf{Fail}}
+    \FUpdate{$G$}\;
+    $b_d\leftarrow$\FBSS{$d$}\;
+    \If{$b_d=\textbf{None}$}{\Return \textbf{Fail}}
+    $E_{\text{req}}\leftarrow$\FEnergy{$s,d$}\;
+    $E_{\text{avail}}\leftarrow\sum_i Q_i$\;
+    
+    \uIf{$E_{\text{avail}}\geq E_{\text{req}}$}{
+      \If{\FDep{}>0}{
+        $\mathcal{B}_{\text{near}}\leftarrow$\FNear{$s,d$}\;
+        \If{$\mathcal{B}_{\text{near}}\neq\emptyset$}{
+          $b^\star\leftarrow$\FOpp{$s,\mathcal{B}_{\text{near}},d$}\;
+          \uIf{$b^\star\neq\textbf{None}$ \textbf{and} \FWorth{$s,b^\star,d$}}{
+            $s\leftarrow$\FMove{$s,b^\star$}\;
+          }
+          \Else{
+            $s\leftarrow$\FMove{$s,d$}\;
+          }
+        }
+        \Else{
+          $s\leftarrow$\FMove{$s,d$}\;
+        }
+      }
+      \Else{
+        $s\leftarrow$\FMove{$s,d$}\;
+      }
+    }
+    \Else{
+      $b\leftarrow$\FFind{$s,d$}\;
+      \If{$b=\textbf{None}$}{\Return \textbf{Fail}}
+      $s\leftarrow$\FMove{$s,b$}\;
+    }
+  }
+  \Else{
+    \tcp{All customers served, return to depot}
+    $E_{\text{req}}\leftarrow$\FEnergy{$s,D$}\;
+    $E_{\text{avail}}\leftarrow\sum_i Q_i$\;
+    \uIf{$E_{\text{avail}}\geq E_{\text{req}}$}{
+      $s\leftarrow$\FMove{$s,D$}\;
+    }
+    \Else{
+      $b\leftarrow$\FFind{$s,D$}\;
+      \If{$b=\textbf{None}$}{\Return \textbf{Fail}}
+      $s\leftarrow$\FMove{$s,b$}\;
+    }
+  }
+}
+
+\Return \textbf{Success}\;
+\end{algorithm}

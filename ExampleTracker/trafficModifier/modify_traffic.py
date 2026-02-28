@@ -2,14 +2,150 @@
 Traffic Factor Modifier
 
 Modifies traffic_factor values in both .dat and .json files within a specified range,
-maintaining consistency by updating Trav, Edep, and Ebox matrices proportionally.
+recalculating Trav (travel time), Edep (energy depletion), and Ebox matrices using
+physics-based energy consumption model.
 """
 
 import json
 import re
 import random
+import math
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
+
+
+# Default physics constants
+DEFAULT_ANGLE = 0.86  # degrees
+DEFAULT_AIR_DENSITY = 1.205  # kg/m³
+GRAVITY = 9.8  # m/s²
+
+
+def calculate_actual_speed(base_speed: float, traffic_factor: float, current_load: float = 0) -> float:
+    """
+    Calculate actual speed based on base speed and traffic factor.
+    
+    Args:
+        base_speed: Base speed in km/h
+        traffic_factor: Traffic factor (0-1, where 1 = free flow)
+        current_load: Current payload in kg (affects speed slightly)
+    
+    Returns:
+        Actual speed in km/h
+    """
+    # Speed is proportional to traffic factor
+    return base_speed * traffic_factor
+
+
+def calculate_energy_consumption(
+    distance: float,
+    actual_speed: float,
+    vehicle_mass: float,
+    rolling_resistance: float,
+    drag_coefficient: float,
+    cross_sectional_area: float,
+    mass_factor: float,
+    current_load: float = 0,
+    angle: float = DEFAULT_ANGLE,
+    air_density: float = DEFAULT_AIR_DENSITY
+) -> float:
+    """
+    Calculate energy consumption using physics-based model.
+    
+    Energy = (1/3600) × [Total_Mass × g × (f×cos(α) + sin(α)) + 
+                         0.0386×ρ×c×A×v₀² + 
+                         (Total_Mass + m)×dv_dt] × distance
+    
+    Args:
+        distance: Distance in km
+        actual_speed: Actual speed in km/h
+        vehicle_mass: Base vehicle mass in kg
+        rolling_resistance: Rolling resistance coefficient (f)
+        drag_coefficient: Drag coefficient (Cx)
+        cross_sectional_area: Cross-sectional area in m² (A)
+        mass_factor: Mass factor for acceleration (m)
+        current_load: Current payload in kg
+        angle: Road grade angle in degrees
+        air_density: Air density in kg/m³
+    
+    Returns:
+        Energy consumption in kWh
+    """
+    # Convert angle to radians
+    cos_alpha = math.cos(math.radians(angle))
+    sin_alpha = math.sin(math.radians(angle))
+    
+    # Calculate dv_dt based on speed ranges
+    if 50 <= actual_speed <= 80:
+        dv_dt = 0.3
+    elif 81 <= actual_speed <= 120:
+        dv_dt = 2
+    else:
+        dv_dt = 0
+    
+    # Total mass including load
+    total_mass = vehicle_mass + current_load
+    
+    # Energy consumption formula
+    # Rolling resistance + grade resistance
+    resistance_term = total_mass * GRAVITY * (rolling_resistance * cos_alpha + sin_alpha)
+    
+    # Aerodynamic drag (speed-squared relationship)
+    aero_term = 0.0386 * air_density * drag_coefficient * cross_sectional_area * (actual_speed ** 2)
+    
+    # Acceleration term
+    accel_term = (total_mass + mass_factor) * dv_dt
+    
+    # Total energy (divide by 3600 to convert to kWh)
+    energy_consumption = (1 / 3600) * (resistance_term + aero_term + accel_term) * distance
+    
+    return energy_consumption
+
+
+def calculate_energy_per_box(
+    base_energy: float,
+    vehicle_mass: float,
+    box_weight: float = 100.0
+) -> float:
+    """
+    Calculate additional energy consumption per box/package.
+    
+    Uses mass ratio approach: energy per box is proportional to the ratio
+    of box weight to vehicle mass, applied to the base energy.
+    
+    Ebox = base_energy × (box_weight / vehicle_mass)
+    
+    This gives values consistent with typical vehicle routing problems where
+    Ebox represents the additional energy cost of carrying payload.
+    
+    Args:
+        base_energy: Base energy consumption without load (Edep) in kWh
+        vehicle_mass: Base vehicle mass in kg
+        box_weight: Weight of payload per box in kg (default: 100 kg)
+    
+    Returns:
+        Additional energy per box in kWh
+    """
+    # Energy per box is proportional to mass ratio
+    # This captures the fact that heavier loads require more energy
+    mass_ratio = box_weight / vehicle_mass
+    
+    return base_energy * mass_ratio
+
+
+def calculate_travel_time(distance: float, actual_speed: float) -> float:
+    """
+    Calculate travel time in minutes.
+    
+    Args:
+        distance: Distance in km
+        actual_speed: Actual speed in km/h
+    
+    Returns:
+        Travel time in minutes
+    """
+    if actual_speed <= 0:
+        return float('inf')
+    return (distance / actual_speed) * 60  # Convert hours to minutes
 
 
 def build_node_mapping(json_data: dict) -> Dict[str, int]:
@@ -120,45 +256,91 @@ def update_dat_matrices(
     Trav: List[List[float]],
     Edep: List[List[float]],
     Ebox: List[List[float]],
-    changes: Dict[Tuple[str, str], Tuple[float, float]],
+    json_data: dict,
     label_to_index: Dict[str, int]
 ) -> None:
     """
-    Update Trav, Edep, and Ebox matrices based on traffic factor changes.
-    Uses ratio: old_tf / new_tf to scale values.
+    Update Trav, Edep, and Ebox matrices using physics-based calculations.
+    
+    Calculates:
+    - Trav: Travel time based on distance / actual_speed
+    - Edep: Energy consumption using physics formula
+    - Ebox: Additional energy per box
     """
-    for (from_node, to_node), (old_tf, new_tf) in changes.items():
+    # Extract vehicle parameters from JSON
+    vehicle = json_data.get("vehicle", {})
+    vehicle_mass = vehicle.get("base_mass", 1500)
+    rolling_resistance = vehicle.get("f", 0.01)
+    drag_coefficient = vehicle.get("Cx", 0.3)
+    cross_sectional_area = vehicle.get("A", 2.5)
+    mass_factor = vehicle.get("m", 100)
+    base_speed = json_data.get("base_speed", 50)
+    
+    # Build edge lookup for quick access
+    edge_lookup = {}
+    for edge in json_data["edges"]:
+        edge_lookup[(edge["from"], edge["to"])] = edge
+        # Also store reverse for bidirectional edges
+        edge_lookup[(edge["to"], edge["from"])] = edge
+    
+    # Update matrices for each edge
+    for edge in json_data["edges"]:
+        from_node = edge["from"]
+        to_node = edge["to"]
+        distance = edge["distance"]
+        traffic_factor = edge["traffic_factor"]
+        
         if from_node not in label_to_index or to_node not in label_to_index:
             continue
         
         i = label_to_index[from_node]
         j = label_to_index[to_node]
         
-        # Calculate ratio (inverse relationship: higher traffic = slower)
-        if new_tf > 0:
-            ratio = old_tf / new_tf
-        else:
-            ratio = 1.0
+        # Calculate actual speed based on traffic factor
+        actual_speed = calculate_actual_speed(base_speed, traffic_factor)
         
-        # Update matrices if they have non-zero values
-        if i < len(Trav) and j < len(Trav[i]) and Trav[i][j] != 0.0:
-            Trav[i][j] = round(Trav[i][j] * ratio, 2)
+        # Calculate travel time (minutes)
+        travel_time = calculate_travel_time(distance, actual_speed)
         
-        if i < len(Edep) and j < len(Edep[i]) and Edep[i][j] != 0.0:
-            Edep[i][j] = round(Edep[i][j] * ratio, 2)
+        # Calculate energy consumption (kWh)
+        energy = calculate_energy_consumption(
+            distance=distance,
+            actual_speed=actual_speed,
+            vehicle_mass=vehicle_mass,
+            rolling_resistance=rolling_resistance,
+            drag_coefficient=drag_coefficient,
+            cross_sectional_area=cross_sectional_area,
+            mass_factor=mass_factor
+        )
         
-        if i < len(Ebox) and j < len(Ebox[i]) and Ebox[i][j] != 0.0:
-            Ebox[i][j] = round(Ebox[i][j] * ratio, 2)
+        # Calculate energy per box (kWh) using mass ratio approach
+        # Ebox = Edep × (box_weight / vehicle_mass)
+        # With 250 kg and 1500 kg vehicle, ratio ≈ 16.7% which matches original data
+        energy_per_box = calculate_energy_per_box(
+            base_energy=energy,
+            vehicle_mass=vehicle_mass,
+            box_weight=250.0  # 250 kg per box gives ~16-17% of Edep
+        )
         
-        # Also update reverse direction for undirected edges
-        if j < len(Trav) and i < len(Trav[j]) and Trav[j][i] != 0.0:
-            Trav[j][i] = round(Trav[j][i] * ratio, 2)
+        # Update forward direction
+        if i < len(Trav) and j < len(Trav[i]):
+            Trav[i][j] = round(travel_time, 2)
         
-        if j < len(Edep) and i < len(Edep[j]) and Edep[j][i] != 0.0:
-            Edep[j][i] = round(Edep[j][i] * ratio, 2)
+        if i < len(Edep) and j < len(Edep[i]):
+            Edep[i][j] = round(energy, 2)
         
-        if j < len(Ebox) and i < len(Ebox[j]) and Ebox[j][i] != 0.0:
-            Ebox[j][i] = round(Ebox[j][i] * ratio, 2)
+        if i < len(Ebox) and j < len(Ebox[i]):
+            Ebox[i][j] = round(energy_per_box, 2)
+        
+        # Update reverse direction (for undirected edges)
+        if j < len(Trav) and i < len(Trav[j]):
+            Trav[j][i] = round(travel_time, 2)
+        
+        if j < len(Edep) and i < len(Edep[j]):
+            Edep[j][i] = round(energy, 2)
+        
+        if j < len(Ebox) and i < len(Ebox[j]):
+            Ebox[j][i] = round(energy_per_box, 2)
 
 
 def format_matrix_for_dat(matrix: List[List[float]], decimals: int = 2) -> str:
@@ -249,8 +431,8 @@ def modify_traffic_files(
     # Modify traffic factors in JSON
     changes = modify_traffic_factors(json_data, lower_bound, upper_bound, seed)
     
-    # Update matrices in .dat file
-    update_dat_matrices(Trav, Edep, Ebox, changes, label_to_index)
+    # Update matrices in .dat file using physics-based calculations
+    update_dat_matrices(Trav, Edep, Ebox, json_data, label_to_index)
     
     # Write modified JSON file
     with output_json_path.open("w", encoding="utf-8") as f:
