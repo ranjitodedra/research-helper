@@ -1,0 +1,37 @@
+============================================================
+  ANT COLONY OPTIMIZATION — SOLUTION SUMMARY
+============================================================
+  Objective Value (legacy):         337.333888
+  Total Travel Time:          10.3611 hours (621.67 min)
+  Total Distance:             408.7000 km
+  Total Energy Depletion:     60.4524 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 12.6718 kWh
+  Final Battery Level:        52.2194 kWh (52.2%)
+  Boxes Delivered:            40
+  Charging Stops:             None
+
+Route Sequence: D -> 1 -> L10 -> 23 -> CS2 -> L35 -> L37 -> L36 -> 33 -> CS4 -> 29 -> L32 -> CS12 -> 37 -> 38 -> CS3 -> L33 -> CS13 -> L39 -> L8 -> CS1 -> L13 -> 22 -> 37 -> CS12 -> L15 -> L38 -> 39 -> L12 -> L22 -> L23 -> L2 -> 6 -> 20 -> L30 -> 20 -> 6 -> L28 -> L3 -> L4 -> 19 -> L7 -> L29 -> L4 -> L40 -> 11 -> L31 -> CS9 -> L17 -> CS9 -> L25 -> L18 -> L34 -> L18 -> L19 -> L12 -> 39 -> L38 -> L15 -> CS8 -> L16 -> 25 -> 32 -> L6 -> L21 -> 10 -> L26 -> L14 -> L11 -> L1 -> L24 -> L5 -> L20 -> L27 -> 8 -> L9 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 1(98.9%) -> L10(97.8%) -> 23(96.9%) -> CS2(96.0%) -> L35(94.9%) -> L37(94.0%) -> L36(93.6%) -> 33(93.0%) -> CS4(92.0%) -> 29(91.5%) -> L32(90.9%) -> CS12(90.1%) -> 37(89.5%) -> 38(88.5%) -> CS3(87.6%) -> L33(86.7%) -> CS13(86.1%) -> L39(85.7%) -> L8(85.3%) -> CS1(84.5%) -> L13(83.6%) -> 22(83.0%) -> 37(83.1%) -> CS12(82.5%) -> L15(81.8%) -> L38(81.1%) -> 39(80.4%) -> L12(79.7%) -> L22(79.0%) -> L23(79.2%) -> L2(78.7%) -> 6(78.8%) -> 20(78.4%) -> L30(77.7%) -> 20(76.9%) -> 6(76.5%) -> L28(76.1%) -> L3(75.5%) -> L4(75.7%) -> 19(74.9%) -> L7(73.8%) -> L29(74.1%) -> L4(73.2%) -> L40(72.6%) -> 11(71.8%) -> L31(71.3%) -> CS9(70.6%) -> L17(70.1%) -> CS9(69.5%) -> L25(68.4%) -> L18(67.9%) -> L34(67.2%) -> L18(66.5%) -> L19(66.9%) -> L12(66.5%) -> 39(65.8%) -> L38(65.1%) -> L15(64.4%) -> CS8(64.0%) -> L16(63.6%) -> 25(63.1%) -> 32(62.5%) -> L6(61.9%) -> L21(61.4%) -> 10(60.8%) -> L26(60.0%) -> L14(59.6%) -> L11(58.7%) -> L1(57.7%) -> L24(56.7%) -> L5(56.0%) -> L20(56.3%) -> L27(55.4%) -> 8(54.7%) -> L9(54.1%) -> 1(53.2%) -> D(52.2%)
+
+Energy Consumption Trail: D - 1.1 kWh > 1 - 1.1 kWh > L10 - 0.9 kWh > 23 - 0.9 kWh > CS2 - 1.1 kWh > L35 - 0.9 kWh > L37 - 0.4 kWh > L36 - 0.6 kWh > 33 - 1.0 kWh > CS4 - 0.5 kWh > 29 - 0.6 kWh > L32 - 0.7 kWh > CS12 - 0.6 kWh > 37 - 1.0 kWh > 38 - 0.9 kWh > CS3 - 0.9 kWh > L33 - 0.6 kWh > CS13 - 0.4 kWh > L39 - 0.4 kWh > L8 - 0.7 kWh > CS1 - 0.9 kWh > L13 - 0.6 kWh > 22 - 1.0 kWh > 37 - 0.6 kWh > CS12 - 0.7 kWh > L15 - 0.7 kWh > L38 - 0.7 kWh > 39 - 0.7 kWh > L12 - 0.7 kWh > L22 - 1.6 kWh > L23 - 0.5 kWh > L2 - 1.1 kWh > 6 - 0.4 kWh > 20 - 0.7 kWh > L30 - 0.7 kWh > 20 - 0.4 kWh > 6 - 0.5 kWh > L28 - 0.6 kWh > L3 - 1.4 kWh > L4 - 0.8 kWh > 19 - 1.0 kWh > L7 - 2.0 kWh > L29 - 0.9 kWh > L4 - 0.6 kWh > L40 - 0.8 kWh > 11 - 0.5 kWh > L31 - 0.7 kWh > CS9 - 0.6 kWh > L17 - 0.6 kWh > CS9 - 1.1 kWh > L25 - 0.5 kWh > L18 - 0.7 kWh > L34 - 0.7 kWh > L18 - 2.2 kWh > L19 - 0.5 kWh > L12 - 0.6 kWh > 39 - 0.7 kWh > L38 - 0.7 kWh > L15 - 0.4 kWh > CS8 - 0.4 kWh > L16 - 0.5 kWh > 25 - 0.6 kWh > 32 - 0.6 kWh > L6 - 0.5 kWh > L21 - 0.6 kWh > 10 - 0.7 kWh > L26 - 0.4 kWh > L14 - 1.0 kWh > L11 - 1.0 kWh > L1 - 1.0 kWh > L24 - 0.7 kWh > L5 - 1.6 kWh > L20 - 0.9 kWh > L27 - 0.8 kWh > 8 - 0.5 kWh > L9 - 0.9 kWh > 1 - 1.0 kWh > D
+
+Travel Time Trail: D - 14.38 min > 1 - 12.61 min > L10 - 7.97 min > 23 - 8.32 min > CS2 - 11.60 min > L35 - 8.05 min > L37 - 4.46 min > L36 - 5.35 min > 33 - 9.67 min > CS4 - 5.65 min > 29 - 8.15 min > L32 - 10.22 min > CS12 - 6.57 min > 37 - 9.56 min > 38 - 7.66 min > CS3 - 12.38 min > L33 - 7.77 min > CS13 - 4.25 min > L39 - 5.46 min > L8 - 8.11 min > CS1 - 13.75 min > L13 - 7.68 min > 22 - 4.03 min > 37 - 6.57 min > CS12 - 7.58 min > L15 - 8.92 min > L38 - 6.35 min > 39 - 8.17 min > L12 - 8.80 min > L22 - 6.40 min > L23 - 5.47 min > L2 - 4.27 min > 6 - 5.08 min > 20 - 8.05 min > L30 - 8.05 min > 20 - 5.08 min > 6 - 6.20 min > L28 - 6.09 min > L3 - 5.72 min > L4 - 7.85 min > 19 - 12.61 min > L7 - 8.02 min > L29 - 9.51 min > L4 - 8.70 min > L40 - 8.89 min > 11 - 4.92 min > L31 - 7.31 min > CS9 - 5.46 min > L17 - 5.46 min > CS9 - 9.94 min > L25 - 6.28 min > L18 - 6.92 min > L34 - 6.92 min > L18 - 9.37 min > L19 - 5.89 min > L12 - 8.17 min > 39 - 6.35 min > L38 - 8.92 min > L15 - 5.38 min > CS8 - 4.13 min > L16 - 5.30 min > 25 - 7.65 min > 32 - 7.76 min > L6 - 8.09 min > L21 - 6.08 min > 10 - 8.11 min > L26 - 6.00 min > L14 - 14.32 min > L11 - 12.41 min > L1 - 14.53 min > L24 - 8.25 min > L5 - 6.91 min > L20 - 12.14 min > L27 - 11.74 min > 8 - 7.69 min > L9 - 12.86 min > 1 - 14.38 min > D
+
+  Pheromone convergence:       iteration 153
+  Total Runtime:               3579.52 seconds
+
+
+============================================================
+  MULTI-RUN SUMMARY (10 runs)
+============================================================
+  Best Objective:   337.333888
+  Worst Objective:  373.696983
+  Mean Objective:   360.538406
+  Std Deviation:    11.668025
+============================================================
+
+[plotter] Box plot saved: results\40c_20bss_100total_boxplot.png
+[ACO] Total elapsed: 4904.31s across 10 run(s)
+[ACO] Logs and plots saved to results/

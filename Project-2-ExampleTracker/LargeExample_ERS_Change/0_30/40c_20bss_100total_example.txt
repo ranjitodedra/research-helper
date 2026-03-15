@@ -1,0 +1,16 @@
+=== UIG2 INSTANCE SUMMARY ===
+Total Nodes: 100
+Customers: 40
+Charging Stations: 20
+Charging Station Ratio: 0.200
+Seed: 674
+Electric Edge Ratio: 0.300
+Electric Edges Count: 58
+
+=== GA NODE COUNTS ===
+All Nodes: 100
+Customers: 40
+Charging Stations: 20
+Intersections: 39
+Edges: 197
+Electric Edges: 58

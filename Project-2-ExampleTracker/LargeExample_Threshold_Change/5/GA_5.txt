@@ -1,0 +1,33 @@
+============================================================
+  BEST SOLUTION SUMMARY
+============================================================
+  RAW Objective (OPL-compatible):  535.785687
+  Penalty Amount:                   0.000000
+  Fitness (GA selection):           535.785687
+  Feasibility Summary:
+    - Feasible:                    True
+    - Max battery violation:       0.000000 kWh
+    - Battery violations count:     0
+    - All customers visited:        True
+    - Returns to depot:             True
+  Objective Value (legacy):         535.785687
+  Total Travel Time:          12.2773 hours (736.64 min)
+  Total Distance:             501.1000 km
+  Total Energy Depletion:     104.2004 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 32.7012 kWh
+  Final Battery Level:        28.5008 kWh (28.5%)
+  Boxes Delivered:            40
+
+  Charging Stops:             None
+
+Route Sequence: D -> 2 -> L9 -> 8 -> L27 -> L20 -> CS7 -> 12 -> L11 -> L14 -> L26 -> 18 -> L5 -> L24 -> L1 -> L26 -> 10 -> L21 -> L6 -> 32 -> 25 -> L16 -> CS8 -> L38 -> 39 -> L12 -> L19 -> L25 -> L18 -> L19 -> L12 -> L19 -> L25 -> L31 -> L18 -> L19 -> L22 -> L23 -> L28 -> L3 -> L40 -> L4 -> 19 -> L7 -> L29 -> L4 -> 11 -> L31 -> L18 -> L34 -> L17 -> CS9 -> L31 -> 11 -> L23 -> L2 -> 6 -> 20 -> L30 -> 20 -> 6 -> L28 -> L40 -> 11 -> L31 -> L18 -> L19 -> L12 -> 39 -> L38 -> L15 -> CS12 -> 37 -> 38 -> CS3 -> L13 -> CS1 -> L8 -> L39 -> CS13 -> L33 -> CS3 -> 22 -> 37 -> CS12 -> L15 -> CS12 -> L32 -> 9 -> 33 -> L36 -> L35 -> L37 -> CS2 -> 23 -> L10 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 2(98.7%) -> L9(98.5%) -> 8(97.7%) -> L27(96.7%) -> L20(95.6%) -> CS7(94.2%) -> 12(93.1%) -> L11(92.3%) -> L14(91.1%) -> L26(90.5%) -> 18(89.8%) -> L5(89.3%) -> L24(88.3%) -> L1(87.0%) -> L26(86.9%) -> 10(85.9%) -> L21(85.0%) -> L6(84.4%) -> 32(83.6%) -> 25(82.8%) -> L16(82.1%) -> CS8(81.5%) -> L38(81.4%) -> 39(80.4%) -> L12(79.5%) -> L19(78.9%) -> L25(78.8%) -> L18(78.1%) -> L19(77.9%) -> L12(77.3%) -> L19(76.7%) -> L25(76.5%) -> L31(76.4%) -> L18(75.7%) -> L19(75.5%) -> L22(75.4%) -> L23(75.3%) -> L28(75.3%) -> L3(74.5%) -> L40(74.4%) -> L4(73.6%) -> 19(72.5%) -> L7(71.1%) -> L29(71.1%) -> L4(69.9%) -> 11(68.7%) -> L31(68.0%) -> L18(67.3%) -> L34(66.3%) -> L17(65.3%) -> CS9(64.5%) -> L31(63.6%) -> 11(62.9%) -> L23(62.9%) -> L2(62.2%) -> 6(62.2%) -> 20(61.7%) -> L30(60.7%) -> 20(59.8%) -> 6(59.3%) -> L28(58.8%) -> L40(58.3%) -> 11(57.2%) -> L31(56.6%) -> L18(55.9%) -> L19(55.8%) -> L12(55.2%) -> 39(54.4%) -> L38(53.4%) -> L15(52.5%) -> CS12(51.6%) -> 37(50.9%) -> 38(49.5%) -> CS3(48.3%) -> L13(47.3%) -> CS1(46.2%) -> L8(45.3%) -> L39(44.8%) -> CS13(44.3%) -> L33(43.6%) -> CS3(42.6%) -> 22(41.3%) -> 37(41.3%) -> CS12(40.6%) -> L15(39.7%) -> CS12(38.8%) -> L32(38.0%) -> 9(37.2%) -> 33(37.2%) -> L36(36.5%) -> L35(35.6%) -> L37(34.4%) -> CS2(33.3%) -> 23(32.2%) -> L10(31.0%) -> 1(29.7%) -> D(28.5%)
+
+Energy Consumption Trail: D - 1.3 kWh > 2 - 2.6 kWh > L9 - 0.7 kWh > 8 - 1.0 kWh > L27 - 1.1 kWh > L20 - 1.4 kWh > CS7 - 1.1 kWh > 12 - 0.8 kWh > L11 - 1.2 kWh > L14 - 0.5 kWh > L26 - 0.7 kWh > 18 - 0.6 kWh > L5 - 1.0 kWh > L24 - 1.3 kWh > L1 - 1.2 kWh > L26 - 1.0 kWh > 10 - 0.9 kWh > L21 - 0.6 kWh > L6 - 0.7 kWh > 32 - 0.8 kWh > 25 - 0.7 kWh > L16 - 0.6 kWh > CS8 - 1.5 kWh > L38 - 1.0 kWh > 39 - 0.8 kWh > L12 - 0.6 kWh > L19 - 2.2 kWh > L25 - 0.7 kWh > L18 - 2.8 kWh > L19 - 0.6 kWh > L12 - 0.6 kWh > L19 - 2.2 kWh > L25 - 2.2 kWh > L31 - 0.8 kWh > L18 - 2.8 kWh > L19 - 1.7 kWh > L22 - 1.9 kWh > L23 - 1.1 kWh > L28 - 0.8 kWh > L3 - 1.5 kWh > L40 - 0.8 kWh > L4 - 1.1 kWh > 19 - 1.3 kWh > L7 - 2.4 kWh > L29 - 1.2 kWh > L4 - 1.2 kWh > 11 - 0.7 kWh > L31 - 0.7 kWh > L18 - 1.0 kWh > L34 - 1.0 kWh > L17 - 0.8 kWh > CS9 - 0.9 kWh > L31 - 0.6 kWh > 11 - 1.6 kWh > L23 - 0.7 kWh > L2 - 1.2 kWh > 6 - 0.5 kWh > 20 - 0.9 kWh > L30 - 0.9 kWh > 20 - 0.5 kWh > 6 - 0.5 kWh > L28 - 0.5 kWh > L40 - 1.0 kWh > 11 - 0.6 kWh > L31 - 0.7 kWh > L18 - 2.7 kWh > L19 - 0.6 kWh > L12 - 0.8 kWh > 39 - 1.0 kWh > L38 - 0.9 kWh > L15 - 0.9 kWh > CS12 - 0.7 kWh > 37 - 1.4 kWh > 38 - 1.2 kWh > CS3 - 1.1 kWh > L13 - 1.1 kWh > CS1 - 0.9 kWh > L8 - 0.5 kWh > L39 - 0.5 kWh > CS13 - 0.7 kWh > L33 - 1.0 kWh > CS3 - 1.3 kWh > 22 - 1.2 kWh > 37 - 0.7 kWh > CS12 - 0.9 kWh > L15 - 0.9 kWh > CS12 - 0.8 kWh > L32 - 0.7 kWh > 9 - 1.6 kWh > 33 - 0.8 kWh > L36 - 0.8 kWh > L35 - 1.2 kWh > L37 - 1.1 kWh > CS2 - 1.1 kWh > 23 - 1.2 kWh > L10 - 1.3 kWh > 1 - 1.2 kWh > D
+
+Travel Time Trail: D - 14.38 min > 2 - 8.54 min > L9 - 7.69 min > 8 - 11.74 min > L27 - 12.14 min > L20 - 8.83 min > CS7 - 7.85 min > 12 - 5.34 min > L11 - 14.32 min > L14 - 6.00 min > L26 - 7.49 min > 18 - 5.03 min > L5 - 8.25 min > L24 - 14.53 min > L1 - 4.03 min > L26 - 8.11 min > 10 - 6.08 min > L21 - 8.09 min > L6 - 7.76 min > 32 - 7.65 min > 25 - 5.30 min > L16 - 4.13 min > CS8 - 4.81 min > L38 - 6.35 min > 39 - 8.17 min > L12 - 5.89 min > L19 - 7.20 min > L25 - 6.28 min > L18 - 9.37 min > L19 - 5.89 min > L12 - 5.89 min > L19 - 7.20 min > L25 - 7.38 min > L31 - 4.94 min > L18 - 9.37 min > L19 - 5.84 min > L22 - 6.40 min > L23 - 3.68 min > L28 - 6.09 min > L3 - 4.93 min > L40 - 8.70 min > L4 - 7.85 min > 19 - 12.61 min > L7 - 8.02 min > L29 - 9.51 min > L4 - 8.74 min > 11 - 4.92 min > L31 - 4.94 min > L18 - 6.92 min > L34 - 11.76 min > L17 - 5.46 min > CS9 - 7.31 min > L31 - 4.92 min > 11 - 5.40 min > L23 - 5.47 min > L2 - 4.27 min > 6 - 5.08 min > 20 - 8.05 min > L30 - 8.05 min > 20 - 5.08 min > 6 - 6.20 min > L28 - 5.44 min > L40 - 8.89 min > 11 - 4.92 min > L31 - 4.94 min > L18 - 9.37 min > L19 - 5.89 min > L12 - 8.17 min > 39 - 6.35 min > L38 - 8.92 min > L15 - 7.58 min > CS12 - 6.57 min > 37 - 9.56 min > 38 - 7.66 min > CS3 - 9.06 min > L13 - 13.75 min > CS1 - 8.11 min > L8 - 5.46 min > L39 - 4.25 min > CS13 - 7.77 min > L33 - 12.38 min > CS3 - 12.11 min > 22 - 4.03 min > 37 - 6.57 min > CS12 - 7.58 min > L15 - 7.58 min > CS12 - 10.22 min > L32 - 5.02 min > 9 - 5.56 min > 33 - 5.35 min > L36 - 6.09 min > L35 - 8.05 min > L37 - 11.92 min > CS2 - 8.32 min > 23 - 7.97 min > L10 - 12.61 min > 1 - 14.38 min > D
+
+  Runtime: 1104.29 seconds
+  Results saved to: C:\Users\ranji\Documents\Projects\EVRP-SCS-and-DWC-Genetic-Algorithm\results\40c_20bss_100total

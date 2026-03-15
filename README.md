@@ -107,3 +107,10 @@ If you encounter an `ImportError` about NumPy and scikit-learn:
 1. Make sure your virtual environment is activated
 2. Verify that requirements are installed: `pip list`
 3. Reinstall requirements: `pip install -r requirements.txt --upgrade`
+
+
+# Get Images from IPYNB file
+
+```
+python extract_notebook_images.py "Project-2-ExampleTracker/C&G_ERS_Change/metrics_barcharts.ipynb" -o output_images
+```

@@ -1,0 +1,25 @@
+============================================================
+  CLARKE & WRIGHT SAVINGS ALGORITHM -- SOLUTION SUMMARY
+============================================================
+  Objective Value (legacy):         109.814244
+  Total Travel Time:          6.4229 hours (385.38 min)
+  Total Distance:             253.5500 km
+  Total Energy Depletion:     38.4217 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 9.6798 kWh
+  Final Battery Level:        71.2581 kWh (71.3%)
+  Boxes Delivered:            24
+  Charging Stops:             None
+
+Route Sequence: D -> 2 -> L10 -> L9 -> 18 -> L1 -> CS7 -> L12 -> L2 -> L22 -> CS8 -> L16 -> CS10 -> L21 -> L6 -> L17 -> L18 -> L17 -> L19 -> 15 -> L7 -> L8 -> L5 -> CS2 -> L13 -> L23 -> 19 -> 23 -> L15 -> CS5 -> 16 -> 12 -> L20 -> 11 -> CS8 -> L22 -> L2 -> L14 -> 21 -> CS4 -> L10 -> L11 -> 2 -> 1 -> L3 -> L24 -> L4 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 2(99.4%) -> L10(99.0%) -> L9(98.5%) -> 18(97.8%) -> L1(96.8%) -> CS7(97.0%) -> L12(96.5%) -> L2(96.1%) -> L22(95.4%) -> CS8(94.9%) -> L16(93.8%) -> CS10(92.7%) -> L21(92.0%) -> L6(91.6%) -> L17(90.6%) -> L18(89.9%) -> L17(89.2%) -> L19(89.5%) -> 15(89.1%) -> L7(88.6%) -> L8(88.9%) -> L5(88.4%) -> CS2(87.9%) -> L13(88.2%) -> L23(87.6%) -> 19(85.4%) -> 23(84.7%) -> L15(84.0%) -> CS5(83.2%) -> 16(82.4%) -> 12(81.9%) -> L20(80.9%) -> 11(80.3%) -> CS8(79.8%) -> L22(79.2%) -> L2(78.6%) -> L14(77.8%) -> 21(76.9%) -> CS4(76.5%) -> L10(75.5%) -> L11(74.9%) -> 2(74.1%) -> 1(73.3%) -> L3(73.7%) -> L24(73.2%) -> L4(72.4%) -> 1(71.8%) -> D(71.3%)
+
+Energy Consumption Trail: D - 0.6 kWh > 2 - 0.4 kWh > L10 - 0.5 kWh > L9 - 0.7 kWh > 18 - 1.0 kWh > L1 - 1.4 kWh > CS7 - 0.5 kWh > L12 - 0.5 kWh > L2 - 0.6 kWh > L22 - 0.6 kWh > CS8 - 1.1 kWh > L16 - 1.0 kWh > CS10 - 0.8 kWh > L21 - 0.4 kWh > L6 - 0.9 kWh > L17 - 0.7 kWh > L18 - 0.7 kWh > L17 - 1.4 kWh > L19 - 0.5 kWh > 15 - 0.5 kWh > L7 - 1.8 kWh > L8 - 0.6 kWh > L5 - 0.4 kWh > CS2 - 1.4 kWh > L13 - 0.6 kWh > L23 - 2.2 kWh > 19 - 0.7 kWh > 23 - 0.7 kWh > L15 - 0.9 kWh > CS5 - 0.8 kWh > 16 - 0.5 kWh > 12 - 0.9 kWh > L20 - 0.7 kWh > 11 - 0.5 kWh > CS8 - 0.6 kWh > L22 - 0.6 kWh > L2 - 0.8 kWh > L14 - 0.9 kWh > 21 - 0.4 kWh > CS4 - 1.0 kWh > L10 - 0.6 kWh > L11 - 0.8 kWh > 2 - 0.9 kWh > 1 - 2.1 kWh > L3 - 0.5 kWh > L24 - 0.8 kWh > L4 - 0.6 kWh > 1 - 0.5 kWh > D  
+
+Travel Time Trail: D - 7.62 min > 2 - 5.52 min > L10 - 4.47 min > L9 - 7.87 min > 18 - 12.81 min > L1 - 5.64 min > CS7 - 6.28 min > L12 - 5.93 min > L2 - 8.56 min > L22 - 5.71 min > CS8 - 10.32 min > L16 - 9.70 min > CS10 - 7.61 min > L21 - 5.31 min > L6 - 10.85 min > L17 - 9.44 min > L18 - 9.44 min > L17 - 6.01 min > L19 - 5.42 min > 15 - 5.55 min > L7 - 7.69 min > L8 - 7.41 min > L5 - 6.49 min > CS2 - 5.87 min > L13 - 8.12 min > L23 - 9.35 min > 19 - 8.23 min > 23 - 8.64 min > L15 - 9.97 min > CS5 - 10.98 min > 16 - 5.17 min > 12 - 13.90 min > L20 - 7.69 min > 11 - 6.68 min > CS8 - 5.71 min > L22 - 8.56 min > L2 - 9.89 min > L14 - 12.53 min > 21 - 4.13 min > CS4 - 11.82 min > L10 - 5.47 min > L11 - 9.15 min > 2 - 9.21 min > 1 - 8.95 min > L3 - 6.11 min > L24 - 9.92 min > L4 - 10.05 min > 1 - 7.62 min > D
+
+  Savings computation time:    1.05 seconds
+  Local search time:           7.84 seconds
+  Total Runtime:               8.89 seconds
+============================================================
