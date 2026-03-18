@@ -28,3 +28,4 @@ python UIG2\uig2.py 28 --seed 799 --eroad-ratio 0.2 --cs-ratio 0.25
 # CS +50% (cs = 0.30) → ~8 BSS nodes
 python UIG2\uig2.py 28 --seed 799 --eroad-ratio 0.2 --cs-ratio 0.30
 ```
+
