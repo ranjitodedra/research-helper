@@ -1,0 +1,33 @@
+============================================================
+  BEST SOLUTION SUMMARY
+============================================================
+  RAW Objective (OPL-compatible):  -1.596299
+  Penalty Amount:                   0.000000
+  Fitness (GA selection):           -1.596299
+  Feasibility Summary:
+    - Feasible:                    True
+    - Max battery violation:       0.000000 kWh
+    - Battery violations count:     0
+    - All customers visited:        True
+    - Returns to depot:             True
+  Objective Value (legacy):         -1.596299
+  Total Travel Time:          1.5835 hours (95.01 min)
+  Total Distance:             73.7300 km
+  Total Energy Depletion:     15.1473 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 3.7434 kWh
+  Final Battery Level:        88.5961 kWh (88.6%)
+  Boxes Delivered:            6
+
+  Charging Stops:             None
+
+Route Sequence: D -> 2 -> CS2 -> CS3 -> 6 -> L1 -> L2 -> L3 -> L4 -> L5 -> L6 -> CS1 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 2(98.9%) -> CS2(98.2%) -> CS3(97.0%) -> 6(96.0%) -> L1(94.7%) -> L2(93.2%) -> L3(92.1%) -> L4(91.5%) -> L5(91.5%) -> L6(90.4%) -> CS1(90.4%) -> 1(89.7%) -> D(88.6%)
+
+Energy Consumption Trail: D - 1.1 kWh > 2 - 0.7 kWh > CS2 - 1.3 kWh > CS3 - 1.0 kWh > 6 - 1.3 kWh > L1 - 1.5 kWh > L2 - 1.1 kWh > L3 - 0.6 kWh > L4 - 2.2 kWh > L5 - 1.0 kWh > L6 - 1.5 kWh > CS1 - 0.8 kWh > 1 - 1.1 kWh > D
+
+Travel Time Trail: D - 8.23 min > 2 - 4.77 min > CS2 - 9.89 min > CS3 - 7.21 min > 6 - 9.22 min > L1 - 9.89 min > L2 - 7.77 min > L3 - 4.56 min > L4 - 7.88 min > L5 - 7.06 min > L6 - 5.33 min > CS1 - 5.64 min > 1 - 7.54 min > D
+
+  Runtime: 3.46 seconds
+  Results saved to: C:\Users\ranji\Documents\Projects\EVRP-SCS-and-DWC-Genetic-Algorithm\results\6c_3bss_16total_Low
