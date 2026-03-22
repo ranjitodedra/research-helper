@@ -1,0 +1,37 @@
+============================================================
+  ANT COLONY OPTIMIZATION — SOLUTION SUMMARY
+============================================================
+  Objective Value (legacy):         6.767853
+  Total Travel Time:          2.5471 hours (152.83 min)
+  Total Distance:             101.6600 km
+  Total Energy Depletion:     14.7786 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 3.8998 kWh
+  Final Battery Level:        89.1212 kWh (89.1%)
+  Boxes Delivered:            11
+  Charging Stops:             None
+
+Route Sequence: D -> 1 -> 5 -> L3 -> L1 -> L5 -> 8 -> 5 -> L2 -> 10 -> L9 -> L6 -> L10 -> L4 -> L7 -> 3 -> L8 -> CS3 -> L11 -> 2 -> D
+
+SoC Trail: D(100.0%) -> 1(99.4%) -> 5(99.0%) -> L3(98.1%) -> L1(97.1%) -> L5(96.6%) -> 8(96.8%) -> 5(96.1%) -> L2(95.3%) -> 10(94.9%) -> L9(94.0%) -> L6(93.5%) -> L10(92.6%) -> L4(92.1%) -> L7(92.3%) -> 3(91.7%) -> L8(91.1%) -> CS3(90.4%) -> L11(90.7%) -> 2(89.7%) -> D(89.1%)
+
+Energy Consumption Trail: D - 0.6 kWh > 1 - 0.4 kWh > 5 - 0.9 kWh > L3 - 1.0 kWh > L1 - 0.5 kWh > L5 - 1.1 kWh > 8 - 0.7 kWh > 5 - 0.8 kWh > L2 - 0.4 kWh > 10 - 0.9 kWh > L9 - 0.5 kWh > L6 - 0.8 kWh > L10 - 0.6 kWh > L4 - 1.0 kWh > L7 - 0.6 kWh > 3 - 0.6 kWh > L8 - 0.6 kWh > CS3 - 1.1 kWh > L11 - 0.9 kWh > 2 - 0.6 kWh > D
+
+Travel Time Trail: D - 9.80 min > 1 - 3.81 min > 5 - 8.80 min > L3 - 11.39 min > L1 - 6.00 min > L5 - 4.60 min > 8 - 9.67 min > 5 - 7.74 min > L2 - 6.90 min > 10 - 9.94 min > L9 - 4.97 min > L6 - 8.49 min > L10 - 6.75 min > L4 - 4.28 min > L7 - 7.82 min > 3 - 9.97 min > L8 - 7.51 min > CS3 - 4.88 min > L11 - 9.69 min > 2 - 9.80 min > D
+
+  Pheromone convergence:       iteration 51
+  Total Runtime:               4.90 seconds
+
+
+============================================================
+  MULTI-RUN SUMMARY (10 runs)
+============================================================
+  Best Objective:   6.767853
+  Worst Objective:  7.180206
+  Mean Objective:   6.891559
+  Std Deviation:    0.199185
+============================================================
+
+[plotter] Box plot saved: results\11c_6bss_28total_boxplot.png
+[ACO] Total elapsed: 10.75s across 10 run(s)
+[ACO] Logs and plots saved to results/

@@ -1,0 +1,25 @@
+============================================================
+  CLARKE & WRIGHT SAVINGS ALGORITHM -- SOLUTION SUMMARY
+============================================================
+  Objective Value (legacy):         -4.787896
+  Total Travel Time:          0.8900 hours (53.40 min)
+  Total Distance:             36.3200 km
+  Total Energy Depletion:     4.5975 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 0.0000 kWh
+  Final Battery Level:        95.4025 kWh (95.4%)
+  Boxes Delivered:            3
+  Charging Stops:             None
+
+Route Sequence: D -> 2 -> L3 -> L2 -> L1 -> L2 -> L3 -> 2 -> D
+
+SoC Trail: D(100.0%) -> 2(99.2%) -> L3(98.8%) -> L2(98.2%) -> L1(97.7%) -> L2(97.2%) -> L3(96.6%) -> 2(96.2%) -> D(95.4%)
+
+Energy Consumption Trail: D - 0.8 kWh > 2 - 0.5 kWh > L3 - 0.5 kWh > L2 - 0.5 kWh > L1 - 0.5 kWh > L2 - 0.5 kWh > L3 - 0.5 kWh > 2 - 0.8 kWh > D
+
+Travel Time Trail: D - 8.63 min > 2 - 5.88 min > L3 - 5.45 min > L2 - 6.74 min > L1 - 6.74 min > L2 - 5.45 min > L3 - 5.88 min > 2 - 8.63 min > D
+
+  Savings computation time:    0.66 seconds
+  Local search time:           0.00 seconds
+  Total Runtime:               0.67 seconds
+============================================================

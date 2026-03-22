@@ -27,7 +27,22 @@ SoC Trail: D(100.0%) -> 2(99.0%) -> CS2(98.3%) -> CS3(97.2%) -> 6(96.3%) -> L1(9
 
 Energy Consumption Trail: D - 1.0 kWh > 2 - 0.6 kWh > CS2 - 1.1 kWh > CS3 - 0.9 kWh > 6 - 1.3 kWh > L1 - 1.3 kWh > L2 - 1.0 kWh > L3 - 0.5 kWh > L4 - 2.2 kWh > L5 - 0.8 kWh > L6 - 1.5 kWh > CS1 - 0.7 kWh > 1 - 1.0 kWh > D
 
-Travel Time Trail: D - 8.63 min > 2 - 5.88 min > CS2 - 12.84 min > CS3 - 7.82 min > 6 - 10.07 min > L1 - 12.53 min > L2 - 10.15 min > L3 - 6.31 min > L4 - 7.88 min > L5 - 10.48 min > L6 - 5.33 min > CS1 - 5.70 min > 1 - 8.63 min > D  
+Travel Time Trail: D - 8.63 min > 2 - 5.88 min > CS2 - 12.84 min > CS3 - 7.82 min > 6 - 10.07 min > L1 - 12.53 min > L2 - 10.15 min > L3 - 6.31 min > L4 - 7.88 min > L5 - 10.48 min > L6 - 5.33 min > CS1 - 5.70 min > 1 - 8.63 min > D
 
-  Runtime: 9.94 seconds
-  Results saved to: C:\Users\ranji\OneDrive\Documents\GitHub\EVRP-SCS-and-DWC-Genetic-Algorithm\results\6c_3bss_16total_V3
+============================================================
+  PER-RUN RUNTIMES
+============================================================
+  Run 1:  1.95 seconds
+  Run 2:  2.07 seconds
+  Run 3:  2.17 seconds
+  Run 4:  2.00 seconds
+  Run 5:  1.98 seconds
+  Run 6:  2.16 seconds
+  Run 7:  2.00 seconds
+  Run 8:  2.17 seconds
+  Run 9:  1.96 seconds
+  Run 10:  2.00 seconds
+  Mean Per-Run Runtime:  2.05 seconds
+
+  Total Runtime: 3.58 seconds
+  Results saved to: C:\Users\ranji\Documents\Projects\EVRP-SCS-and-DWC-Genetic-Algorithm\results\6c_3bss_16total_V3

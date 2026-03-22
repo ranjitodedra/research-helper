@@ -29,5 +29,20 @@ Energy Consumption Trail: D - 0.7 kWh > 2 - 0.6 kWh > 4 - 0.6 kWh > L8 - 0.6 kWh
 
 Travel Time Trail: D - 9.80 min > 2 - 4.21 min > 4 - 3.95 min > L8 - 3.95 min > 4 - 8.68 min > L7 - 8.49 min > L6 - 8.70 min > L4 - 6.12 min > 7 - 7.51 min > L9 - 5.54 min > CS4 - 7.07 min > L10 - 6.90 min > L2 - 6.00 min > 5 - 6.28 min > L3 - 7.16 min > L1 - 6.47 min > L5 - 9.67 min > L3 - 6.28 min > 5 - 3.81 min > 1 - 9.80 min > D    
 
-  Runtime: 44.29 seconds
-  Results saved to: C:\Users\ranji\OneDrive\Documents\GitHub\EVRP-SCS-and-DWC-Genetic-Algorithm\results\10c_5bss_24total
+============================================================
+  PER-RUN RUNTIMES
+============================================================
+  Run 1:  4.96 seconds
+  Run 2:  5.12 seconds
+  Run 3:  4.99 seconds
+  Run 4:  5.10 seconds
+  Run 5:  4.29 seconds
+  Run 6:  4.87 seconds
+  Run 7:  4.46 seconds
+  Run 8:  4.64 seconds
+  Run 9:  4.46 seconds
+  Run 10:  4.63 seconds
+  Mean Per-Run Runtime:  4.75 seconds
+
+  Total Runtime: 6.43 seconds
+  Results saved to: C:\Users\ranji\Documents\Projects\EVRP-SCS-and-DWC-Genetic-Algorithm\results\10c_5bss_24total

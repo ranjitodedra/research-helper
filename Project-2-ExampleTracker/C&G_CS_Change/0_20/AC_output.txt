@@ -1,0 +1,37 @@
+============================================================
+  ANT COLONY OPTIMIZATION — SOLUTION SUMMARY
+============================================================
+  Objective Value (legacy):         -3.466122
+  Total Travel Time:          1.4614 hours (87.68 min)
+  Total Distance:             59.7200 km
+  Total Energy Depletion:     8.6611 kWh
+  Total Energy Charged (SC):  0.0000 kWh
+  Total Energy Charged (DWC): 2.3460 kWh
+  Final Battery Level:        93.6849 kWh (93.7%)
+  Boxes Delivered:            6
+  Charging Stops:             None
+
+Route Sequence: D -> 1 -> 4 -> L3 -> L5 -> L2 -> CS1 -> L6 -> L4 -> CS2 -> L1 -> 1 -> D
+
+SoC Trail: D(100.0%) -> 1(99.4%) -> 4(99.6%) -> L3(98.8%) -> L5(97.9%) -> L2(97.5%) -> CS1(97.1%) -> L6(97.3%) -> L4(96.5%) -> CS2(95.9%) -> L1(94.9%) -> 1(94.3%) -> D(93.7%)
+
+Energy Consumption Trail: D - 0.6 kWh > 1 - 1.0 kWh > 4 - 0.8 kWh > L3 - 0.9 kWh > L5 - 0.5 kWh > L2 - 0.4 kWh > CS1 - 0.9 kWh > L6 - 0.7 kWh > L4 - 0.6 kWh > CS2 - 1.0 kWh > L1 - 0.6 kWh > 1 - 0.6 kWh > D
+
+Travel Time Trail: D - 9.80 min > 1 - 4.43 min > 4 - 7.74 min > L3 - 8.80 min > L5 - 6.00 min > L2 - 4.05 min > CS1 - 3.85 min > L6 - 8.32 min > L4 - 7.82 min > CS2 - 10.58 min > L1 - 6.50 min > 1 - 9.80 min > D
+
+  Pheromone convergence:       iteration 51
+  Total Runtime:               0.80 seconds
+
+
+============================================================
+  MULTI-RUN SUMMARY (10 runs)
+============================================================
+  Best Objective:   -3.466122
+  Worst Objective:  -3.466122
+  Mean Objective:   -3.466122
+  Std Deviation:    0.000000
+============================================================
+
+[plotter] Box plot saved: results\6c_3bss_16total_boxplot.png
+[ACO] Total elapsed: 3.93s across 10 run(s)
+[ACO] Logs and plots saved to results/
